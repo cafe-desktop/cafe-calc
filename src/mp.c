@@ -937,7 +937,7 @@ mp_exp(const MPNumber *x, MPNumber *z)
     mp_set_from_mp(x, &t1);
     rlb = log((float)MP_BASE);
 
-    /* Compute approximately optimal q (and divide x by 2^q) */
+    /* Compute approxicafely optimal q (and divide x by 2^q) */
     q = (int)(sqrt((float)MP_T * 0.48f * rlb) + (float) x->exponent * 1.44f * rlb);
 
     /* HALVE Q TIMES */

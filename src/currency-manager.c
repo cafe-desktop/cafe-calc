@@ -170,7 +170,7 @@ static char *
 get_imf_rate_filepath()
 {
     return g_build_filename(g_get_user_cache_dir (),
-                            "mate-calc",
+                            "cafe-calc",
                             "rms_five.xls",
                             NULL);
 }
@@ -180,7 +180,7 @@ static char *
 get_ecb_rate_filepath()
 {
     return g_build_filename(g_get_user_cache_dir (),
-                            "mate-calc",
+                            "cafe-calc",
                             "eurofxref-daily.xml",
                             NULL);
 }

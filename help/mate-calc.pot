@@ -162,7 +162,7 @@ msgstr ""
 
 #. (itstool) path: note/p
 #: C/conv-currency.page:23
-msgid "Currency information is approximate and should not be used for making financial decisions."
+msgid "Currency information is approxicafe and should not be used for making financial decisions."
 msgstr ""
 
 #. (itstool) path: page/title

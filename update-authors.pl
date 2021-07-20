@@ -1,20 +1,20 @@
 #!/usr/bin/perl
 =pod
 
-    update-authors.pl is part of mate-calc.
+    update-authors.pl is part of cafe-calc.
 
-    mate-calc is free software: you can redistribute it and/or modify
+    cafe-calc is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 2 of the License, or
     (at your option) any later version.
 
-    mate-calc is distributed in the hope that it will be useful,
+    cafe-calc is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with mate-calc.  If not, see <http://www.gnu.org/licenses/>.
+    along with cafe-calc.  If not, see <http://www.gnu.org/licenses/>.
 
 =cut
 use strict;
@@ -31,25 +31,25 @@ sub ReplaceAuthors {
   $_ eq 'José Aliste <jaliste%src.gnome.org>' and $_ = 'José Aliste <jaliste%gnome.org>' for @authors;
   $_ eq 'leigh123linux <leigh123linux%googlemail.com>' and $_ = 'Leigh Scott <leigh123linux%googlemail.com>' for @authors;
   $_ eq 'lyokha <alexey.radkov%gmail.com>' and $_ = 'Alexey Radkov <alexey.radkov%gmail.com>' for @authors;
-  $_ eq 'Martin Wimpress <code%flexion.org>' and $_ = 'Martin Wimpress <martin%mate-desktop.org>' for @authors;
+  $_ eq 'Martin Wimpress <code%flexion.org>' and $_ = 'Martin Wimpress <martin%cafe-desktop.org>' for @authors;
   $_ eq 'monsta <monsta%inbox.ru>' and $_ = 'Vlad Orlov <monsta%inbox.ru>' for @authors;
   $_ eq 'Monsta <monsta%inbox.ru>' and $_ = 'Vlad Orlov <monsta%inbox.ru>' for @authors;
   $_ eq 'oz123 <nahumoz%gmail.com>' and $_ = 'Oz N Tiram <nahumoz%gmail.com>' for @authors;
   $_ eq 'Piiit <pitiz29a%gmail.com>' and $_ = 'Peter Moser <pitiz29a%gmail.com>' for @authors;
   $_ eq 'rootavish <avishkar_gupta%outlook.com>' and $_ = 'Avishkar Gupta <rootavish%gmail.com>' for @authors;
   $_ eq 'rootavish <rootavish%gmail.com>' and $_ = 'Avishkar Gupta <rootavish%gmail.com>' for @authors;
-  $_ eq 'raveit <chat-to-me%raveit.de>' and $_ = 'Wolfgang Ulbrich <mate%raveit.de>' for @authors;
-  $_ eq 'raveit65 <chat-to-me%raveit.de>' and $_ = 'Wolfgang Ulbrich <mate%raveit.de>' for @authors;
-  $_ eq 'raveit65 <mate%raveit.de>' and $_ = 'Wolfgang Ulbrich <mate%raveit.de>' for @authors;
+  $_ eq 'raveit <chat-to-me%raveit.de>' and $_ = 'Wolfgang Ulbrich <cafe%raveit.de>' for @authors;
+  $_ eq 'raveit65 <chat-to-me%raveit.de>' and $_ = 'Wolfgang Ulbrich <cafe%raveit.de>' for @authors;
+  $_ eq 'raveit65 <cafe%raveit.de>' and $_ = 'Wolfgang Ulbrich <cafe%raveit.de>' for @authors;
   $_ eq 'rbuj <robert.buj%gmail.com>' and $_ = 'Robert Buj <robert.buj%gmail.com>' for @authors;
-  $_ eq 'Scott Balneaves <sbalneav%ltsp.org>' and $_ = 'Scott Balneaves <sbalneav%mate-desktop.org>' for @authors;
-  $_ eq 'Wolfgang Ulbrich <chat-to-me%raveit.de>' and $_ = 'Wolfgang Ulbrich <mate%raveit.de>' for @authors;
+  $_ eq 'Scott Balneaves <sbalneav%ltsp.org>' and $_ = 'Scott Balneaves <sbalneav%cafe-desktop.org>' for @authors;
+  $_ eq 'Wolfgang Ulbrich <chat-to-me%raveit.de>' and $_ = 'Wolfgang Ulbrich <cafe%raveit.de>' for @authors;
   return @authors;
 }
 
 sub GetCurrentAuthors {
   my @authors;
-  open(FILE,"src/mate-calc.about") or die "Can't open src/mate-calc.about"";
+  open(FILE,"src/cafe-calc.about") or die "Can't open src/cafe-calc.about"";
   while (<FILE>) {
     if (/^Authors=*(.+)$/) {
       @authors=split(";",$1);
@@ -60,7 +60,7 @@ sub GetCurrentAuthors {
 }
 
 sub GetNewAuthors {
-  my @authors = `git log --pretty="%an <%ae>" --since "2012-01-01" -- . "_.h" "_.c" | sort | uniq | sed 's/@/%/g' | sed '/^mate-i18n.*/d'`;
+  my @authors = `git log --pretty="%an <%ae>" --since "2012-01-01" -- . "_.h" "_.c" | sort | uniq | sed 's/@/%/g' | sed '/^cafe-i18n.*/d'`;
   chomp @authors;
   return ReplaceAuthors(@authors);
 }

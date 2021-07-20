@@ -1,4 +1,4 @@
-bin_PROGRAMS = mate-calc mate-calc-cmd
+bin_PROGRAMS = cafe-calc cafe-calc-cmd
 noinst_PROGRAMS = test-mp test-mp-equation
 
 TESTS = test-mp test-mp-equation
@@ -11,13 +11,13 @@ AM_CPPFLAGS = \
 	$(CAFE_CALC_CFLAGS)
 
 BUILT_SOURCES = \
-	mate-calc-resources.c \
-	mate-calc-resources.h
+	cafe-calc-resources.c \
+	cafe-calc-resources.h
 
-nodist_mate_calc_SOURCES= $(BUILT_SOURCES)
+nodist_cafe_calc_SOURCES= $(BUILT_SOURCES)
 
-mate_calc_SOURCES = \
-	mate-calc.c \
+cafe_calc_SOURCES = \
+	cafe-calc.c \
 	currency.c \
 	currency.h \
 	currency-manager.c \
@@ -68,11 +68,11 @@ mate_calc_SOURCES = \
 	parser.h \
 	utility.h
 
-mate_calc_LDADD = \
+cafe_calc_LDADD = \
 	$(CAFE_CALC_LIBS)        
 
-mate_calc_cmd_SOURCES = \
-	mate-calc-cmd.c \
+cafe_calc_cmd_SOURCES = \
+	cafe-calc-cmd.c \
 	currency.c \
 	currency.h \
 	currency-manager.c \
@@ -101,7 +101,7 @@ mate_calc_cmd_SOURCES = \
 	parser.c \
 	parser.h
 
-mate_calc_cmd_LDADD = \
+cafe_calc_cmd_LDADD = \
 	$(CAFE_CALC_CMD_LIBS) \
 	-lm
 
@@ -171,33 +171,33 @@ math-serializer.c: mp-enums.h
 math-equation.c: mp-enums.h
 
 # Generate resources
-mate-calc-resources.h mate-calc-resources.c: org.mate.calculator.gresource.xml Makefile $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies --sourcedir $(srcdir) $(srcdir)/org.mate.calculator.gresource.xml)
+cafe-calc-resources.h cafe-calc-resources.c: org.cafe.calculator.gresource.xml Makefile $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies --sourcedir $(srcdir) $(srcdir)/org.cafe.calculator.gresource.xml)
 	$(AM_V_GEN) XMLLINT=$(XMLLINT) $(GLIB_COMPILE_RESOURCES) --target $@ --sourcedir $(srcdir) --generate --c-name calculator $<
 
 
-# Install a symlink between mate-calc and mate-calculator
+# Install a symlink between cafe-calc and cafe-calculator
 install-exec-hook:
-	test -e "$(DESTDIR)$(bindir)/mate-calculator" \
-	|| (cd "$(DESTDIR)$(bindir)" && ln -s mate-calc mate-calculator)
+	test -e "$(DESTDIR)$(bindir)/cafe-calculator" \
+	|| (cd "$(DESTDIR)$(bindir)" && ln -s cafe-calc cafe-calculator)
 
-# Remove the symlink between mate-calc and mate-calculator
+# Remove the symlink between cafe-calc and cafe-calculator
 uninstall-local:
-	test -h "$(DESTDIR)$(bindir)/mate-calculator" \
-	&& rm -f "$(DESTDIR)$(bindir)/mate-calculator"
+	test -h "$(DESTDIR)$(bindir)/cafe-calculator" \
+	&& rm -f "$(DESTDIR)$(bindir)/cafe-calculator"
 
 EXTRA_DIST = \
 	buttons-advanced.ui \
 	buttons-basic.ui \
 	buttons-financial.ui \
 	buttons-programming.ui \
-	mate-calc.about \
+	cafe-calc.about \
 	mp-enums.c.template \
 	mp-enums.h.template \
-	org.mate.calculator.gresource.xml \
+	org.cafe.calculator.gresource.xml \
 	preferences.ui
 
 DISTCLEANFILES = \
 	Makefile.in
 
-test: mate-calc
-	./mate-calc -u
+test: cafe-calc
+	./cafe-calc -u

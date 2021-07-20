@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR CAFE Desktop Environment team
-# This file is distributed under the same license as the mate-calc package.
+# This file is distributed under the same license as the cafe-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # elio <micta2003@hotmail.com>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Andres Sanchez <blackatze93@gmail.com>, 2020
 # Emiliano Fascetti, 2020
 # Adolfo Jayme-Barrientos, 2020
@@ -17,12 +17,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
-"Report-Msgid-Bugs-To: http://mate-desktop.org\n"
+"Project-Id-Version: cafe-calc 1.23.0\n"
+"Report-Msgid-Bugs-To: http://cafe-desktop.org\n"
 "POT-Creation-Date: 2020-01-14 20:58+0100\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Toni Estévez <toni.estevez@gmail.com>, 2020\n"
-"Language-Team: Spanish (https://www.transifex.com/mate/teams/13566/es/)\n"
+"Language-Team: Spanish (https://www.transifex.com/cafe/teams/13566/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -569,15 +569,15 @@ msgstr "Mostrar los c_eros finales"
 msgid "Show _thousands separators"
 msgstr "Mostrar los separadores de _millares"
 
-#: data/mate-calc.appdata.xml.in:7
+#: data/cafe-calc.appdata.xml.in:7
 msgid "CAFE Calc"
 msgstr "Calculadora de CAFE"
 
-#: data/mate-calc.appdata.xml.in:8
+#: data/cafe-calc.appdata.xml.in:8
 msgid "CAFE Desktop calculator"
 msgstr "Calculadora del escritorio CAFE"
 
-#: data/mate-calc.appdata.xml.in:10
+#: data/cafe-calc.appdata.xml.in:10
 msgid ""
 "CAFE Calc is a powerful graphical calculator with financial, logical and "
 "scientific modes. It uses a multiple precision package to do its arithmetic "
@@ -587,7 +587,7 @@ msgstr ""
 " financiero, lógico y científico. Utiliza un paquete de precisión múltiple "
 "para realizar los cálculos y ofrecer un alto grado de precisión."
 
-#: data/mate-calc.appdata.xml.in:15
+#: data/cafe-calc.appdata.xml.in:15
 msgid ""
 "CAFE Calc is a fork of GNOME Calc and part of the CAFE Desktop Environment. "
 "If you would like to know more about CAFE and CAFE Calc, please visit the "
@@ -597,68 +597,68 @@ msgstr ""
 " del entorno de escritorio CAFE. Si quiere saber más sobre CAFE y "
 "Calculadora de CAFE, visite la página principal del proyecto."
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/cafe-calc.desktop.in:3 src/math-window.c:261
 msgid "CAFE Calculator"
 msgstr "Calculadora de CAFE"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/cafe-calc.desktop.in:4 src/math-window.c:568
 msgid "Calculator"
 msgstr "Calculadora"
 
-#: data/mate-calc.desktop.in:5
+#: data/cafe-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Realice cálculos aritméticos, científicos o financieros"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: data/mate-calc.desktop.in:8
+#: data/cafe-calc.desktop.in:8
 msgid "accessories-calculator"
 msgstr "accessories-calculator"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: data/mate-calc.desktop.in:13
+#: data/cafe-calc.desktop.in:13
 msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
 msgstr "calculadora;CAFE;científica;aritmética;financiera;operaciones"
 
-#: data/org.mate.calc.gschema.xml:25
+#: data/org.cafe.calc.gschema.xml:25
 msgid "Accuracy value"
 msgstr "Valor de precisión"
 
-#: data/org.mate.calc.gschema.xml:26
+#: data/org.cafe.calc.gschema.xml:26
 msgid "The number of digits displayed after the numeric point"
 msgstr "El número de dígitos mostrados después del punto numérico"
 
-#: data/org.mate.calc.gschema.xml:31
+#: data/org.cafe.calc.gschema.xml:31
 msgid "Word size"
 msgstr "Tamaño de la palabra"
 
-#: data/org.mate.calc.gschema.xml:32
+#: data/org.cafe.calc.gschema.xml:32
 msgid "The size of the words used in bitwise operations"
 msgstr "El tamaño de las palabras usadas en las operaciones bit a bit"
 
-#: data/org.mate.calc.gschema.xml:37
+#: data/org.cafe.calc.gschema.xml:37
 msgid "Numeric Base"
 msgstr "Base numérica"
 
-#: data/org.mate.calc.gschema.xml:38
+#: data/org.cafe.calc.gschema.xml:38
 msgid "The numeric base"
 msgstr "La base numérica"
 
-#: data/org.mate.calc.gschema.xml:42
+#: data/org.cafe.calc.gschema.xml:42
 msgid "Show Thousands Separators"
 msgstr "Mostrar separadores de millares"
 
-#: data/org.mate.calc.gschema.xml:43
+#: data/org.cafe.calc.gschema.xml:43
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "Si se deben mostrar los separadores de miles en los números grandes."
 
-#: data/org.mate.calc.gschema.xml:47
+#: data/org.cafe.calc.gschema.xml:47
 msgid "Show Trailing Zeroes"
 msgstr "Mostrar los ceros excedentes"
 
-#: data/org.mate.calc.gschema.xml:48
+#: data/org.cafe.calc.gschema.xml:48
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
@@ -666,59 +666,59 @@ msgstr ""
 "Si se debe mostrar en el valor cualquier cero excedente después del punto "
 "del número."
 
-#: data/org.mate.calc.gschema.xml:52
+#: data/org.cafe.calc.gschema.xml:52
 msgid "Number format"
 msgstr "Formato numérico"
 
-#: data/org.mate.calc.gschema.xml:53
+#: data/org.cafe.calc.gschema.xml:53
 msgid "The format to display numbers in"
 msgstr "El formato en el que mostrar los números"
 
-#: data/org.mate.calc.gschema.xml:57
+#: data/org.cafe.calc.gschema.xml:57
 msgid "Angle units"
 msgstr "Unidades de ángulo"
 
-#: data/org.mate.calc.gschema.xml:58
+#: data/org.cafe.calc.gschema.xml:58
 msgid "The angle units to use"
 msgstr "La unidad de ángulo que usar"
 
-#: data/org.mate.calc.gschema.xml:62
+#: data/org.cafe.calc.gschema.xml:62
 msgid "Button mode"
 msgstr "Modo botón"
 
-#: data/org.mate.calc.gschema.xml:63
+#: data/org.cafe.calc.gschema.xml:63
 msgid "The button mode"
 msgstr "El modo botón"
 
-#: data/org.mate.calc.gschema.xml:67
+#: data/org.cafe.calc.gschema.xml:67
 msgid "Source currency"
 msgstr "Divisa de origen"
 
-#: data/org.mate.calc.gschema.xml:68
+#: data/org.cafe.calc.gschema.xml:68
 msgid "Currency of the current calculation"
 msgstr "Divisa del cálculo actual"
 
-#: data/org.mate.calc.gschema.xml:72
+#: data/org.cafe.calc.gschema.xml:72
 msgid "Target currency"
 msgstr "Divisa de destino"
 
-#: data/org.mate.calc.gschema.xml:73
+#: data/org.cafe.calc.gschema.xml:73
 msgid "Currency to convert the current calculation into"
 msgstr "Divisa a la que convertir el cálculo actual"
 
-#: data/org.mate.calc.gschema.xml:77
+#: data/org.cafe.calc.gschema.xml:77
 msgid "Source units"
 msgstr "Unidades de origen"
 
-#: data/org.mate.calc.gschema.xml:78
+#: data/org.cafe.calc.gschema.xml:78
 msgid "Units of the current calculation"
 msgstr "Unidades del cálculo actual"
 
-#: data/org.mate.calc.gschema.xml:82
+#: data/org.cafe.calc.gschema.xml:82
 msgid "Target units"
 msgstr "Unidades de destino"
 
-#: data/org.mate.calc.gschema.xml:83
+#: data/org.cafe.calc.gschema.xml:83
 msgid "Units to convert the current calculation into"
 msgstr "Unidades a las que convertir el cálculo actual"
 
@@ -966,19 +966,19 @@ msgstr "Rand sudafricano"
 msgid "Error: the number of periods must be positive"
 msgstr "Error: el número de períodos debe ser positivo"
 
-#. Description on how to use mate-calc displayed on command-line
-#: src/mate-calc.c:79
+#. Description on how to use cafe-calc displayed on command-line
+#: src/cafe-calc.c:79
 #, c-format
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
 msgstr ""
 "Uso:\n"
-"  %s — Realizar cálculos matemáticos"
+"  %s — Realizar cálculos cafemáticos"
 
-#. Description on mate-calc command-line help options displayed on command-
+#. Description on cafe-calc command-line help options displayed on command-
 #. line
-#: src/mate-calc.c:87
+#: src/cafe-calc.c:87
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -993,9 +993,9 @@ msgstr ""
 "  -help-all                       Mostrar todas las opciones de ayuda\n"
 "  -help-gtk                       Mostrar las opciones de GTK"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line GTK+ options displayed on command-
 #. line
-#: src/mate-calc.c:98
+#: src/cafe-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -1014,8 +1014,8 @@ msgstr ""
 "  --gtk-module=MÓDULOS            Cargar módulos de GTK adicionales\n"
 "  --g-fatal-warnings              Hacer que todos los avisos sean fatales"
 
-#. Description on mate-calc application options displayed on command-line
-#: src/mate-calc.c:112
+#. Description on cafe-calc application options displayed on command-line
+#: src/cafe-calc.c:112
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1025,13 +1025,13 @@ msgstr ""
 "  -s, --solve <ecuación>          Resolver la ecuación proporcionada"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/mate-calc.c:160
+#: src/cafe-calc.c:160
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "Parámetro --resolver requiere una ecuación para resolver"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/mate-calc.c:171
+#: src/cafe-calc.c:171
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "Parámetro «%s» desconocido"

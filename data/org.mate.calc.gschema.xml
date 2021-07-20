@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <enum id="org.mate.calc.NumberFormat">
+  <enum id="org.cafe.calc.NumberFormat">
     <value value="0" nick="automatic"/>
     <value value="1" nick="fixed"/>
     <value value="2" nick="scientific"/>
     <value value="3" nick="engineering"/>
   </enum>
-  <enum id="org.mate.calc.ButtonMode">
+  <enum id="org.cafe.calc.ButtonMode">
     <value value="0" nick="basic"/>
     <value value="1" nick="advanced"/>
     <value value="2" nick="financial"/>
     <value value="3" nick="programming"/>
   </enum>
-  <enum id="org.mate.calc.AngleUnit">
+  <enum id="org.cafe.calc.AngleUnit">
     <value value="0" nick="radians"/>
     <value value="1" nick="degrees"/>
     <value value="2" nick="gradians"/>
   </enum>
 
-  <schema path="/org/mate/calc/" id="org.mate.calc" gettext-domain="mate-calc">
+  <schema path="/org/cafe/calc/" id="org.cafe.calc" gettext-domain="cafe-calc">
     <key type="i" name="accuracy">
       <default>9</default>
       <range min="0" max="15"/>
@@ -47,17 +47,17 @@
       <summary>Show Trailing Zeroes</summary>
       <description>Indicates whether any trailing zeroes after the  numeric point should be shown in the display value.</description>
     </key>
-    <key name="number-format" enum="org.mate.calc.NumberFormat">
+    <key name="number-format" enum="org.cafe.calc.NumberFormat">
       <default>'automatic'</default>
       <summary>Number format</summary>
       <description>The format to display numbers in</description>
     </key>
-    <key name="angle-units" enum="org.mate.calc.AngleUnit">
+    <key name="angle-units" enum="org.cafe.calc.AngleUnit">
       <default>'degrees'</default>
       <summary>Angle units</summary>
       <description>The angle units to use</description>
     </key>
-    <key name="button-mode" enum="org.mate.calc.ButtonMode">
+    <key name="button-mode" enum="org.cafe.calc.ButtonMode">
       <default>'basic'</default>
       <summary>Button mode</summary>
       <description>The button mode</description>

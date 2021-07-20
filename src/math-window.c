@@ -201,7 +201,7 @@ static void help_cb(GtkWidget *widget, MathWindow *window)
     GError *error = NULL;
 
     gtk_show_uri_on_window(GTK_WINDOW(window),
-                           "help:mate-calc",
+                           "help:cafe-calc",
                            gtk_get_current_event_time(),
                            &error);
 
@@ -257,7 +257,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
     char **authors;
     gsize n_authors = 0, i;
 
-    bytes = g_resources_lookup_data ("/org/mate/calculator/ui/mate-calc.about", G_RESOURCE_LOOKUP_FLAGS_NONE, &error);
+    bytes = g_resources_lookup_data ("/org/cafe/calculator/ui/cafe-calc.about", G_RESOURCE_LOOKUP_FLAGS_NONE, &error);
     g_assert_no_error (error);
 
     data = g_bytes_get_data (bytes, &data_len);
@@ -290,7 +290,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
         "documenters", documenters,
         "translator_credits", _("translator-credits"),
         "wrap-license", TRUE,
-        "website", "http://mate-desktop.org",
+        "website", "http://cafe-desktop.org",
         "icon-name", "accessories-calculator",
         "logo-icon-name", "accessories-calculator",
         NULL);
@@ -589,7 +589,7 @@ math_window_init(MathWindow *window)
                          /* Title of main window */
                          _("Calculator"));
     gtk_window_set_icon_name(GTK_WINDOW(window), "accessories-calculator");
-    gtk_window_set_role(GTK_WINDOW(window), "mate-calc");
+    gtk_window_set_role(GTK_WINDOW(window), "cafe-calc");
     gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
     g_signal_connect_after(G_OBJECT(window), "key-press-event", G_CALLBACK(key_press_cb), NULL);
     g_signal_connect(G_OBJECT(window), "delete-event", G_CALLBACK(delete_cb), NULL);

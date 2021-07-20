@@ -14,7 +14,7 @@ msgstr ""
 "POT-Creation-Date: 2019-02-09 20:37+0100\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
-"Language-Team: Spanish (Peru) (https://www.transifex.com/mate/teams/13566/es_PE/)\n"
+"Language-Team: Spanish (Peru) (https://www.transifex.com/cafe/teams/13566/es_PE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -484,11 +484,11 @@ msgstr ""
 msgid "Show _thousands separators"
 msgstr ""
 
-#: ../data/mate-calc.appdata.xml.in.h:1
+#: ../data/cafe-calc.appdata.xml.in.h:1
 msgid "CAFE Desktop calculator"
 msgstr ""
 
-#: ../data/mate-calc.appdata.xml.in.h:2
+#: ../data/cafe-calc.appdata.xml.in.h:2
 msgid ""
 "<p> CAFE Calc is a powerful graphical calculator with financial, logical and"
 " scientific modes. It uses a multiple precision package to do its arithmetic"
@@ -497,16 +497,16 @@ msgid ""
 "more about CAFE and CAFE Calc, please visit the project's home page. </p>"
 msgstr ""
 
-#: ../data/mate-calc.desktop.in.h:1
+#: ../data/cafe-calc.desktop.in.h:1
 msgid "CAFE Calculator"
 msgstr ""
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:563
+#: ../data/cafe-calc.desktop.in.h:2 ../src/math-window.c:563
 msgid "Calculator"
 msgstr ""
 
-#: ../data/mate-calc.desktop.in.h:3
+#: ../data/cafe-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr ""
 
@@ -754,17 +754,17 @@ msgstr ""
 msgid "Error: the number of periods must be positive"
 msgstr ""
 
-#. Description on how to use mate-calc displayed on command-line
-#: ../src/mate-calc.c:79
+#. Description on how to use cafe-calc displayed on command-line
+#: ../src/cafe-calc.c:79
 #, c-format
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
 msgstr ""
 
-#. Description on mate-calc command-line help options displayed on command-
+#. Description on cafe-calc command-line help options displayed on command-
 #. line
-#: ../src/mate-calc.c:87
+#: ../src/cafe-calc.c:87
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -774,9 +774,9 @@ msgid ""
 "  --help-gtk                      Show GTK+ options"
 msgstr ""
 
-#. Description on mate-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line GTK+ options displayed on command-
 #. line
-#: ../src/mate-calc.c:98
+#: ../src/cafe-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -788,8 +788,8 @@ msgid ""
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
 
-#. Description on mate-calc application options displayed on command-line
-#: ../src/mate-calc.c:112
+#. Description on cafe-calc application options displayed on command-line
+#: ../src/cafe-calc.c:112
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -797,13 +797,13 @@ msgid ""
 msgstr ""
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: ../src/mate-calc.c:156
+#: ../src/cafe-calc.c:156
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr ""
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/mate-calc.c:166
+#: ../src/cafe-calc.c:166
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr ""
@@ -1282,29 +1282,29 @@ msgstr ""
 #: ../src/math-window.c:239
 msgid "translator-credits"
 msgstr ""
-"Francisco Javier F. Serrador <serrador@cvs.mate.org>\n"
+"Francisco Javier F. Serrador <serrador@cvs.cafe.org>\n"
 "Jorge González González <jorge.gonzalez.gonzalez@hispalinux.es>"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
 msgid ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
+"cafe-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
 "the Free Software Foundation; either version 2 of the License, or\n"
 "(at your option) any later version.\n"
 "\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
+"cafe-calc is distributed in the hope that it will be useful,\n"
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
 "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"along with cafe-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr ""
 
 #: ../src/math-window.c:261
-msgid "mate-calc"
+msgid "cafe-calc"
 msgstr ""
 
 #: ../src/math-window.c:265
