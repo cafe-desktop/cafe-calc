@@ -582,7 +582,7 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
-"Mate Calc é uma calculador gráfica poderosa com modos para finanças, lógica "
+"Cafe Calc é uma calculador gráfica poderosa com modos para finanças, lógica "
 "e ciência. Utiliza um pacote de precisão múltipla no seu processo aritmético"
 " para obter um nível alto de precisão."
 

@@ -55,4 +55,4 @@ See the AUTHORS file.
 Suggestions for further improvement would be most welcome, plus bug
 reports and comments.
 
-The Mate Team.
+The Cafe Team.
