@@ -593,7 +593,7 @@ msgstr ""
 
 #: data/cafe-calc.desktop.in:3 src/math-window.c:261
 msgid "CAFE Calculator"
-msgstr "Mate-lommeregner"
+msgstr "Cafe-lommeregner"
 
 #. Title of main window
 #: data/cafe-calc.desktop.in:4 src/math-window.c:568

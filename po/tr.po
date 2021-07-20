@@ -972,7 +972,7 @@ msgid ""
 "  %s — Perform mathematical calculations"
 msgstr ""
 "Kullanımı:\n"
-"  %s — Matematiksel Hesapları Yürüt"
+"  %s — Cafematiksel Hesapları Yürüt"
 
 #. Description on cafe-calc command-line help options displayed on command-
 #. line

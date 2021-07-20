@@ -294,7 +294,7 @@
 
 ========== en@shaw.po ==========
 # Shavian translation for cafe-calc.
-# Copyright (C) 2009-2010 The Mate Foundation.
+# Copyright (C) 2009-2010 The Cafe Foundation.
 # Thomas Thurman <tthurman@gnome.org>, 2010.
 
 
@@ -509,7 +509,7 @@
 # Andras Timar <timar at cafe dot hu>, 2003.
 # Laszlo Dvornik <dvornik at cafe dot hu>, 2004.
 # Gabor Kelemen <kelemeng at cafe dot hu>, 2005, 2006, 2007, 2008, 2009.
-# Mate ORY <orycafe at gmail d0t com>, 2006.
+# Cafe ORY <orycafe at gmail d0t com>, 2006.
 # Gabor Kelemen <kelemeng at cafe dot hu>, 2009, 2010.
 
 
@@ -944,7 +944,7 @@
 #
 # Andraž Tori <andraz.tori1@guest.arnes.si>, 2002.
 # Matic Žgur <mr.zgur@gmail.com>, 2006 - 2007.
-# Matej Urbančič <cafeju@svn.cafe.org>, 2007 - 2010.
+# Cafej Urbančič <cafeju@svn.cafe.org>, 2007 - 2010.
 #
 
 

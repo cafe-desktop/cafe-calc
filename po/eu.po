@@ -1587,7 +1587,7 @@ msgstr "Sun Microsystems"
 
 #: src/math-window.c:235
 msgid "CAFE Documentation Team"
-msgstr "Mate dokumentatzeko taldea"
+msgstr "Cafe dokumentatzeko taldea"
 
 #: src/math-window.c:241
 msgid ""

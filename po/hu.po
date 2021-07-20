@@ -965,7 +965,7 @@ msgid ""
 "  %s — Perform mathematical calculations"
 msgstr ""
 "Használat:\n"
-"  %s – Matematikai számítások végrehajtása"
+"  %s – Cafematikai számítások végrehajtása"
 
 #. Description on cafe-calc command-line help options displayed on command-
 #. line

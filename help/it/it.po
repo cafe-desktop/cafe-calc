@@ -167,7 +167,7 @@ msgstr "Numeri Complessi"
 #: C/complex.page:11
 msgid "Complex numbers are not supported in <app>CAFE Calculator</app>."
 msgstr ""
-"I numeri complessi non sono supportati in <app> Calcolatrice di Mate </app>."
+"I numeri complessi non sono supportati in <app> Calcolatrice di Cafe </app>."
 
 #. (itstool) path: page/p
 #: C/conv-base.page:11
