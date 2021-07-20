@@ -16,12 +16,12 @@
     along with CAFE Calc.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <gresources>
-  <gresource prefix="/org/mate/calculator/ui">
+  <gresource prefix="/org/cafe/calculator/ui">
     <file compressed="true" preprocess="xml-stripblanks">buttons-advanced.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">buttons-basic.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">buttons-financial.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">buttons-programming.ui</file>
-    <file compressed="true">mate-calc.about</file>
+    <file compressed="true">cafe-calc.about</file>
     <file compressed="true" preprocess="xml-stripblanks">preferences.ui</file>
   </gresource>
 </gresources>

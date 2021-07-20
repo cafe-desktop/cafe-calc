@@ -1,5 +1,5 @@
 @YELP_HELP_RULES@
-HELP_ID = mate-calc
+HELP_ID = cafe-calc
 HELP_FILES = absolute.page \
              base.page \
              boolean.page \

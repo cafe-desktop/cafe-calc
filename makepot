@@ -1,6 +1,6 @@
 #! /bin/sh
 
-PACKAGE=mate-calc;
+PACKAGE=cafe-calc;
 
 # normal translations
 make -C po $PACKAGE.pot && mv po/$PACKAGE.pot .

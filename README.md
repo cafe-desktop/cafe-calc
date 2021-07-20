@@ -1,6 +1,6 @@
 # Introduction.
 
-This is `mate-calc`, a fork of `gnome-calc`, the calculator application
+This is `cafe-calc`, a fork of `gnome-calc`, the calculator application
 that was previously in the OpenWindows Deskset of the Solaris 8
 operating system.
 
@@ -12,7 +12,7 @@ There is a single graphics driver for Gtk3 included with this release.
 
 ## Getting started.
 
-The manual pages also describe how to use `mate-calc` in detail.
+The manual pages also describe how to use `cafe-calc` in detail.
 
 
 ## Calctool history.
@@ -42,7 +42,7 @@ application that is a part of CDE (albeit I had nothing to do with
 that).
 
 With its inclusion in the CAFE CVS repository, it was renamed to
-`mate-calc`.
+`cafe-calc`.
 
 More recently, Sami Pietila provided arithmetic precedence support and
 Robert Ancell converted the UI to use Glade.

@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR CAFE Desktop Environment team
-# This file is distributed under the same license as the mate-calc package.
+# This file is distributed under the same license as the cafe-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Alan Lee <bkrhlim@aol.com>, 2020
@@ -13,12 +13,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
-"Report-Msgid-Bugs-To: http://mate-desktop.org\n"
+"Project-Id-Version: cafe-calc 1.23.0\n"
+"Report-Msgid-Bugs-To: http://cafe-desktop.org\n"
 "POT-Creation-Date: 2020-01-14 20:58+0100\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2020\n"
-"Language-Team: Korean (https://www.transifex.com/mate/teams/13566/ko/)\n"
+"Language-Team: Korean (https://www.transifex.com/cafe/teams/13566/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -540,148 +540,148 @@ msgstr "마지막 0 표시(_Z)"
 msgid "Show _thousands separators"
 msgstr "천단위 자리수 구분 표시(_T)"
 
-#: data/mate-calc.appdata.xml.in:7
+#: data/cafe-calc.appdata.xml.in:7
 msgid "CAFE Calc"
 msgstr ""
 
-#: data/mate-calc.appdata.xml.in:8
+#: data/cafe-calc.appdata.xml.in:8
 msgid "CAFE Desktop calculator"
 msgstr "마테 데스크톱 계산기 "
 
-#: data/mate-calc.appdata.xml.in:10
+#: data/cafe-calc.appdata.xml.in:10
 msgid ""
 "CAFE Calc is a powerful graphical calculator with financial, logical and "
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
 
-#: data/mate-calc.appdata.xml.in:15
+#: data/cafe-calc.appdata.xml.in:15
 msgid ""
 "CAFE Calc is a fork of GNOME Calc and part of the CAFE Desktop Environment. "
 "If you would like to know more about CAFE and CAFE Calc, please visit the "
 "project's home page."
 msgstr ""
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/cafe-calc.desktop.in:3 src/math-window.c:261
 msgid "CAFE Calculator"
 msgstr "마테 계산기 "
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/cafe-calc.desktop.in:4 src/math-window.c:568
 msgid "Calculator"
 msgstr "계산기"
 
-#: data/mate-calc.desktop.in:5
+#: data/cafe-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "일반 연산, 과학, 재무용 계산을 합니다"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: data/mate-calc.desktop.in:8
+#: data/cafe-calc.desktop.in:8
 msgid "accessories-calculator"
 msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: data/mate-calc.desktop.in:13
+#: data/cafe-calc.desktop.in:13
 msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
 msgstr ""
 
-#: data/org.mate.calc.gschema.xml:25
+#: data/org.cafe.calc.gschema.xml:25
 msgid "Accuracy value"
 msgstr "유효 숫자"
 
-#: data/org.mate.calc.gschema.xml:26
+#: data/org.cafe.calc.gschema.xml:26
 msgid "The number of digits displayed after the numeric point"
 msgstr "소수점 뒤에 표시할 숫자 개수"
 
-#: data/org.mate.calc.gschema.xml:31
+#: data/org.cafe.calc.gschema.xml:31
 msgid "Word size"
 msgstr "워드 크기"
 
-#: data/org.mate.calc.gschema.xml:32
+#: data/org.cafe.calc.gschema.xml:32
 msgid "The size of the words used in bitwise operations"
 msgstr "비트 처리 기능에서 사용할 워드 크기"
 
-#: data/org.mate.calc.gschema.xml:37
+#: data/org.cafe.calc.gschema.xml:37
 msgid "Numeric Base"
 msgstr "진법"
 
-#: data/org.mate.calc.gschema.xml:38
+#: data/org.cafe.calc.gschema.xml:38
 msgid "The numeric base"
 msgstr "진법"
 
-#: data/org.mate.calc.gschema.xml:42
+#: data/org.cafe.calc.gschema.xml:42
 msgid "Show Thousands Separators"
 msgstr "천단위 자리수 구분 표시"
 
-#: data/org.mate.calc.gschema.xml:43
+#: data/org.cafe.calc.gschema.xml:43
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "큰 수에서 천단위 자리수 표시를 사용할 지 여부."
 
-#: data/org.mate.calc.gschema.xml:47
+#: data/org.cafe.calc.gschema.xml:47
 msgid "Show Trailing Zeroes"
 msgstr "마지막 0 표시"
 
-#: data/org.mate.calc.gschema.xml:48
+#: data/org.cafe.calc.gschema.xml:48
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
 msgstr "표시하는 값에서 소수점 뒤에 0을 표시할 지 여부."
 
-#: data/org.mate.calc.gschema.xml:52
+#: data/org.cafe.calc.gschema.xml:52
 msgid "Number format"
 msgstr "숫자 형식"
 
-#: data/org.mate.calc.gschema.xml:53
+#: data/org.cafe.calc.gschema.xml:53
 msgid "The format to display numbers in"
 msgstr "숫자를 표시할 형식"
 
-#: data/org.mate.calc.gschema.xml:57
+#: data/org.cafe.calc.gschema.xml:57
 msgid "Angle units"
 msgstr "각도 단위"
 
-#: data/org.mate.calc.gschema.xml:58
+#: data/org.cafe.calc.gschema.xml:58
 msgid "The angle units to use"
 msgstr "사용할 각도 단위"
 
-#: data/org.mate.calc.gschema.xml:62
+#: data/org.cafe.calc.gschema.xml:62
 msgid "Button mode"
 msgstr "단추 모드"
 
-#: data/org.mate.calc.gschema.xml:63
+#: data/org.cafe.calc.gschema.xml:63
 msgid "The button mode"
 msgstr "단추 모드"
 
-#: data/org.mate.calc.gschema.xml:67
+#: data/org.cafe.calc.gschema.xml:67
 msgid "Source currency"
 msgstr "원본 통화"
 
-#: data/org.mate.calc.gschema.xml:68
+#: data/org.cafe.calc.gschema.xml:68
 msgid "Currency of the current calculation"
 msgstr "현재 계산값의 통화 단위"
 
-#: data/org.mate.calc.gschema.xml:72
+#: data/org.cafe.calc.gschema.xml:72
 msgid "Target currency"
 msgstr "대상 통화"
 
-#: data/org.mate.calc.gschema.xml:73
+#: data/org.cafe.calc.gschema.xml:73
 msgid "Currency to convert the current calculation into"
 msgstr "현재 계산값을 변환할 통화 단위"
 
-#: data/org.mate.calc.gschema.xml:77
+#: data/org.cafe.calc.gschema.xml:77
 msgid "Source units"
 msgstr "원본 단위"
 
-#: data/org.mate.calc.gschema.xml:78
+#: data/org.cafe.calc.gschema.xml:78
 msgid "Units of the current calculation"
 msgstr "현재 계산값의 단위"
 
-#: data/org.mate.calc.gschema.xml:82
+#: data/org.cafe.calc.gschema.xml:82
 msgid "Target units"
 msgstr "대상 단위"
 
-#: data/org.mate.calc.gschema.xml:83
+#: data/org.cafe.calc.gschema.xml:83
 msgid "Units to convert the current calculation into"
 msgstr "현재 계산값을 변환할 대상 단위"
 
@@ -929,8 +929,8 @@ msgstr "남아프리카공화국 랜드"
 msgid "Error: the number of periods must be positive"
 msgstr "오류: 기간은 0보다 커야 합니다"
 
-#. Description on how to use mate-calc displayed on command-line
-#: src/mate-calc.c:79
+#. Description on how to use cafe-calc displayed on command-line
+#: src/cafe-calc.c:79
 #, c-format
 msgid ""
 "Usage:\n"
@@ -939,9 +939,9 @@ msgstr ""
 "사용법:\n"
 "  %s — 수학 계산을 합니다"
 
-#. Description on mate-calc command-line help options displayed on command-
+#. Description on cafe-calc command-line help options displayed on command-
 #. line
-#: src/mate-calc.c:87
+#: src/cafe-calc.c:87
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -956,9 +956,9 @@ msgstr ""
 "  --help-all                      모든 도움말 옵션을 표시합니다\n"
 "  --help-gtk                      GTK+ 옵션을 표시합니다"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line GTK+ options displayed on command-
 #. line
-#: src/mate-calc.c:98
+#: src/cafe-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -977,8 +977,8 @@ msgstr ""
 "  --gtk-module=MODULES            추가 GTK+ 모듈 읽어들이기\n"
 "  --g-fatal-warnings              모든 경고를 치명적으로 취급"
 
-#. Description on mate-calc application options displayed on command-line
-#: src/mate-calc.c:112
+#. Description on cafe-calc application options displayed on command-line
+#: src/cafe-calc.c:112
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -988,13 +988,13 @@ msgstr ""
 "  -s, --solve <equation>          주어진 식을 풉니다"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/mate-calc.c:160
+#: src/cafe-calc.c:160
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "--solve 옵션에는 풀 식이 필요합니다"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/mate-calc.c:171
+#: src/cafe-calc.c:171
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "알 수 없는 인수 '%s'"
@@ -1611,7 +1611,7 @@ msgstr ""
 "Yoo Duk Nam https://launchpad.net/~yoo2001818\n"
 "onlyeriko https://launchpad.net/~onlyeriko\n"
 "Seong-ho Cho <darkcircle.0426@gmail.com>\n"
-"CAFE Desktop Environment Team <https://www.transifex.com/mate/teams/13566/ko/>"
+"CAFE Desktop Environment Team <https://www.transifex.com/cafe/teams/13566/ko/>"
 
 #. Calculator menu
 #: src/math-window.c:403

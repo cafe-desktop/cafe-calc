@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR CAFE Desktop Environment team
-# This file is distributed under the same license as the mate-calc package.
+# This file is distributed under the same license as the cafe-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -9,12 +9,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
-"Report-Msgid-Bugs-To: http://mate-desktop.org\n"
+"Project-Id-Version: cafe-calc 1.23.0\n"
+"Report-Msgid-Bugs-To: http://cafe-desktop.org\n"
 "POT-Creation-Date: 2020-01-14 20:58+0100\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Vaibhav S Dalvi <vaibhav.dlv@gmail.com>, 2020\n"
-"Language-Team: Marathi (https://www.transifex.com/mate/teams/13566/mr/)\n"
+"Language-Team: Marathi (https://www.transifex.com/cafe/teams/13566/mr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -560,90 +560,90 @@ msgstr "शेवटचे शून्य दाखवा (_z)"
 msgid "Show _thousands separators"
 msgstr "हजारो विभाजन दाखवा (_t)"
 
-#: data/mate-calc.appdata.xml.in:7
+#: data/cafe-calc.appdata.xml.in:7
 msgid "CAFE Calc"
 msgstr ""
 
-#: data/mate-calc.appdata.xml.in:8
+#: data/cafe-calc.appdata.xml.in:8
 msgid "CAFE Desktop calculator"
 msgstr ""
 
-#: data/mate-calc.appdata.xml.in:10
+#: data/cafe-calc.appdata.xml.in:10
 msgid ""
 "CAFE Calc is a powerful graphical calculator with financial, logical and "
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
 
-#: data/mate-calc.appdata.xml.in:15
+#: data/cafe-calc.appdata.xml.in:15
 msgid ""
 "CAFE Calc is a fork of GNOME Calc and part of the CAFE Desktop Environment. "
 "If you would like to know more about CAFE and CAFE Calc, please visit the "
 "project's home page."
 msgstr ""
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/cafe-calc.desktop.in:3 src/math-window.c:261
 msgid "CAFE Calculator"
 msgstr "मेट गणनयंत्र"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/cafe-calc.desktop.in:4 src/math-window.c:568
 msgid "Calculator"
 msgstr "गणनयंत्र"
 
-#: data/mate-calc.desktop.in:5
+#: data/cafe-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "अंकगणित, शास्त्रीय किंवा वित्तीय गणना चालवून पहा"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: data/mate-calc.desktop.in:8
+#: data/cafe-calc.desktop.in:8
 msgid "accessories-calculator"
 msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: data/mate-calc.desktop.in:13
+#: data/cafe-calc.desktop.in:13
 msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
 msgstr ""
 
-#: data/org.mate.calc.gschema.xml:25
+#: data/org.cafe.calc.gschema.xml:25
 msgid "Accuracy value"
 msgstr "अचूकपणा मूल्य"
 
-#: data/org.mate.calc.gschema.xml:26
+#: data/org.cafe.calc.gschema.xml:26
 msgid "The number of digits displayed after the numeric point"
 msgstr "न्युमेरिक पॉइंटनंतर दाखवण्याजोगी अंकांची संख्या"
 
-#: data/org.mate.calc.gschema.xml:31
+#: data/org.cafe.calc.gschema.xml:31
 msgid "Word size"
 msgstr "शब्दाचे आकार"
 
-#: data/org.mate.calc.gschema.xml:32
+#: data/org.cafe.calc.gschema.xml:32
 msgid "The size of the words used in bitwise operations"
 msgstr "बिटवाइज कार्यांमध्ये वापरण्याजोगी शब्दांचे आकार"
 
-#: data/org.mate.calc.gschema.xml:37
+#: data/org.cafe.calc.gschema.xml:37
 msgid "Numeric Base"
 msgstr "न्यूमेरीक बेस्"
 
-#: data/org.mate.calc.gschema.xml:38
+#: data/org.cafe.calc.gschema.xml:38
 msgid "The numeric base"
 msgstr "न्यूमेरीक बेस्"
 
-#: data/org.mate.calc.gschema.xml:42
+#: data/org.cafe.calc.gschema.xml:42
 msgid "Show Thousands Separators"
 msgstr "हजार विभाजक दाखवा"
 
-#: data/org.mate.calc.gschema.xml:43
+#: data/org.cafe.calc.gschema.xml:43
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "हजाराचे विभाजक मोठ्या क्रमांकात दाखवले जाते का, ते दर्शवतो."
 
-#: data/org.mate.calc.gschema.xml:47
+#: data/org.cafe.calc.gschema.xml:47
 msgid "Show Trailing Zeroes"
 msgstr "शेवटचे शून्य दाखवा"
 
-#: data/org.mate.calc.gschema.xml:48
+#: data/org.cafe.calc.gschema.xml:48
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
@@ -651,59 +651,59 @@ msgstr ""
 "डिस्पले मूल्यमध्ये न्युमेरिक पॉइंटनंतरचे कोणतेहि ट्रैलिंग झिरोज् निर्देशीत "
 "करते."
 
-#: data/org.mate.calc.gschema.xml:52
+#: data/org.cafe.calc.gschema.xml:52
 msgid "Number format"
 msgstr "अंक रूपण"
 
-#: data/org.mate.calc.gschema.xml:53
+#: data/org.cafe.calc.gschema.xml:53
 msgid "The format to display numbers in"
 msgstr "दाखण्याजोगी क्रमांक"
 
-#: data/org.mate.calc.gschema.xml:57
+#: data/org.cafe.calc.gschema.xml:57
 msgid "Angle units"
 msgstr "कोन युनिट्स्"
 
-#: data/org.mate.calc.gschema.xml:58
+#: data/org.cafe.calc.gschema.xml:58
 msgid "The angle units to use"
 msgstr "The angle units to use"
 
-#: data/org.mate.calc.gschema.xml:62
+#: data/org.cafe.calc.gschema.xml:62
 msgid "Button mode"
 msgstr "बटन मोड"
 
-#: data/org.mate.calc.gschema.xml:63
+#: data/org.cafe.calc.gschema.xml:63
 msgid "The button mode"
 msgstr "बटन मोड"
 
-#: data/org.mate.calc.gschema.xml:67
+#: data/org.cafe.calc.gschema.xml:67
 msgid "Source currency"
 msgstr "स्रोत चलन"
 
-#: data/org.mate.calc.gschema.xml:68
+#: data/org.cafe.calc.gschema.xml:68
 msgid "Currency of the current calculation"
 msgstr "सध्याचे गणनाचे चलन"
 
-#: data/org.mate.calc.gschema.xml:72
+#: data/org.cafe.calc.gschema.xml:72
 msgid "Target currency"
 msgstr "लक्ष्य चलन"
 
-#: data/org.mate.calc.gschema.xml:73
+#: data/org.cafe.calc.gschema.xml:73
 msgid "Currency to convert the current calculation into"
 msgstr "सध्याची गणना रूपांतरीत करण्यासाठी चलन"
 
-#: data/org.mate.calc.gschema.xml:77
+#: data/org.cafe.calc.gschema.xml:77
 msgid "Source units"
 msgstr "स्रोत युनिट्स्"
 
-#: data/org.mate.calc.gschema.xml:78
+#: data/org.cafe.calc.gschema.xml:78
 msgid "Units of the current calculation"
 msgstr "सध्याच्या गणनाचे युनिट"
 
-#: data/org.mate.calc.gschema.xml:82
+#: data/org.cafe.calc.gschema.xml:82
 msgid "Target units"
 msgstr "लक्ष्य युनिट्स्"
 
-#: data/org.mate.calc.gschema.xml:83
+#: data/org.cafe.calc.gschema.xml:83
 msgid "Units to convert the current calculation into"
 msgstr "सध्याची गणना रूपांतरीत करण्यासाठी युनिट्स्"
 
@@ -951,8 +951,8 @@ msgstr "साऊथ आफ्रिकन रँड"
 msgid "Error: the number of periods must be positive"
 msgstr "त्रुटी: पिरिअड्स्ची संख्या पॉजिटिव्ह असावे"
 
-#. Description on how to use mate-calc displayed on command-line
-#: src/mate-calc.c:79
+#. Description on how to use cafe-calc displayed on command-line
+#: src/cafe-calc.c:79
 #, c-format
 msgid ""
 "Usage:\n"
@@ -961,9 +961,9 @@ msgstr ""
 "वापर:\n"
 "  %s — मॅथेमॅटिकल गणना सुरू का"
 
-#. Description on mate-calc command-line help options displayed on command-
+#. Description on cafe-calc command-line help options displayed on command-
 #. line
-#: src/mate-calc.c:87
+#: src/cafe-calc.c:87
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -978,9 +978,9 @@ msgstr ""
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line GTK+ options displayed on command-
 #. line
-#: src/mate-calc.c:98
+#: src/cafe-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -999,8 +999,8 @@ msgstr ""
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 
-#. Description on mate-calc application options displayed on command-line
-#: src/mate-calc.c:112
+#. Description on cafe-calc application options displayed on command-line
+#: src/cafe-calc.c:112
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1010,13 +1010,13 @@ msgstr ""
 "  -s, --solve <equation>          दिलेले समांतरचे निर्धारण"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/mate-calc.c:160
+#: src/cafe-calc.c:160
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "घटक --solve निवारण करीता समीकरण आवश्यक आहे"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/mate-calc.c:171
+#: src/cafe-calc.c:171
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "अपरिचीत घटक '%s'"

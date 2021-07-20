@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.62)
-AC_INIT([mate-calc], [1.24.1], [http://mate-desktop.org])
+AC_INIT([cafe-calc], [1.24.1], [http://cafe-desktop.org])
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
 AC_CONFIG_HEADERS(config.h)
@@ -48,7 +48,7 @@ dnl ###########################################################################
 AM_GNU_GETTEXT_VERSION([0.19.8])
 AM_GNU_GETTEXT_REQUIRE_VERSION([0.19.8])
 AM_GNU_GETTEXT([external])
-AC_SUBST(GETTEXT_PACKAGE, mate-calc)
+AC_SUBST(GETTEXT_PACKAGE, cafe-calc)
 
 # **********************
 # GLIB_COMPILE_RESOURCES

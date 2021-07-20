@@ -61,10 +61,10 @@ struct MathButtonsPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathButtons, math_buttons, GTK_TYPE_BOX);
 
-#define UI_BASIC_RESOURCE_PATH       "/org/mate/calculator/ui/buttons-basic.ui"
-#define UI_ADVANCED_RESOURCE_PATH    "/org/mate/calculator/ui/buttons-advanced.ui"
-#define UI_FINANCIAL_RESOURCE_PATH   "/org/mate/calculator/ui/buttons-financial.ui"
-#define UI_PROGRAMMING_RESOURCE_PATH "/org/mate/calculator/ui/buttons-programming.ui"
+#define UI_BASIC_RESOURCE_PATH       "/org/cafe/calculator/ui/buttons-basic.ui"
+#define UI_ADVANCED_RESOURCE_PATH    "/org/cafe/calculator/ui/buttons-advanced.ui"
+#define UI_FINANCIAL_RESOURCE_PATH   "/org/cafe/calculator/ui/buttons-financial.ui"
+#define UI_PROGRAMMING_RESOURCE_PATH "/org/cafe/calculator/ui/buttons-programming.ui"
 
 #define GET_WIDGET(ui, name) \
           GTK_WIDGET(gtk_builder_get_object((ui), (name)))

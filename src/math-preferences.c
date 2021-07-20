@@ -28,7 +28,7 @@ struct MathPreferencesDialogPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathPreferencesDialog, math_preferences, GTK_TYPE_DIALOG);
 
-#define UI_DIALOGS_RESOURCE_PATH "/org/mate/calculator/ui/preferences.ui"
+#define UI_DIALOGS_RESOURCE_PATH "/org/cafe/calculator/ui/preferences.ui"
 #define GET_WIDGET(ui, name) \
           GTK_WIDGET(gtk_builder_get_object(ui, name))
 
