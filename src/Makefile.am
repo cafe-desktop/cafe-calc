@@ -8,7 +8,7 @@ AM_CPPFLAGS = \
 	-DLOCALE_DIR=\""$(localedir)"\" \
 	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
 	$(WARN_CFLAGS) \
-	$(MATE_CALC_CFLAGS)
+	$(CAFE_CALC_CFLAGS)
 
 BUILT_SOURCES = \
 	mate-calc-resources.c \
@@ -69,7 +69,7 @@ mate_calc_SOURCES = \
 	utility.h
 
 mate_calc_LDADD = \
-	$(MATE_CALC_LIBS)        
+	$(CAFE_CALC_LIBS)        
 
 mate_calc_cmd_SOURCES = \
 	mate-calc-cmd.c \
@@ -102,7 +102,7 @@ mate_calc_cmd_SOURCES = \
 	parser.h
 
 mate_calc_cmd_LDADD = \
-	$(MATE_CALC_CMD_LIBS) \
+	$(CAFE_CALC_CMD_LIBS) \
 	-lm
 
 test_mp_SOURCES = \
@@ -117,7 +117,7 @@ test_mp_SOURCES = \
 	mp-trigonometric.c
 
 test_mp_LDADD = \
-	$(MATE_CALC_CMD_LIBS) \
+	$(CAFE_CALC_CMD_LIBS) \
 	-lm
 
 test_mp_equation_SOURCES = \
@@ -151,7 +151,7 @@ test_mp_equation_SOURCES = \
 	parser.h
 
 test_mp_equation_LDADD = \
-	$(MATE_CALC_CMD_LIBS) \
+	$(CAFE_CALC_CMD_LIBS) \
 	-lm
 
 CLEANFILES = \

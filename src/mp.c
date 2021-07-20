@@ -776,7 +776,7 @@ mp_divide_integer_real(const MPNumber *x, int64_t y, MPNumber *z)
     for (k = 1; k <= MP_T + 4; k++) {
         int ir, iq, iqj;
 
-        /* GET APPROXIMATE QUOTIENT FIRST */
+        /* GET APPROXICAFE QUOTIENT FIRST */
         ir = c / (j1 + 1);
 
         /* NOW REDUCE SO OVERFLOW DOES NOT OCCUR */
@@ -1234,7 +1234,7 @@ mp_ln_real(const MPNumber *x, MPNumber *z)
     double rx, rlx;
     MPNumber t1, t2;
 
-    /* LOOP TO GET APPROXIMATE LN(X) USING SINGLE-PRECISION */
+    /* LOOP TO GET APPROXICAFE LN(X) USING SINGLE-PRECISION */
     mp_set_from_mp(x, &t1);
     mp_set_from_integer(0, z);
     for(k = 0; k < 10; k++)
@@ -1255,7 +1255,7 @@ mp_ln_real(const MPNumber *x, MPNumber *z)
         rlx = log(rx) + e * log(MP_BASE);
         mp_set_from_double(-(double)rlx, &t2);
 
-        /* UPDATE Z AND COMPUTE ACCURATE EXP OF APPROXIMATE LOG */
+        /* UPDATE Z AND COMPUTE ACCURATE EXP OF APPROXICAFE LOG */
         mp_subtract(z, &t2, z);
         mp_epowy(&t2, &t2);
 

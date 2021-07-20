@@ -10,7 +10,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
+"Project-Id-Version: CAFE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-09 20:37+0100\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
@@ -486,20 +486,20 @@ msgid "Show _thousands separators"
 msgstr ""
 
 #: ../data/mate-calc.appdata.xml.in.h:1
-msgid "MATE Desktop calculator"
+msgid "CAFE Desktop calculator"
 msgstr ""
 
 #: ../data/mate-calc.appdata.xml.in.h:2
 msgid ""
-"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+"<p> CAFE Calc is a powerful graphical calculator with financial, logical and"
 " scientific modes. It uses a multiple precision package to do its arithmetic"
-" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
-"Calc and part of the MATE Desktop Environment. If you would like to know "
-"more about MATE and MATE Calc, please visit the project's home page. </p>"
+" to give a high degree of accuracy. </p> <p> CAFE Calc is a fork of GNOME "
+"Calc and part of the CAFE Desktop Environment. If you would like to know "
+"more about CAFE and CAFE Calc, please visit the project's home page. </p>"
 msgstr ""
 
 #: ../data/mate-calc.desktop.in.h:1
-msgid "MATE Calculator"
+msgid "CAFE Calculator"
 msgstr ""
 
 #. Title of main window

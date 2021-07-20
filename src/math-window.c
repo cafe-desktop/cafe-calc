@@ -228,22 +228,22 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
 {
     const char* documenters[] = {
         N_("Sun Microsystems"),
-        N_("MATE Documentation Team"),
+        N_("CAFE Documentation Team"),
         NULL
     };
 
     /* The license this software is under (GPL2+) */
     const char* license[] = {
-        N_("MATE Calculator is free software; you can redistribute it and/or modify "
+        N_("CAFE Calculator is free software; you can redistribute it and/or modify "
            "it under the terms of the GNU General Public License as published by "
            "the Free Software Foundation; either version 2 of the License, or "
            "(at your option) any later version."),
-        N_("MATE Calculator is distributed in the hope that it will be useful, "
+        N_("CAFE Calculator is distributed in the hope that it will be useful, "
            "but WITHOUT ANY WARRANTY; without even the implied warranty of "
            "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the "
            "GNU General Public License for more details."),
         N_("You should have received a copy of the GNU General Public License "
-           "along with MATE Calculator; if not, write to the Free Software Foundation, Inc., "
+           "along with CAFE Calculator; if not, write to the Free Software Foundation, Inc., "
            "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.")
     };
 
@@ -279,11 +279,11 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
         *p = _(*p);
 
     gtk_show_about_dialog(GTK_WINDOW(window),
-        "program-name", _("MATE Calculator"),
+        "program-name", _("CAFE Calculator"),
         "version", VERSION,
-        "title", _("About MATE Calculator"),
+        "title", _("About CAFE Calculator"),
         "copyright", _("Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
-                       "Copyright \xc2\xa9 2011-2020 MATE developers"),
+                       "Copyright \xc2\xa9 2011-2020 CAFE developers"),
         "license", license_trans,
         "comments", _("Calculator with financial and scientific modes."),
         "authors", authors,

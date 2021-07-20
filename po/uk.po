@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -565,36 +565,36 @@ msgid "Show _thousands separators"
 msgstr "Показувати розділювач _тисячних"
 
 #: data/mate-calc.appdata.xml.in:7
-msgid "MATE Calc"
-msgstr "MATE Рахівник"
+msgid "CAFE Calc"
+msgstr "CAFE Рахівник"
 
 #: data/mate-calc.appdata.xml.in:8
-msgid "MATE Desktop calculator"
-msgstr "Рахівник стільниці MATE"
+msgid "CAFE Desktop calculator"
+msgstr "Рахівник стільниці CAFE"
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
-"MATE Calc is a powerful graphical calculator with financial, logical and "
+"CAFE Calc is a powerful graphical calculator with financial, logical and "
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
-"MATE Calc - це потужний графічний рахівник з економічним, логічним та "
+"CAFE Calc - це потужний графічний рахівник з економічним, логічним та "
 "науковим режимами. Він використовує пакунок повторюваних операцій, щоб "
 "додати розрахункам більшої точности."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
-"MATE Calc is a fork of GNOME Calc and part of the MATE Desktop Environment. "
-"If you would like to know more about MATE and MATE Calc, please visit the "
+"CAFE Calc is a fork of GNOME Calc and part of the CAFE Desktop Environment. "
+"If you would like to know more about CAFE and CAFE Calc, please visit the "
 "project's home page."
 msgstr ""
-"MATE Calc є відгалуженням(форком) GNOME Calc і частиною оточення стільниці "
-"MATE. Якщо ви хочете дізнатися більше про MATE або MATE Calc, будь ласка, "
+"CAFE Calc є відгалуженням(форком) GNOME Calc і частиною оточення стільниці "
+"CAFE. Якщо ви хочете дізнатися більше про CAFE або CAFE Calc, будь ласка, "
 "відвідайте домашню сторінку проєкту."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:261
-msgid "MATE Calculator"
-msgstr "Рахівник MATE"
+msgid "CAFE Calculator"
+msgstr "Рахівник CAFE"
 
 #. Title of main window
 #: data/mate-calc.desktop.in:4 src/math-window.c:568
@@ -614,8 +614,8 @@ msgstr "accessories-calculator"
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
-msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr "рахівник;MATE;наукові;арифметичні;фінансові;розрахунки;"
+msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
+msgstr "рахівник;CAFE;наукові;арифметичні;фінансові;розрахунки;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -1594,24 +1594,24 @@ msgid "Sun Microsystems"
 msgstr "Сун Мікросістемс"
 
 #: src/math-window.c:235
-msgid "MATE Documentation Team"
-msgstr "Команда документування MATE"
+msgid "CAFE Documentation Team"
+msgstr "Команда документування CAFE"
 
 #: src/math-window.c:241
 msgid ""
-"MATE Calculator is free software; you can redistribute it and/or modify it "
+"CAFE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"MATE Рахівник - це безкоштовне програмне забезпечення; ви можете "
+"CAFE Рахівник - це безкоштовне програмне забезпечення; ви можете "
 "розповсюджувати його та/або змінювати відповідно до умов Загальної публічної"
 " ліцензії GNU, оголошених Фундацією вільного програмного забезпечення; або "
 "версії 2 Ліцензії, або (за вашим бажанням) будь-якої пізнішої версії."
 
 #: src/math-window.c:245
 msgid ""
-"MATE Calculator is distributed in the hope that it will be useful, but "
+"CAFE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
@@ -1620,25 +1620,25 @@ msgstr ""
 #: src/math-window.c:249
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
-" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+" CAFE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 "Ви мали б отримати копію Генеральної публічної ліцензії GNU разом із "
-"рахівником MATE; якщо ні, пишіть у Фундацію вільного програмного "
+"рахівником CAFE; якщо ні, пишіть у Фундацію вільного програмного "
 "забезпечення, Inc., Франклін Стріт, 51, П'ятий поверх, Бостон, MA "
 "02110-1301, США."
 
 #: src/math-window.c:263
-msgid "About MATE Calculator"
-msgstr "Про MATE Calc"
+msgid "About CAFE Calculator"
+msgstr "Про CAFE Calc"
 
 #: src/math-window.c:264
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
-"Copyright © 2011-2020 MATE developers"
+"Copyright © 2011-2020 CAFE developers"
 msgstr ""
 "Авторське право © 1986–2010 Автори GCalctool\n"
-"Авторське право © 2011-2020 Розробники MATE"
+"Авторське право © 2011-2020 Розробники CAFE"
 
 #: src/math-window.c:267
 msgid "Calculator with financial and scientific modes."

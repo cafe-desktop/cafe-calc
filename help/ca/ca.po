@@ -6,7 +6,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
+"Project-Id-Version: CAFE Desktop Environment\n"
 "POT-Creation-Date: 2018-10-03 14:33+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Pere O. <gotrunks@gmail.com>, 2020\n"
@@ -145,7 +145,7 @@ msgstr "Nombres complexes"
 
 #. (itstool) path: page/p
 #: C/complex.page:11
-msgid "Complex numbers are not supported in <app>MATE Calculator</app>."
+msgid "Complex numbers are not supported in <app>CAFE Calculator</app>."
 msgstr ""
 
 #. (itstool) path: page/p
@@ -691,7 +691,7 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/functions.page:88
-msgid "<app>MATE Calculator</app> does not support user-defined functions."
+msgid "<app>CAFE Calculator</app> does not support user-defined functions."
 msgstr ""
 
 #. (itstool) path: credit/name
@@ -701,8 +701,8 @@ msgstr "Robert Ancell"
 
 #. (itstool) path: page/title
 #: C/index.page:13
-msgid "MATE Calculator Help"
-msgstr "Ajuda de la calculadora de MATE"
+msgid "CAFE Calculator Help"
+msgstr "Ajuda de la calculadora de CAFE"
 
 #. (itstool) path: section/title
 #: C/index.page:16

@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
+"Project-Id-Version: CAFE Desktop Environment\n"
 "POT-Creation-Date: 2018-10-03 14:33+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2020\n"
@@ -165,7 +165,7 @@ msgstr "Numeri Complessi"
 
 #. (itstool) path: page/p
 #: C/complex.page:11
-msgid "Complex numbers are not supported in <app>MATE Calculator</app>."
+msgid "Complex numbers are not supported in <app>CAFE Calculator</app>."
 msgstr ""
 "I numeri complessi non sono supportati in <app> Calcolatrice di Mate </app>."
 
@@ -781,9 +781,9 @@ msgstr "Complemento a due"
 
 #. (itstool) path: page/p
 #: C/functions.page:88
-msgid "<app>MATE Calculator</app> does not support user-defined functions."
+msgid "<app>CAFE Calculator</app> does not support user-defined functions."
 msgstr ""
-"<app>Calcol,atrice di MATE</app> non supporta funzioni definite dall'utente."
+"<app>Calcol,atrice di CAFE</app> non supporta funzioni definite dall'utente."
 
 #. (itstool) path: credit/name
 #: C/index.page:7
@@ -792,8 +792,8 @@ msgstr "Robert Ancell"
 
 #. (itstool) path: page/title
 #: C/index.page:13
-msgid "MATE Calculator Help"
-msgstr "Aiuto Calcolatrice di MATE"
+msgid "CAFE Calculator Help"
+msgstr "Aiuto Calcolatrice di CAFE"
 
 #. (itstool) path: section/title
 #: C/index.page:16

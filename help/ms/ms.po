@@ -6,7 +6,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
+"Project-Id-Version: CAFE Desktop Environment\n"
 "POT-Creation-Date: 2018-10-03 14:33+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Puretech <terjemah.puretech@gmail.com>, 2020\n"
@@ -160,8 +160,8 @@ msgstr "Nombor Kompleks"
 
 #. (itstool) path: page/p
 #: C/complex.page:11
-msgid "Complex numbers are not supported in <app>MATE Calculator</app>."
-msgstr "Nombor kompleks tidak disokong dalam <app>Kalkulator MATE</app>."
+msgid "Complex numbers are not supported in <app>CAFE Calculator</app>."
+msgstr "Nombor kompleks tidak disokong dalam <app>Kalkulator CAFE</app>."
 
 #. (itstool) path: page/p
 #: C/conv-base.page:11
@@ -764,8 +764,8 @@ msgstr "Pelengkap dua"
 
 #. (itstool) path: page/p
 #: C/functions.page:88
-msgid "<app>MATE Calculator</app> does not support user-defined functions."
-msgstr "<app>Kalkulator MATE</app> tidak menyokong fungsi ditakrif-pengguna."
+msgid "<app>CAFE Calculator</app> does not support user-defined functions."
+msgstr "<app>Kalkulator CAFE</app> tidak menyokong fungsi ditakrif-pengguna."
 
 #. (itstool) path: credit/name
 #: C/index.page:7
@@ -774,8 +774,8 @@ msgstr "Robert Ancell"
 
 #. (itstool) path: page/title
 #: C/index.page:13
-msgid "MATE Calculator Help"
-msgstr "Bantuan Kalkulator MATE"
+msgid "CAFE Calculator Help"
+msgstr "Bantuan Kalkulator CAFE"
 
 #. (itstool) path: section/title
 #: C/index.page:16
