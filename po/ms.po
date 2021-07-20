@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -561,36 +561,36 @@ msgid "Show _thousands separators"
 msgstr "Papar pemisah ribu"
 
 #: data/mate-calc.appdata.xml.in:7
-msgid "MATE Calc"
-msgstr "Kalkulator MATE"
+msgid "CAFE Calc"
+msgstr "Kalkulator CAFE"
 
 #: data/mate-calc.appdata.xml.in:8
-msgid "MATE Desktop calculator"
-msgstr "Kalkulator Desktop MATE"
+msgid "CAFE Desktop calculator"
+msgstr "Kalkulator Desktop CAFE"
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
-"MATE Calc is a powerful graphical calculator with financial, logical and "
+"CAFE Calc is a powerful graphical calculator with financial, logical and "
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
-"Kalkulator MATE ialah kalkultor bergrafik yang terbaik dengan mod kewangan, "
+"Kalkulator CAFE ialah kalkultor bergrafik yang terbaik dengan mod kewangan, "
 "logikal dan saintifik. Ia menggunakan pakej kepersisan berbilang untuk "
 "melakukan aritmatiknya supaya dapat mempersembahkan ketepatan yang tinggi."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
-"MATE Calc is a fork of GNOME Calc and part of the MATE Desktop Environment. "
-"If you would like to know more about MATE and MATE Calc, please visit the "
+"CAFE Calc is a fork of GNOME Calc and part of the CAFE Desktop Environment. "
+"If you would like to know more about CAFE and CAFE Calc, please visit the "
 "project's home page."
 msgstr ""
-"Kalkulator MATE merupakan cabang dari GNOME Calc dan sebahagian dari "
-"Persekitaran Desktop MATE. Jika anda mahu ketahui lebih lanjut mengenai MATE"
-" dan Kalkulator MATE, sila lawati laman sesawang projek."
+"Kalkulator CAFE merupakan cabang dari GNOME Calc dan sebahagian dari "
+"Persekitaran Desktop CAFE. Jika anda mahu ketahui lebih lanjut mengenai CAFE"
+" dan Kalkulator CAFE, sila lawati laman sesawang projek."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:261
-msgid "MATE Calculator"
-msgstr "Kalkulator MATE"
+msgid "CAFE Calculator"
+msgstr "Kalkulator CAFE"
 
 #. Title of main window
 #: data/mate-calc.desktop.in:4 src/math-window.c:568
@@ -610,8 +610,8 @@ msgstr "accessories-calculator"
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
-msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr "kalkulator;MATE;saintifik;aritmatik;kewangan;pengiraan;"
+msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
+msgstr "kalkulator;CAFE;saintifik;aritmatik;kewangan;pengiraan;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -1586,29 +1586,29 @@ msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
 #: src/math-window.c:235
-msgid "MATE Documentation Team"
-msgstr "Pasukan Dokumentasi MATE"
+msgid "CAFE Documentation Team"
+msgstr "Pasukan Dokumentasi CAFE"
 
 #: src/math-window.c:241
 msgid ""
-"MATE Calculator is free software; you can redistribute it and/or modify it "
+"CAFE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"Kalkulator MATE merupakan perisian bebas; anda boleh mengedarkannya dan/atau"
+"Kalkulator CAFE merupakan perisian bebas; anda boleh mengedarkannya dan/atau"
 " mengubahsuainya dibawah terma GNU General Public License sebagaimana yang "
 "telah dikeluarkan oleh Free Software Foundation; sama ada versi ke-2 lesen, "
 "atau (mengikut pilihan anda) sebarang versi terkemudian."
 
 #: src/math-window.c:245
 msgid ""
-"MATE Calculator is distributed in the hope that it will be useful, but "
+"CAFE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
-"Kalkulator MATE diedarkan dengan harapan ianya berguna tetapi TANPA SEBARANG"
+"Kalkulator CAFE diedarkan dengan harapan ianya berguna tetapi TANPA SEBARANG"
 " JAMINAN; tanpa sebarang implakasi jaminan KEBOLEHDAGANGAN atau KESESUAIAN "
 "UNTUK SESUATU TUJUAN. Sila rujuk GNU General Public LIcense untuk keterangan"
 " lanjut."
@@ -1616,24 +1616,24 @@ msgstr ""
 #: src/math-window.c:249
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
-" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+" CAFE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 "Anda seharusnya menerima salinan Lesen Awam Am GNU bersama-sama Kalkulator "
-"MATE; jika tiada, laporkan ke Free Software Foundation, Inc., 51 Franklin "
+"CAFE; jika tiada, laporkan ke Free Software Foundation, Inc., 51 Franklin "
 "Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
 #: src/math-window.c:263
-msgid "About MATE Calculator"
-msgstr "Perihal Kalkulator MATE"
+msgid "About CAFE Calculator"
+msgstr "Perihal Kalkulator CAFE"
 
 #: src/math-window.c:264
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
-"Copyright © 2011-2020 MATE developers"
+"Copyright © 2011-2020 CAFE developers"
 msgstr ""
 "Hak Cipta © 1986–2010 Pengarang GCalctool\n"
-"Hak Cipta © 2011-2020 Pembangun MATE"
+"Hak Cipta © 2011-2020 Pembangun CAFE"
 
 #: src/math-window.c:267
 msgid "Calculator with financial and scientific modes."

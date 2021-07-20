@@ -16,7 +16,7 @@ REQUIRED_YELP_TOOLS_VERSION=3.1.1
 }
 
 which mate-autogen || {
-    echo "You need to install mate-common from the MATE git"
+    echo "You need to install mate-common from the CAFE git"
     exit 1
 }
 
@@ -25,4 +25,4 @@ which yelp-build || {
     exit 1
 }
 
-USE_MATE2_MACROS=1 USE_COMMON_DOC_BUILD=yes . mate-autogen
+USE_CAFE2_MACROS=1 USE_COMMON_DOC_BUILD=yes . mate-autogen

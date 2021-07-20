@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -567,36 +567,36 @@ msgid "Show _thousands separators"
 msgstr "_Binlik ayraçları göster"
 
 #: data/mate-calc.appdata.xml.in:7
-msgid "MATE Calc"
-msgstr "MATE Hesaplayıcı"
+msgid "CAFE Calc"
+msgstr "CAFE Hesaplayıcı"
 
 #: data/mate-calc.appdata.xml.in:8
-msgid "MATE Desktop calculator"
-msgstr "MATE Masaüstü hesap makinesi"
+msgid "CAFE Desktop calculator"
+msgstr "CAFE Masaüstü hesap makinesi"
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
-"MATE Calc is a powerful graphical calculator with financial, logical and "
+"CAFE Calc is a powerful graphical calculator with financial, logical and "
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
-"MATE Hesaplayıcı; finansal, mantıksal ve bilimsel kipleri bulunan güçlü bir "
+"CAFE Hesaplayıcı; finansal, mantıksal ve bilimsel kipleri bulunan güçlü bir "
 "grafik hesap makinesidir. Yüksek bir doğruluk seviyesi sağlamak amacıyla, "
 "aritmetiği için çoklu hassasiyet paketi kullanır."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
-"MATE Calc is a fork of GNOME Calc and part of the MATE Desktop Environment. "
-"If you would like to know more about MATE and MATE Calc, please visit the "
+"CAFE Calc is a fork of GNOME Calc and part of the CAFE Desktop Environment. "
+"If you would like to know more about CAFE and CAFE Calc, please visit the "
 "project's home page."
 msgstr ""
-"MATE Hesaplayıcı, GNOME Hesaplayıcının çatallamasıdır ve MATE Masaüstü "
-"Ortamı'nın bir parçasıdır. MATE ve MATE Hesaplayıcı hakkında daha fazla "
+"CAFE Hesaplayıcı, GNOME Hesaplayıcının çatallamasıdır ve CAFE Masaüstü "
+"Ortamı'nın bir parçasıdır. CAFE ve CAFE Hesaplayıcı hakkında daha fazla "
 "bilgi edinmek isterseniz, lütfen projenin anasayfasını ziyaret ediniz."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:261
-msgid "MATE Calculator"
-msgstr "MATE Hesap Makinesi"
+msgid "CAFE Calculator"
+msgstr "CAFE Hesap Makinesi"
 
 #. Title of main window
 #: data/mate-calc.desktop.in:4 src/math-window.c:568
@@ -616,7 +616,7 @@ msgstr "accessories-calculator"
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
-msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
+msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
 msgstr ""
 
 #: data/org.mate.calc.gschema.xml:25
@@ -1595,24 +1595,24 @@ msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
 #: src/math-window.c:235
-msgid "MATE Documentation Team"
-msgstr "MATE Belgelendirme Projesi"
+msgid "CAFE Documentation Team"
+msgstr "CAFE Belgelendirme Projesi"
 
 #: src/math-window.c:241
 msgid ""
-"MATE Calculator is free software; you can redistribute it and/or modify it "
+"CAFE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"MATE Hesaplayıcı özgür yazılımdır; Özgür Yazılım Vakfı tarafından "
+"CAFE Hesaplayıcı özgür yazılımdır; Özgür Yazılım Vakfı tarafından "
 "yayınlanmış GNU Genel Kamu Lisansı'nın -Lisans'ın 2. veya (size bağlı "
 "olarak) daha üstü versiyonları- koşulları altında yeniden dağıtabilir "
 "ve/veya değiştirebilirsiniz. "
 
 #: src/math-window.c:245
 msgid ""
-"MATE Calculator is distributed in the hope that it will be useful, but "
+"CAFE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
@@ -1621,18 +1621,18 @@ msgstr ""
 #: src/math-window.c:249
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
-" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+" CAFE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 
 #: src/math-window.c:263
-msgid "About MATE Calculator"
-msgstr "MATE Hesaplayıcı Hakkında"
+msgid "About CAFE Calculator"
+msgstr "CAFE Hesaplayıcı Hakkında"
 
 #: src/math-window.c:264
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
-"Copyright © 2011-2020 MATE developers"
+"Copyright © 2011-2020 CAFE developers"
 msgstr ""
 
 #: src/math-window.c:267
@@ -1647,7 +1647,7 @@ msgstr ""
 "Görkem Çetin <gorkem@gelecek.com.tr>, 2002/2003.\n"
 "Barış Çicek <baris@teamforce.name.tr>, 2004, 2008, 2009.\n"
 "Muhammet Kara <muhammet.k@gmail.com>, 2011.\n"
-"MATE projesine katkıda bulunanlar:\n"
+"CAFE projesine katkıda bulunanlar:\n"
 "hsngrms <dead-bodies-everywhere@hotmail.com>, 2012\n"
 "mauron, 2012, 2013, 2014, 2015, 2016, 2017, 2018\n"
 "Atilla Öntaş <tarakbumba@gmail.com>, 2014\n"

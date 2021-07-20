@@ -302,7 +302,7 @@
 
 ========== en_CA.po ==========
 # English/Canada translation of mate-calc.
-# Copyright (C) 2004-2006 Adam Weinberger and the MATE Foundation
+# Copyright (C) 2004-2006 Adam Weinberger and the CAFE Foundation
 # This file is distributed under the same licence as the mate-calc package.
 # Adam Weinberger <adamw@gnome.org>, 2004, 2005, 2006.
 #
@@ -361,7 +361,7 @@
 # mate-calc'i eesti keele tõlge.
 # Estonian translation of mate-calc.
 #
-# Copyright (C) 2004—2010, The MATE Project.
+# Copyright (C) 2004—2010, The CAFE Project.
 # This file is distributed under the same license as the mate-calc package.
 #
 # Priit Laes <amd tt ee>, 2004.
@@ -841,8 +841,8 @@
 
 
 ========== pt_BR.po ==========
-# Brazilian Portuguese translation of the MATE Calculator.
-# Copyright (C) 2003-2009 the MATE Calculator authors.
+# Brazilian Portuguese translation of the CAFE Calculator.
+# Copyright (C) 2003-2009 the CAFE Calculator authors.
 # This file is distributed under the same license as the mate-calc package.
 #
 # Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003.

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -569,36 +569,36 @@ msgid "Show _thousands separators"
 msgstr "Mostrare il separatore delle _migliaia"
 
 #: data/mate-calc.appdata.xml.in:7
-msgid "MATE Calc"
-msgstr "MATE Calc"
+msgid "CAFE Calc"
+msgstr "CAFE Calc"
 
 #: data/mate-calc.appdata.xml.in:8
-msgid "MATE Desktop calculator"
-msgstr "Calcolatrice del Desktop MATE"
+msgid "CAFE Desktop calculator"
+msgstr "Calcolatrice del Desktop CAFE"
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
-"MATE Calc is a powerful graphical calculator with financial, logical and "
+"CAFE Calc is a powerful graphical calculator with financial, logical and "
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
-"MATE Calc è una calcolatrice grafica con modalità finanziaria, logica e "
+"CAFE Calc è una calcolatrice grafica con modalità finanziaria, logica e "
 "scientifica. Utilizza un pacchetto a precisione multipla per eseguire i "
 "calcoli e fornisce un alto livello di precisione."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
-"MATE Calc is a fork of GNOME Calc and part of the MATE Desktop Environment. "
-"If you would like to know more about MATE and MATE Calc, please visit the "
+"CAFE Calc is a fork of GNOME Calc and part of the CAFE Desktop Environment. "
+"If you would like to know more about CAFE and CAFE Calc, please visit the "
 "project's home page."
 msgstr ""
-"MATE Calc è un fork di GNOME Calc e parte dell'ambiente desktop MATE. Se "
-"desideri ulteriori informazioni su MATE e MATE Calc, visita il sito web del "
+"CAFE Calc è un fork di GNOME Calc e parte dell'ambiente desktop CAFE. Se "
+"desideri ulteriori informazioni su CAFE e CAFE Calc, visita il sito web del "
 "progetto."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:261
-msgid "MATE Calculator"
-msgstr "Calcolatrice di MATE"
+msgid "CAFE Calculator"
+msgstr "Calcolatrice di CAFE"
 
 #. Title of main window
 #: data/mate-calc.desktop.in:4 src/math-window.c:568
@@ -618,8 +618,8 @@ msgstr "accessories-calculator"
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
-msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr "calcolatrice;MATE;scientifica;aritmetica;finanza;calcoli;"
+msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
+msgstr "calcolatrice;CAFE;scientifica;aritmetica;finanza;calcoli;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -1597,29 +1597,29 @@ msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
 #: src/math-window.c:235
-msgid "MATE Documentation Team"
-msgstr "Team Documentazione di MATE"
+msgid "CAFE Documentation Team"
+msgstr "Team Documentazione di CAFE"
 
 #: src/math-window.c:241
 msgid ""
-"MATE Calculator is free software; you can redistribute it and/or modify it "
+"CAFE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"Calcolatrice di MATE è software libero; è possibile ridistribuirlo e/o "
+"Calcolatrice di CAFE è software libero; è possibile ridistribuirlo e/o "
 "modificarlo secondo i termini della licenza GNU General Public License come "
 "pubblicata dalla Free Software Foundation; versione 2 della licenza, o (a "
 "scelta) una versione successiva."
 
 #: src/math-window.c:245
 msgid ""
-"MATE Calculator is distributed in the hope that it will be useful, but "
+"CAFE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
-"Calcolatrice di MATE è distribuito nella speranza che possa risultare utile,"
+"Calcolatrice di CAFE è distribuito nella speranza che possa risultare utile,"
 " ma SENZA ALCUNA GARANZIA, nemmeno la garanzia implicita di COMMERCIABILITÀ "
 "o APPLICABILITÀ PER UNO SCOPO PARTICOLARE. Per maggiori dettagli consultare "
 "la GNU General Public License."
@@ -1627,25 +1627,25 @@ msgstr ""
 #: src/math-window.c:249
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
-" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+" CAFE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 "Una copia della GNU General Public License dovrebbe essere stata fornita con"
-" Calcolatrice di MATE. In caso contrario scrivere a Free Software "
+" Calcolatrice di CAFE. In caso contrario scrivere a Free Software "
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, "
 "USA."
 
 #: src/math-window.c:263
-msgid "About MATE Calculator"
-msgstr "Info su Calcolatrice di MATE"
+msgid "About CAFE Calculator"
+msgstr "Info su Calcolatrice di CAFE"
 
 #: src/math-window.c:264
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
-"Copyright © 2011-2020 MATE developers"
+"Copyright © 2011-2020 CAFE developers"
 msgstr ""
 "Copyright © 1986–2010 Gli autori di GCalctool \n"
-"Copyright © 2011-2020 sviluppatori MATE "
+"Copyright © 2011-2020 sviluppatori CAFE "
 
 #: src/math-window.c:267
 msgid "Calculator with financial and scientific modes."

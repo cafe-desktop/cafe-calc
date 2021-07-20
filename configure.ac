@@ -5,7 +5,7 @@ AC_INIT([mate-calc], [1.24.1], [http://mate-desktop.org])
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
 AC_CONFIG_HEADERS(config.h)
 AM_MAINTAINER_MODE
-MATE_MAINTAINER_MODE_DEFINES
+CAFE_MAINTAINER_MODE_DEFINES
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 
 AC_ISC_POSIX
@@ -13,7 +13,7 @@ AC_PROG_CC
 AC_HEADER_STDC
 
 GLIB_GSETTINGS
-MATE_COMPILE_WARNINGS
+CAFE_COMPILE_WARNINGS
 
 dnl ###########################################################################
 dnl Dependencies
@@ -23,7 +23,7 @@ GLIB_REQUIRED=2.50.0
 GIO_REQUIRED=2.36.0
 GTK_REQUIRED=3.22.0
 
-PKG_CHECK_MODULES(MATE_CALC, [
+PKG_CHECK_MODULES(CAFE_CALC, [
     gtk+-3.0 >= $GTK_REQUIRED
     glib-2.0 >= $GLIB_REQUIRED
     gio-2.0 >= $GIO_REQUIRED
@@ -31,7 +31,7 @@ PKG_CHECK_MODULES(MATE_CALC, [
     gmodule-export-2.0
 ])
 
-PKG_CHECK_MODULES(MATE_CALC_CMD, [
+PKG_CHECK_MODULES(CAFE_CALC_CMD, [
     glib-2.0 >= $GLIB_REQUIRED
     gio-2.0 >= $GIO_REQUIRED
     libxml-2.0

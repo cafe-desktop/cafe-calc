@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -569,36 +569,36 @@ msgid "Show _thousands separators"
 msgstr "_Tampilkan pemisah ribuan"
 
 #: data/mate-calc.appdata.xml.in:7
-msgid "MATE Calc"
-msgstr "Kalkulator MATE"
+msgid "CAFE Calc"
+msgstr "Kalkulator CAFE"
 
 #: data/mate-calc.appdata.xml.in:8
-msgid "MATE Desktop calculator"
-msgstr "Kalkulator destop MATE"
+msgid "CAFE Desktop calculator"
+msgstr "Kalkulator destop CAFE"
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
-"MATE Calc is a powerful graphical calculator with financial, logical and "
+"CAFE Calc is a powerful graphical calculator with financial, logical and "
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
-"Kalkulator MATE adalah kalkulator grafis yang bertenaga dengan mode "
+"Kalkulator CAFE adalah kalkulator grafis yang bertenaga dengan mode "
 "keuangan, logika, dan ilmiah. Menggunakan paket presisi ganda untuk "
 "melakukan aritmatika yang memberikan tingkat akurasi yang tinggi."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
-"MATE Calc is a fork of GNOME Calc and part of the MATE Desktop Environment. "
-"If you would like to know more about MATE and MATE Calc, please visit the "
+"CAFE Calc is a fork of GNOME Calc and part of the CAFE Desktop Environment. "
+"If you would like to know more about CAFE and CAFE Calc, please visit the "
 "project's home page."
 msgstr ""
-"Kalkulator MATE merupakan fork dari Kalkulator GNOME dan bagian dari "
-"Lingkungan Desktop MATE. Bila Anda ingin tahu lebih banyak tentang MATE dan "
-"Kalkulator MATE, silakan kunjungi laman beranda proyek."
+"Kalkulator CAFE merupakan fork dari Kalkulator GNOME dan bagian dari "
+"Lingkungan Desktop CAFE. Bila Anda ingin tahu lebih banyak tentang CAFE dan "
+"Kalkulator CAFE, silakan kunjungi laman beranda proyek."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:261
-msgid "MATE Calculator"
-msgstr "MATE Calculator"
+msgid "CAFE Calculator"
+msgstr "CAFE Calculator"
 
 #. Title of main window
 #: data/mate-calc.desktop.in:4 src/math-window.c:568
@@ -618,9 +618,9 @@ msgstr "accessories-calculator"
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
-msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
+msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
 msgstr ""
-"kalkulator;MATE;ilmiah;aritmatika;keuangan;finansial;perhitungan;kalkulasi;"
+"kalkulator;CAFE;ilmiah;aritmatika;keuangan;finansial;perhitungan;kalkulasi;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -1595,54 +1595,54 @@ msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
 #: src/math-window.c:235
-msgid "MATE Documentation Team"
-msgstr "Tim Dokumentasi MATE"
+msgid "CAFE Documentation Team"
+msgstr "Tim Dokumentasi CAFE"
 
 #: src/math-window.c:241
 msgid ""
-"MATE Calculator is free software; you can redistribute it and/or modify it "
+"CAFE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"Kalkulator MATE adalah perangkat lunak bebas; Anda dapat menyebarluaskannya "
+"Kalkulator CAFE adalah perangkat lunak bebas; Anda dapat menyebarluaskannya "
 "dan/atau mengubahnya di bawah syarat GNU General Public License sebagaimana "
 "dipublikasikan oleh Free Software Foundation; baik versi 2 dari Lisensi, "
 "atau (terserah pilihan Anda) versi setelahnya."
 
 #: src/math-window.c:245
 msgid ""
-"MATE Calculator is distributed in the hope that it will be useful, but "
+"CAFE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
-"Kalkulator MATE didistribusikan dengan harapan dapat berguna, tetapi TANPA "
+"Kalkulator CAFE didistribusikan dengan harapan dapat berguna, tetapi TANPA "
 "ADANYA JAMINAN; termasuk tanpa jaminan DAYA JUAL atau KELAIKAN UNTUK TUJUAN "
 "TERTENTU. Lihat GNU General Public License untuk rincian lebih lanjut."
 
 #: src/math-window.c:249
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
-" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+" CAFE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 "Anda seharusnya menerima salinan dari GNU General Public License bersama "
-"Kalkulator MATE; jika tidak, kirimkan surat Anda ke Free Software "
+"Kalkulator CAFE; jika tidak, kirimkan surat Anda ke Free Software "
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, "
 "USA."
 
 #: src/math-window.c:263
-msgid "About MATE Calculator"
-msgstr "Tentang Kalkulator MATE"
+msgid "About CAFE Calculator"
+msgstr "Tentang Kalkulator CAFE"
 
 #: src/math-window.c:264
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
-"Copyright © 2011-2020 MATE developers"
+"Copyright © 2011-2020 CAFE developers"
 msgstr ""
 "Hak Cipta © 1986–2010 penulis GCalctool authors\n"
-"Hak Cipta © 2011-2020 pengembang MATE"
+"Hak Cipta © 2011-2020 pengembang CAFE"
 
 #: src/math-window.c:267
 msgid "Calculator with financial and scientific modes."
@@ -1654,7 +1654,7 @@ msgstr ""
 "Mohammad DAMT <mdamt@bisnisweb.com>\n"
 "Ahmad Riza H Nst  <ari@160c.afraid.org>\n"
 "Dirgita <dirgita@gmail.com>\n"
-"Tim MATE Indonesia <http://id.mate.org>\n"
+"Tim CAFE Indonesia <http://id.mate.org>\n"
 "Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017.\n"
 "Andika Triwidada <andika@gmail.com>, 2020."
 

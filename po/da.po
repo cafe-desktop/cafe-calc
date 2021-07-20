@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -564,35 +564,35 @@ msgid "Show _thousands separators"
 msgstr "Vis _tusinde-adskillere"
 
 #: data/mate-calc.appdata.xml.in:7
-msgid "MATE Calc"
-msgstr "MATE Calc"
+msgid "CAFE Calc"
+msgstr "CAFE Calc"
 
 #: data/mate-calc.appdata.xml.in:8
-msgid "MATE Desktop calculator"
-msgstr "MATE Skrivebords lommeregner"
+msgid "CAFE Desktop calculator"
+msgstr "CAFE Skrivebords lommeregner"
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
-"MATE Calc is a powerful graphical calculator with financial, logical and "
+"CAFE Calc is a powerful graphical calculator with financial, logical and "
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
-"MATE Calc er en kraftfuld grafisk lommeregner med finansiel, logisk og "
+"CAFE Calc er en kraftfuld grafisk lommeregner med finansiel, logisk og "
 "videnskabelig tilstande. Det bruger en multipel præcisionspakke til at "
 "udføre aritmetik til en høj grad af nøjagtighed."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
-"MATE Calc is a fork of GNOME Calc and part of the MATE Desktop Environment. "
-"If you would like to know more about MATE and MATE Calc, please visit the "
+"CAFE Calc is a fork of GNOME Calc and part of the CAFE Desktop Environment. "
+"If you would like to know more about CAFE and CAFE Calc, please visit the "
 "project's home page."
 msgstr ""
-"MATE Calc er en forgrening af GNOME Calc og en del af MATE-skrivebordet. "
-"Hvis du ønsker at vide mere om MATE og MATE Calc, så besøg projektets "
+"CAFE Calc er en forgrening af GNOME Calc og en del af CAFE-skrivebordet. "
+"Hvis du ønsker at vide mere om CAFE og CAFE Calc, så besøg projektets "
 "hjemmeside."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:261
-msgid "MATE Calculator"
+msgid "CAFE Calculator"
 msgstr "Mate-lommeregner"
 
 #. Title of main window
@@ -613,9 +613,9 @@ msgstr "accessories-calculator"
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
-msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
+msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
 msgstr ""
-"calculator;MATE;scientific;arithmetic;financial;calculations;lommregner;videnskabelig;aritmetik;financiel;beregninger;"
+"calculator;CAFE;scientific;arithmetic;financial;calculations;lommregner;videnskabelig;aritmetik;financiel;beregninger;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -1593,53 +1593,53 @@ msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
 #: src/math-window.c:235
-msgid "MATE Documentation Team"
-msgstr "MATE-dokumentationsholdet"
+msgid "CAFE Documentation Team"
+msgstr "CAFE-dokumentationsholdet"
 
 #: src/math-window.c:241
 msgid ""
-"MATE Calculator is free software; you can redistribute it and/or modify it "
+"CAFE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"MATE-lommeregner er et frit program. Du kan redistribuere og ændre "
+"CAFE-lommeregner er et frit program. Du kan redistribuere og ændre "
 "programmet under betingelserne i GNU General Public License som udgivet af "
 "Free Software Foundation; enten version 2 af licensen, eller (hvis du ønsker"
 " det) enhver senere version."
 
 #: src/math-window.c:245
 msgid ""
-"MATE Calculator is distributed in the hope that it will be useful, but "
+"CAFE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
-"MATE-lommeregner distribueres i håb om at programmet er nyttigt, men uden "
+"CAFE-lommeregner distribueres i håb om at programmet er nyttigt, men uden "
 "NOGEN GARANTI, ikke engang underforstået garanti om at det er SALGBART eller"
 " PASSER TIL ET BESTEMT FORMÅL. Se GNU General Public License for detaljer."
 
 #: src/math-window.c:249
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
-" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+" CAFE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
-"Du bør have modtaget en kopi af GNU General Public License sammen med MATE-"
+"Du bør have modtaget en kopi af GNU General Public License sammen med CAFE-"
 "lommeregner. Hvis du ikke har det, kan du skrive til Free Software "
 "Foundation, Inc. 51 Franklin Street, 5. sal, Boston, MA 02110-1301 USA."
 
 #: src/math-window.c:263
-msgid "About MATE Calculator"
-msgstr "Om MATE-lommeregner"
+msgid "About CAFE Calculator"
+msgstr "Om CAFE-lommeregner"
 
 #: src/math-window.c:264
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
-"Copyright © 2011-2020 MATE developers"
+"Copyright © 2011-2020 CAFE developers"
 msgstr ""
 "Ophavsret 1986–2010 GCalctool-forfatterne\n"
-"Ophavsret 2011–2020 MATE-udviklerne"
+"Ophavsret 2011–2020 CAFE-udviklerne"
 
 #: src/math-window.c:267
 msgid "Calculator with financial and scientific modes."

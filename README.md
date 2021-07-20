@@ -41,7 +41,7 @@ logical modes. This calctool was also the basis of the dtcalc
 application that is a part of CDE (albeit I had nothing to do with
 that).
 
-With its inclusion in the MATE CVS repository, it was renamed to
+With its inclusion in the CAFE CVS repository, it was renamed to
 `mate-calc`.
 
 More recently, Sami Pietila provided arithmetic precedence support and
