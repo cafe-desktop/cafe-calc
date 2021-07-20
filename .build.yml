@@ -11,6 +11,7 @@ requires:
     - clang-tools
     - cppcheck
     - gcc
+    - gettext
     - git
     - libatk1.0-dev
     - libglib2.0-dev
