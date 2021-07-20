@@ -1,0 +1,125 @@
+### mate-calc 1.24.1
+
+  * Translations update
+  * fixes incorrect parenthesis handling
+  * build: silent build warnings for distcheck
+  * use default MATE_COMPILE_WARNINGS level
+  * math-buttons: add space character after inverse trig. functions
+  * mate-calc.desktop: Do not collect the translation for Icon
+  * Read authors (updated) from mate-calc.about
+
+### mate-calc 1.24.0
+
+  * Translations update
+  * Fix typo: 'Avogadro' instead 'Avogrado'
+  * Update copyright to 2020
+  * fixes precedence of functions i.e. the result of -ln(1) and add according tests
+  * desktop file: add missing hints for translators
+  * fix typo in keywords in desktop file
+  * mate-calc.desktop.in: Add missing Keywords
+  * Do not remove org.mate.calc.gschema.xml on make distclean
+  * The function 'mp_mask' is never used
+  * sets the required version for gettext (0.19.8)
+  * parserfunc: Return NULL on NOT operation overflow
+
+### mate-calc 1.23.0
+
+  * Translations update
+  * Remove trailing whitespaces
+  * Migrate from intltools into gettext
+  * mp-serializer: fix scientific presentation of complex numbers
+  * [ci] Add cppcheck html report
+  * Avoid deprecated 'gtk_widget_get_style' and 'gtk_widget_modify_font'
+  * Fix FSF address
+  * test-mp-equation: add tests for physical constants
+  * mp-equation: update values from physical constants to match with tooltip values in math-buttons.c
+  * Add unit tooltips to physical constants
+  * dont focus on click
+  * mp-equation: add pre-defined physical constants
+  * buttons-ui: add destructive-action style to 'clear' button
+  * buttons-ui: add style class "suggested-action" to result button
+  * Use gresources for UI files
+  * Unit tests: pi constant, ln (e^iπ)
+  * currency-manager: Update name_map in load_imf_rates
+  * math-buttons: Fix cppcheck warning: Identical inner 'return'
+  * mp: Fix calculate result ln(e^(i*π))
+  * display small numbers in scientific notation
+  * mate-calc: Fix memory leak
+  * math-buttons: avoid shifting signed 64-bit value by 63 bits
+  * Add support for "pi" in addition to "π"
+  * [ci] enable clang analyzer
+  * i18n about dialog
+
+### mate-calc 1.22.0
+
+  * Translations update
+  * Initialize Travis CI support
+  * math-window: update copyright year to 2019
+  * Increase accuracy range to 15
+  * math-display: avoid deprecated 'gtk_widget_modify_bg'
+  * currency-manager: avoid deprecated 'g_type_class_add_private'
+  * currency: avoid deprecated 'g_type_class_add_private'
+  * math-equation: avoid deprecated 'g_type_class_add_private'
+  * unit-manager: avoid deprecated 'g_type_class_add_private'
+  * unit-category: avoid deprecated 'g_type_class_add_private'
+  * unit: avoid deprecated 'g_type_class_add_private'
+  * mp-serializer: avoid deprecated 'g_type_class_add_private'
+  * math-variable-popup: avoid deprecated 'g_type_class_add_private'
+  * math-preferences: avoid deprecated 'g_type_class_add_private'
+  * math-variables: avoid deprecated 'g_type_class_add_private'
+  * math-converter: avoid deprecated 'g_type_class_add_private'
+  * math-buttons: avoid deprecated 'g_type_class_add_private'
+  * math-window: avoid deprecated 'g_type_class_add_private'
+  * Remove dublicated assignment
+  * disable deprecation warnings for distcheck
+  * math-display: avoid deprecated 'g_type_class_add_private'
+  * math-window: Fix memory leak
+  * math-display.c: avoid deprecated 'gtk_widget_ensure_style' (#66)
+  * data: update appdata directory
+  * ui files: add missing icons in titles to dialogs
+  * buttons-programming.ui: Fix buttons
+  * Use make functions for HELP_LINGUAS
+  * Write equation using MathML
+  * Fix application name
+  * Fix repeated words
+  * tx: add help for user-guide to transifex config
+  * Copy equation as ASCII text
+
+### mate-calc 1.21.0
+
+  * Translations update
+  * UI: avoid deprecated GtkButton:use-stock
+  * UI: drop all deprecated elements
+  * replace deprecated gtk_menu_popup
+  * math-preferences: add window icon to Preferences dialog
+  * Init gtk before math_equation_new; fix #44
+  * avoid deprecated gtk_image_menu_item_new_from_stock
+
+### mate-calc 1.20.0
+
+  * Translations update
+  * Add icon image on close button in preferences dialog
+  * avoid deprecated GtkStock
+  * building: bump required glib and gtk+ versions
+  * add missing window icon to About dialog
+  * update copyright year to 2018
+
+### mate-calc 1.19.0
+
+  * Translations update
+  * math-window: don't use deprecated gtk_show_uri
+  * Restore Polish translation credits from GNOME
+  * update copyright year to 2017
+
+### mate-calc 1.18.0
+
+  * Add AppData.
+
+### mate-calc 1.10.0
+
+  * build gtk3 only
+
+### mate-calc 1.8.0
+
+  * Make numpad period work without numlock on
+  * Enable yelp documentation
