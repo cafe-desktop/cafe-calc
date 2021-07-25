@@ -423,7 +423,7 @@ math_equation_copy(MathEquation *equation)
         ctk_text_buffer_get_bounds(CTK_TEXT_BUFFER(equation), &start, &end);
 
     text = ctk_text_buffer_get_text(CTK_TEXT_BUFFER(equation), &start, &end, FALSE);
-    ctk_clipboard_set_text(ctk_clipboard_get(GDK_NONE), g_str_to_ascii (text, "C"), -1);
+    ctk_clipboard_set_text(ctk_clipboard_get(CDK_NONE), g_str_to_ascii (text, "C"), -1);
     g_free(text);
 }
 
@@ -441,7 +441,7 @@ void
 math_equation_paste(MathEquation *equation)
 {
     g_return_if_fail(equation != NULL);
-    ctk_clipboard_request_text(ctk_clipboard_get(GDK_NONE), on_paste, equation);
+    ctk_clipboard_request_text(ctk_clipboard_get(CDK_NONE), on_paste, equation);
 }
 
 

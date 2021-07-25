@@ -862,8 +862,8 @@ popup_button_menu(CtkWidget *widget, CtkMenu *menu)
 {
     ctk_menu_popup_at_widget (menu,
                               widget,
-                              GDK_GRAVITY_SOUTH_WEST,
-                              GDK_GRAVITY_NORTH_WEST,
+                              CDK_GRAVITY_SOUTH_WEST,
+                              CDK_GRAVITY_NORTH_WEST,
                               NULL);
 }
 
