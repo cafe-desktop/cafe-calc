@@ -283,7 +283,8 @@ static void about_cb(CtkWidget* widget, MathWindow* window)
         "version", VERSION,
         "title", _("About CAFE Calculator"),
         "copyright", _("Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
-                       "Copyright \xc2\xa9 2011-2020 CAFE developers"),
+                       "Copyright \xc2\xa9 2011-2020 MATE developers\n"
+                       "Copyright \xc2\xa9 2021 CAFE developers"),
         "license", license_trans,
         "comments", _("Calculator with financial and scientific modes."),
         "authors", authors,
