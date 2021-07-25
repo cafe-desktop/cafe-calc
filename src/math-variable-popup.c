@@ -59,8 +59,8 @@ static gboolean
 variable_name_key_press_cb(CtkWidget *widget, CdkEventKey *event, MathVariablePopup *popup)
 {
     /* Can't have whitespace in names, so replace with underscores */
-    if (event->keyval == GDK_KEY_space || event->keyval == GDK_KEY_KP_Space)
-        event->keyval = GDK_KEY_underscore;
+    if (event->keyval == CDK_KEY_space || event->keyval == CDK_KEY_KP_Space)
+        event->keyval = CDK_KEY_underscore;
 
     return FALSE;
 }

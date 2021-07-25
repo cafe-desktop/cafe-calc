@@ -69,38 +69,38 @@ display_key_press_cb(CtkWidget *widget, CdkEventKey *event, MathDisplay *display
     /* Treat keypad keys as numbers even when numlock is off */
     switch(event->keyval)
     {
-    case GDK_KEY_KP_Delete: /* Period without numlock */
-        new_keyval = GDK_KEY_KP_Decimal;
+    case CDK_KEY_KP_Delete: /* Period without numlock */
+        new_keyval = CDK_KEY_KP_Decimal;
         break;
-    case GDK_KEY_KP_Insert:
-        new_keyval = GDK_KEY_0;
+    case CDK_KEY_KP_Insert:
+        new_keyval = CDK_KEY_0;
         break;
-    case GDK_KEY_KP_End:
-        new_keyval = GDK_KEY_1;
+    case CDK_KEY_KP_End:
+        new_keyval = CDK_KEY_1;
         break;
-    case GDK_KEY_KP_Down:
-        new_keyval = GDK_KEY_2;
+    case CDK_KEY_KP_Down:
+        new_keyval = CDK_KEY_2;
         break;
-    case GDK_KEY_KP_Page_Down:
-        new_keyval = GDK_KEY_3;
+    case CDK_KEY_KP_Page_Down:
+        new_keyval = CDK_KEY_3;
         break;
-    case GDK_KEY_KP_Left:
-        new_keyval = GDK_KEY_4;
+    case CDK_KEY_KP_Left:
+        new_keyval = CDK_KEY_4;
         break;
-    case GDK_KEY_KP_Begin: /* This is apparently what "5" does when numlock is off. */
-        new_keyval = GDK_KEY_5;
+    case CDK_KEY_KP_Begin: /* This is apparently what "5" does when numlock is off. */
+        new_keyval = CDK_KEY_5;
         break;
-    case GDK_KEY_KP_Right:
-        new_keyval = GDK_KEY_6;
+    case CDK_KEY_KP_Right:
+        new_keyval = CDK_KEY_6;
         break;
-    case GDK_KEY_KP_Home:
-        new_keyval = GDK_KEY_7;
+    case CDK_KEY_KP_Home:
+        new_keyval = CDK_KEY_7;
         break;
-    case GDK_KEY_KP_Up:
-        new_keyval = GDK_KEY_8;
+    case CDK_KEY_KP_Up:
+        new_keyval = CDK_KEY_8;
         break;
-    case GDK_KEY_KP_Page_Up:
-        new_keyval = GDK_KEY_9;
+    case CDK_KEY_KP_Page_Up:
+        new_keyval = CDK_KEY_9;
         break;
     }
 
@@ -115,25 +115,25 @@ display_key_press_cb(CtkWidget *widget, CdkEventKey *event, MathDisplay *display
         return result;
     }
 
-    state = event->state & (GDK_CONTROL_MASK | GDK_MOD1_MASK);
+    state = event->state & (CDK_CONTROL_MASK | CDK_MOD1_MASK);
     c = cdk_keyval_to_unicode(event->keyval);
 
     /* Solve on enter */
-    if (event->keyval == GDK_KEY_Return || event->keyval == GDK_KEY_KP_Enter) {
+    if (event->keyval == CDK_KEY_Return || event->keyval == CDK_KEY_KP_Enter) {
         math_equation_solve(display->priv->equation);
         return TRUE;
     }
 
     /* Clear on escape */
-    if ((event->keyval == GDK_KEY_Escape && state == 0) ||
-        (event->keyval == GDK_KEY_BackSpace && state == GDK_CONTROL_MASK) ||
-        (event->keyval == GDK_KEY_Delete && state == GDK_SHIFT_MASK)) {
+    if ((event->keyval == CDK_KEY_Escape && state == 0) ||
+        (event->keyval == CDK_KEY_BackSpace && state == CDK_CONTROL_MASK) ||
+        (event->keyval == CDK_KEY_Delete && state == CDK_SHIFT_MASK)) {
         math_equation_clear(display->priv->equation);
         return TRUE;
     }
 
     /* Numeric keypad will often insert '.' regardless of locale */
-    if (event->keyval == GDK_KEY_KP_Decimal) {
+    if (event->keyval == CDK_KEY_KP_Decimal) {
         math_equation_insert_numeric_point(display->priv->equation);
         return TRUE;
     }
@@ -155,139 +155,139 @@ display_key_press_cb(CtkWidget *widget, CdkEventKey *event, MathDisplay *display
     }
 
     /* Shortcuts */
-    if (state == GDK_CONTROL_MASK) {
+    if (state == CDK_CONTROL_MASK) {
         switch(event->keyval)
         {
-        case GDK_KEY_bracketleft:
+        case CDK_KEY_bracketleft:
             math_equation_insert(display->priv->equation, "⌈");
             return TRUE;
-        case GDK_KEY_bracketright:
+        case CDK_KEY_bracketright:
             math_equation_insert(display->priv->equation, "⌉");
             return TRUE;
-        case GDK_KEY_e:
+        case CDK_KEY_e:
             math_equation_insert_exponent(display->priv->equation);
             return TRUE;
-        case GDK_KEY_f:
+        case CDK_KEY_f:
             math_equation_factorize(display->priv->equation);
             return TRUE;
-        case GDK_KEY_i:
+        case CDK_KEY_i:
             math_equation_insert(display->priv->equation, "⁻¹");
             return TRUE;
-        case GDK_KEY_p:
+        case CDK_KEY_p:
             math_equation_insert(display->priv->equation, "π");
             return TRUE;
-        case GDK_KEY_r:
+        case CDK_KEY_r:
             math_equation_insert(display->priv->equation, "√");
             return TRUE;
-        case GDK_KEY_u:
+        case CDK_KEY_u:
             math_equation_insert(display->priv->equation, "µ");
             return TRUE;
-        case GDK_KEY_minus:
+        case CDK_KEY_minus:
              math_equation_insert(display->priv->equation, "⁻");
              return TRUE;
-        case GDK_KEY_apostrophe:
+        case CDK_KEY_apostrophe:
              math_equation_insert(display->priv->equation, "°");
              return TRUE;
         }
     }
-    if (state == GDK_MOD1_MASK) {
+    if (state == CDK_MOD1_MASK) {
         switch(event->keyval)
         {
-        case GDK_KEY_bracketleft:
+        case CDK_KEY_bracketleft:
             math_equation_insert(display->priv->equation, "⌊");
             return TRUE;
-        case GDK_KEY_bracketright:
+        case CDK_KEY_bracketright:
             math_equation_insert(display->priv->equation, "⌋");
             return TRUE;
         }
     }
 
-    if (state == GDK_CONTROL_MASK || math_equation_get_number_mode(display->priv->equation) == SUPERSCRIPT) {
+    if (state == CDK_CONTROL_MASK || math_equation_get_number_mode(display->priv->equation) == SUPERSCRIPT) {
         switch(event->keyval)
         {
-        case GDK_KEY_0:
-        case GDK_KEY_KP_0:
+        case CDK_KEY_0:
+        case CDK_KEY_KP_0:
             math_equation_insert(display->priv->equation, "⁰");
             return TRUE;
-        case GDK_KEY_1:
-        case GDK_KEY_KP_1:
+        case CDK_KEY_1:
+        case CDK_KEY_KP_1:
             math_equation_insert(display->priv->equation, "¹");
             return TRUE;
-        case GDK_KEY_2:
-        case GDK_KEY_KP_2:
+        case CDK_KEY_2:
+        case CDK_KEY_KP_2:
             math_equation_insert(display->priv->equation, "²");
             return TRUE;
-        case GDK_KEY_3:
-        case GDK_KEY_KP_3:
+        case CDK_KEY_3:
+        case CDK_KEY_KP_3:
             math_equation_insert(display->priv->equation, "³");
             return TRUE;
-        case GDK_KEY_4:
-        case GDK_KEY_KP_4:
+        case CDK_KEY_4:
+        case CDK_KEY_KP_4:
             math_equation_insert(display->priv->equation, "⁴");
             return TRUE;
-        case GDK_KEY_5:
-        case GDK_KEY_KP_5:
+        case CDK_KEY_5:
+        case CDK_KEY_KP_5:
             math_equation_insert(display->priv->equation, "⁵");
             return TRUE;
-        case GDK_KEY_6:
-        case GDK_KEY_KP_6:
+        case CDK_KEY_6:
+        case CDK_KEY_KP_6:
             math_equation_insert(display->priv->equation, "⁶");
             return TRUE;
-        case GDK_KEY_7:
-        case GDK_KEY_KP_7:
+        case CDK_KEY_7:
+        case CDK_KEY_KP_7:
             math_equation_insert(display->priv->equation, "⁷");
             return TRUE;
-        case GDK_KEY_8:
-        case GDK_KEY_KP_8:
+        case CDK_KEY_8:
+        case CDK_KEY_KP_8:
             math_equation_insert(display->priv->equation, "⁸");
             return TRUE;
-        case GDK_KEY_9:
-        case GDK_KEY_KP_9:
+        case CDK_KEY_9:
+        case CDK_KEY_KP_9:
             math_equation_insert(display->priv->equation, "⁹");
             return TRUE;
         }
     }
-    else if (state == GDK_MOD1_MASK || math_equation_get_number_mode(display->priv->equation) == SUBSCRIPT) {
+    else if (state == CDK_MOD1_MASK || math_equation_get_number_mode(display->priv->equation) == SUBSCRIPT) {
         switch(event->keyval)
         {
-        case GDK_KEY_0:
-        case GDK_KEY_KP_0:
+        case CDK_KEY_0:
+        case CDK_KEY_KP_0:
             math_equation_insert(display->priv->equation, "₀");
             return TRUE;
-        case GDK_KEY_1:
-        case GDK_KEY_KP_1:
+        case CDK_KEY_1:
+        case CDK_KEY_KP_1:
             math_equation_insert(display->priv->equation, "₁");
             return TRUE;
-        case GDK_KEY_2:
-        case GDK_KEY_KP_2:
+        case CDK_KEY_2:
+        case CDK_KEY_KP_2:
             math_equation_insert(display->priv->equation, "₂");
             return TRUE;
-        case GDK_KEY_3:
-        case GDK_KEY_KP_3:
+        case CDK_KEY_3:
+        case CDK_KEY_KP_3:
             math_equation_insert(display->priv->equation, "₃");
             return TRUE;
-        case GDK_KEY_4:
-        case GDK_KEY_KP_4:
+        case CDK_KEY_4:
+        case CDK_KEY_KP_4:
             math_equation_insert(display->priv->equation, "₄");
             return TRUE;
-        case GDK_KEY_5:
-        case GDK_KEY_KP_5:
+        case CDK_KEY_5:
+        case CDK_KEY_KP_5:
             math_equation_insert(display->priv->equation, "₅");
             return TRUE;
-        case GDK_KEY_6:
-        case GDK_KEY_KP_6:
+        case CDK_KEY_6:
+        case CDK_KEY_KP_6:
             math_equation_insert(display->priv->equation, "₆");
             return TRUE;
-        case GDK_KEY_7:
-        case GDK_KEY_KP_7:
+        case CDK_KEY_7:
+        case CDK_KEY_KP_7:
             math_equation_insert(display->priv->equation, "₇");
             return TRUE;
-        case GDK_KEY_8:
-        case GDK_KEY_KP_8:
+        case CDK_KEY_8:
+        case CDK_KEY_KP_8:
             math_equation_insert(display->priv->equation, "₈");
             return TRUE;
-        case GDK_KEY_9:
-        case GDK_KEY_KP_9:
+        case CDK_KEY_9:
+        case CDK_KEY_KP_9:
             math_equation_insert(display->priv->equation, "₉");
             return TRUE;
         }

@@ -17,16 +17,16 @@
 #include "utility.h"
 
 // ctk3 hack
-	#ifndef GDK_KEY_F1
-		#define GDK_KEY_F1 GDK_F1
+	#ifndef CDK_KEY_F1
+		#define CDK_KEY_F1 CDK_F1
 	#endif
 
-	#ifndef GDK_KEY_W
-		#define GDK_KEY_W GDK_w
+	#ifndef CDK_KEY_W
+		#define CDK_KEY_W CDK_w
 	#endif
 
-	#ifndef GDK_KEY_Z
-		#define GDK_KEY_Z GDK_z
+	#ifndef CDK_KEY_Z
+		#define CDK_KEY_Z CDK_z
 	#endif
 
 enum {
@@ -146,23 +146,23 @@ key_press_cb(MathWindow *window, CdkEventKey *event)
     gboolean result;
     g_signal_emit_by_name(window->priv->display, "key-press-event", event, &result);
 
-    if (math_buttons_get_mode (window->priv->buttons) == PROGRAMMING && (event->state & GDK_CONTROL_MASK) == GDK_CONTROL_MASK) {
+    if (math_buttons_get_mode (window->priv->buttons) == PROGRAMMING && (event->state & CDK_CONTROL_MASK) == CDK_CONTROL_MASK) {
         switch(event->keyval)
         {
         /* Binary */
-        case GDK_KEY_b:
+        case CDK_KEY_b:
             math_equation_set_base (window->priv->equation, 2);
             return TRUE;
         /* Octal */
-        case GDK_KEY_o:
+        case CDK_KEY_o:
             math_equation_set_base (window->priv->equation, 8);
             return TRUE;
         /* Decimal */
-        case GDK_KEY_d:
+        case CDK_KEY_d:
             math_equation_set_base (window->priv->equation, 10);
             return TRUE;
         /* Hexdecimal */
-        case GDK_KEY_h:
+        case CDK_KEY_h:
             math_equation_set_base (window->priv->equation, 16);
             return TRUE;
         }
@@ -440,19 +440,19 @@ static void create_menu(MathWindow* window)
 
     menu = add_menu(window->priv->menu_bar, CALCULATOR_MENU_LABEL);
     menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("edit-copy",_("_Copy"), accel_group), G_CALLBACK(copy_cb), window);
-    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_C, GDK_CONTROL_MASK, CTK_ACCEL_VISIBLE);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, CDK_KEY_C, CDK_CONTROL_MASK, CTK_ACCEL_VISIBLE);
     menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("edit-paste",_("_Paste"), accel_group), G_CALLBACK(paste_cb), window);
-    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_V, GDK_CONTROL_MASK, CTK_ACCEL_VISIBLE);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, CDK_KEY_V, CDK_CONTROL_MASK, CTK_ACCEL_VISIBLE);
     menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("edit-undo",_("_Undo"), accel_group), G_CALLBACK(undo_cb), window);
-    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Z, GDK_CONTROL_MASK, CTK_ACCEL_VISIBLE);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, CDK_KEY_Z, CDK_CONTROL_MASK, CTK_ACCEL_VISIBLE);
     menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("edit-redo",_("_Redo"), accel_group), G_CALLBACK(redo_cb), window);
-    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Z, GDK_CONTROL_MASK | GDK_SHIFT_MASK, CTK_ACCEL_VISIBLE);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, CDK_KEY_Z, CDK_CONTROL_MASK | CDK_SHIFT_MASK, CTK_ACCEL_VISIBLE);
     add_menu_item(menu, ctk_separator_menu_item_new(), NULL, NULL);
     add_menu_item(menu, ctk_image_menu_item_new_from_icon("preferences-desktop",_("_Preferences"), accel_group), G_CALLBACK(show_preferences_cb), window);
     add_menu_item(menu, ctk_separator_menu_item_new(), NULL, NULL);
     menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("application-exit",_("_Quit"), accel_group), G_CALLBACK(quit_cb), window);
-    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Q, GDK_CONTROL_MASK, CTK_ACCEL_VISIBLE);
-    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_W, GDK_CONTROL_MASK, CTK_ACCEL_VISIBLE);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, CDK_KEY_Q, CDK_CONTROL_MASK, CTK_ACCEL_VISIBLE);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, CDK_KEY_W, CDK_CONTROL_MASK, CTK_ACCEL_VISIBLE);
 
     menu = add_menu(window->priv->menu_bar, MODE_MENU_LABEL);
     window->priv->mode_basic_menu_item = add_menu_item(menu, radio_menu_item_new(&group, MODE_BASIC_LABEL), G_CALLBACK(mode_changed_cb), window);
@@ -466,7 +466,7 @@ static void create_menu(MathWindow* window)
 
     menu = add_menu(window->priv->menu_bar, HELP_MENU_LABEL);
     menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("help-browser", HELP_CONTENTS_LABEL, accel_group), G_CALLBACK(help_cb), window);
-    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_F1, 0, CTK_ACCEL_VISIBLE);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, CDK_KEY_F1, 0, CTK_ACCEL_VISIBLE);
     add_menu_item(menu, ctk_image_menu_item_new_from_icon("help-about",_("_About"), accel_group), G_CALLBACK(about_cb), window);
 }
 
