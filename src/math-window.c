@@ -36,16 +36,16 @@ enum {
 
 struct MathWindowPrivate
 {
-    GtkWidget *menu_bar;
+    CtkWidget *menu_bar;
     MathEquation *equation;
     MathDisplay *display;
     MathButtons *buttons;
     MathPreferencesDialog *preferences_dialog;
     gboolean right_aligned;
-    GtkWidget *mode_basic_menu_item;
-    GtkWidget *mode_advanced_menu_item;
-    GtkWidget *mode_financial_menu_item;
-    GtkWidget *mode_programming_menu_item;
+    CtkWidget *mode_basic_menu_item;
+    CtkWidget *mode_advanced_menu_item;
+    CtkWidget *mode_financial_menu_item;
+    CtkWidget *mode_programming_menu_item;
 };
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathWindow, math_window, GTK_TYPE_WINDOW);
@@ -65,7 +65,7 @@ math_window_new(MathEquation *equation)
             "equation", equation, NULL);
 }
 
-GtkWidget *math_window_get_menu_bar(MathWindow *window)
+CtkWidget *math_window_get_menu_bar(MathWindow *window)
 {
     return window->priv->menu_bar;
 }
@@ -97,7 +97,7 @@ math_window_get_buttons(MathWindow *window)
 void
 math_window_critical_error(MathWindow *window, const gchar *title, const gchar *contents)
 {
-    GtkWidget *dialog;
+    CtkWidget *dialog;
 
     g_return_if_fail(window != NULL);
     g_return_if_fail(title != NULL);
@@ -116,7 +116,7 @@ math_window_critical_error(MathWindow *window, const gchar *title, const gchar *
     g_signal_emit(window, signals[QUIT], 0);
 }
 
-static void mode_changed_cb(GtkWidget *menu, MathWindow *window)
+static void mode_changed_cb(CtkWidget *menu, MathWindow *window)
 {
     int mode;
 
@@ -129,7 +129,7 @@ static void mode_changed_cb(GtkWidget *menu, MathWindow *window)
     math_buttons_set_mode(window->priv->buttons, mode);
 }
 
-static void show_preferences_cb(GtkMenuItem *menu, MathWindow *window)
+static void show_preferences_cb(CtkMenuItem *menu, MathWindow *window)
 {
     if (!window->priv->preferences_dialog)
     {
@@ -176,27 +176,27 @@ static void delete_cb(MathWindow *window, GdkEvent *event)
     g_signal_emit(window, signals[QUIT], 0);
 }
 
-static void copy_cb(GtkWidget *widget, MathWindow *window)
+static void copy_cb(CtkWidget *widget, MathWindow *window)
 {
     math_equation_copy(window->priv->equation);
 }
 
-static void paste_cb(GtkWidget *widget, MathWindow *window)
+static void paste_cb(CtkWidget *widget, MathWindow *window)
 {
     math_equation_paste(window->priv->equation);
 }
 
-static void undo_cb(GtkWidget *widget, MathWindow *window)
+static void undo_cb(CtkWidget *widget, MathWindow *window)
 {
     math_equation_undo(window->priv->equation);
 }
 
-static void redo_cb(GtkWidget *widget, MathWindow *window)
+static void redo_cb(CtkWidget *widget, MathWindow *window)
 {
     math_equation_redo(window->priv->equation);
 }
 
-static void help_cb(GtkWidget *widget, MathWindow *window)
+static void help_cb(CtkWidget *widget, MathWindow *window)
 {
     GError *error = NULL;
 
@@ -207,7 +207,7 @@ static void help_cb(GtkWidget *widget, MathWindow *window)
 
     if (error != NULL)
     {
-        GtkWidget *d;
+        CtkWidget *d;
         /* Translators: Error message displayed when unable to launch help browser */
         const char *message = _("Unable to open help file");
 
@@ -224,7 +224,7 @@ static void help_cb(GtkWidget *widget, MathWindow *window)
 #define ABOUT_GROUP "About"
 #define EMAILIFY(string) (g_strdelimit ((string), "%", '@'))
 
-static void about_cb(GtkWidget* widget, MathWindow* window)
+static void about_cb(CtkWidget* widget, MathWindow* window)
 {
     const char* documenters[] = {
         N_("Sun Microsystems"),
@@ -300,7 +300,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
 }
 
 static void
-scroll_changed_cb(GtkAdjustment *adjustment, MathWindow *window)
+scroll_changed_cb(CtkAdjustment *adjustment, MathWindow *window)
 {
     if (window->priv->right_aligned)
         ctk_adjustment_set_value(adjustment, ctk_adjustment_get_upper(adjustment) - ctk_adjustment_get_page_size(adjustment));
@@ -308,7 +308,7 @@ scroll_changed_cb(GtkAdjustment *adjustment, MathWindow *window)
 
 
 static void
-scroll_value_changed_cb(GtkAdjustment *adjustment, MathWindow *window)
+scroll_value_changed_cb(CtkAdjustment *adjustment, MathWindow *window)
 {
     if (ctk_adjustment_get_value(adjustment) == ctk_adjustment_get_upper(adjustment) - ctk_adjustment_get_page_size(adjustment))
         window->priv->right_aligned = TRUE;
@@ -318,7 +318,7 @@ scroll_value_changed_cb(GtkAdjustment *adjustment, MathWindow *window)
 
 static void button_mode_changed_cb(MathButtons *buttons, GParamSpec *spec, MathWindow *window)
 {
-    GtkWidget *menu;
+    CtkWidget *menu;
 
     switch (math_buttons_get_mode(buttons))
     {
@@ -341,10 +341,10 @@ static void button_mode_changed_cb(MathButtons *buttons, GParamSpec *spec, MathW
     g_settings_set_enum(g_settings_var, "button-mode", math_buttons_get_mode(buttons));
 }
 
-static GtkWidget *add_menu(GtkWidget *menu_bar, const gchar *name)
+static CtkWidget *add_menu(CtkWidget *menu_bar, const gchar *name)
 {
-    GtkWidget *menu_item;
-    GtkWidget *menu;
+    CtkWidget *menu_item;
+    CtkWidget *menu;
 
     menu_item = ctk_menu_item_new_with_mnemonic(name);
     ctk_menu_shell_append(GTK_MENU_SHELL(menu_bar), menu_item);
@@ -356,12 +356,12 @@ static GtkWidget *add_menu(GtkWidget *menu_bar, const gchar *name)
     return menu;
 }
 
-static void quit_cb(GtkWidget* widget, MathWindow* window)
+static void quit_cb(CtkWidget* widget, MathWindow* window)
 {
     g_signal_emit(window, signals[QUIT], 0);
 }
 
-static GtkWidget *add_menu_item(GtkWidget *menu, GtkWidget *menu_item, GCallback callback, gpointer callback_data)
+static CtkWidget *add_menu_item(CtkWidget *menu, CtkWidget *menu_item, GCallback callback, gpointer callback_data)
 {
     ctk_menu_shell_append(GTK_MENU_SHELL(menu), menu_item);
     ctk_widget_show(menu_item);
@@ -374,24 +374,24 @@ static GtkWidget *add_menu_item(GtkWidget *menu, GtkWidget *menu_item, GCallback
     return menu_item;
 }
 
-static GtkWidget *radio_menu_item_new(GSList **group, const gchar *name)
+static CtkWidget *radio_menu_item_new(GSList **group, const gchar *name)
 {
-    GtkWidget *menu_item = ctk_radio_menu_item_new_with_mnemonic(*group, name);
+    CtkWidget *menu_item = ctk_radio_menu_item_new_with_mnemonic(*group, name);
 
     *group = ctk_radio_menu_item_get_group(GTK_RADIO_MENU_ITEM(menu_item));
 
     return menu_item;
 }
 
-static GtkWidget *ctk_image_menu_item_new_from_icon (const gchar   *icon_name,
+static CtkWidget *ctk_image_menu_item_new_from_icon (const gchar   *icon_name,
                                                      const gchar   *label_name,
-                                                     GtkAccelGroup *accel_group)
+                                                     CtkAccelGroup *accel_group)
 {
     gchar *concat = g_strconcat (label_name, "     ", NULL);
-    GtkWidget *box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-    GtkWidget *icon = ctk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
-    GtkWidget *label = ctk_accel_label_new (concat);
-    GtkWidget *menu_item = ctk_menu_item_new ();
+    CtkWidget *box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+    CtkWidget *icon = ctk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
+    CtkWidget *label = ctk_accel_label_new (concat);
+    CtkWidget *menu_item = ctk_menu_item_new ();
 
     g_free (concat);
 
@@ -413,9 +413,9 @@ static GtkWidget *ctk_image_menu_item_new_from_icon (const gchar   *icon_name,
 
 static void create_menu(MathWindow* window)
 {
-    GtkAccelGroup* accel_group;
-    GtkWidget* menu;
-    GtkWidget* menu_item;
+    CtkAccelGroup* accel_group;
+    CtkWidget* menu;
+    CtkWidget* menu_item;
     GSList* group = NULL;
 
     accel_group = ctk_accel_group_new();
@@ -473,8 +473,8 @@ static void create_menu(MathWindow* window)
 static void
 create_gui(MathWindow *window)
 {
-    GtkWidget *main_vbox, *vbox;
-    GtkWidget *scrolled_window;
+    CtkWidget *main_vbox, *vbox;
+    CtkWidget *scrolled_window;
 
     main_vbox = ctk_box_new(GTK_ORIENTATION_VERTICAL, 0);
     ctk_container_add(GTK_CONTAINER(window), main_vbox);

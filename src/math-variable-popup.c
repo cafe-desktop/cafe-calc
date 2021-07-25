@@ -22,9 +22,9 @@ struct MathVariablePopupPrivate
 {
     MathEquation *equation;
 
-    GtkWidget *vbox;
-    GtkWidget *variable_name_entry;
-    GtkWidget *add_variable_button;
+    CtkWidget *vbox;
+    CtkWidget *variable_name_entry;
+    CtkWidget *add_variable_button;
 };
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathVariablePopup, math_variable_popup, GTK_TYPE_WINDOW);
@@ -37,14 +37,14 @@ math_variable_popup_new(MathEquation *equation)
 
 
 static void
-variable_focus_out_event_cb(GtkWidget *widget, GdkEventFocus *event, MathVariablePopup *popup)
+variable_focus_out_event_cb(CtkWidget *widget, GdkEventFocus *event, MathVariablePopup *popup)
 {
     ctk_widget_destroy(widget);
 }
 
 
 static void
-insert_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
+insert_variable_cb(CtkWidget *widget, MathVariablePopup *popup)
 {
     const gchar *name;
 
@@ -56,7 +56,7 @@ insert_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
 
 
 static gboolean
-variable_name_key_press_cb(GtkWidget *widget, GdkEventKey *event, MathVariablePopup *popup)
+variable_name_key_press_cb(CtkWidget *widget, GdkEventKey *event, MathVariablePopup *popup)
 {
     /* Can't have whitespace in names, so replace with underscores */
     if (event->keyval == GDK_KEY_space || event->keyval == GDK_KEY_KP_Space)
@@ -67,7 +67,7 @@ variable_name_key_press_cb(GtkWidget *widget, GdkEventKey *event, MathVariablePo
 
 
 static void
-variable_name_changed_cb(GtkWidget *widget, MathVariablePopup *popup)
+variable_name_changed_cb(CtkWidget *widget, MathVariablePopup *popup)
 {
     const gchar *text = ctk_entry_get_text(GTK_ENTRY(popup->priv->variable_name_entry));
     ctk_widget_set_sensitive(popup->priv->add_variable_button, text[0] != '\0');
@@ -75,7 +75,7 @@ variable_name_changed_cb(GtkWidget *widget, MathVariablePopup *popup)
 
 
 static void
-add_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
+add_variable_cb(CtkWidget *widget, MathVariablePopup *popup)
 {
     const gchar *name;
     MPNumber z;
@@ -96,7 +96,7 @@ add_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
 
 
 static void
-save_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
+save_variable_cb(CtkWidget *widget, MathVariablePopup *popup)
 {
     const gchar *name;
     MPNumber z;
@@ -114,7 +114,7 @@ save_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
 
 
 static void
-delete_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
+delete_variable_cb(CtkWidget *widget, MathVariablePopup *popup)
 {
     const gchar *name;
 
@@ -125,10 +125,10 @@ delete_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
 }
 
 
-static GtkWidget *
+static CtkWidget *
 make_variable_entry(MathVariablePopup *popup, const gchar *name, const MPNumber *value, gboolean writable)
 {
-    GtkWidget *hbox, *button, *label;
+    CtkWidget *hbox, *button, *label;
     gchar *text;
 
     hbox = ctk_box_new(GTK_ORIENTATION_HORIZONTAL, 6);
@@ -158,7 +158,7 @@ make_variable_entry(MathVariablePopup *popup, const gchar *name, const MPNumber 
 
     if (writable)
     {
-        GtkWidget *image;
+        CtkWidget *image;
 
         button = ctk_button_new();
         g_object_set_data(G_OBJECT(button), "variable_name", g_strdup(name));
@@ -192,7 +192,7 @@ math_variable_popup_set_property(GObject      *object,
     MathVariablePopup *self;
     gchar **names;
     int i;
-    GtkWidget *entry, *image;
+    CtkWidget *entry, *image;
 
     self = MATH_VARIABLE_POPUP(object);
 

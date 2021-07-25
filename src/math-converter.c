@@ -26,10 +26,10 @@ struct MathConverterPrivate
 
     gchar *category;
 
-    GtkWidget *from_combo;
-    GtkWidget *to_combo;
+    CtkWidget *from_combo;
+    CtkWidget *to_combo;
 
-    GtkWidget *result_label;
+    CtkWidget *result_label;
 };
 
 
@@ -53,7 +53,7 @@ math_converter_new(MathEquation *equation)
 static gboolean
 convert_equation(MathConverter *converter, const MPNumber *x, MPNumber *z)
 {
-    GtkTreeIter from_iter, to_iter;
+    CtkTreeIter from_iter, to_iter;
     UnitCategory *category = NULL;
     Unit *source_unit = NULL, *target_unit = NULL;
     gboolean result;
@@ -124,7 +124,7 @@ display_changed_cb(MathEquation *equation, GParamSpec *spec, MathConverter *conv
 static void
 update_from_model(MathConverter *converter)
 {
-    GtkTreeStore *from_model;
+    CtkTreeStore *from_model;
 
     from_model = ctk_tree_store_new(3, G_TYPE_STRING, G_TYPE_OBJECT, G_TYPE_OBJECT);
 
@@ -134,7 +134,7 @@ update_from_model(MathConverter *converter)
         categories = unit_manager_get_categories(unit_manager_get_default());
         for (iter = categories; iter; iter = iter->next) {
             UnitCategory *category = iter->data;
-            GtkTreeIter parent;
+            CtkTreeIter parent;
             const GList *unit_iter;
 
             ctk_tree_store_append(from_model, &parent, NULL);
@@ -142,7 +142,7 @@ update_from_model(MathConverter *converter)
 
             for (unit_iter = unit_category_get_units(category); unit_iter; unit_iter = unit_iter->next) {
                 Unit *unit = unit_iter->data;
-                GtkTreeIter iter;
+                CtkTreeIter iter;
 
                 ctk_tree_store_append(from_model, &iter, &parent);
                 ctk_tree_store_set(from_model, &iter, 0, unit_get_display_name(unit), 1, category, 2, unit, -1);
@@ -156,7 +156,7 @@ update_from_model(MathConverter *converter)
         category = unit_manager_get_category(unit_manager_get_default(), converter->priv->category);
         for (unit_iter = unit_category_get_units(category); unit_iter; unit_iter = unit_iter->next) {
             Unit *unit = unit_iter->data;
-            GtkTreeIter iter;
+            CtkTreeIter iter;
 
             ctk_tree_store_append(from_model, &iter, NULL);
             ctk_tree_store_set(from_model, &iter, 0, unit_get_display_name(unit), 1, category, 2, unit, -1);
@@ -193,7 +193,7 @@ math_converter_get_category(MathConverter *converter)
 
 
 static gboolean
-iter_is_unit(GtkTreeModel *model, GtkTreeIter *iter, Unit *unit)
+iter_is_unit(CtkTreeModel *model, CtkTreeIter *iter, Unit *unit)
 {
     Unit *u;
 
@@ -211,10 +211,10 @@ iter_is_unit(GtkTreeModel *model, GtkTreeIter *iter, Unit *unit)
 
 
 static gboolean
-set_active_unit(GtkComboBox *combo, GtkTreeIter *iter, Unit *unit)
+set_active_unit(CtkComboBox *combo, CtkTreeIter *iter, Unit *unit)
 {
-    GtkTreeModel *model;
-    GtkTreeIter child_iter;
+    CtkTreeModel *model;
+    CtkTreeIter child_iter;
 
     model = ctk_combo_box_get_model(combo);
 
@@ -249,13 +249,13 @@ math_converter_set_conversion(MathConverter *converter, /*const gchar *category,
     ub = unit_manager_get_unit_by_name(unit_manager_get_default(), unit_b);
     if (!ua || !ub)
     {
-        GtkTreeModel *model;
-        GtkTreeIter iter;
+        CtkTreeModel *model;
+        CtkTreeIter iter;
 
         /* Select the first unit */
         model = ctk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->from_combo));
         if (ctk_tree_model_get_iter_first(model, &iter)) {
-            GtkTreeIter child_iter;
+            CtkTreeIter child_iter;
             while (ctk_tree_model_iter_children(model, &child_iter, &iter))
                 iter = child_iter;
             ctk_combo_box_set_active_iter(GTK_COMBO_BOX(converter->priv->from_combo), &iter);
@@ -271,7 +271,7 @@ math_converter_set_conversion(MathConverter *converter, /*const gchar *category,
 void
 math_converter_get_conversion(MathConverter *converter, Unit **from_unit, Unit **to_unit)
 {
-    GtkTreeIter from_iter, to_iter;
+    CtkTreeIter from_iter, to_iter;
 
     g_return_if_fail (converter != NULL);
     g_return_if_fail (from_unit != NULL);
@@ -300,10 +300,10 @@ math_converter_class_init(MathConverterClass *klass)
 
 
 static void
-from_combobox_changed_cb(GtkWidget *combo, MathConverter *converter)
+from_combobox_changed_cb(CtkWidget *combo, MathConverter *converter)
 {
-    GtkTreeModel *model;
-    GtkTreeIter iter;
+    CtkTreeModel *model;
+    CtkTreeIter iter;
     UnitCategory *category;
     Unit *unit;
     const GList *unit_iter;
@@ -333,7 +333,7 @@ from_combobox_changed_cb(GtkWidget *combo, MathConverter *converter)
 
 
 static void
-to_combobox_changed_cb(GtkWidget *combo, MathConverter *converter)
+to_combobox_changed_cb(CtkWidget *combo, MathConverter *converter)
 {
     /* Conversion must have changed */
     update_result_label(converter);
@@ -343,10 +343,10 @@ to_combobox_changed_cb(GtkWidget *combo, MathConverter *converter)
 
 
 static void
-from_cell_data_func(GtkCellLayout   *cell_layout,
-                    GtkCellRenderer *cell,
-                    GtkTreeModel    *tree_model,
-                    GtkTreeIter     *iter,
+from_cell_data_func(CtkCellLayout   *cell_layout,
+                    CtkCellRenderer *cell,
+                    CtkTreeModel    *tree_model,
+                    CtkTreeIter     *iter,
                     gpointer         data)
 {
     g_object_set(cell, "sensitive", !ctk_tree_model_iter_has_child(tree_model, iter), NULL);
@@ -360,7 +360,7 @@ currency_updated_cb(CurrencyManager *manager, MathConverter *converter)
 }
 
 static void
-swap_button_clicked_cb(GtkButton *button, MathConverter *converter)
+swap_button_clicked_cb(CtkButton *button, MathConverter *converter)
 {
     Unit *from_unit, *to_unit;
     MPNumber x, z;
@@ -382,8 +382,8 @@ swap_button_clicked_cb(GtkButton *button, MathConverter *converter)
 static void
 math_converter_init(MathConverter *converter)
 {
-    GtkWidget *hbox, *label, *swap_button;
-    GtkCellRenderer *renderer;
+    CtkWidget *hbox, *label, *swap_button;
+    CtkCellRenderer *renderer;
 
     converter->priv = math_converter_get_instance_private (converter);
 

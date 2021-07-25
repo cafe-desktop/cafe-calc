@@ -22,13 +22,13 @@ typedef struct MathVariablePopupPrivate MathVariablePopupPrivate;
 
 typedef struct
 {
-    GtkWindow parent_instance;
+    CtkWindow parent_instance;
     MathVariablePopupPrivate *priv;
 } MathVariablePopup;
 
 typedef struct
 {
-    GtkWindowClass parent_class;
+    CtkWindowClass parent_class;
 } MathVariablePopupClass;
 
 GType math_variable_popup_get_type(void);

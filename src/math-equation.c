@@ -65,7 +65,7 @@ typedef struct {
 
 struct MathEquationPrivate
 {
-    GtkTextTag *ans_tag;
+    CtkTextTag *ans_tag;
 
     gint word_size;           /* Word size in bits */
     MPAngleUnit angle_units;  /* Units for trigonometric functions */
@@ -78,7 +78,7 @@ struct MathEquationPrivate
 
     gunichar digits[16];      /* Localized digits */
 
-    GtkTextMark *ans_start, *ans_end;
+    CtkTextMark *ans_start, *ans_end;
 
     MathEquationState state;  /* Equation state */
     GList *undo_stack;        /* History of expression mode states */
@@ -123,7 +123,7 @@ math_equation_get_variables(MathEquation *equation)
 static void
 get_ans_offsets(MathEquation *equation, gint *start, gint *end)
 {
-    GtkTextIter iter;
+    CtkTextIter iter;
 
     if (!equation->priv->ans_start) {
         *start = *end = -1;
@@ -145,7 +145,7 @@ reformat_ans(MathEquation *equation)
 
     gchar *orig_ans_text;
     gchar *ans_text;
-    GtkTextIter ans_start, ans_end;
+    CtkTextIter ans_start, ans_end;
 
     ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &ans_start, equation->priv->ans_start);
     ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &ans_end, equation->priv->ans_end);
@@ -241,7 +241,7 @@ reformat_separators(MathEquation *equation)
 
             /* Expected a thousands separator between these digits - insert it */
             if (expect_tsep) {
-                GtkTextIter iter;
+                CtkTextIter iter;
                 gchar buffer[7];
                 gint len;
 
@@ -261,7 +261,7 @@ reformat_separators(MathEquation *equation)
         else if (c == mp_serializer_get_thousands_separator(equation->priv->serializer)) {
             /* Didn't expect thousands separator - delete it */
             if (!expect_tsep && in_number) {
-                GtkTextIter start, end;
+                CtkTextIter start, end;
                 ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &start, offset);
                 ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &end, offset + 1);
                 ctk_text_buffer_delete(GTK_TEXT_BUFFER(equation), &start, &end);
@@ -303,7 +303,7 @@ get_current_state(MathEquation *equation)
 
     if (equation->priv->ans_start)
     {
-        GtkTextIter iter;
+        CtkTextIter iter;
         ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_start);
         ans_start = ctk_text_iter_get_offset(&iter);
         ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_end);
@@ -364,7 +364,7 @@ clear_ans(MathEquation *equation, gboolean remove_tag)
         return;
 
     if (remove_tag) {
-        GtkTextIter start, end;
+        CtkTextIter start, end;
 
         ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &start, equation->priv->ans_start);
         ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &end, equation->priv->ans_end);
@@ -381,7 +381,7 @@ clear_ans(MathEquation *equation, gboolean remove_tag)
 static void
 apply_state(MathEquation *equation, MathEquationState *state)
 {
-    GtkTextIter cursor;
+    CtkTextIter cursor;
 
     /* Disable undo detection */
     equation->priv->in_undo_operation = TRUE;
@@ -393,7 +393,7 @@ apply_state(MathEquation *equation, MathEquationState *state)
     ctk_text_buffer_place_cursor(GTK_TEXT_BUFFER(equation), &cursor);
     clear_ans(equation, FALSE);
     if (state->ans_start >= 0) {
-        GtkTextIter start, end;
+        CtkTextIter start, end;
 
         ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &start, state->ans_start);
         equation->priv->ans_start = ctk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &start, FALSE);
@@ -414,7 +414,7 @@ apply_state(MathEquation *equation, MathEquationState *state)
 void
 math_equation_copy(MathEquation *equation)
 {
-    GtkTextIter start, end;
+    CtkTextIter start, end;
     gchar *text;
 
     g_return_if_fail(equation != NULL);
@@ -429,7 +429,7 @@ math_equation_copy(MathEquation *equation)
 
 
 static void
-on_paste(GtkClipboard *clipboard, const gchar *text, gpointer data)
+on_paste(CtkClipboard *clipboard, const gchar *text, gpointer data)
 {
     MathEquation *equation = data;
     if (text != NULL)
@@ -804,7 +804,7 @@ math_equation_is_result(MathEquation *equation)
 gchar *
 math_equation_get_display(MathEquation *equation)
 {
-    GtkTextIter start, end;
+    CtkTextIter start, end;
 
     g_return_val_if_fail(equation != NULL, NULL);
 
@@ -974,7 +974,7 @@ void
 math_equation_set_number(MathEquation *equation, const MPNumber *x)
 {
     char *text;
-    GtkTextIter start, end;
+    CtkTextIter start, end;
 
     g_return_if_fail(equation != NULL);
     g_return_if_fail(x != NULL);
@@ -1003,7 +1003,7 @@ math_equation_insert(MathEquation *equation, const gchar *text)
     /* Replace ** with ^ (not on all keyboards) */
     if (!ctk_text_buffer_get_has_selection(GTK_TEXT_BUFFER(equation)) &&
         strcmp(text, "×") == 0 && equation->priv->state.entered_multiply) {
-        GtkTextIter iter;
+        CtkTextIter iter;
 
         ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, ctk_text_buffer_get_insert(GTK_TEXT_BUFFER(equation)));
         ctk_text_buffer_backspace(GTK_TEXT_BUFFER(equation), &iter, TRUE, TRUE);
@@ -1404,7 +1404,7 @@ void
 math_equation_delete(MathEquation *equation)
 {
     gint cursor;
-    GtkTextIter start, end;
+    CtkTextIter start, end;
 
     g_return_if_fail(equation != NULL);
 
@@ -1430,7 +1430,7 @@ math_equation_backspace(MathEquation *equation)
     if (ctk_text_buffer_get_has_selection(GTK_TEXT_BUFFER(equation)))
         ctk_text_buffer_delete_selection(GTK_TEXT_BUFFER(equation), FALSE, FALSE);
     else {
-        GtkTextIter iter;
+        CtkTextIter iter;
         ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, ctk_text_buffer_get_insert(GTK_TEXT_BUFFER(equation)));
         ctk_text_buffer_backspace(GTK_TEXT_BUFFER(equation), &iter, TRUE, TRUE);
     }
@@ -1637,7 +1637,7 @@ math_equation_get_property(GObject    *object,
 static void
 math_equation_constructed(GObject *object)
 {
-    GtkTextBuffer *parent_class;
+    CtkTextBuffer *parent_class;
     parent_class = g_type_class_peek_parent(MATH_EQUATION_GET_CLASS(object));
     if (G_OBJECT_CLASS(parent_class)->constructed)
         G_OBJECT_CLASS(parent_class)->constructed(object);
@@ -1793,7 +1793,7 @@ math_equation_class_init(MathEquationClass *klass)
 
 static void
 pre_insert_text_cb(MathEquation  *equation,
-                   GtkTextIter   *location,
+                   CtkTextIter   *location,
                    gchar         *text,
                    gint           len,
                    gpointer       user_data)
@@ -1804,7 +1804,7 @@ pre_insert_text_cb(MathEquation  *equation,
     if (equation->priv->in_reformat)
         return;
 
-    /* If following a delete then have already pushed undo stack (GtkTextBuffer
+    /* If following a delete then have already pushed undo stack (CtkTextBuffer
        doesn't indicate replace operations so we have to infer them) */
     if (!equation->priv->in_delete)
         math_equation_push_undo_stack(equation);
@@ -1844,8 +1844,8 @@ on_delete(MathEquation *equation)
 
 static void
 pre_delete_range_cb(MathEquation  *equation,
-                    GtkTextIter   *start,
-                    GtkTextIter   *end,
+                    CtkTextIter   *start,
+                    CtkTextIter   *end,
                     gpointer       user_data)
 {
     if (equation->priv->in_reformat)
@@ -1873,7 +1873,7 @@ pre_delete_range_cb(MathEquation  *equation,
 
 static void
 insert_text_cb(MathEquation  *equation,
-               GtkTextIter   *location,
+               CtkTextIter   *location,
                gchar         *text,
                gint           len,
                gpointer       user_data)
@@ -1892,8 +1892,8 @@ insert_text_cb(MathEquation  *equation,
 
 static void
 delete_range_cb(MathEquation  *equation,
-                GtkTextIter   *start,
-                GtkTextIter   *end,
+                CtkTextIter   *start,
+                CtkTextIter   *end,
                 gpointer       user_data)
 {
     if (equation->priv->in_reformat)

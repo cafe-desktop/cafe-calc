@@ -2,7 +2,7 @@
 <!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="ctk+" version="3.22"/>
-  <object class="GtkDialog" id="ctrm_dialog">
+  <object class="CtkDialog" id="ctrm_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of Compounding Term dialog">Compounding Term</property>
@@ -14,17 +14,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox1">
+      <object class="CtkBox" id="dialog-vbox1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area1">
+          <object class="CtkButtonBox" id="dialog-action_area1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button1">
+              <object class="CtkButton" id="button1">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -39,7 +39,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button2">
+              <object class="CtkButton" id="button2">
                 <property name="label" translatable="yes" comments="Compounding Term Dialog: Calculate button">C_alculate</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -62,14 +62,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table1">
+          <object class="CtkGrid" id="table1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">6</property>
             <property name="row_spacing">6</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkEntry" id="ctrm_pint">
+              <object class="CtkEntry" id="ctrm_pint">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -84,7 +84,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="ctrm_fv">
+              <object class="CtkEntry" id="ctrm_fv">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -99,7 +99,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="ctrm_pv">
+              <object class="CtkEntry" id="ctrm_pv">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -114,7 +114,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label9">
+              <object class="CtkLabel" id="label9">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">35</property>
@@ -130,7 +130,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label6">
+              <object class="CtkLabel" id="label6">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Compounding Term Dialog: Label before periodic interest rate input">Periodic Interest _Rate:</property>
@@ -144,7 +144,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label16">
+              <object class="CtkLabel" id="label16">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Compounding Term Dialog: Label before future value input">_Future Value:</property>
@@ -158,7 +158,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label5">
+              <object class="CtkLabel" id="label5">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Compounding Term Dialog: Label before present value input">Present _Value:</property>
@@ -185,7 +185,7 @@
       <action-widget response="-5">button2</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkDialog" id="ddb_dialog">
+  <object class="CtkDialog" id="ddb_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of Double-Declining Depreciation dialog">Double-Declining Depreciation</property>
@@ -197,17 +197,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox2">
+      <object class="CtkBox" id="dialog-vbox2">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area2">
+          <object class="CtkButtonBox" id="dialog-action_area2">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button3">
+              <object class="CtkButton" id="button3">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -222,7 +222,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button4">
+              <object class="CtkButton" id="button4">
                 <property name="label" translatable="yes" comments="Double-Declining Depreciation Dialog: Calculate button">C_alculate</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -245,14 +245,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table2">
+          <object class="CtkGrid" id="table2">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">6</property>
             <property name="row_spacing">6</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkLabel" id="label7">
+              <object class="CtkLabel" id="label7">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">35</property>
@@ -268,7 +268,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="ddb_life">
+              <object class="CtkEntry" id="ddb_life">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -283,7 +283,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="ddb_cost">
+              <object class="CtkEntry" id="ddb_cost">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -298,7 +298,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="ddb_period">
+              <object class="CtkEntry" id="ddb_period">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -313,7 +313,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label10">
+              <object class="CtkLabel" id="label10">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Double-Declining Depreciation Dialog: Label before life input">_Life:</property>
@@ -327,7 +327,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label11">
+              <object class="CtkLabel" id="label11">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Double-Declining Depreciation Dialog: Label before period input">_Period:</property>
@@ -341,7 +341,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label8">
+              <object class="CtkLabel" id="label8">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Double-Declining Depreciation Dialog: Label before cost input">C_ost:</property>
@@ -368,7 +368,7 @@
       <action-widget response="-5">button4</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkDialog" id="fv_dialog">
+  <object class="CtkDialog" id="fv_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of Future Value dialog">Future Value</property>
@@ -380,17 +380,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox3">
+      <object class="CtkBox" id="dialog-vbox3">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area3">
+          <object class="CtkButtonBox" id="dialog-action_area3">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button5">
+              <object class="CtkButton" id="button5">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -405,7 +405,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button6">
+              <object class="CtkButton" id="button6">
                 <property name="label" translatable="yes" comments="Future Value Dialog: Calculate button">C_alculate</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -428,14 +428,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table3">
+          <object class="CtkGrid" id="table3">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">6</property>
             <property name="row_spacing">6</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkEntry" id="fv_n">
+              <object class="CtkEntry" id="fv_n">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -450,7 +450,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="fv_pint">
+              <object class="CtkEntry" id="fv_pint">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -465,7 +465,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="fv_pmt">
+              <object class="CtkEntry" id="fv_pmt">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -480,7 +480,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label14">
+              <object class="CtkLabel" id="label14">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Future Value Dialog: Label before periodic interest rate input">Periodic Interest _Rate:</property>
@@ -494,7 +494,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label15">
+              <object class="CtkLabel" id="label15">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Future Value Dialog: Label before number of periods input">_Number of Periods:</property>
@@ -508,7 +508,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label12">
+              <object class="CtkLabel" id="label12">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">35</property>
@@ -524,7 +524,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label13">
+              <object class="CtkLabel" id="label13">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Future Value Dialog: Label before periodic payment input">_Periodic Payment:</property>
@@ -551,7 +551,7 @@
       <action-widget response="-5">button6</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkDialog" id="gpm_dialog">
+  <object class="CtkDialog" id="gpm_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of Gross Profit Margin dialog">Gross Profit Margin</property>
@@ -563,17 +563,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox10">
+      <object class="CtkBox" id="dialog-vbox10">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area10">
+          <object class="CtkButtonBox" id="dialog-action_area10">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button19">
+              <object class="CtkButton" id="button19">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -588,7 +588,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button20">
+              <object class="CtkButton" id="button20">
                 <property name="label" translatable="yes" comments="Gross Profit Margin Dialog: Calculate button">C_alculate</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -611,14 +611,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table10">
+          <object class="CtkGrid" id="table10">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">6</property>
             <property name="row_spacing">6</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkLabel" id="label47">
+              <object class="CtkLabel" id="label47">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">35</property>
@@ -634,7 +634,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="gpm_cost">
+              <object class="CtkEntry" id="gpm_cost">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -649,7 +649,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="gpm_margin">
+              <object class="CtkEntry" id="gpm_margin">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -664,7 +664,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label48">
+              <object class="CtkLabel" id="label48">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Gross Profit Margin Dialog: Label before cost input">C_ost:</property>
@@ -678,7 +678,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label49">
+              <object class="CtkLabel" id="label49">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Gross Profit Margin Dialog: Label before margin input">_Margin:</property>
@@ -704,7 +704,7 @@
       <action-widget response="-5">button20</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkDialog" id="pmt_dialog">
+  <object class="CtkDialog" id="pmt_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of Periodic Payment dialog">Periodic Payment</property>
@@ -716,17 +716,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox4">
+      <object class="CtkBox" id="dialog-vbox4">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area4">
+          <object class="CtkButtonBox" id="dialog-action_area4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button7">
+              <object class="CtkButton" id="button7">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -741,7 +741,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button8">
+              <object class="CtkButton" id="button8">
                 <property name="label" translatable="yes" comments="Periodic Payment Dialog: Calculate button">C_alculate</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -764,14 +764,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table4">
+          <object class="CtkGrid" id="table4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">6</property>
             <property name="row_spacing">6</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkLabel" id="label17">
+              <object class="CtkLabel" id="label17">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">35</property>
@@ -788,7 +788,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="pmt_prin">
+              <object class="CtkEntry" id="pmt_prin">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -803,7 +803,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="pmt_pint">
+              <object class="CtkEntry" id="pmt_pint">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -818,7 +818,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="pmt_n">
+              <object class="CtkEntry" id="pmt_n">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -833,7 +833,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label21">
+              <object class="CtkLabel" id="label21">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Periodic Payment Dialog: Label before term input">_Term:</property>
@@ -847,7 +847,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label19">
+              <object class="CtkLabel" id="label19">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Periodic Payment Dialog: Label before periodic interest rate input">Periodic Interest _Rate:</property>
@@ -861,7 +861,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label18">
+              <object class="CtkLabel" id="label18">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Periodic Payment Dialog: Label before principal input">_Principal:</property>
@@ -888,7 +888,7 @@
       <action-widget response="-5">button8</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkDialog" id="pv_dialog">
+  <object class="CtkDialog" id="pv_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of Present Value dialog">Present Value</property>
@@ -900,17 +900,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox5">
+      <object class="CtkBox" id="dialog-vbox5">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area5">
+          <object class="CtkButtonBox" id="dialog-action_area5">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button9">
+              <object class="CtkButton" id="button9">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -925,7 +925,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button10">
+              <object class="CtkButton" id="button10">
                 <property name="label" translatable="yes" comments="Present Value Dialog: Calculate button">C_alculate</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -948,14 +948,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table5">
+          <object class="CtkGrid" id="table5">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">6</property>
             <property name="row_spacing">6</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkLabel" id="label36">
+              <object class="CtkLabel" id="label36">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">35</property>
@@ -972,7 +972,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="pv_pmt">
+              <object class="CtkEntry" id="pv_pmt">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -987,7 +987,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="pv_pint">
+              <object class="CtkEntry" id="pv_pint">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1002,7 +1002,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="pv_n">
+              <object class="CtkEntry" id="pv_n">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1017,7 +1017,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label26">
+              <object class="CtkLabel" id="label26">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Present Value Dialog: Label before number of periods input">_Number of Periods:</property>
@@ -1031,7 +1031,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label25">
+              <object class="CtkLabel" id="label25">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Present Value Dialog: Label before periodic interest rate input">Periodic Interest _Rate:</property>
@@ -1045,7 +1045,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label24">
+              <object class="CtkLabel" id="label24">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Present Value Dialog: Label before periodic payment input">_Periodic Payment:</property>
@@ -1072,7 +1072,7 @@
       <action-widget response="-5">button10</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkDialog" id="rate_dialog">
+  <object class="CtkDialog" id="rate_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of Periodic Interest Rate dialog">Periodic Interest Rate</property>
@@ -1084,17 +1084,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox6">
+      <object class="CtkBox" id="dialog-vbox6">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area6">
+          <object class="CtkButtonBox" id="dialog-action_area6">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button11">
+              <object class="CtkButton" id="button11">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1109,7 +1109,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button12">
+              <object class="CtkButton" id="button12">
                 <property name="label" translatable="yes" comments="Periodic Interest Rate Dialog: Calculate button">C_alculate</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1132,14 +1132,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table6">
+          <object class="CtkGrid" id="table6">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">6</property>
             <property name="row_spacing">6</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkLabel" id="label28">
+              <object class="CtkLabel" id="label28">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">35</property>
@@ -1156,7 +1156,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="rate_fv">
+              <object class="CtkEntry" id="rate_fv">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1171,7 +1171,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="rate_pv">
+              <object class="CtkEntry" id="rate_pv">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1186,7 +1186,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="rate_n">
+              <object class="CtkEntry" id="rate_n">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1201,7 +1201,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label30">
+              <object class="CtkLabel" id="label30">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Periodic Interest Rate Dialog: Label before present value input">Present _Value:</property>
@@ -1215,7 +1215,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label31">
+              <object class="CtkLabel" id="label31">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Periodic Interest Rate Dialog: Label before term input">_Term:</property>
@@ -1229,7 +1229,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label29">
+              <object class="CtkLabel" id="label29">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Periodic Interest Rate Dialog: Label before future value input">_Future Value:</property>
@@ -1256,7 +1256,7 @@
       <action-widget response="-5">button12</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkDialog" id="sln_dialog">
+  <object class="CtkDialog" id="sln_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of Straight-Line Depreciation dialog">Straight-Line Depreciation</property>
@@ -1268,17 +1268,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox7">
+      <object class="CtkBox" id="dialog-vbox7">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area7">
+          <object class="CtkButtonBox" id="dialog-action_area7">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button13">
+              <object class="CtkButton" id="button13">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1293,7 +1293,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button14">
+              <object class="CtkButton" id="button14">
                 <property name="label" translatable="yes" comments="Straight-Line Depreciation Dialog: Calculate button">C_alculate</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1316,14 +1316,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table7">
+          <object class="CtkGrid" id="table7">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">6</property>
             <property name="row_spacing">6</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkLabel" id="label33">
+              <object class="CtkLabel" id="label33">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Straight-Line Depreciation Dialog: Label before cost input">_Cost:</property>
@@ -1337,7 +1337,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="sln_salvage">
+              <object class="CtkEntry" id="sln_salvage">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1352,7 +1352,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="sln_cost">
+              <object class="CtkEntry" id="sln_cost">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1367,7 +1367,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="sln_life">
+              <object class="CtkEntry" id="sln_life">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1382,7 +1382,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label35">
+              <object class="CtkLabel" id="label35">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Straight-Line Depreciation Dialog: Label before life input">_Life:</property>
@@ -1396,7 +1396,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label34">
+              <object class="CtkLabel" id="label34">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Straight-Line Depreciation Dialog: Label before salvage input">_Salvage:</property>
@@ -1410,7 +1410,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label32">
+              <object class="CtkLabel" id="label32">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">35</property>
@@ -1440,7 +1440,7 @@
       <action-widget response="-5">button14</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkDialog" id="syd_dialog">
+  <object class="CtkDialog" id="syd_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of Sum-of-the-Years'-Digits Depreciation dialog">Sum-of-the-Years'-Digits Depreciation</property>
@@ -1452,17 +1452,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox8">
+      <object class="CtkBox" id="dialog-vbox8">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area8">
+          <object class="CtkButtonBox" id="dialog-action_area8">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button15">
+              <object class="CtkButton" id="button15">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1477,7 +1477,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button16">
+              <object class="CtkButton" id="button16">
                 <property name="label" translatable="yes" comments="Sum-of-the-Years'-Digits Depreciation Dialog: Calculate result button">C_alculate</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1500,14 +1500,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table8">
+          <object class="CtkGrid" id="table8">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">6</property>
             <property name="row_spacing">6</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkLabel" id="label37">
+              <object class="CtkLabel" id="label37">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input">_Period:</property>
@@ -1521,7 +1521,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label38">
+              <object class="CtkLabel" id="label38">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input">_Life:</property>
@@ -1535,7 +1535,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label39">
+              <object class="CtkLabel" id="label39">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input">_Salvage:</property>
@@ -1549,7 +1549,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label40">
+              <object class="CtkLabel" id="label40">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input">_Cost:</property>
@@ -1563,7 +1563,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="syd_cost">
+              <object class="CtkEntry" id="syd_cost">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1578,7 +1578,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="syd_salvage">
+              <object class="CtkEntry" id="syd_salvage">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1593,7 +1593,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="syd_life">
+              <object class="CtkEntry" id="syd_life">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1608,7 +1608,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="syd_period">
+              <object class="CtkEntry" id="syd_period">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1623,7 +1623,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label41">
+              <object class="CtkLabel" id="label41">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">35</property>
@@ -1653,7 +1653,7 @@
       <action-widget response="-5">button16</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkDialog" id="term_dialog">
+  <object class="CtkDialog" id="term_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of Payment Period dialog">Payment Period</property>
@@ -1665,17 +1665,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox9">
+      <object class="CtkBox" id="dialog-vbox9">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area9">
+          <object class="CtkButtonBox" id="dialog-action_area9">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button17">
+              <object class="CtkButton" id="button17">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1690,7 +1690,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button18">
+              <object class="CtkButton" id="button18">
                 <property name="label" translatable="yes" comments="Payment Period Dialog: Button to calculate result">C_alculate</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1713,14 +1713,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table9">
+          <object class="CtkGrid" id="table9">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">6</property>
             <property name="row_spacing">6</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkEntry" id="term_pint">
+              <object class="CtkEntry" id="term_pint">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1735,7 +1735,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="term_fv">
+              <object class="CtkEntry" id="term_fv">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1750,7 +1750,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="term_pmt">
+              <object class="CtkEntry" id="term_pmt">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">●</property>
@@ -1765,7 +1765,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label45">
+              <object class="CtkLabel" id="label45">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Payment Period Dialog: Label before periodic payment input">_Periodic Payment:</property>
@@ -1779,7 +1779,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label44">
+              <object class="CtkLabel" id="label44">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Payment Period Dialog: Label before future value input">Future _Value:</property>
@@ -1793,7 +1793,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label43">
+              <object class="CtkLabel" id="label43">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Payment Period Dialog: Label before periodic interest rate input">Periodic Interest _Rate:</property>
@@ -1807,7 +1807,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label46">
+              <object class="CtkLabel" id="label46">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">35</property>
@@ -1837,31 +1837,31 @@
       <action-widget response="-5">button18</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkWindow" id="window1">
+  <object class="CtkWindow" id="window1">
     <property name="can_focus">False</property>
     <child type="titlebar">
       <placeholder/>
     </child>
     <child>
-      <object class="GtkGrid" id="button_panel">
+      <object class="CtkGrid" id="button_panel">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="row_homogeneous">True</property>
         <property name="column_homogeneous">True</property>
         <child>
-          <object class="GtkButton" id="calc_memory_button">
+          <object class="CtkButton" id="calc_memory_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="memory_cb" swapped="no"/>
             <child>
-              <object class="GtkBox" id="hbox20">
+              <object class="CtkBox" id="hbox20">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="spacing">3</property>
                 <child>
-                  <object class="GtkLabel" id="label23">
+                  <object class="CtkLabel" id="label23">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes" comments="The label on the memory button">x</property>
@@ -1876,7 +1876,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkArrow" id="arrow14">
+                  <object class="CtkArrow" id="arrow14">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="arrow_type">down</property>
@@ -1902,7 +1902,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_logarithm_button">
+          <object class="CtkButton" id="calc_logarithm_button">
             <property name="label">log</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -1916,7 +1916,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_8_button">
+          <object class="CtkButton" id="calc_8_button">
             <property name="label">8</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -1931,7 +1931,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_9_button">
+          <object class="CtkButton" id="calc_9_button">
             <property name="label">9</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -1946,7 +1946,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_5_button">
+          <object class="CtkButton" id="calc_5_button">
             <property name="label">5</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -1961,7 +1961,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_6_button">
+          <object class="CtkButton" id="calc_6_button">
             <property name="label">6</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -1976,7 +1976,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_divide_button">
+          <object class="CtkButton" id="calc_divide_button">
             <property name="label">÷</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -1991,7 +1991,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_2_button">
+          <object class="CtkButton" id="calc_2_button">
             <property name="label">2</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2006,7 +2006,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_numeric_point_button">
+          <object class="CtkButton" id="calc_numeric_point_button">
             <property name="label" comments="Label is set in ctk.c to comply with LC flags">.</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2021,7 +2021,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_percentage_button">
+          <object class="CtkButton" id="calc_percentage_button">
             <property name="label">%</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2036,7 +2036,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_3_button">
+          <object class="CtkButton" id="calc_3_button">
             <property name="label">3</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2051,7 +2051,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_multiply_button">
+          <object class="CtkButton" id="calc_multiply_button">
             <property name="label">×</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2066,7 +2066,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_subtract_button">
+          <object class="CtkButton" id="calc_subtract_button">
             <property name="label">−</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2081,7 +2081,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_add_button">
+          <object class="CtkButton" id="calc_add_button">
             <property name="label">+</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2096,7 +2096,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_result_button">
+          <object class="CtkButton" id="calc_result_button">
             <property name="label" translatable="yes" comments="Label on the solve button (clicking this solves the displayed calculation)">=</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2115,7 +2115,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_start_group_button">
+          <object class="CtkButton" id="calc_start_group_button">
             <property name="label">(</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2130,7 +2130,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_end_group_button">
+          <object class="CtkButton" id="calc_end_group_button">
             <property name="label">)</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2145,7 +2145,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_clear_button">
+          <object class="CtkButton" id="calc_clear_button">
             <property name="label" translatable="yes">Clear</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2162,7 +2162,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_finc_compounding_term_button">
+          <object class="CtkButton" id="calc_finc_compounding_term_button">
             <property name="label" translatable="yes" comments="Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest">Ctrm</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2177,7 +2177,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_finc_double_declining_depreciation_button">
+          <object class="CtkButton" id="calc_finc_double_declining_depreciation_button">
             <property name="label" translatable="yes" comments="Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation">Ddb</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2192,7 +2192,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_finc_future_value_button">
+          <object class="CtkButton" id="calc_finc_future_value_button">
             <property name="label" translatable="yes" comments="Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value">Fv</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2207,7 +2207,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_finc_term_button">
+          <object class="CtkButton" id="calc_finc_term_button">
             <property name="label" translatable="yes" comments="Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)">Term</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2222,7 +2222,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_finc_sum_of_the_years_digits_depreciation_button">
+          <object class="CtkButton" id="calc_finc_sum_of_the_years_digits_depreciation_button">
             <property name="label" translatable="yes" comments="Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation">Syd</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2237,7 +2237,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_finc_straight_line_depreciation_button">
+          <object class="CtkButton" id="calc_finc_straight_line_depreciation_button">
             <property name="label" translatable="yes" comments="Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation">Sln</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2252,7 +2252,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_finc_periodic_interest_rate_button">
+          <object class="CtkButton" id="calc_finc_periodic_interest_rate_button">
             <property name="label" translatable="yes" comments="Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest                                      ">Rate</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2267,7 +2267,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_finc_present_value_button">
+          <object class="CtkButton" id="calc_finc_present_value_button">
             <property name="label" translatable="yes" comments="Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value">Pv</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2282,7 +2282,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_finc_periodic_payment_button">
+          <object class="CtkButton" id="calc_finc_periodic_payment_button">
             <property name="label" translatable="yes" comments="Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule">Pmt</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2297,7 +2297,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_finc_gross_profit_margin_button">
+          <object class="CtkButton" id="calc_finc_gross_profit_margin_button">
             <property name="label" translatable="yes" comments="Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin">Gpm</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2312,14 +2312,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_x_pow_y_button">
+          <object class="CtkButton" id="calc_x_pow_y_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="x_pow_y_label">
+              <object class="CtkLabel" id="x_pow_y_label">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;x&lt;/i&gt;&lt;sup&gt;&lt;i&gt;y&lt;/i&gt;&lt;/sup&gt;</property>
@@ -2338,7 +2338,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_root_button">
+          <object class="CtkButton" id="calc_root_button">
             <property name="label">√</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2353,7 +2353,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_undo_button">
+          <object class="CtkButton" id="calc_undo_button">
             <property name="label" translatable="yes">Undo</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2366,7 +2366,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_7_button">
+          <object class="CtkButton" id="calc_7_button">
             <property name="label">7</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2381,7 +2381,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_4_button">
+          <object class="CtkButton" id="calc_4_button">
             <property name="label">4</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2396,7 +2396,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_1_button">
+          <object class="CtkButton" id="calc_1_button">
             <property name="label">1</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -2411,7 +2411,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_0_button">
+          <object class="CtkButton" id="calc_0_button">
             <property name="label">0</property>
             <property name="width_request">50</property>
             <property name="visible">True</property>

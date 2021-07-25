@@ -2,7 +2,7 @@
 <!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="ctk+" version="3.22"/>
-  <object class="GtkDialog" id="character_code_dialog">
+  <object class="CtkDialog" id="character_code_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of insert character code dialog">Insert Character Code</property>
@@ -15,17 +15,17 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox3">
+      <object class="CtkBox" id="dialog-vbox3">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area3">
+          <object class="CtkButtonBox" id="dialog-action_area3">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button9">
+              <object class="CtkButton" id="button9">
                 <property name="label" translatable="yes">_Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -40,7 +40,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button8">
+              <object class="CtkButton" id="button8">
                 <property name="label" translatable="yes" comments="Insert ASCII dialog: Button to insert selected character">_Insert</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -63,12 +63,12 @@
           </packing>
         </child>
         <child>
-          <object class="GtkBox" id="hbox21">
+          <object class="CtkBox" id="hbox21">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">5</property>
             <child>
-              <object class="GtkLabel" id="label39">
+              <object class="CtkLabel" id="label39">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Insert ASCII dialog: Label before character entry">Ch_aracter:</property>
@@ -82,7 +82,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="character_code_entry">
+              <object class="CtkEntry" id="character_code_entry">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="max_length">1</property>
@@ -111,24 +111,24 @@
       <action-widget response="-5">button8</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkWindow" id="window1">
+  <object class="CtkWindow" id="window1">
     <property name="can_focus">False</property>
     <child>
       <placeholder/>
     </child>
     <child>
-      <object class="GtkBox" id="button_panel">
+      <object class="CtkBox" id="button_panel">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <property name="spacing">6</property>
         <child>
-          <object class="GtkBox" id="hbox1">
+          <object class="CtkBox" id="hbox1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="spacing">6</property>
             <child>
-              <object class="GtkComboBox" id="base_combo">
+              <object class="CtkComboBox" id="base_combo">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="focus_on_click">False</property>
@@ -140,7 +140,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="base_label">
+              <object class="CtkLabel" id="base_label">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" comments="Example content">FF₁₆ 256₁₀</property>
@@ -160,22 +160,22 @@
           </packing>
         </child>
         <child>
-          <object class="GtkAlignment" id="bit_panel">
+          <object class="CtkAlignment" id="bit_panel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="xscale">0</property>
             <property name="yscale">0</property>
             <child>
-              <object class="GtkGrid" id="bit_table">
+              <object class="CtkGrid" id="bit_table">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_1">
+                  <object class="CtkEventBox" id="bit_eventbox_1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_1">
+                      <object class="CtkLabel" id="bit_label_1">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -189,12 +189,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_2">
+                  <object class="CtkEventBox" id="bit_eventbox_2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_2">
+                      <object class="CtkLabel" id="bit_label_2">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -208,12 +208,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_3">
+                  <object class="CtkEventBox" id="bit_eventbox_3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_3">
+                      <object class="CtkLabel" id="bit_label_3">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -227,12 +227,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_4">
+                  <object class="CtkEventBox" id="bit_eventbox_4">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_4">
+                      <object class="CtkLabel" id="bit_label_4">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -246,12 +246,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_5">
+                  <object class="CtkEventBox" id="bit_eventbox_5">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_5">
+                      <object class="CtkLabel" id="bit_label_5">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -265,12 +265,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_6">
+                  <object class="CtkEventBox" id="bit_eventbox_6">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_6">
+                      <object class="CtkLabel" id="bit_label_6">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -284,12 +284,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_7">
+                  <object class="CtkEventBox" id="bit_eventbox_7">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_7">
+                      <object class="CtkLabel" id="bit_label_7">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -303,12 +303,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_8">
+                  <object class="CtkEventBox" id="bit_eventbox_8">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_8">
+                      <object class="CtkLabel" id="bit_label_8">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -322,12 +322,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_9">
+                  <object class="CtkEventBox" id="bit_eventbox_9">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_9">
+                      <object class="CtkLabel" id="bit_label_9">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -341,12 +341,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_10">
+                  <object class="CtkEventBox" id="bit_eventbox_10">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_10">
+                      <object class="CtkLabel" id="bit_label_10">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -360,12 +360,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_11">
+                  <object class="CtkEventBox" id="bit_eventbox_11">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_11">
+                      <object class="CtkLabel" id="bit_label_11">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -379,12 +379,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_12">
+                  <object class="CtkEventBox" id="bit_eventbox_12">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_12">
+                      <object class="CtkLabel" id="bit_label_12">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -398,12 +398,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_13">
+                  <object class="CtkEventBox" id="bit_eventbox_13">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_13">
+                      <object class="CtkLabel" id="bit_label_13">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -417,12 +417,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_14">
+                  <object class="CtkEventBox" id="bit_eventbox_14">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_14">
+                      <object class="CtkLabel" id="bit_label_14">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -436,12 +436,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_15">
+                  <object class="CtkEventBox" id="bit_eventbox_15">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_15">
+                      <object class="CtkLabel" id="bit_label_15">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -455,12 +455,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_31">
+                  <object class="CtkEventBox" id="bit_eventbox_31">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_31">
+                      <object class="CtkLabel" id="bit_label_31">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -474,12 +474,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_30">
+                  <object class="CtkEventBox" id="bit_eventbox_30">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_30">
+                      <object class="CtkLabel" id="bit_label_30">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -493,12 +493,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_29">
+                  <object class="CtkEventBox" id="bit_eventbox_29">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_29">
+                      <object class="CtkLabel" id="bit_label_29">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -512,12 +512,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_28">
+                  <object class="CtkEventBox" id="bit_eventbox_28">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_28">
+                      <object class="CtkLabel" id="bit_label_28">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -531,12 +531,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_27">
+                  <object class="CtkEventBox" id="bit_eventbox_27">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_27">
+                      <object class="CtkLabel" id="bit_label_27">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -550,12 +550,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_26">
+                  <object class="CtkEventBox" id="bit_eventbox_26">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_26">
+                      <object class="CtkLabel" id="bit_label_26">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -569,12 +569,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_25">
+                  <object class="CtkEventBox" id="bit_eventbox_25">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_25">
+                      <object class="CtkLabel" id="bit_label_25">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -588,12 +588,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_24">
+                  <object class="CtkEventBox" id="bit_eventbox_24">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_24">
+                      <object class="CtkLabel" id="bit_label_24">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -607,12 +607,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_23">
+                  <object class="CtkEventBox" id="bit_eventbox_23">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_23">
+                      <object class="CtkLabel" id="bit_label_23">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -626,12 +626,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_22">
+                  <object class="CtkEventBox" id="bit_eventbox_22">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_22">
+                      <object class="CtkLabel" id="bit_label_22">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -645,12 +645,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_21">
+                  <object class="CtkEventBox" id="bit_eventbox_21">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_21">
+                      <object class="CtkLabel" id="bit_label_21">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -664,12 +664,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_20">
+                  <object class="CtkEventBox" id="bit_eventbox_20">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_20">
+                      <object class="CtkLabel" id="bit_label_20">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -683,12 +683,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_19">
+                  <object class="CtkEventBox" id="bit_eventbox_19">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_19">
+                      <object class="CtkLabel" id="bit_label_19">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -702,12 +702,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_18">
+                  <object class="CtkEventBox" id="bit_eventbox_18">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_18">
+                      <object class="CtkLabel" id="bit_label_18">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -721,12 +721,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_17">
+                  <object class="CtkEventBox" id="bit_eventbox_17">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_17">
+                      <object class="CtkLabel" id="bit_label_17">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -740,12 +740,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_16">
+                  <object class="CtkEventBox" id="bit_eventbox_16">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_16">
+                      <object class="CtkLabel" id="bit_label_16">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -759,7 +759,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="bit_marker_label2">
+                  <object class="CtkLabel" id="bit_marker_label2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">32</property>
@@ -772,7 +772,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="bit_marker_label5">
+                  <object class="CtkLabel" id="bit_marker_label5">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">0</property>
@@ -785,12 +785,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_33">
+                  <object class="CtkEventBox" id="bit_eventbox_33">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_33">
+                      <object class="CtkLabel" id="bit_label_33">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -804,12 +804,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_34">
+                  <object class="CtkEventBox" id="bit_eventbox_34">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_34">
+                      <object class="CtkLabel" id="bit_label_34">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -823,12 +823,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_35">
+                  <object class="CtkEventBox" id="bit_eventbox_35">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_35">
+                      <object class="CtkLabel" id="bit_label_35">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -842,12 +842,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_36">
+                  <object class="CtkEventBox" id="bit_eventbox_36">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_36">
+                      <object class="CtkLabel" id="bit_label_36">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -861,12 +861,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_37">
+                  <object class="CtkEventBox" id="bit_eventbox_37">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_37">
+                      <object class="CtkLabel" id="bit_label_37">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -880,12 +880,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_38">
+                  <object class="CtkEventBox" id="bit_eventbox_38">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_38">
+                      <object class="CtkLabel" id="bit_label_38">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -899,12 +899,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_39">
+                  <object class="CtkEventBox" id="bit_eventbox_39">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_39">
+                      <object class="CtkLabel" id="bit_label_39">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -918,12 +918,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_40">
+                  <object class="CtkEventBox" id="bit_eventbox_40">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_40">
+                      <object class="CtkLabel" id="bit_label_40">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -937,12 +937,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_41">
+                  <object class="CtkEventBox" id="bit_eventbox_41">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_41">
+                      <object class="CtkLabel" id="bit_label_41">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -956,12 +956,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_42">
+                  <object class="CtkEventBox" id="bit_eventbox_42">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_42">
+                      <object class="CtkLabel" id="bit_label_42">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -975,12 +975,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_43">
+                  <object class="CtkEventBox" id="bit_eventbox_43">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_43">
+                      <object class="CtkLabel" id="bit_label_43">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -994,12 +994,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_44">
+                  <object class="CtkEventBox" id="bit_eventbox_44">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_44">
+                      <object class="CtkLabel" id="bit_label_44">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1013,12 +1013,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_45">
+                  <object class="CtkEventBox" id="bit_eventbox_45">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_45">
+                      <object class="CtkLabel" id="bit_label_45">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1032,12 +1032,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_46">
+                  <object class="CtkEventBox" id="bit_eventbox_46">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_46">
+                      <object class="CtkLabel" id="bit_label_46">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1051,12 +1051,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_47">
+                  <object class="CtkEventBox" id="bit_eventbox_47">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_47">
+                      <object class="CtkLabel" id="bit_label_47">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1070,12 +1070,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_48">
+                  <object class="CtkEventBox" id="bit_eventbox_48">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_48">
+                      <object class="CtkLabel" id="bit_label_48">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1089,12 +1089,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_49">
+                  <object class="CtkEventBox" id="bit_eventbox_49">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_49">
+                      <object class="CtkLabel" id="bit_label_49">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1108,12 +1108,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_50">
+                  <object class="CtkEventBox" id="bit_eventbox_50">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_50">
+                      <object class="CtkLabel" id="bit_label_50">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1127,12 +1127,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_51">
+                  <object class="CtkEventBox" id="bit_eventbox_51">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_51">
+                      <object class="CtkLabel" id="bit_label_51">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1146,12 +1146,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_52">
+                  <object class="CtkEventBox" id="bit_eventbox_52">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_52">
+                      <object class="CtkLabel" id="bit_label_52">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1165,12 +1165,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_53">
+                  <object class="CtkEventBox" id="bit_eventbox_53">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_53">
+                      <object class="CtkLabel" id="bit_label_53">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1184,12 +1184,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_54">
+                  <object class="CtkEventBox" id="bit_eventbox_54">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_54">
+                      <object class="CtkLabel" id="bit_label_54">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1203,12 +1203,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_55">
+                  <object class="CtkEventBox" id="bit_eventbox_55">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_55">
+                      <object class="CtkLabel" id="bit_label_55">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1222,12 +1222,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_56">
+                  <object class="CtkEventBox" id="bit_eventbox_56">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_56">
+                      <object class="CtkLabel" id="bit_label_56">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1241,12 +1241,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_57">
+                  <object class="CtkEventBox" id="bit_eventbox_57">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_57">
+                      <object class="CtkLabel" id="bit_label_57">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1260,12 +1260,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_58">
+                  <object class="CtkEventBox" id="bit_eventbox_58">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_58">
+                      <object class="CtkLabel" id="bit_label_58">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1279,12 +1279,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_59">
+                  <object class="CtkEventBox" id="bit_eventbox_59">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_59">
+                      <object class="CtkLabel" id="bit_label_59">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1298,12 +1298,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_60">
+                  <object class="CtkEventBox" id="bit_eventbox_60">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_60">
+                      <object class="CtkLabel" id="bit_label_60">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1317,12 +1317,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_61">
+                  <object class="CtkEventBox" id="bit_eventbox_61">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_61">
+                      <object class="CtkLabel" id="bit_label_61">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1336,12 +1336,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_62">
+                  <object class="CtkEventBox" id="bit_eventbox_62">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_62">
+                      <object class="CtkLabel" id="bit_label_62">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1355,12 +1355,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_63">
+                  <object class="CtkEventBox" id="bit_eventbox_63">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_63">
+                      <object class="CtkLabel" id="bit_label_63">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1374,7 +1374,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="bit_marker_label1">
+                  <object class="CtkLabel" id="bit_marker_label1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">47</property>
@@ -1387,7 +1387,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="bit_marker_label4">
+                  <object class="CtkLabel" id="bit_marker_label4">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">15</property>
@@ -1400,7 +1400,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label25">
+                  <object class="CtkLabel" id="label25">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1412,7 +1412,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label26">
+                  <object class="CtkLabel" id="label26">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1424,7 +1424,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label27">
+                  <object class="CtkLabel" id="label27">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1436,7 +1436,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label28">
+                  <object class="CtkLabel" id="label28">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1448,7 +1448,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label29">
+                  <object class="CtkLabel" id="label29">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1460,7 +1460,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label30">
+                  <object class="CtkLabel" id="label30">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1472,7 +1472,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label31">
+                  <object class="CtkLabel" id="label31">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1484,7 +1484,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label32">
+                  <object class="CtkLabel" id="label32">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1496,7 +1496,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label33">
+                  <object class="CtkLabel" id="label33">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1508,7 +1508,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label34">
+                  <object class="CtkLabel" id="label34">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1520,7 +1520,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label35">
+                  <object class="CtkLabel" id="label35">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1532,7 +1532,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label36">
+                  <object class="CtkLabel" id="label36">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1544,7 +1544,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label37">
+                  <object class="CtkLabel" id="label37">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1556,7 +1556,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label38">
+                  <object class="CtkLabel" id="label38">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">  </property>
@@ -1568,12 +1568,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_0">
+                  <object class="CtkEventBox" id="bit_eventbox_0">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_0">
+                      <object class="CtkLabel" id="bit_label_0">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1587,7 +1587,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="bit_marker_label0">
+                  <object class="CtkLabel" id="bit_marker_label0">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">63</property>
@@ -1600,7 +1600,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="bit_maker_label3">
+                  <object class="CtkLabel" id="bit_maker_label3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">31</property>
@@ -1613,12 +1613,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEventBox" id="bit_eventbox_32">
+                  <object class="CtkEventBox" id="bit_eventbox_32">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <signal name="button-press-event" handler="bit_toggle_cb" swapped="no"/>
                     <child>
-                      <object class="GtkLabel" id="bit_label_32">
+                      <object class="CtkLabel" id="bit_label_32">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label"> 0</property>
@@ -1857,13 +1857,13 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="advanced_panel">
+          <object class="CtkGrid" id="advanced_panel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="row_homogeneous">True</property>
             <property name="column_homogeneous">True</property>
             <child>
-              <object class="GtkButton" id="calc_root_button">
+              <object class="CtkButton" id="calc_root_button">
                 <property name="label">√</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1878,7 +1878,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_logarithm_button">
+              <object class="CtkButton" id="calc_logarithm_button">
                 <property name="label">log</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1892,7 +1892,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_factor_button">
+              <object class="CtkButton" id="calc_factor_button">
                 <property name="label">fact</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1912,7 +1912,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_natural_logarithm_button">
+              <object class="CtkButton" id="calc_natural_logarithm_button">
                 <property name="label">ln</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1927,7 +1927,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_abs_button">
+              <object class="CtkButton" id="calc_abs_button">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="focus_on_click">False</property>
@@ -1935,7 +1935,7 @@
                 <property name="use_underline">True</property>
                 <signal name="clicked" handler="button_cb" swapped="no"/>
                 <child>
-                  <object class="GtkLabel" id="label1">
+                  <object class="CtkLabel" id="label1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">|&lt;i&gt;x&lt;/i&gt;|</property>
@@ -1954,7 +1954,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_integer_portion_button">
+              <object class="CtkButton" id="calc_integer_portion_button">
                 <property name="label">int</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1969,7 +1969,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_fractional_portion_button">
+              <object class="CtkButton" id="calc_fractional_portion_button">
                 <property name="label">frac</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1984,7 +1984,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_divide_button">
+              <object class="CtkButton" id="calc_divide_button">
                 <property name="label">÷</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -1999,7 +1999,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_multiply_button">
+              <object class="CtkButton" id="calc_multiply_button">
                 <property name="label">×</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2014,7 +2014,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_subtract_button">
+              <object class="CtkButton" id="calc_subtract_button">
                 <property name="label">−</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2029,7 +2029,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_add_button">
+              <object class="CtkButton" id="calc_add_button">
                 <property name="label">+</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2044,7 +2044,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_result_button">
+              <object class="CtkButton" id="calc_result_button">
                 <property name="label" translatable="yes" comments="Label on the solve button (clicking this solves the displayed calculation)">=</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2062,7 +2062,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_clear_button">
+              <object class="CtkButton" id="calc_clear_button">
                 <property name="label" translatable="yes">Clear</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2080,7 +2080,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_1_button">
+              <object class="CtkButton" id="calc_1_button">
                 <property name="label">1</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2095,7 +2095,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_2_button">
+              <object class="CtkButton" id="calc_2_button">
                 <property name="label">2</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2110,7 +2110,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_3_button">
+              <object class="CtkButton" id="calc_3_button">
                 <property name="label">3</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2125,7 +2125,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_5_button">
+              <object class="CtkButton" id="calc_5_button">
                 <property name="label">5</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2140,7 +2140,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_6_button">
+              <object class="CtkButton" id="calc_6_button">
                 <property name="label">6</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2155,7 +2155,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_7_button">
+              <object class="CtkButton" id="calc_7_button">
                 <property name="label">7</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2170,7 +2170,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_9_button">
+              <object class="CtkButton" id="calc_9_button">
                 <property name="label">9</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2185,7 +2185,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_10_button">
+              <object class="CtkButton" id="calc_10_button">
                 <property name="label">A</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2200,7 +2200,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_11_button">
+              <object class="CtkButton" id="calc_11_button">
                 <property name="label">B</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2215,7 +2215,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_13_button">
+              <object class="CtkButton" id="calc_13_button">
                 <property name="label">D</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2230,7 +2230,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_14_button">
+              <object class="CtkButton" id="calc_14_button">
                 <property name="label">E</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2245,7 +2245,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_15_button">
+              <object class="CtkButton" id="calc_15_button">
                 <property name="label">F</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2260,14 +2260,14 @@
               </packing>
             </child>
             <child>
-              <object class="GtkToggleButton" id="calc_superscript_button">
+              <object class="CtkToggleButton" id="calc_superscript_button">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="focus_on_click">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="set_superscript_cb" swapped="no"/>
                 <child>
-                  <object class="GtkLabel" id="label3">
+                  <object class="CtkLabel" id="label3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">↑n</property>
@@ -2286,7 +2286,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_numeric_point_button">
+              <object class="CtkButton" id="calc_numeric_point_button">
                 <property name="label" comments="Label is set in ctk.c to comply with LC flags">.</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2301,19 +2301,19 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_memory_button">
+              <object class="CtkButton" id="calc_memory_button">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="focus_on_click">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="memory_cb" swapped="no"/>
                 <child>
-                  <object class="GtkBox" id="hbox20">
+                  <object class="CtkBox" id="hbox20">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="spacing">3</property>
                     <child>
-                      <object class="GtkLabel" id="label23">
+                      <object class="CtkLabel" id="label23">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label" translatable="yes" comments="The label on the memory button">x</property>
@@ -2325,7 +2325,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkArrow" id="arrow14">
+                      <object class="CtkArrow" id="arrow14">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="arrow_type">down</property>
@@ -2350,7 +2350,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_xor_button">
+              <object class="CtkButton" id="calc_xor_button">
                 <property name="label">XOR</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2365,7 +2365,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_or_button">
+              <object class="CtkButton" id="calc_or_button">
                 <property name="label">OR</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2380,7 +2380,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_and_button">
+              <object class="CtkButton" id="calc_and_button">
                 <property name="label">AND</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2395,7 +2395,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_modulus_divide_button">
+              <object class="CtkButton" id="calc_modulus_divide_button">
                 <property name="label">mod</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2410,7 +2410,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_start_group_button">
+              <object class="CtkButton" id="calc_start_group_button">
                 <property name="label">(</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2425,7 +2425,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_end_group_button">
+              <object class="CtkButton" id="calc_end_group_button">
                 <property name="label">)</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2440,19 +2440,19 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_shift_left_button">
+              <object class="CtkButton" id="calc_shift_left_button">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="focus_on_click">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="shift_left_cb" swapped="no"/>
                 <child>
-                  <object class="GtkBox" id="hbox11">
+                  <object class="CtkBox" id="hbox11">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="spacing">3</property>
                     <child>
-                      <object class="GtkLabel" id="label7">
+                      <object class="CtkLabel" id="label7">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="label">&lt;</property>
@@ -2464,7 +2464,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkArrow" id="arrow5">
+                      <object class="CtkArrow" id="arrow5">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="arrow_type">down</property>
@@ -2489,19 +2489,19 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_shift_right_button">
+              <object class="CtkButton" id="calc_shift_right_button">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="focus_on_click">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="shift_right_cb" swapped="no"/>
                 <child>
-                  <object class="GtkBox" id="hbox10">
+                  <object class="CtkBox" id="hbox10">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="spacing">3</property>
                     <child>
-                      <object class="GtkLabel" id="label6">
+                      <object class="CtkLabel" id="label6">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="label">&gt;</property>
@@ -2513,7 +2513,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkArrow" id="arrow4">
+                      <object class="CtkArrow" id="arrow4">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="arrow_type">down</property>
@@ -2538,7 +2538,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_character_button">
+              <object class="CtkButton" id="calc_character_button">
                 <property name="label">á</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2557,7 +2557,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_not_button">
+              <object class="CtkButton" id="calc_not_button">
                 <property name="label">NOT</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2572,14 +2572,14 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_factorial_button">
+              <object class="CtkButton" id="calc_factorial_button">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="focus_on_click">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="button_cb" swapped="no"/>
                 <child>
-                  <object class="GtkLabel" id="label14">
+                  <object class="CtkLabel" id="label14">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">&lt;i&gt;x&lt;/i&gt;!</property>
@@ -2598,14 +2598,14 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_inverse_button">
+              <object class="CtkButton" id="calc_inverse_button">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="focus_on_click">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="button_cb" swapped="no"/>
                 <child>
-                  <object class="GtkLabel" id="label20">
+                  <object class="CtkLabel" id="label20">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">&lt;i&gt;x&lt;/i&gt;&lt;sup&gt;−1&lt;/sup&gt;</property>
@@ -2625,14 +2625,14 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_x_pow_y_button">
+              <object class="CtkButton" id="calc_x_pow_y_button">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="focus_on_click">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="button_cb" swapped="no"/>
                 <child>
-                  <object class="GtkLabel" id="x_pow_y_label">
+                  <object class="CtkLabel" id="x_pow_y_label">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">&lt;i&gt;x&lt;/i&gt;&lt;sup&gt;&lt;i&gt;y&lt;/i&gt;&lt;/sup&gt;</property>
@@ -2651,7 +2651,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_ones_complement_button">
+              <object class="CtkButton" id="calc_ones_complement_button">
                 <property name="label">ones</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2666,7 +2666,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_twos_complement_button">
+              <object class="CtkButton" id="calc_twos_complement_button">
                 <property name="label">twos</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2681,7 +2681,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_trunc_button">
+              <object class="CtkButton" id="calc_trunc_button">
                 <property name="label">trunc</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2696,14 +2696,14 @@
               </packing>
             </child>
             <child>
-              <object class="GtkToggleButton" id="calc_subscript_button">
+              <object class="CtkToggleButton" id="calc_subscript_button">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="focus_on_click">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="set_subscript_cb" swapped="no"/>
                 <child>
-                  <object class="GtkLabel" id="label4">
+                  <object class="CtkLabel" id="label4">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">↓n</property>
@@ -2722,7 +2722,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_12_button">
+              <object class="CtkButton" id="calc_12_button">
                 <property name="label">C</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2737,7 +2737,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_8_button">
+              <object class="CtkButton" id="calc_8_button">
                 <property name="label">8</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2752,7 +2752,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_4_button">
+              <object class="CtkButton" id="calc_4_button">
                 <property name="label">4</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2767,7 +2767,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_0_button">
+              <object class="CtkButton" id="calc_0_button">
                 <property name="label">0</property>
                 <property name="width_request">50</property>
                 <property name="visible">True</property>

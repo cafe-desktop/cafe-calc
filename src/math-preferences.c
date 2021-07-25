@@ -23,7 +23,7 @@ enum {
 struct MathPreferencesDialogPrivate
 {
     MathEquation *equation;
-    GtkBuilder *ui;
+    CtkBuilder *ui;
 };
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathPreferencesDialog, math_preferences, GTK_TYPE_DIALOG);
@@ -41,28 +41,28 @@ math_preferences_dialog_new(MathEquation *equation)
 
 
 static void
-preferences_response_cb(GtkWidget *widget, gint id)
+preferences_response_cb(CtkWidget *widget, gint id)
 {
     ctk_widget_hide(widget);
 }
 
 
 static gboolean
-preferences_dialog_delete_cb(GtkWidget *widget, GdkEvent *event)
+preferences_dialog_delete_cb(CtkWidget *widget, GdkEvent *event)
 {
     preferences_response_cb(widget, 0);
     return TRUE;
 }
 
 
-void number_format_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog);
+void number_format_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
 void
-number_format_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
+number_format_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog)
 {
     MpDisplayFormat value;
-    GtkTreeModel *model;
-    GtkTreeIter iter;
+    CtkTreeModel *model;
+    CtkTreeIter iter;
 
     model = ctk_combo_box_get_model(GTK_COMBO_BOX(combo));
     ctk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
@@ -71,14 +71,14 @@ number_format_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialo
 }
 
 
-void angle_unit_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog);
+void angle_unit_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
 void
-angle_unit_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
+angle_unit_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog)
 {
     MPAngleUnit value;
-    GtkTreeModel *model;
-    GtkTreeIter iter;
+    CtkTreeModel *model;
+    CtkTreeIter iter;
 
     model = ctk_combo_box_get_model(GTK_COMBO_BOX(combo));
     ctk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
@@ -87,14 +87,14 @@ angle_unit_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
 }
 
 
-void word_size_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog);
+void word_size_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
 void
-word_size_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
+word_size_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog)
 {
     gint value;
-    GtkTreeModel *model;
-    GtkTreeIter iter;
+    CtkTreeModel *model;
+    CtkTreeIter iter;
 
     model = ctk_combo_box_get_model(GTK_COMBO_BOX(combo));
     ctk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
@@ -103,10 +103,10 @@ word_size_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
 }
 
 
-void decimal_places_spin_change_value_cb(GtkWidget *spin, MathPreferencesDialog *dialog);
+void decimal_places_spin_change_value_cb(CtkWidget *spin, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
 void
-decimal_places_spin_change_value_cb(GtkWidget *spin, MathPreferencesDialog *dialog)
+decimal_places_spin_change_value_cb(CtkWidget *spin, MathPreferencesDialog *dialog)
 {
     gint value = 0;
 
@@ -115,10 +115,10 @@ decimal_places_spin_change_value_cb(GtkWidget *spin, MathPreferencesDialog *dial
 }
 
 
-void thousands_separator_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *dialog);
+void thousands_separator_check_toggled_cb(CtkWidget *check, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
 void
-thousands_separator_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *dialog)
+thousands_separator_check_toggled_cb(CtkWidget *check, MathPreferencesDialog *dialog)
 {
     gboolean value;
 
@@ -127,10 +127,10 @@ thousands_separator_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *di
 }
 
 
-void trailing_zeroes_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *dialog);
+void trailing_zeroes_check_toggled_cb(CtkWidget *check, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
 void
-trailing_zeroes_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *dialog)
+trailing_zeroes_check_toggled_cb(CtkWidget *check, MathPreferencesDialog *dialog)
 {
     gboolean value;
 
@@ -140,10 +140,10 @@ trailing_zeroes_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *dialog
 
 
 static void
-set_combo_box_from_int(GtkWidget *combo, int value)
+set_combo_box_from_int(CtkWidget *combo, int value)
 {
-    GtkTreeModel *model;
-    GtkTreeIter iter;
+    CtkTreeModel *model;
+    CtkTreeIter iter;
     gboolean valid;
 
     model = ctk_combo_box_get_model(GTK_COMBO_BOX(combo));
@@ -218,10 +218,10 @@ angle_unit_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *d
 static void
 create_gui(MathPreferencesDialog *dialog)
 {
-    GtkWidget *widget;
-    GtkTreeModel *model;
-    GtkTreeIter iter;
-    GtkCellRenderer *renderer;
+    CtkWidget *widget;
+    CtkTreeModel *model;
+    CtkTreeIter iter;
+    CtkCellRenderer *renderer;
     gchar *string, **tokens;
     GError *error = NULL;
     static gchar *objects[] = { "preferences_table", "angle_unit_model", "number_format_model",

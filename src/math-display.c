@@ -25,13 +25,13 @@ struct MathDisplayPrivate
     MathEquation *equation;
 
     /* Display widget */
-    GtkWidget *text_view;
+    CtkWidget *text_view;
 
     /* Buffer that shows errors etc */
-    GtkTextBuffer *info_buffer;
+    CtkTextBuffer *info_buffer;
 
     /* Spinner widget that shows if we're calculating a response */
-    GtkWidget *spinner;
+    CtkWidget *spinner;
 };
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathDisplay, math_display, GTK_TYPE_VIEWPORT);
@@ -60,7 +60,7 @@ math_display_get_equation(MathDisplay *display)
 
 
 static gboolean
-display_key_press_cb(GtkWidget *widget, GdkEventKey *event, MathDisplay *display)
+display_key_press_cb(CtkWidget *widget, GdkEventKey *event, MathDisplay *display)
 {
     int state;
     guint32 c;
@@ -320,9 +320,9 @@ status_changed_cb(MathEquation *equation, GParamSpec *spec, MathDisplay *display
     }
 }
 
-static void _text_view_override_font (GtkWidget *widget, PangoFontDescription *font)
+static void _text_view_override_font (CtkWidget *widget, PangoFontDescription *font)
 {
-    GtkCssProvider *provider;
+    CtkCssProvider *provider;
     gchar          *css;
     gchar          *family;
     gchar          *weight;
@@ -359,10 +359,10 @@ static void _text_view_override_font (GtkWidget *widget, PangoFontDescription *f
 static void
 create_gui(MathDisplay *display)
 {
-    GtkWidget *info_view, *info_box, *main_box;
+    CtkWidget *info_view, *info_box, *main_box;
     PangoFontDescription *font_desc;
-    GtkStyleContext *context;
-    GtkStateFlags state;
+    CtkStyleContext *context;
+    CtkStateFlags state;
 
     main_box = ctk_box_new(GTK_ORIENTATION_VERTICAL, 0);
     ctk_container_add(GTK_CONTAINER(display), main_box);
