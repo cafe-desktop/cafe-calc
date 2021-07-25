@@ -985,33 +985,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Opsi Bantuan:\n"
 "  -v, --version                   Menampilkan rilis versi\n"
 "  -h, -?, --help                  Menampilkan opsi bantuan\n"
 "  --help-all                      Menampilkan semua opsi bantuan\n"
-"  --help-ctk                      Menampilkan opsi GTK+"
+"  --help-ctk                      Menampilkan opsi CTK+"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Opsi GTK+:\n"
+"Opsi CTK+:\n"
 "  --class=CLASS                   Kelas program yang dipakai oleh manajer jendela\n"
 "  --name=NAME                     Nama program yang dipakai oleh manajer jendela\n"
 "  --screen=SCREEN                 Layar X yang hendak dipakai\n"
 "  --sync                          Membuat panggilan X yang sinkronus\n"
-"  --ctk-module=MODULES            Memuat modul GTK+ tambahan\n"
+"  --ctk-module=MODULES            Memuat modul CTK+ tambahan\n"
 "  --g-fatal-warnings              Membuat semua peringatan menjadi fatal"
 
 #. Description on cafe-calc application options displayed on command-line

@@ -971,33 +971,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "ជម្រើស​ជំនួយ ៖\n"
 "  -v, --កំណែ​ បង្ហាញ​កំណែ​ចេញ​ផ្សាយ\n"
 "  -h, -?, --ជំនួយ                  បង្ហាញ​ជម្រើស​ជំនួយ\n"
 "  --ជំនួយ-​ទាំងអស់ បង្ហាញ​ជម្រើស​ជំនួយ​ទាំងអស់\n"
-"  --ជំនួយ-ctk                      បង្ហាញ GTK+ ជម្រើស"
+"  --ជំនួយ-ctk                      បង្ហាញ CTK+ ជម្រើស"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ ជម្រើស ៖\n"
+"CTK+ ជម្រើស ៖\n"
 "  --class=CLASS ថ្នាក់​កម្មវិធី​​បាន​ប្រើ​ដោយ​កម្មវិធី​គ្រប់គ្រង​បង្អួច\n"
 "  --name=NAME   ឈ្មោះ​កម្មវិធី​បាន​ប្រើ​ដោយ​កម្មវិធី​គ្រប់គ្រង​បង្អួច\n"
 "  --screen=SCREEN                អេក្រង់ X ត្រូវ​ប្រើ\n"
 "  --ធ្វើ​សមកាលកម្ម    Make X calls អសមកាល\n"
-"  --ctk-module=MODULES  ផ្ទុក​បន្ថែម GTK+ ម៉ូឌុល\n"
+"  --ctk-module=MODULES  ផ្ទុក​បន្ថែម CTK+ ម៉ូឌុល\n"
 "  --g-fatal-warnings ធ្វើ​ការ​ព្រមាន​ធ្ងន់ធ្ងរ​ទាំងអស់"
 
 #. Description on cafe-calc application options displayed on command-line

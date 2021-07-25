@@ -963,33 +963,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Help Options:\n"
 "  -v, --version                   উণ্মোচন সংস্কৰণ দেখুৱাওক\n"
 "  -h, -?, --help                  সহায় বিকল্পসমূহ দেখুৱাওক\n"
 "  --help-all                     সকলো সহায় বিকল্প দেখুৱাওক\n"
-"  --help-ctk                      GTK+ বিকল্পসমূহ দেখুৱাওক"
+"  --help-ctk                      CTK+ বিকল্পসমূহ দেখুৱাওক"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   উইন্ডো দ্বাৰা ব্যৱহাৰ কৰা প্ৰগ্ৰাম শ্ৰেণীmanager\n"
 "  --name=NAME                     উইন্ডো দ্বাৰা ব্যৱহাৰ কৰা প্ৰগ্ৰাম নামmanager\n"
 "  --screen=SCREEN                 ব্যৱহাৰ কৰিবলে X পৰ্দা\n"
 "  --sync                          X কলসমূহ সংমিহলি কৰক\n"
-"  --ctk-module=MODULES            অতিৰিক্ত GTK+ মডিউলসমূহ ল'ড কৰক\n"
+"  --ctk-module=MODULES            অতিৰিক্ত CTK+ মডিউলসমূহ ল'ড কৰক\n"
 "  --g-fatal-warnings              সকলো সতৰ্কবাৰ্তা মাৰাত্মক দেখুৱাওক"
 
 #. Description on cafe-calc application options displayed on command-line

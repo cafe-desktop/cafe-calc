@@ -965,33 +965,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "મદદ વિકલ્પો:\n"
 "  -v, --version                   પ્રકાશ આવૃત્તિ બતાવો\n"
 "  -h, -?, --help                  મદદ વિકલ્પો બતાવો\n"
 "  --help-all                      બધા મદદ વિકલ્પો બતાવો\n"
-"  --help-ctk                      GTK+ વિકલ્પો બતાવો"
+"  --help-ctk                      CTK+ વિકલ્પો બતાવો"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   વિન્ડો વ્યવસ્થાપક દ્દારા વાપરેલ તરીકે પ્રક્રિયા ક્લાસ\n"
 "  --name=NAME                     વિન્ડો વ્યવસ્થાપક દ્દારા વાપરેલ તરીકે પ્રક્રિયા નામ\n"
 "  --screen=SCREEN                 વાપરવા માટે X સ્ક્રીન\n"
 "  --sync                          X કોલો સુમેળ બનાવો\n"
-"  --ctk-module=MODULES            વધારાનાં GTK+ મોડ્યુલોને લોડ કરો\n"
+"  --ctk-module=MODULES            વધારાનાં CTK+ મોડ્યુલોને લોડ કરો\n"
 "  --g-fatal-warnings              બધી ચેતવણીઓ ફેટલ બનાવો"
 
 #. Description on cafe-calc application options displayed on command-line

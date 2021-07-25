@@ -982,33 +982,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Опции помощи:\n"
 "  -v, --version                   Показать версию выпуска\n"
 "  -h, -?, --help                  Показать опции помощи\n"
 "  --help-all                      Показать все опции помощи\n"
-"  --help-ctk                      Показать опции GTK+"
+"  --help-ctk                      Показать опции CTK+"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Опции GTK+:\n"
+"Опции CTK+:\n"
 "  --class=CLASS                   Класс программы, который используется менеджером окон\n"
 "  --name=NAME                     Имя программы, которое используется менеджером окон\n"
 "  --screen=SCREEN                 Экран, используемый графической средой X\n"
 "  --sync                          Сделать вызовы от X синхронными\n"
-"  --ctk-module=MODULES            Загрузить дополнительные GTK+ модули\n"
+"  --ctk-module=MODULES            Загрузить дополнительные CTK+ модули\n"
 "  --g-fatal-warnings              Сделать все предупреждения фатальными"
 
 #. Description on cafe-calc application options displayed on command-line

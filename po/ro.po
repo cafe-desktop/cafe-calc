@@ -974,33 +974,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Opțiuni de ajutor\n"
 "  -v, --version                   Arată versiunea ediției\n"
 "  -h, -?, --help                  Arată opțiuni de ajutor\n"
 "  --help-all                      Arată toate opțiunile de ajutor\n"
-"  --help-ctk                      Arată opțiunile de ajutor GTK+"
+"  --help-ctk                      Arată opțiunile de ajutor CTK+"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Opțiuni GTK+:\n"
+"Opțiuni CTK+:\n"
 "  --class=CLASS                   Clasa de program folosită de administratorul de ferestre\n"
 "  --name=NAME                     Nume program folosit de administratorul de ferestre\n"
 "  --screen=SCREEN                 Ecranul X folosit\n"
 "  --sync                          Efectuează apeluri X sincrone\n"
-"  --ctk-module=MODULES            Încarcă module GTK+ adiționale\n"
+"  --ctk-module=MODULES            Încarcă module CTK+ adiționale\n"
 "  --g-fatal-warnings              Consideră toate avertismentele fatale"
 
 #. Description on cafe-calc application options displayed on command-line

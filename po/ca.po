@@ -980,33 +980,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Opcions d'ajuda:\n"
 "  -v, --version                   Mostra la versió del llançament\n"
 "  -h, -?, --help                  Mostra les opcions d'ajuda\n"
 "  --help-all                      Mostra totes les opcions d'ajuda\n"
-"  --help-ctk                      Mostra les opcions de GTK+"
+"  --help-ctk                      Mostra les opcions de CTK+"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Opcions de la GTK+:\n"
+"Opcions de la CTK+:\n"
 "  --class=CLASSE                  Classe del programa tal com l'utilitza el gestor de finestres\n"
 "  --name=NOM                      Nom del programa tal com l'utilitza el gestor de finestres\n"
 "  --screen=PANTALLA               Pantalla X a utilitzar\n"
 "  --sync                          Fa que les crides X siguin síncrones\n"
-"  --ctk-module=MÒDULS             Carrega mòduls de GTK+ addicionals\n"
+"  --ctk-module=MÒDULS             Carrega mòduls de CTK+ addicionals\n"
 "  --g-fatal-warnings              Fa que tots els avisos siguin fatals"
 
 #. Description on cafe-calc application options displayed on command-line

@@ -948,33 +948,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "도움말 옵션:\n"
 "  -v, --version                   릴리스 버전을 표시합니다\n"
 "  -h, -?, --help                  도움말 옵션을 표시합니다\n"
 "  --help-all                      모든 도움말 옵션을 표시합니다\n"
-"  --help-ctk                      GTK+ 옵션을 표시합니다"
+"  --help-ctk                      CTK+ 옵션을 표시합니다"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ 옵션:\n"
+"CTK+ 옵션:\n"
 "  --class=CLASS                   창 관리자가 사용하는 프로그램 클래스\n"
 "  --name=NAME                     창 관리자가 사용하는 프로그램 이름\n"
 "  --screen=SCREEN                 사용할 X 스크린\n"
 "  --sync                          동기식 X 호출 사용\n"
-"  --ctk-module=MODULES            추가 GTK+ 모듈 읽어들이기\n"
+"  --ctk-module=MODULES            추가 CTK+ 모듈 읽어들이기\n"
 "  --g-fatal-warnings              모든 경고를 치명적으로 취급"
 
 #. Description on cafe-calc application options displayed on command-line

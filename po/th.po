@@ -966,33 +966,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "ตัวเลือก:\n"
 "  -v, --version                   แสดงเลขรุ่น\n"
 "  -h, -?, --help                  แสดงคำอธิบายตัวเลือกต่างๆ\n"
 "  --help-all                      แสดงคำอธิบายของตัวเลือกทั้งหมด\n"
-"  --help-ctk                      แสดงตัวเลือก GTK+"
+"  --help-ctk                      แสดงตัวเลือก CTK+"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"ตัวเลือก GTK+:\n"
+"ตัวเลือก CTK+:\n"
 "  --class=CLASS                   คลาสของโปรแกรมตามที่ใช้โดยโปรแกรมจัดการหน้าต่าง\n"
 "  --name=NAME                     ชื่อของโปรแกรมตามที่ใช้โดยโปรแกรมจัดการหน้าต่าง\n"
 "  --screen=SCREEN                 สกรีน X ที่จะใช้\n"
 "  --sync                          ทำให้การเรียก X เป็นแบบหยุดคอย (synchronous)\n"
-"  --ctk-module=MODULES            โหลดมอดูล GTK+ เพิ่มเติม\n"
+"  --ctk-module=MODULES            โหลดมอดูล CTK+ เพิ่มเติม\n"
 "  --g-fatal-warnings              ถือว่าคำเตือนต่างๆ ที่เกิดขึ้นเป็นความผิดพลาดร้ายแรง"
 
 #. Description on cafe-calc application options displayed on command-line

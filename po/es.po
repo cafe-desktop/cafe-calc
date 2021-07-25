@@ -985,33 +985,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Opciones de ayuda:\n"
 "  -v, --version                   Mostrar la versión de publicación\n"
 "  -h, -?, --help                  Mostrar las opciones de ayuda\n"
 "  -help-all                       Mostrar todas las opciones de ayuda\n"
-"  -help-ctk                       Mostrar las opciones de GTK"
+"  -help-ctk                       Mostrar las opciones de CTK"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Opciones de GTK:\n"
+"Opciones de CTK:\n"
 "  --class=CLASE                   Clase de programa como se usa por el gestor de ventanas\n"
 "  --name=NOMBRE                   Nombre del programa como se usa por el gestor de ventanas\n"
 "  --screen=PANTALLA               Pantalla X que usar\n"
 "  --sync                          Hacer que las llamadas las X sean síncronas\n"
-"  --ctk-module=MÓDULOS            Cargar módulos de GTK adicionales\n"
+"  --ctk-module=MÓDULOS            Cargar módulos de CTK adicionales\n"
 "  --g-fatal-warnings              Hacer que todos los avisos sean fatales"
 
 #. Description on cafe-calc application options displayed on command-line

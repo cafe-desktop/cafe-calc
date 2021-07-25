@@ -971,33 +971,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "ನೆರವಿನ ಆಯ್ಕೆಗಳು:\n"
 "  -v, --version                   ಬಿಡುಗಡೆಯ ಆವೃತ್ತಿಯನ್ನು ತೋರಿಸು\n"
 "  -h, -?, --help                  ನೆರವಿನ ಆಯ್ಕೆಗಳನ್ನು ತೋರಿಸು\n"
 "  --help-all                      ಎಲ್ಲಾ ನೆರವಿನ ಆಯ್ಕೆಗಳನ್ನು ತೋರಿಸು\n"
-"  --help-ctk                      GTK+ ಆಯ್ಕೆಗಳನ್ನು ತೋರಿಸು"
+"  --help-ctk                      CTK+ ಆಯ್ಕೆಗಳನ್ನು ತೋರಿಸು"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ ಆಯ್ಕೆಗಳು:\n"
+"CTK+ ಆಯ್ಕೆಗಳು:\n"
 "  --class=CLASS                   ವಿಂಡೊ ಮ್ಯಾನೇಜರಿನಿಂದ ಬಳಸಲಾದ ಪ್ರೊಗ್ರಾಮ್ ವರ್ಗ\n"
 "  --name=NAME                     ವಿಂಡೊ ಮ್ಯಾನೇಜರಿನಿಂದ ಬಳಸಲಾದ ಪ್ರೊಗ್ರಾಮ್ ಹೆಸರು\n"
 "  --screen=SCREEN                 ಬಳಸಬೇಕಿರುವ X ತೆರೆ\n"
 "  --sync                          X ಕರೆಗಳನ್ನು ಹೊಂದಿಕೊಳ್ಳುವಂತೆ ಮಾಡುತ್ತದೆ\n"
-"  --ctk-module=MODULES            ಹೆಚ್ಚುವರಿ GTK+ ಘಟಕಗಳನ್ನು ಲೋಡ್ ಮಾಡುತ್ತದೆ\n"
+"  --ctk-module=MODULES            ಹೆಚ್ಚುವರಿ CTK+ ಘಟಕಗಳನ್ನು ಲೋಡ್ ಮಾಡುತ್ತದೆ\n"
 "  --g-fatal-warnings              ಎಲ್ಲಾ ಎಚ್ಚರಿಕೆಗಳನ್ನು ಮಾರಕವಾಗಿಸುತ್ತದೆ"
 
 #. Description on cafe-calc application options displayed on command-line

@@ -974,33 +974,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Laguntza-aukerak:\n"
 "  -v, --version                   Erakutsi argitaratze-bertsioa\n"
 "  -h, -?, --help                  Erakutsi laguntza-aukerak\n"
 "  --help-all                      Erakutsi laguntza-aukera guztiak\n"
-"  --help-ctk                      Erakutsi GTK+ aukerak"
+"  --help-ctk                      Erakutsi CTK+ aukerak"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ aukerak:\n"
+"CTK+ aukerak:\n"
 "  --class=CLASS                   Programa-klaseak, leiho-kudeatzaileak erabiltzen duen bezala\n"
 "  --name=NAME                     Programa-izena, leiho-kudeatzaileak erabiltzen duen bezala\n"
 "  --screen=SCREEN                 Erabiliko den X pantaila\n"
 "  --sync                          Egin X deiak sinkroniko\n"
-"  --ctk-module=MODULES            Kargatu GTK+ moduluak\n"
+"  --ctk-module=MODULES            Kargatu CTK+ moduluak\n"
 "  --g-fatal-warnings              Egin abisu guztiak ezinbesteko"
 
 #. Description on cafe-calc application options displayed on command-line

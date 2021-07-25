@@ -941,25 +941,25 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "ياردەم تاللانمىلىرى:\n"
 "  -v, --version                   نەشر ئۇچۇرىنى كۆرسىتىدۇ\n"
 "  -h, -?, --help                  تاللانما ئۇچۇرىنى كۆرسىتىدۇ\n"
 "  --help-all                      بارلىق ياردەم ئۇچۇرلىرىنى كۆرسىتىدۇ\n"
-"  --help-ctk                      GTK+ تاللانمىلىرىنى كۆرسىتىدۇ"
+"  --help-ctk                      CTK+ تاللانمىلىرىنى كۆرسىتىدۇ"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
 "GTk+ تاللانمىلىرى:\n"
@@ -967,7 +967,7 @@ msgstr ""
 "--name=كۆزنەك باشقۇرغۇچى ئىشلىتىدىغان نام\n"
 "--screen= ئىشلىتىلىدىغان X ئېكرانى\n"
 "--sync X- ماس قەدەملەشتۈرۈشنى قوزغىتىشنى ئىجرا قىلىش\n"
-"--ctk-module باشقا بىر GTK+ Module نى قوزغىتىش\n"
+"--ctk-module باشقا بىر CTK+ Module نى قوزغىتىش\n"
 "--g-fatal-warnigs ھەممە ئاگاھلاندۇرۇشلار خەتەرگە ئايلىنىدۇ"
 
 #. Description on cafe-calc application options displayed on command-line

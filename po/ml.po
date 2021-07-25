@@ -972,33 +972,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "സഹായ ഉപാധികള്‍:\n"
 "  -v, --version                   പ്രദര്‍ശന പതിപ്പു് കാണിക്കുക\n"
 "  -h, -?, --help                  സഹായ ഉപാധികള്‍ കാണിക്കുക\n"
 "  --help-all                      എല്ലാ സഹായ ഉപാധികളും കാണിക്കുക\n"
-"  --help-ctk                      GTK+ ഉപാധികള്‍ കാണിക്കുക"
+"  --help-ctk                      CTK+ ഉപാധികള്‍ കാണിക്കുക"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ ഉപാധികള്‍:\n"
+"CTK+ ഉപാധികള്‍:\n"
 "  --class=CLASS                   വിന്‍ഡോ മാനേജര്‍ ഉപയോഗിക്കുന്ന പ്രോഗ്രാം ക്ലാസ്സ്manager\n"
 "  --name=NAME                     വിന്‍ഡോ മാനേജര്‍ ഉപയോഗിക്കുന്ന പ്രോഗ്രാമിന്റെ പേരു്\n"
 "  --screen=SCREEN                 ഉപയോഗിക്കുവാനുള്ള X സ്ക്രീന്‍\n"
 "  --sync                          X കോളുകള്‍ സിന്‍ക്രൊണസ് ആക്കുക\n"
-"  --ctk-module=MODULES            കൂടുതല്‍ GTK+ ഘടകങ്ങള്‍ ലഭ്യമാക്കുക\n"
+"  --ctk-module=MODULES            കൂടുതല്‍ CTK+ ഘടകങ്ങള്‍ ലഭ്യമാക്കുക\n"
 "  --g-fatal-warnings              എല്ലാ മുന്നറിയിപ്പുകളും പ്രാധാന്യമാക്കുക"
 
 #. Description on cafe-calc application options displayed on command-line
