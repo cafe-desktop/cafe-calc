@@ -29,7 +29,7 @@
   * Migrate from intltools into gettext
   * mp-serializer: fix scientific presentation of complex numbers
   * [ci] Add cppcheck html report
-  * Avoid deprecated 'gtk_widget_get_style' and 'gtk_widget_modify_font'
+  * Avoid deprecated 'ctk_widget_get_style' and 'ctk_widget_modify_font'
   * Fix FSF address
   * test-mp-equation: add tests for physical constants
   * mp-equation: update values from physical constants to match with tooltip values in math-buttons.c
@@ -56,7 +56,7 @@
   * Initialize Travis CI support
   * math-window: update copyright year to 2019
   * Increase accuracy range to 15
-  * math-display: avoid deprecated 'gtk_widget_modify_bg'
+  * math-display: avoid deprecated 'ctk_widget_modify_bg'
   * currency-manager: avoid deprecated 'g_type_class_add_private'
   * currency: avoid deprecated 'g_type_class_add_private'
   * math-equation: avoid deprecated 'g_type_class_add_private'
@@ -74,7 +74,7 @@
   * disable deprecation warnings for distcheck
   * math-display: avoid deprecated 'g_type_class_add_private'
   * math-window: Fix memory leak
-  * math-display.c: avoid deprecated 'gtk_widget_ensure_style' (#66)
+  * math-display.c: avoid deprecated 'ctk_widget_ensure_style' (#66)
   * data: update appdata directory
   * ui files: add missing icons in titles to dialogs
   * buttons-programming.ui: Fix buttons
@@ -90,24 +90,24 @@
   * Translations update
   * UI: avoid deprecated GtkButton:use-stock
   * UI: drop all deprecated elements
-  * replace deprecated gtk_menu_popup
+  * replace deprecated ctk_menu_popup
   * math-preferences: add window icon to Preferences dialog
-  * Init gtk before math_equation_new; fix #44
-  * avoid deprecated gtk_image_menu_item_new_from_stock
+  * Init ctk before math_equation_new; fix #44
+  * avoid deprecated ctk_image_menu_item_new_from_stock
 
 ### cafe-calc 1.20.0
 
   * Translations update
   * Add icon image on close button in preferences dialog
   * avoid deprecated GtkStock
-  * building: bump required glib and gtk+ versions
+  * building: bump required glib and ctk+ versions
   * add missing window icon to About dialog
   * update copyright year to 2018
 
 ### cafe-calc 1.19.0
 
   * Translations update
-  * math-window: don't use deprecated gtk_show_uri
+  * math-window: don't use deprecated ctk_show_uri
   * Restore Polish translation credits from GNOME
   * update copyright year to 2017
 
@@ -117,7 +117,7 @@
 
 ### cafe-calc 1.10.0
 
-  * build gtk3 only
+  * build ctk3 only
 
 ### cafe-calc 1.8.0
 

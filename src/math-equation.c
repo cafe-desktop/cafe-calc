@@ -130,10 +130,10 @@ get_ans_offsets(MathEquation *equation, gint *start, gint *end)
         return;
     }
 
-    gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_start);
-    *start = gtk_text_iter_get_offset(&iter);
-    gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_end);
-    *end = gtk_text_iter_get_offset(&iter);
+    ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_start);
+    *start = ctk_text_iter_get_offset(&iter);
+    ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_end);
+    *end = ctk_text_iter_get_offset(&iter);
 }
 
 
@@ -147,9 +147,9 @@ reformat_ans(MathEquation *equation)
     gchar *ans_text;
     GtkTextIter ans_start, ans_end;
 
-    gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &ans_start, equation->priv->ans_start);
-    gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &ans_end, equation->priv->ans_end);
-    orig_ans_text = gtk_text_buffer_get_text(GTK_TEXT_BUFFER(equation), &ans_start, &ans_end, FALSE);
+    ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &ans_start, equation->priv->ans_start);
+    ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &ans_end, equation->priv->ans_end);
+    orig_ans_text = ctk_text_buffer_get_text(GTK_TEXT_BUFFER(equation), &ans_start, &ans_end, FALSE);
     ans_text = mp_serializer_to_string(equation->priv->serializer, &equation->priv->state.ans);
     if (strcmp(orig_ans_text, ans_text) != 0) {
         gint start;
@@ -157,20 +157,20 @@ reformat_ans(MathEquation *equation)
         equation->priv->in_undo_operation = TRUE;
         equation->priv->in_reformat = TRUE;
 
-        start = gtk_text_iter_get_offset(&ans_start);
-        gtk_text_buffer_delete(GTK_TEXT_BUFFER(equation), &ans_start, &ans_end);
-        gtk_text_buffer_insert_with_tags(GTK_TEXT_BUFFER(equation), &ans_end, ans_text, -1, equation->priv->ans_tag, NULL);
+        start = ctk_text_iter_get_offset(&ans_start);
+        ctk_text_buffer_delete(GTK_TEXT_BUFFER(equation), &ans_start, &ans_end);
+        ctk_text_buffer_insert_with_tags(GTK_TEXT_BUFFER(equation), &ans_end, ans_text, -1, equation->priv->ans_tag, NULL);
 
         /* There seems to be a bug in the marks as they alternate being the correct and incorrect ways.  Reset them */
-        gtk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &ans_start, start);
-        gtk_text_buffer_move_mark(GTK_TEXT_BUFFER(equation), equation->priv->ans_start, &ans_start);
-        gtk_text_buffer_move_mark(GTK_TEXT_BUFFER(equation), equation->priv->ans_end, &ans_end);
+        ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &ans_start, start);
+        ctk_text_buffer_move_mark(GTK_TEXT_BUFFER(equation), equation->priv->ans_start, &ans_start);
+        ctk_text_buffer_move_mark(GTK_TEXT_BUFFER(equation), equation->priv->ans_end, &ans_end);
 
         equation->priv->in_reformat = FALSE;
         equation->priv->in_undo_operation = FALSE;
     }
-    gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &ans_start, equation->priv->ans_start);
-    gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &ans_end, equation->priv->ans_end);
+    ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &ans_start, equation->priv->ans_start);
+    ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &ans_end, equation->priv->ans_end);
     g_free(orig_ans_text);
     g_free(ans_text);
 }
@@ -245,10 +245,10 @@ reformat_separators(MathEquation *equation)
                 gchar buffer[7];
                 gint len;
 
-                gtk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &iter, offset);
+                ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &iter, offset);
                 len = g_unichar_to_utf8(mp_serializer_get_thousands_separator(equation->priv->serializer), buffer);
                 buffer[len] = '\0';
-                gtk_text_buffer_insert(GTK_TEXT_BUFFER(equation), &iter, buffer, -1);
+                ctk_text_buffer_insert(GTK_TEXT_BUFFER(equation), &iter, buffer, -1);
                 offset++;
                 last_is_tsep = TRUE;
             }
@@ -262,9 +262,9 @@ reformat_separators(MathEquation *equation)
             /* Didn't expect thousands separator - delete it */
             if (!expect_tsep && in_number) {
                 GtkTextIter start, end;
-                gtk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &start, offset);
-                gtk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &end, offset + 1);
-                gtk_text_buffer_delete(GTK_TEXT_BUFFER(equation), &start, &end);
+                ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &start, offset);
+                ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &end, offset + 1);
+                ctk_text_buffer_delete(GTK_TEXT_BUFFER(equation), &start, &end);
                 offset--;
             }
             else
@@ -304,10 +304,10 @@ get_current_state(MathEquation *equation)
     if (equation->priv->ans_start)
     {
         GtkTextIter iter;
-        gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_start);
-        ans_start = gtk_text_iter_get_offset(&iter);
-        gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_end);
-        ans_end = gtk_text_iter_get_offset(&iter);
+        ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_start);
+        ans_start = ctk_text_iter_get_offset(&iter);
+        ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_end);
+        ans_end = ctk_text_iter_get_offset(&iter);
     }
 
     mp_set_from_mp(&equation->priv->state.ans, &state->ans);
@@ -366,13 +366,13 @@ clear_ans(MathEquation *equation, gboolean remove_tag)
     if (remove_tag) {
         GtkTextIter start, end;
 
-        gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &start, equation->priv->ans_start);
-        gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &end, equation->priv->ans_end);
-        gtk_text_buffer_remove_tag(GTK_TEXT_BUFFER(equation), equation->priv->ans_tag, &start, &end);
+        ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &start, equation->priv->ans_start);
+        ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &end, equation->priv->ans_end);
+        ctk_text_buffer_remove_tag(GTK_TEXT_BUFFER(equation), equation->priv->ans_tag, &start, &end);
     }
 
-    gtk_text_buffer_delete_mark(GTK_TEXT_BUFFER(equation), equation->priv->ans_start);
-    gtk_text_buffer_delete_mark(GTK_TEXT_BUFFER(equation), equation->priv->ans_end);
+    ctk_text_buffer_delete_mark(GTK_TEXT_BUFFER(equation), equation->priv->ans_start);
+    ctk_text_buffer_delete_mark(GTK_TEXT_BUFFER(equation), equation->priv->ans_end);
     equation->priv->ans_start = NULL;
     equation->priv->ans_end = NULL;
 }
@@ -388,18 +388,18 @@ apply_state(MathEquation *equation, MathEquationState *state)
 
     mp_set_from_mp(&state->ans, &equation->priv->state.ans);
 
-    gtk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), state->expression, -1);
-    gtk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &cursor, state->cursor);
-    gtk_text_buffer_place_cursor(GTK_TEXT_BUFFER(equation), &cursor);
+    ctk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), state->expression, -1);
+    ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &cursor, state->cursor);
+    ctk_text_buffer_place_cursor(GTK_TEXT_BUFFER(equation), &cursor);
     clear_ans(equation, FALSE);
     if (state->ans_start >= 0) {
         GtkTextIter start, end;
 
-        gtk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &start, state->ans_start);
-        equation->priv->ans_start = gtk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &start, FALSE);
-        gtk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &end, state->ans_end);
-        equation->priv->ans_end = gtk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &end, TRUE);
-        gtk_text_buffer_apply_tag(GTK_TEXT_BUFFER(equation), equation->priv->ans_tag, &start, &end);
+        ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &start, state->ans_start);
+        equation->priv->ans_start = ctk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &start, FALSE);
+        ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &end, state->ans_end);
+        equation->priv->ans_end = ctk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &end, TRUE);
+        ctk_text_buffer_apply_tag(GTK_TEXT_BUFFER(equation), equation->priv->ans_tag, &start, &end);
     }
 
     math_equation_set_number_mode(equation, state->number_mode);
@@ -419,11 +419,11 @@ math_equation_copy(MathEquation *equation)
 
     g_return_if_fail(equation != NULL);
 
-    if (!gtk_text_buffer_get_selection_bounds(GTK_TEXT_BUFFER(equation), &start, &end))
-        gtk_text_buffer_get_bounds(GTK_TEXT_BUFFER(equation), &start, &end);
+    if (!ctk_text_buffer_get_selection_bounds(GTK_TEXT_BUFFER(equation), &start, &end))
+        ctk_text_buffer_get_bounds(GTK_TEXT_BUFFER(equation), &start, &end);
 
-    text = gtk_text_buffer_get_text(GTK_TEXT_BUFFER(equation), &start, &end, FALSE);
-    gtk_clipboard_set_text(gtk_clipboard_get(GDK_NONE), g_str_to_ascii (text, "C"), -1);
+    text = ctk_text_buffer_get_text(GTK_TEXT_BUFFER(equation), &start, &end, FALSE);
+    ctk_clipboard_set_text(ctk_clipboard_get(GDK_NONE), g_str_to_ascii (text, "C"), -1);
     g_free(text);
 }
 
@@ -441,7 +441,7 @@ void
 math_equation_paste(MathEquation *equation)
 {
     g_return_if_fail(equation != NULL);
-    gtk_clipboard_request_text(gtk_clipboard_get(GDK_NONE), on_paste, equation);
+    ctk_clipboard_request_text(ctk_clipboard_get(GDK_NONE), on_paste, equation);
 }
 
 
@@ -781,7 +781,7 @@ gboolean
 math_equation_is_empty(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, FALSE);
-    return gtk_text_buffer_get_char_count(GTK_TEXT_BUFFER(equation)) == 0;
+    return ctk_text_buffer_get_char_count(GTK_TEXT_BUFFER(equation)) == 0;
 }
 
 
@@ -808,8 +808,8 @@ math_equation_get_display(MathEquation *equation)
 
     g_return_val_if_fail(equation != NULL, NULL);
 
-    gtk_text_buffer_get_bounds(GTK_TEXT_BUFFER(equation), &start, &end);
-    return gtk_text_buffer_get_text(GTK_TEXT_BUFFER(equation), &start, &end, FALSE);
+    ctk_text_buffer_get_bounds(GTK_TEXT_BUFFER(equation), &start, &end);
+    return ctk_text_buffer_get_text(GTK_TEXT_BUFFER(equation), &start, &end, FALSE);
 }
 
 
@@ -965,7 +965,7 @@ math_equation_set(MathEquation *equation, const gchar *text)
 {
     g_return_if_fail(equation != NULL);
     g_return_if_fail(text != NULL);
-    gtk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), text, -1);
+    ctk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), text, -1);
     clear_ans(equation, FALSE);
 }
 
@@ -981,15 +981,15 @@ math_equation_set_number(MathEquation *equation, const MPNumber *x)
 
     /* Show the number in the user chosen format */
     text = mp_serializer_to_string(equation->priv->serializer, x);
-    gtk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), text, -1);
+    ctk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), text, -1);
     mp_set_from_mp(x, &equation->priv->state.ans);
 
     /* Mark this text as the answer variable */
-    gtk_text_buffer_get_bounds(GTK_TEXT_BUFFER(equation), &start, &end);
+    ctk_text_buffer_get_bounds(GTK_TEXT_BUFFER(equation), &start, &end);
     clear_ans(equation, FALSE);
-    equation->priv->ans_start = gtk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &start, FALSE);
-    equation->priv->ans_end = gtk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &end, TRUE);
-    gtk_text_buffer_apply_tag(GTK_TEXT_BUFFER(equation), equation->priv->ans_tag, &start, &end);
+    equation->priv->ans_start = ctk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &start, FALSE);
+    equation->priv->ans_end = ctk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &end, TRUE);
+    ctk_text_buffer_apply_tag(GTK_TEXT_BUFFER(equation), equation->priv->ans_tag, &start, &end);
     g_free(text);
 }
 
@@ -1001,13 +1001,13 @@ math_equation_insert(MathEquation *equation, const gchar *text)
     g_return_if_fail(text != NULL);
 
     /* Replace ** with ^ (not on all keyboards) */
-    if (!gtk_text_buffer_get_has_selection(GTK_TEXT_BUFFER(equation)) &&
+    if (!ctk_text_buffer_get_has_selection(GTK_TEXT_BUFFER(equation)) &&
         strcmp(text, "×") == 0 && equation->priv->state.entered_multiply) {
         GtkTextIter iter;
 
-        gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, gtk_text_buffer_get_insert(GTK_TEXT_BUFFER(equation)));
-        gtk_text_buffer_backspace(GTK_TEXT_BUFFER(equation), &iter, TRUE, TRUE);
-        gtk_text_buffer_insert_at_cursor(GTK_TEXT_BUFFER(equation), "^", -1);
+        ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, ctk_text_buffer_get_insert(GTK_TEXT_BUFFER(equation)));
+        ctk_text_buffer_backspace(GTK_TEXT_BUFFER(equation), &iter, TRUE, TRUE);
+        ctk_text_buffer_insert_at_cursor(GTK_TEXT_BUFFER(equation), "^", -1);
         return;
     }
 
@@ -1019,8 +1019,8 @@ math_equation_insert(MathEquation *equation, const gchar *text)
     if (strstr("⁻⁰¹²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉", text) == NULL)
         math_equation_set_number_mode(equation, NORMAL);
 
-    gtk_text_buffer_delete_selection(GTK_TEXT_BUFFER(equation), FALSE, FALSE);
-    gtk_text_buffer_insert_at_cursor(GTK_TEXT_BUFFER(equation), text, -1);
+    ctk_text_buffer_delete_selection(GTK_TEXT_BUFFER(equation), FALSE, FALSE);
+    ctk_text_buffer_insert_at_cursor(GTK_TEXT_BUFFER(equation), text, -1);
 }
 
 
@@ -1409,12 +1409,12 @@ math_equation_delete(MathEquation *equation)
     g_return_if_fail(equation != NULL);
 
     g_object_get(G_OBJECT(equation), "cursor-position", &cursor, NULL);
-    if (cursor >= gtk_text_buffer_get_char_count(GTK_TEXT_BUFFER(equation)))
+    if (cursor >= ctk_text_buffer_get_char_count(GTK_TEXT_BUFFER(equation)))
         return;
 
-    gtk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &start, cursor);
-    gtk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &end, cursor+1);
-    gtk_text_buffer_delete(GTK_TEXT_BUFFER(equation), &start, &end);
+    ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &start, cursor);
+    ctk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &end, cursor+1);
+    ctk_text_buffer_delete(GTK_TEXT_BUFFER(equation), &start, &end);
 }
 
 
@@ -1427,12 +1427,12 @@ math_equation_backspace(MathEquation *equation)
     if (math_equation_is_empty(equation))
         return;
 
-    if (gtk_text_buffer_get_has_selection(GTK_TEXT_BUFFER(equation)))
-        gtk_text_buffer_delete_selection(GTK_TEXT_BUFFER(equation), FALSE, FALSE);
+    if (ctk_text_buffer_get_has_selection(GTK_TEXT_BUFFER(equation)))
+        ctk_text_buffer_delete_selection(GTK_TEXT_BUFFER(equation), FALSE, FALSE);
     else {
         GtkTextIter iter;
-        gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, gtk_text_buffer_get_insert(GTK_TEXT_BUFFER(equation)));
-        gtk_text_buffer_backspace(GTK_TEXT_BUFFER(equation), &iter, TRUE, TRUE);
+        ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, ctk_text_buffer_get_insert(GTK_TEXT_BUFFER(equation)));
+        ctk_text_buffer_backspace(GTK_TEXT_BUFFER(equation), &iter, TRUE, TRUE);
     }
 }
 
@@ -1443,7 +1443,7 @@ math_equation_clear(MathEquation *equation)
     g_return_if_fail(equation != NULL);
 
     math_equation_set_number_mode(equation, NORMAL);
-    gtk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), "", -1);
+    ctk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), "", -1);
     clear_ans(equation, FALSE);
 }
 
@@ -1642,7 +1642,7 @@ math_equation_constructed(GObject *object)
     if (G_OBJECT_CLASS(parent_class)->constructed)
         G_OBJECT_CLASS(parent_class)->constructed(object);
 
-    MATH_EQUATION(object)->priv->ans_tag = gtk_text_buffer_create_tag(GTK_TEXT_BUFFER(object), NULL, "weight", PANGO_WEIGHT_BOLD, NULL);
+    MATH_EQUATION(object)->priv->ans_tag = ctk_text_buffer_create_tag(GTK_TEXT_BUFFER(object), NULL, "weight", PANGO_WEIGHT_BOLD, NULL);
 }
 
 
@@ -1814,17 +1814,17 @@ pre_insert_text_cb(MathEquation  *equation,
     g_object_get(G_OBJECT(equation), "cursor-position", &cursor, NULL);
     if ((g_unichar_isdigit(c) || c == mp_serializer_get_radix(equation->priv->serializer)) &&
          math_equation_is_result(equation) &&
-         cursor >= gtk_text_buffer_get_char_count(GTK_TEXT_BUFFER(equation))) {
-        gtk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), "", -1);
+         cursor >= ctk_text_buffer_get_char_count(GTK_TEXT_BUFFER(equation))) {
+        ctk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), "", -1);
         clear_ans(equation, FALSE);
-        gtk_text_buffer_get_end_iter(GTK_TEXT_BUFFER(equation), location);
+        ctk_text_buffer_get_end_iter(GTK_TEXT_BUFFER(equation), location);
     }
 
     if (equation->priv->ans_start) {
         gint ans_start, ans_end;
         gint offset;
 
-        offset = gtk_text_iter_get_offset(location);
+        offset = ctk_text_iter_get_offset(location);
         get_ans_offsets(equation, &ans_start, &ans_end);
 
         /* Inserted inside ans */
@@ -1860,8 +1860,8 @@ pre_delete_range_cb(MathEquation  *equation,
         gint ans_start, ans_end;
         gint start_offset, end_offset;
 
-        start_offset = gtk_text_iter_get_offset(start);
-        end_offset = gtk_text_iter_get_offset(end);
+        start_offset = ctk_text_iter_get_offset(start);
+        end_offset = ctk_text_iter_get_offset(end);
         get_ans_offsets(equation, &ans_start, &ans_end);
 
         /* Deleted part of ans */

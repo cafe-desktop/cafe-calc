@@ -72,7 +72,7 @@ solve(const char *equation)
 
 
 static void
-usage(const gchar *progname, gboolean show_application, gboolean show_gtk)
+usage(const gchar *progname, gboolean show_application, gboolean show_ctk)
 {
     fprintf(stderr,
             /* Description on how to use cafe-calc displayed on command-line */
@@ -88,11 +88,11 @@ usage(const gchar *progname, gboolean show_application, gboolean show_gtk)
               "  -v, --version                   Show release version\n"
               "  -h, -?, --help                  Show help options\n"
               "  --help-all                      Show all help options\n"
-              "  --help-gtk                      Show GTK+ options"));
+              "  --help-ctk                      Show GTK+ options"));
     fprintf(stderr,
             "\n\n");
 
-    if (show_gtk) {
+    if (show_ctk) {
         fprintf(stderr,
                 /* Description on cafe-calc command-line GTK+ options displayed on command-line */
                 _("GTK+ Options:\n"
@@ -100,7 +100,7 @@ usage(const gchar *progname, gboolean show_application, gboolean show_gtk)
                   "  --name=NAME                     Program name as used by the window manager\n"
                   "  --screen=SCREEN                 X screen to use\n"
                   "  --sync                          Make X calls synchronous\n"
-                  "  --gtk-module=MODULES            Load additional GTK+ modules\n"
+                  "  --ctk-module=MODULES            Load additional GTK+ modules\n"
                   "  --g-fatal-warnings              Make all warnings fatal"));
         fprintf(stderr,
                 "\n\n");
@@ -146,7 +146,7 @@ get_options(int argc, char *argv[])
             g_free(progname);
             exit(0);
         }
-        else if (strcmp(arg, "--help-gtk") == 0) {
+        else if (strcmp(arg, "--help-ctk") == 0) {
             usage(progname, FALSE, TRUE);
             g_free(progname);
             exit(0);
@@ -182,7 +182,7 @@ get_options(int argc, char *argv[])
 static void
 quit_cb(MathWindow *window)
 {
-    gtk_main_quit();
+    ctk_main_quit();
 }
 
 int main(int argc, char **argv)
@@ -205,7 +205,7 @@ int main(int argc, char **argv)
     /* Seed random number generator. */
     srand48((long) time((time_t *) 0));
 
-    gtk_init(&argc, &argv);
+    ctk_init(&argc, &argv);
 
     g_settings_var = g_settings_new ("org.cafe.calc");
     accuracy = g_settings_get_int(g_settings_var, "accuracy");
@@ -239,7 +239,7 @@ int main(int argc, char **argv)
 
     get_options(argc, argv);
 
-    //gtk_window_set_default_icon_name("accessories-calculator");
+    //ctk_window_set_default_icon_name("accessories-calculator");
 
     window = math_window_new(equation);
     buttons = math_window_get_buttons(window);
@@ -247,8 +247,8 @@ int main(int argc, char **argv)
     math_buttons_set_programming_base(buttons, base);
     math_buttons_set_mode(buttons, button_mode); // FIXME: We load the basic buttons even if we immediately switch to the next type
 
-    gtk_widget_show(GTK_WIDGET(window));
-    gtk_main();
+    ctk_widget_show(GTK_WIDGET(window));
+    ctk_main();
 
     return 0;
 }

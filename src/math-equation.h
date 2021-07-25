@@ -13,7 +13,7 @@
 #define MATH_EQUATION_H
 
 #include <glib-object.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 #include "mp.h"
 #include "math-variables.h"

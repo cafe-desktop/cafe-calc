@@ -12,7 +12,7 @@
 #define MATH_DISPLAY_H
 
 #include <glib-object.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 #include "math-equation.h"
 

@@ -9,7 +9,7 @@
  */
 
 #include <glib/gi18n.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 #include "math-preferences.h"
 #include "utility.h"
@@ -30,7 +30,7 @@ G_DEFINE_TYPE_WITH_PRIVATE (MathPreferencesDialog, math_preferences, GTK_TYPE_DI
 
 #define UI_DIALOGS_RESOURCE_PATH "/org/cafe/calculator/ui/preferences.ui"
 #define GET_WIDGET(ui, name) \
-          GTK_WIDGET(gtk_builder_get_object(ui, name))
+          GTK_WIDGET(ctk_builder_get_object(ui, name))
 
 
 MathPreferencesDialog *
@@ -43,7 +43,7 @@ math_preferences_dialog_new(MathEquation *equation)
 static void
 preferences_response_cb(GtkWidget *widget, gint id)
 {
-    gtk_widget_hide(widget);
+    ctk_widget_hide(widget);
 }
 
 
@@ -64,9 +64,9 @@ number_format_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialo
     GtkTreeModel *model;
     GtkTreeIter iter;
 
-    model = gtk_combo_box_get_model(GTK_COMBO_BOX(combo));
-    gtk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
-    gtk_tree_model_get(model, &iter, 1, &value, -1);
+    model = ctk_combo_box_get_model(GTK_COMBO_BOX(combo));
+    ctk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
+    ctk_tree_model_get(model, &iter, 1, &value, -1);
     math_equation_set_number_format(dialog->priv->equation, value);
 }
 
@@ -80,9 +80,9 @@ angle_unit_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
     GtkTreeModel *model;
     GtkTreeIter iter;
 
-    model = gtk_combo_box_get_model(GTK_COMBO_BOX(combo));
-    gtk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
-    gtk_tree_model_get(model, &iter, 1, &value, -1);
+    model = ctk_combo_box_get_model(GTK_COMBO_BOX(combo));
+    ctk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
+    ctk_tree_model_get(model, &iter, 1, &value, -1);
     math_equation_set_angle_units(dialog->priv->equation, value);
 }
 
@@ -96,9 +96,9 @@ word_size_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
     GtkTreeModel *model;
     GtkTreeIter iter;
 
-    model = gtk_combo_box_get_model(GTK_COMBO_BOX(combo));
-    gtk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
-    gtk_tree_model_get(model, &iter, 1, &value, -1);
+    model = ctk_combo_box_get_model(GTK_COMBO_BOX(combo));
+    ctk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
+    ctk_tree_model_get(model, &iter, 1, &value, -1);
     math_equation_set_word_size(dialog->priv->equation, value);
 }
 
@@ -110,7 +110,7 @@ decimal_places_spin_change_value_cb(GtkWidget *spin, MathPreferencesDialog *dial
 {
     gint value = 0;
 
-    value = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(spin));
+    value = ctk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(spin));
     math_equation_set_accuracy(dialog->priv->equation, value);
 }
 
@@ -122,7 +122,7 @@ thousands_separator_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *di
 {
     gboolean value;
 
-    value = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check));
+    value = ctk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check));
     math_equation_set_show_thousands_separators(dialog->priv->equation, value);
 }
 
@@ -134,7 +134,7 @@ trailing_zeroes_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *dialog
 {
     gboolean value;
 
-    value = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check));
+    value = ctk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check));
     math_equation_set_show_trailing_zeroes(dialog->priv->equation, value);
 }
 
@@ -146,28 +146,28 @@ set_combo_box_from_int(GtkWidget *combo, int value)
     GtkTreeIter iter;
     gboolean valid;
 
-    model = gtk_combo_box_get_model(GTK_COMBO_BOX(combo));
-    valid = gtk_tree_model_get_iter_first(model, &iter);
+    model = ctk_combo_box_get_model(GTK_COMBO_BOX(combo));
+    valid = ctk_tree_model_get_iter_first(model, &iter);
 
     while (valid) {
         gint v;
 
-        gtk_tree_model_get(model, &iter, 1, &v, -1);
+        ctk_tree_model_get(model, &iter, 1, &v, -1);
         if (v == value)
             break;
-        valid = gtk_tree_model_iter_next(model, &iter);
+        valid = ctk_tree_model_iter_next(model, &iter);
     }
     if (!valid)
-        valid = gtk_tree_model_get_iter_first(model, &iter);
+        valid = ctk_tree_model_get_iter_first(model, &iter);
 
-    gtk_combo_box_set_active_iter(GTK_COMBO_BOX(combo), &iter);
+    ctk_combo_box_set_active_iter(GTK_COMBO_BOX(combo), &iter);
 }
 
 
 static void
 accuracy_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
-    gtk_spin_button_set_value(GTK_SPIN_BUTTON(gtk_builder_get_object(dialog->priv->ui, "decimal_places_spin")),
+    ctk_spin_button_set_value(GTK_SPIN_BUTTON(ctk_builder_get_object(dialog->priv->ui, "decimal_places_spin")),
                               math_equation_get_accuracy(equation));
     g_settings_set_int(g_settings_var, "accuracy", math_equation_get_accuracy(equation));
 }
@@ -176,7 +176,7 @@ accuracy_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dia
 static void
 show_thousands_separators_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
-    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(gtk_builder_get_object(dialog->priv->ui, "thousands_separator_check")),
+    ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(ctk_builder_get_object(dialog->priv->ui, "thousands_separator_check")),
                                  math_equation_get_show_thousands_separators(equation));
     g_settings_set_boolean(g_settings_var, "show-thousands", math_equation_get_show_thousands_separators(equation));
 }
@@ -185,7 +185,7 @@ show_thousands_separators_cb(MathEquation *equation, GParamSpec *spec, MathPrefe
 static void
 show_trailing_zeroes_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
-    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(gtk_builder_get_object(dialog->priv->ui, "trailing_zeroes_check")),
+    ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(ctk_builder_get_object(dialog->priv->ui, "trailing_zeroes_check")),
                                  math_equation_get_show_trailing_zeroes(equation));
     g_settings_set_boolean(g_settings_var, "show-zeroes", math_equation_get_show_trailing_zeroes(equation));
 }
@@ -228,70 +228,70 @@ create_gui(MathPreferencesDialog *dialog)
                                 "word_size_model", "decimal_places_adjustment", "number_base_model", NULL };
 
     // FIXME: Handle errors
-    dialog->priv->ui = gtk_builder_new();
-    gtk_builder_add_objects_from_resource(dialog->priv->ui, UI_DIALOGS_RESOURCE_PATH, objects, &error);
+    dialog->priv->ui = ctk_builder_new();
+    ctk_builder_add_objects_from_resource(dialog->priv->ui, UI_DIALOGS_RESOURCE_PATH, objects, &error);
     if (error)
         g_warning("Error loading preferences UI: %s", error->message);
     g_clear_error(&error);
 
-    gtk_window_set_title(GTK_WINDOW(dialog),
+    ctk_window_set_title(GTK_WINDOW(dialog),
                          /* Title of preferences dialog */
                          _("Preferences"));
-    gtk_container_set_border_width(GTK_CONTAINER(dialog), 8);
-    gtk_dialog_add_button(GTK_DIALOG(dialog),
+    ctk_container_set_border_width(GTK_CONTAINER(dialog), 8);
+    ctk_dialog_add_button(GTK_DIALOG(dialog),
                           /* Icon name on close button in preferences dialog */
-                          "gtk-close", GTK_RESPONSE_CLOSE);
+                          "ctk-close", GTK_RESPONSE_CLOSE);
 
-    gtk_window_set_icon_name (GTK_WINDOW(dialog), "accessories-calculator");
+    ctk_window_set_icon_name (GTK_WINDOW(dialog), "accessories-calculator");
 
     g_signal_connect(dialog, "response", G_CALLBACK(preferences_response_cb), NULL);
     g_signal_connect(dialog, "delete-event", G_CALLBACK(preferences_dialog_delete_cb), NULL);
-    gtk_box_pack_start(GTK_BOX(gtk_dialog_get_content_area(GTK_DIALOG(dialog))), GET_WIDGET(dialog->priv->ui, "preferences_table"), TRUE, TRUE, 0);
+    ctk_box_pack_start(GTK_BOX(ctk_dialog_get_content_area(GTK_DIALOG(dialog))), GET_WIDGET(dialog->priv->ui, "preferences_table"), TRUE, TRUE, 0);
 
     widget = GET_WIDGET(dialog->priv->ui, "angle_unit_combobox");
-    model = gtk_combo_box_get_model(GTK_COMBO_BOX(widget));
-    gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-    gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+    model = ctk_combo_box_get_model(GTK_COMBO_BOX(widget));
+    ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+    ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                        /* Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations */
                        _("Degrees"), 1, MP_DEGREES, -1);
-    gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-    gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+    ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+    ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                        /* Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations */
                        _("Radians"), 1, MP_RADIANS, -1);
-    gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-    gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+    ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+    ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                        /* Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations */
                        _("Gradians"), 1, MP_GRADIANS, -1);
-    renderer = gtk_cell_renderer_text_new();
-    gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(widget), renderer, TRUE);
-    gtk_cell_layout_add_attribute(GTK_CELL_LAYOUT(widget), renderer, "text", 0);
+    renderer = ctk_cell_renderer_text_new();
+    ctk_cell_layout_pack_start(GTK_CELL_LAYOUT(widget), renderer, TRUE);
+    ctk_cell_layout_add_attribute(GTK_CELL_LAYOUT(widget), renderer, "text", 0);
 
     widget = GET_WIDGET(dialog->priv->ui, "number_format_combobox");
-    model = gtk_combo_box_get_model(GTK_COMBO_BOX(widget));
-    gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-    gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+    model = ctk_combo_box_get_model(GTK_COMBO_BOX(widget));
+    ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+    ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                        /* Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99) */
                        _("Automatic"), 1, MP_DISPLAY_FORMAT_AUTOMATIC, -1);
-    gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-    gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+    ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+    ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                        /* Number display mode combo: Fixed, e.g. 1234 */
                        _("Fixed"), 1, MP_DISPLAY_FORMAT_FIXED, -1);
-    gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-    gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+    ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+    ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                        /* Number display mode combo: Scientific, e.g. 1.234×10^3 */
                        _("Scientific"), 1, MP_DISPLAY_FORMAT_SCIENTIFIC, -1);
-    gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-    gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+    ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+    ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                        /* Number display mode combo: Engineering, e.g. 1.234k */
                        _("Engineering"), 1, MP_DISPLAY_FORMAT_ENGINEERING, -1);
-    renderer = gtk_cell_renderer_text_new();
-    gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(widget), renderer, TRUE);
-    gtk_cell_layout_add_attribute(GTK_CELL_LAYOUT(widget), renderer, "text", 0);
+    renderer = ctk_cell_renderer_text_new();
+    ctk_cell_layout_pack_start(GTK_CELL_LAYOUT(widget), renderer, TRUE);
+    ctk_cell_layout_add_attribute(GTK_CELL_LAYOUT(widget), renderer, "text", 0);
 
     widget = GET_WIDGET(dialog->priv->ui, "word_size_combobox");
-    renderer = gtk_cell_renderer_text_new();
-    gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(widget), renderer, TRUE);
-    gtk_cell_layout_add_attribute(GTK_CELL_LAYOUT(widget), renderer, "text", 0);
+    renderer = ctk_cell_renderer_text_new();
+    ctk_cell_layout_pack_start(GTK_CELL_LAYOUT(widget), renderer, TRUE);
+    ctk_cell_layout_add_attribute(GTK_CELL_LAYOUT(widget), renderer, "text", 0);
 
     /* Label used in preferences dialog.  The %d is replaced by a spinbutton */
     string = _("Show %d decimal _places");
@@ -302,9 +302,9 @@ create_gui(MathPreferencesDialog *dialog)
     else
         string = "";
     if (string[0] != '\0')
-        gtk_label_set_text_with_mnemonic(GTK_LABEL(widget), string);
+        ctk_label_set_text_with_mnemonic(GTK_LABEL(widget), string);
     else
-        gtk_widget_hide(widget);
+        ctk_widget_hide(widget);
 
     widget = GET_WIDGET(dialog->priv->ui, "decimal_places_label2");
     if (tokens[0] && tokens[1])
@@ -312,13 +312,13 @@ create_gui(MathPreferencesDialog *dialog)
     else
         string = "";
     if (string[0] != '\0')
-        gtk_label_set_text_with_mnemonic(GTK_LABEL(widget), string);
+        ctk_label_set_text_with_mnemonic(GTK_LABEL(widget), string);
     else
-        gtk_widget_hide(widget);
+        ctk_widget_hide(widget);
 
     g_strfreev(tokens);
 
-    gtk_builder_connect_signals(dialog->priv->ui, dialog);
+    ctk_builder_connect_signals(dialog->priv->ui, dialog);
 
     g_signal_connect(dialog->priv->equation, "notify::accuracy", G_CALLBACK(accuracy_cb), dialog);
     g_signal_connect(dialog->priv->equation, "notify::show-thousands-separators", G_CALLBACK(show_thousands_separators_cb), dialog);
