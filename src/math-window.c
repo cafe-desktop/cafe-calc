@@ -594,4 +594,5 @@ math_window_init(MathWindow *window)
     ctk_window_set_resizable(CTK_WINDOW(window), FALSE);
     g_signal_connect_after(G_OBJECT(window), "key-press-event", G_CALLBACK(key_press_cb), NULL);
     g_signal_connect(G_OBJECT(window), "delete-event", G_CALLBACK(delete_cb), NULL);
+    g_object_set (ctk_settings_get_default (), "ctk-button-images", TRUE, NULL);
 }
