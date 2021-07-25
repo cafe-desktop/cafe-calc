@@ -88,19 +88,19 @@ usage(const gchar *progname, gboolean show_application, gboolean show_ctk)
               "  -v, --version                   Show release version\n"
               "  -h, -?, --help                  Show help options\n"
               "  --help-all                      Show all help options\n"
-              "  --help-ctk                      Show GTK+ options"));
+              "  --help-ctk                      Show CTK+ options"));
     fprintf(stderr,
             "\n\n");
 
     if (show_ctk) {
         fprintf(stderr,
-                /* Description on cafe-calc command-line GTK+ options displayed on command-line */
-                _("GTK+ Options:\n"
+                /* Description on cafe-calc command-line CTK+ options displayed on command-line */
+                _("CTK+ Options:\n"
                   "  --class=CLASS                   Program class as used by the window manager\n"
                   "  --name=NAME                     Program name as used by the window manager\n"
                   "  --screen=SCREEN                 X screen to use\n"
                   "  --sync                          Make X calls synchronous\n"
-                  "  --ctk-module=MODULES            Load additional GTK+ modules\n"
+                  "  --ctk-module=MODULES            Load additional CTK+ modules\n"
                   "  --g-fatal-warnings              Make all warnings fatal"));
         fprintf(stderr,
                 "\n\n");
@@ -247,7 +247,7 @@ int main(int argc, char **argv)
     math_buttons_set_programming_base(buttons, base);
     math_buttons_set_mode(buttons, button_mode); // FIXME: We load the basic buttons even if we immediately switch to the next type
 
-    ctk_widget_show(GTK_WIDGET(window));
+    ctk_widget_show(CTK_WIDGET(window));
     ctk_main();
 
     return 0;

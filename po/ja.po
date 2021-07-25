@@ -951,33 +951,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "ヘルプオプション:\n"
 "  -v, --version                   リリースバージョンを表示\n"
 "  -h, -?, --help                  ヘルプオプションを表示\n"
 "  --help-all                      すべてのヘルプオプションを表示\n"
-"  --help-ctk                      GTK+のオプションを表示"
+"  --help-ctk                      CTK+のオプションを表示"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+オプション:\n"
+"CTK+オプション:\n"
 "  --class=CLASS                   ウィンドウマネジャーが使用するプログラムのクラス\n"
 "  --name=NAME                     ウィンドウマネジャーが使用するプログラム名\n"
 "  --screen=SCREEN                 使用するXのスクリーン\n"
 "  --sync                          Xを同期して呼び出す\n"
-"  --ctk-module=MODULES            追加呼び出しを行うGTK+モジュール\n"
+"  --ctk-module=MODULES            追加呼び出しを行うCTK+モジュール\n"
 "  --g-fatal-warnings              すべての警告を致命的とみなす"
 
 #. Description on cafe-calc application options displayed on command-line

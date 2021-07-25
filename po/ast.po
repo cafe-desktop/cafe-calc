@@ -972,33 +972,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Opciones d'ayuda:\n"
 "  -v, --version                   Amosar la versión de espublizamientu\n"
 "  -h, -?, --help                  Amosar les opciones d'ayuda\n"
 "  -help-all                       Amosar toles opciones d'ayuda\n"
-"  -help-ctk                       Amosar les opciones de GTK+"
+"  -help-ctk                       Amosar les opciones de CTK+"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Opciones de GTK+:\n"
+"Opciones de CTK+:\n"
 "  --class=CLASE                   Clase de programa como s'usa pol xestor de ventanes\n"
 "  --name=NOME                   Nome del programa como s'usa pol xestor de ventanes\n"
 "  --screen=PANTALLA               Pantalla X qu'usar\n"
 "  --sync                          Facer que les llamaes les X seyan síncrones\n"
-"  --ctk-module=MÓDULOS            Cargar módulos GTK+ adicionales\n"
+"  --ctk-module=MÓDULOS            Cargar módulos CTK+ adicionales\n"
 "  --g-fatal-warnings              Facer que tolos avisos seyan fatales"
 
 #. Description on cafe-calc application options displayed on command-line

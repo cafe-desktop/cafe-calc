@@ -986,33 +986,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Hulp-opties:\n"
 "  -v, --version                   Geef programmaversie weer\n"
 "  -h, -?, --help                  Geef hulp-opties weer\n"
 "  --help-all                      Geef alle hulp-opties weer\n"
-"  --help-ctk                      Geef GTK+-opties weer"
+"  --help-ctk                      Geef CTK+-opties weer"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+-opties:\n"
+"CTK+-opties:\n"
 "  --class=KLASSE                   Programmaklasse, zoals gebruikt door de vensterbeheerder\n"
 "  --name=NAAM                     Programmanaam, zoals gebruikt door de vensterbeheerder\n"
 "  --screen=SCHERM                 Te gebruiken X-scherm\n"
 "  --sync                          X-aanroepen synchroon maken\n"
-"  --ctk-module=MODULES            Aanvullende GTK+-modules laden\n"
+"  --ctk-module=MODULES            Aanvullende CTK+-modules laden\n"
 "  --g-fatal-warnings              Alle waarschuwingen fataal maken"
 
 #. Description on cafe-calc application options displayed on command-line

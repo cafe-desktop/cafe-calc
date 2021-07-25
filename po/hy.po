@@ -966,33 +966,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Օգնության մանրամասներ.\n"
 "  -v, --version             Ցուցադրել թողարկման տարբերակը\n"
 "  -h, -?, --help            Ցուցադրել օգնության կարգավորումները\n"
 "  --help-all                Ցուցադրել օգնության բոլոր կարգավորումները\n"
-"  --help-ctk                Ցուցադրել GTK+ կարգավորումները"
+"  --help-ctk                Ցուցադրել CTK+ կարգավորումները"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ Կարգավորումներ.\n"
+"CTK+ Կարգավորումներ.\n"
 "  --class=CLASS             Պատուհանի մենեջերի կողմից օգտագործվող ծրագրի կլասը\n"
 "  --name=NAME               Պատուհանի մենեջերի կողմից օգտագործվող ծրագրի անունը\n"
 "  --screen=SCREEN           X screen to use\n"
 "  --sync                    Make X calls synchronous\n"
-"  --ctk-module=MODULES      Բեռնել GTK+ հավելյալ մոդուլներ\n"
+"  --ctk-module=MODULES      Բեռնել CTK+ հավելյալ մոդուլներ\n"
 "  --g-fatal-warnings        Բոլոր զգուշացումները դարձնել ճակատագրական"
 
 #. Description on cafe-calc application options displayed on command-line

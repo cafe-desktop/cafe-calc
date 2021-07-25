@@ -965,33 +965,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "ସହାୟତା ବିକଳ୍ପଗୁଡ଼ିକ:\n"
 "  -v, --version                   ପ୍ରକାଶନ ସଂସ୍କରଣ ଦର୍ଶାନ୍ତୁ\n"
 "  -h, -?, --help                  ସହାୟତା ବିକଳ୍ପଗୁଡ଼ିକୁ ଦର୍ଶାନ୍ତୁ\n"
 "  --help-all                      ସମସ୍ତ ସହାୟତା ବିକଳ୍ପଗୁଡ଼ିକୁ ଦର୍ଶାନ୍ତୁ\n"
-"  --help-ctk                      GTK+ ବିକଳ୍ପଗୁଡ଼ିକୁ ଦର୍ଶାନ୍ତୁ"
+"  --help-ctk                      CTK+ ବିକଳ୍ପଗୁଡ଼ିକୁ ଦର୍ଶାନ୍ତୁ"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ ବିକଳ୍ପଗୁଡ଼ିକ:\n"
+"CTK+ ବିକଳ୍ପଗୁଡ଼ିକ:\n"
 "  --class=CLASS                   ୱିଣ୍ଡୋ ପରିଚାଳକଙ୍କ ଦ୍ୱାରା ବ୍ୟବହୃତ ହେଲା ପରି ପ୍ରଗ୍ରାମ ଶ୍ରେଣୀ\n"
 "  --name=NAME                     ୱିଣ୍ଡୋ ପରିଚାଳକଙ୍କ ଦ୍ୱାରା ବ୍ୟବହୃତ ହେଲା ପରି ପ୍ରଗ୍ରାମ ନାମ\n"
 "  --screen=SCREEN                 ବ୍ୟବହାର କରିବା ପାଇଁ X ପରଦା\n"
 "  --sync                          X ଡାକକୁ ସମତାଳ କରନ୍ତୁ\n"
-"  --ctk-module=MODULES            ଅତିରିକ୍ତ GTK+ ଏକକାଂଶଗୁଡ଼ିକୁ ଧାରଣ କରନ୍ତୁ\n"
+"  --ctk-module=MODULES            ଅତିରିକ୍ତ CTK+ ଏକକାଂଶଗୁଡ଼ିକୁ ଧାରଣ କରନ୍ତୁ\n"
 "  --g-fatal-warnings              ସମସ୍ତ ଚେତାବନୀଗୁଡ଼ିକୁ ମାରାତ୍ମକ କରନ୍ତୁ"
 
 #. Description on cafe-calc application options displayed on command-line

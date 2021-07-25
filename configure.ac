@@ -21,10 +21,10 @@ dnl ###########################################################################
 
 GLIB_REQUIRED=2.50.0
 GIO_REQUIRED=2.36.0
-GTK_REQUIRED=3.22.0
+CTK_REQUIRED=3.22.0
 
 PKG_CHECK_MODULES(CAFE_CALC, [
-    ctk+-3.0 >= $GTK_REQUIRED
+    ctk+-3.0 >= $CTK_REQUIRED
     glib-2.0 >= $GLIB_REQUIRED
     gio-2.0 >= $GIO_REQUIRED
     libxml-2.0

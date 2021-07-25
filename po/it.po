@@ -985,33 +985,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Opzioni di aiuto:\n"
 "  -v, --version                   Mostra la versione di rilascio\n"
 "  -h, -?, --help                  Mostra le opzioni di aiuto\n"
 "  --help-all                      Mostra tutte le opzioni di aiuto\n"
-"  --help-ctk                      Mostra le opzioni GTK+"
+"  --help-ctk                      Mostra le opzioni CTK+"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Opzioni GTK+:\n"
+"Opzioni CTK+:\n"
 "  --class=CLASSE                  Classe del programma utilizzata dal gestore di finestre\n"
 "  --name=NOME                     Nome del programma utilizzato dal gestore di finestre\n"
 "  --screen=SCHERMO                Schermo X da utilizzare\n"
 "  --sync                          Rende sincrone le chiacafe a X\n"
-"  --ctk-module=MODULI             Carica moduli GTK+ aggiuntivi\n"
+"  --ctk-module=MODULI             Carica moduli CTK+ aggiuntivi\n"
 "  --g-fatal-warnings              Rende fatali tutti gli avvertimenti"
 
 #. Description on cafe-calc application options displayed on command-line

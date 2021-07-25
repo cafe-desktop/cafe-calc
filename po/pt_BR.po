@@ -988,33 +988,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Opções de ajuda:\n"
 "  -v, --version                   Mostra a versão do lançamento\n"
 "  -h, -?, --help                  Mostra as opções de ajuda\n"
 "  --help-all                      Mostra todas as opções de ajuda\n"
-"  --help-ctk                      Mostra as opções do GTK+"
+"  --help-ctk                      Mostra as opções do CTK+"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Opções do GTK+:\n"
+"Opções do CTK+:\n"
 "  --class=CLASS                   Classe de programa como usada pelo gerenciador de janelas\n"
 "  --name=NAME                     Nome do programa assim como usado pelo gerenciador de janelas\n"
 "  --screen=SCREEN                 Tela X a ser usada\n"
 "  --sync                          Torna as chamadas do X síncronas\n"
-"  --ctk-module=MODULES            Carrega módulos adicionais do GTK+\n"
+"  --ctk-module=MODULES            Carrega módulos adicionais do CTK+\n"
 "  --g-fatal-warnings              Torna todos os avisos fatais"
 
 #. Description on cafe-calc application options displayed on command-line

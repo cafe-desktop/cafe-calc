@@ -967,7 +967,7 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "உதவி தேர்வுகள்:\n"
 "  -v, --version                   வெளியீடு பதிப்பை காட்டுக\n"
@@ -975,25 +975,25 @@ msgstr ""
 "  --help-all                      எல்லா உதவி தேர்வுகளையும் காட்டுக\n"
 "  --help-ctk                      ஜிடிகே+ தேர்வை காட்டுக"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ தேர்வுகள்:\n"
+"CTK+ தேர்வுகள்:\n"
 "  --class=CLASS                   சாளர மேலாளர் பயன்படுத்தும் நிரல் வகை\n"
 "  --name=NAME                     சாளர மேலாளர் பயன்படுத்தும் நிரல் பெயர்\n"
 "  --screen=SCREEN                 பயன்படுத்த வேண்டிய எக்ஸ் திரை \n"
 "  --sync                          எக்ஸ் அழைப்புக்களை சமகாலப்படுத்துகிறது\n"
-"  --ctk-module=MODULES            கூடுதல் ஜிடிகே GTK+ கூறுகளை ஏற்றுக\n"
+"  --ctk-module=MODULES            கூடுதல் ஜிடிகே CTK+ கூறுகளை ஏற்றுக\n"
 "  --g-fatal-warnings              எல்லா எச்சரிக்கைகளையும் ஆபத்தாக்கு"
 
 #. Description on cafe-calc application options displayed on command-line

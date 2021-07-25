@@ -984,33 +984,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Επιλογές βοήθειας:\n"
 "  -v, --version                   Εμφάνιση αριθμού έκδοσης\n"
 "  -h, -?, --help                  Εμφάνιση επιλογών βοήθειας\n"
 "  --help-all                      Εμφάνιση όλων των επιλογών βοήθειας\n"
-"  --help-ctk                      Εμφάνιση επιλογών GTK+"
+"  --help-ctk                      Εμφάνιση επιλογών CTK+"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Επιλογές GTK+:\n"
+"Επιλογές CTK+:\n"
 "  --class=CLASS                   Κλάση προγράμματος χρησιμοποιούμενη από το διαχειριστή παραθύρων\n"
 "  --name=NAME                     Όνομα προγράμματος χρησιμοποιούμενη από το διαχειριστή παραθύρων\n"
 "  --screen=SCREEN                 Οθόνη X προς χρήση\n"
 "  --sync                          Να είναι σύγχρονες οι κλήσεις στο X\n"
-"  --ctk-module=MODULES            Φόρτωση πρόσθετων αρθρωμάτων GTK+\n"
+"  --ctk-module=MODULES            Φόρτωση πρόσθετων αρθρωμάτων CTK+\n"
 "  --g-fatal-warnings              Να είναι όλες οι προειδοποιήσεις μοιραίες"
 
 #. Description on cafe-calc application options displayed on command-line

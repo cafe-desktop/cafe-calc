@@ -967,33 +967,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "সহায়তা অপশন:\n"
 "  -v, --version                   রিলিজ সংস্করণ প্রদর্শন করে\n"
 "  -h, -?, --help                  সহায়তা অপশন প্রদর্শন করে\n"
 "  --help-all                      সহায়তার সকল অপশন প্রদর্শন করে\n"
-"  --help-ctk                     GTK+ অপশন প্রদর্শন করে"
+"  --help-ctk                     CTK+ অপশন প্রদর্শন করে"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ অপশন:\n"
+"CTK+ অপশন:\n"
 "  --class=CLASS                   প্রোগ্রাম ক্লাস যেভাবে উইন্ডো ম্যানেজার দ্বারা ব্যবহৃত হয়\n"
 "  --name=NAME                     প্রোগ্রাম নাম যেভাবে উইন্ডো ম্যানেজার দ্বারা ব্যবহৃত হয়\n"
 "  --screen=SCREEN                 ব্যবহারের জন্য X স্ক্রিন\n"
 "  --sync                          X কল সমকালীন করা হয়\n"
-"  --ctk-module=MODULES            অতিরিক্ত GTK+ মডিউল লোড করা হয়\n"
+"  --ctk-module=MODULES            অতিরিক্ত CTK+ মডিউল লোড করা হয়\n"
 "  --g-fatal-warnings              সকল সতর্কবানী মারাত্মক হিসেবে প্রদর্শন করা হয়"
 
 #. Description on cafe-calc application options displayed on command-line

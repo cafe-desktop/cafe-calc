@@ -967,33 +967,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Abiteabe võtmed:\n"
 "  -v, --version             Väljalaske versiooni näitamine\n"
 "  -h, -?, --help            Abiteabe võtmete näitamine\n"
 "  --help-all                Kõikide abiteabe võtmete näitamine\n"
-"  --help-ctk                GTK+ võtmete näitamine"
+"  --help-ctk                CTK+ võtmete näitamine"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"GTK+ võtmed:\n"
+"CTK+ võtmed:\n"
 "  --class=KLASS             Aknahalduri poolt kasutatav programmi klass\n"
 "  --name=NIMI               Aknahalduri poolt kasutatav programmi nimi\n"
 "  --screen=EKRAAN           Kasutatav X'i ekraan\n"
 "  --sync                    X'i kutsungid sünkroonseks\n"
-"  --ctk-module=MOODULID     Täiendavate GTK+ moodulite laadimine\n"
+"  --ctk-module=MOODULID     Täiendavate CTK+ moodulite laadimine\n"
 "  --g-fatal-warnings        Kõikide hoiatuste muutmine fataalseks"
 
 #. Description on cafe-calc application options displayed on command-line

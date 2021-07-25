@@ -975,33 +975,33 @@ msgid ""
 "  -v, --version                   Show release version\n"
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
-"  --help-ctk                      Show GTK+ options"
+"  --help-ctk                      Show CTK+ options"
 msgstr ""
 "Možnosti pomoči:\n"
 "  -v, --version Pokaži različico programa\n"
 "  -h, -?, --help Pokaži možnosti pomoči\n"
 "  --help-all Pokaži vse možnosti pomoči\n"
-"  --help-ctk Pokaži možnosti GTK+"
+"  --help-ctk Pokaži možnosti CTK+"
 
-#. Description on cafe-calc command-line GTK+ options displayed on command-
+#. Description on cafe-calc command-line CTK+ options displayed on command-
 #. line
 #: src/cafe-calc.c:98
 #, c-format
 msgid ""
-"GTK+ Options:\n"
+"CTK+ Options:\n"
 "  --class=CLASS                   Program class as used by the window manager\n"
 "  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
-"  --ctk-module=MODULES            Load additional GTK+ modules\n"
+"  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Možnosti GTK+:\n"
+"Možnosti CTK+:\n"
 "  --class=CLASS Programski razred, uporabljen v upravljalniku oken\n"
 "  --name=NAME Ime programa, uporabljen v upravljalniku oken\n"
 "  --screen=SCREEN X zaslon za uporabo\n"
 "  --sync Uskladi klice X\n"
-"  --ctk-module=MODULES Naloži dodatne module GTK+\n"
+"  --ctk-module=MODULES Naloži dodatne module CTK+\n"
 "  --g-fatal-warnings Določi vsa opozorila kot ključna"
 
 #. Description on cafe-calc application options displayed on command-line

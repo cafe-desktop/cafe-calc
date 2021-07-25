@@ -10,7 +10,7 @@ Type=Application
 StartupNotify=true
 # Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 Keywords=calculator;CAFE;scientific;arithmetic;financial;calculations;
-Categories=GTK;Utility;Calculator;
+Categories=CTK;Utility;Calculator;
 X-CAFE-DocPath=cafe-calc/cafe-calc.xml
 X-CAFE-Bugzilla-Bugzilla=CAFE
 X-CAFE-Bugzilla-Product=cafe-calc
