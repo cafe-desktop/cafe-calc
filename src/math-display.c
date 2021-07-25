@@ -10,7 +10,7 @@
 
 #include <string.h>
 #include <glib/gi18n.h>
-#include <gdk/gdkkeysyms.h>
+#include <cdk/cdkkeysyms.h>
 
 #include "math-display.h"
 
@@ -108,15 +108,15 @@ display_key_press_cb(CtkWidget *widget, GdkEventKey *event, MathDisplay *display
         gboolean result;
         GdkEvent *new_event;
 
-        new_event = gdk_event_copy((GdkEvent *)event);
+        new_event = cdk_event_copy((GdkEvent *)event);
         ((GdkEventKey *)new_event)->keyval = new_keyval;
         g_signal_emit_by_name(widget, "key-press-event", new_event, &result);
-        gdk_event_free(new_event);
+        cdk_event_free(new_event);
         return result;
     }
 
     state = event->state & (GDK_CONTROL_MASK | GDK_MOD1_MASK);
-    c = gdk_keyval_to_unicode(event->keyval);
+    c = cdk_keyval_to_unicode(event->keyval);
 
     /* Solve on enter */
     if (event->keyval == GDK_KEY_Return || event->keyval == GDK_KEY_KP_Enter) {
