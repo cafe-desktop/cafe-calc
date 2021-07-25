@@ -60,7 +60,7 @@ math_display_get_equation(MathDisplay *display)
 
 
 static gboolean
-display_key_press_cb(CtkWidget *widget, GdkEventKey *event, MathDisplay *display)
+display_key_press_cb(CtkWidget *widget, CdkEventKey *event, MathDisplay *display)
 {
     int state;
     guint32 c;
@@ -106,10 +106,10 @@ display_key_press_cb(CtkWidget *widget, GdkEventKey *event, MathDisplay *display
 
     if (new_keyval) {
         gboolean result;
-        GdkEvent *new_event;
+        CdkEvent *new_event;
 
-        new_event = cdk_event_copy((GdkEvent *)event);
-        ((GdkEventKey *)new_event)->keyval = new_keyval;
+        new_event = cdk_event_copy((CdkEvent *)event);
+        ((CdkEventKey *)new_event)->keyval = new_keyval;
         g_signal_emit_by_name(widget, "key-press-event", new_event, &result);
         cdk_event_free(new_event);
         return result;
@@ -298,7 +298,7 @@ display_key_press_cb(CtkWidget *widget, GdkEventKey *event, MathDisplay *display
 
 
 static gboolean
-key_press_cb(MathDisplay *display, GdkEventKey *event)
+key_press_cb(MathDisplay *display, CdkEventKey *event)
 {
     gboolean result;
     g_signal_emit_by_name(display->priv->text_view, "key-press-event", event, &result);

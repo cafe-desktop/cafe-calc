@@ -37,7 +37,7 @@ math_variable_popup_new(MathEquation *equation)
 
 
 static void
-variable_focus_out_event_cb(CtkWidget *widget, GdkEventFocus *event, MathVariablePopup *popup)
+variable_focus_out_event_cb(CtkWidget *widget, CdkEventFocus *event, MathVariablePopup *popup)
 {
     ctk_widget_destroy(widget);
 }
@@ -56,7 +56,7 @@ insert_variable_cb(CtkWidget *widget, MathVariablePopup *popup)
 
 
 static gboolean
-variable_name_key_press_cb(CtkWidget *widget, GdkEventKey *event, MathVariablePopup *popup)
+variable_name_key_press_cb(CtkWidget *widget, CdkEventKey *event, MathVariablePopup *popup)
 {
     /* Can't have whitespace in names, so replace with underscores */
     if (event->keyval == GDK_KEY_space || event->keyval == GDK_KEY_KP_Space)
