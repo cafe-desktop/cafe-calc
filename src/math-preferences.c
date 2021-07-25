@@ -48,7 +48,7 @@ preferences_response_cb(CtkWidget *widget, gint id)
 
 
 static gboolean
-preferences_dialog_delete_cb(CtkWidget *widget, GdkEvent *event)
+preferences_dialog_delete_cb(CtkWidget *widget, CdkEvent *event)
 {
     preferences_response_cb(widget, 0);
     return TRUE;

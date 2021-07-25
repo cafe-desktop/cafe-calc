@@ -141,7 +141,7 @@ static void show_preferences_cb(CtkMenuItem *menu, MathWindow *window)
 }
 
 static gboolean
-key_press_cb(MathWindow *window, GdkEventKey *event)
+key_press_cb(MathWindow *window, CdkEventKey *event)
 {
     gboolean result;
     g_signal_emit_by_name(window->priv->display, "key-press-event", event, &result);
@@ -171,7 +171,7 @@ key_press_cb(MathWindow *window, GdkEventKey *event)
     return result;
 }
 
-static void delete_cb(MathWindow *window, GdkEvent *event)
+static void delete_cb(MathWindow *window, CdkEvent *event)
 {
     g_signal_emit(window, signals[QUIT], 0);
 }

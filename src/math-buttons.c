@@ -1230,20 +1230,20 @@ character_code_dialog_activate_cb(CtkWidget *entry, MathButtons *buttons)
 }
 
 
-gboolean character_code_dialog_delete_cb(CtkWidget *dialog, GdkEvent *event, MathButtons *buttons);
+gboolean character_code_dialog_delete_cb(CtkWidget *dialog, CdkEvent *event, MathButtons *buttons);
 G_MODULE_EXPORT
 gboolean
-character_code_dialog_delete_cb(CtkWidget *dialog, GdkEvent *event, MathButtons *buttons)
+character_code_dialog_delete_cb(CtkWidget *dialog, CdkEvent *event, MathButtons *buttons)
 {
     character_code_dialog_response_cb(dialog, CTK_RESPONSE_CANCEL, buttons);
     return TRUE;
 }
 
 
-gboolean bit_toggle_cb(CtkWidget *event_box, GdkEventButton *event, MathButtons *buttons);
+gboolean bit_toggle_cb(CtkWidget *event_box, CdkEventButton *event, MathButtons *buttons);
 G_MODULE_EXPORT
 gboolean
-bit_toggle_cb(CtkWidget *event_box, GdkEventButton *event, MathButtons *buttons)
+bit_toggle_cb(CtkWidget *event_box, CdkEventButton *event, MathButtons *buttons)
 {
     math_equation_toggle_bit(buttons->priv->equation, GPOINTER_TO_INT(g_object_get_data(G_OBJECT(event_box), "bit_index")));
     return TRUE;
