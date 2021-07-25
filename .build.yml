@@ -16,7 +16,6 @@ requires:
     - git
     - libatk1.0-dev
     - libglib2.0-dev
-    - libgtk-3-dev
     - libxml2-dev
     - make
     - wget
