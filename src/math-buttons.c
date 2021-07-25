@@ -881,7 +881,7 @@ memory_cb(CtkWidget *widget, MathButtons *buttons)
     ctk_window_set_transient_for(CTK_WINDOW(popup), CTK_WINDOW(ctk_widget_get_toplevel(widget)));
 
     ctk_widget_get_allocation(widget, &allocation);
-    gdk_window_get_root_coords(ctk_widget_get_window(widget), allocation.x, allocation.y, &x, &y);
+    cdk_window_get_root_coords(ctk_widget_get_window(widget), allocation.x, allocation.y, &x, &y);
     ctk_window_move(CTK_WINDOW(popup), x, y);
     ctk_widget_show(CTK_WIDGET(popup));
 }
