@@ -88,7 +88,7 @@
 ### cafe-calc 1.21.0
 
   * Translations update
-  * UI: avoid deprecated GtkButton:use-stock
+  * UI: avoid deprecated CtkButton:use-stock
   * UI: drop all deprecated elements
   * replace deprecated ctk_menu_popup
   * math-preferences: add window icon to Preferences dialog
@@ -99,7 +99,7 @@
 
   * Translations update
   * Add icon image on close button in preferences dialog
-  * avoid deprecated GtkStock
+  * avoid deprecated CtkStock
   * building: bump required glib and ctk+ versions
   * add missing window icon to About dialog
   * update copyright year to 2018

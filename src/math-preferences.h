@@ -23,13 +23,13 @@ typedef struct MathPreferencesDialogPrivate MathPreferencesDialogPrivate;
 
 typedef struct
 {
-    GtkDialog                 parent_instance;
+    CtkDialog                 parent_instance;
     MathPreferencesDialogPrivate *priv;
 } MathPreferencesDialog;
 
 typedef struct
 {
-    GtkDialogClass parent_class;
+    CtkDialogClass parent_class;
 } MathPreferencesDialogClass;
 
 GType math_preferences_get_type(void);

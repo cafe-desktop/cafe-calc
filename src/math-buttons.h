@@ -23,13 +23,13 @@ typedef struct MathButtonsPrivate MathButtonsPrivate;
 
 typedef struct
 {
-    GtkVBox parent_instance;
+    CtkVBox parent_instance;
     MathButtonsPrivate *priv;
 } MathButtons;
 
 typedef struct
 {
-    GtkVBoxClass parent_class;
+    CtkVBoxClass parent_class;
 } MathButtonsClass;
 
 typedef enum {

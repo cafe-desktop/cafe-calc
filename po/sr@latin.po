@@ -973,7 +973,7 @@ msgstr ""
 "  -v, --version                   Ispisuje izdanje programa\n"
 "  -h, -?, --help                  Prikazuje opcije pomoći\n"
 "  --help-all                      Prikazuje sve opcije pomoći\n"
-"  --help-ctk                      Prikazuje Gtk+ opcije"
+"  --help-ctk                      Prikazuje Ctk+ opcije"
 
 #. Description on cafe-calc command-line GTK+ options displayed on command-
 #. line
@@ -988,12 +988,12 @@ msgid ""
 "  --ctk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Gtk+ opcije:\n"
+"Ctk+ opcije:\n"
 "  --class=RAZRED                  Razred programa kako ga koristi upravljač prozora\n"
 "  --name=NAZIV                    Naziv programa kako ga koristi upravljač prozora\n"
 "  --screen=EKRAN                  Iks ekran za korišćenje\n"
 "  --sync                          Čini pozive Iksa usklađenim\n"
-"  --ctk-module=MODULI             Učitava dopunske Gtk+ module\n"
+"  --ctk-module=MODULI             Učitava dopunske Ctk+ module\n"
 "  --g-fatal-warnings              Čini sva upozorenja kobnim"
 
 #. Description on cafe-calc application options displayed on command-line

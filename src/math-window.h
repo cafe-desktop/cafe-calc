@@ -26,13 +26,13 @@ typedef struct MathWindowPrivate MathWindowPrivate;
 
 typedef struct
 {
-    GtkWindow parent_instance;
+    CtkWindow parent_instance;
     MathWindowPrivate *priv;
 } MathWindow;
 
 typedef struct
 {
-    GtkWindowClass parent_class;
+    CtkWindowClass parent_class;
 
     void (*quit) (MathWindow *window);
 } MathWindowClass;
@@ -41,7 +41,7 @@ GType math_window_get_type(void);
 
 MathWindow *math_window_new(MathEquation *equation);
 
-GtkWidget *math_window_get_menu_bar(MathWindow *window);
+CtkWidget *math_window_get_menu_bar(MathWindow *window);
 
 MathEquation *math_window_get_equation(MathWindow *window);
 

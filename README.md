@@ -8,7 +8,7 @@ It incorporates a multiple precision arithmetic packages based on the
 work of Professor Richard Brent, who has also kindly given me
 permission to make it available.
 
-There is a single graphics driver for Gtk3 included with this release.
+There is a single graphics driver for Ctk3 included with this release.
 
 ## Getting started.
 

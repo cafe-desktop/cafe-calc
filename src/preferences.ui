@@ -2,7 +2,7 @@
 <!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="ctk+" version="3.22"/>
-  <object class="GtkListStore" id="angle_unit_model">
+  <object class="CtkListStore" id="angle_unit_model">
     <columns>
       <!-- column-name label -->
       <column type="gchararray"/>
@@ -10,17 +10,17 @@
       <column type="gint"/>
     </columns>
   </object>
-  <object class="GtkAdjustment" id="decimal_places_adjustment">
+  <object class="CtkAdjustment" id="decimal_places_adjustment">
     <property name="upper">15</property>
     <property name="step_increment">1</property>
     <property name="page_increment">1</property>
   </object>
-  <object class="GtkImage" id="image1">
+  <object class="CtkImage" id="image1">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="icon_name">window-close</property>
   </object>
-  <object class="GtkListStore" id="number_format_model">
+  <object class="CtkListStore" id="number_format_model">
     <columns>
       <!-- column-name label -->
       <column type="gchararray"/>
@@ -28,7 +28,7 @@
       <column type="gint"/>
     </columns>
   </object>
-  <object class="GtkListStore" id="word_size_model">
+  <object class="CtkListStore" id="word_size_model">
     <columns>
       <!-- column-name label -->
       <column type="gchararray"/>
@@ -54,7 +54,7 @@
       </row>
     </data>
   </object>
-  <object class="GtkDialog" id="preferences_dialog">
+  <object class="CtkDialog" id="preferences_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">8</property>
     <property name="title" translatable="yes">Preferences</property>
@@ -65,18 +65,18 @@
       <placeholder/>
     </child>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox4">
+      <object class="CtkBox" id="dialog-vbox4">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <property name="spacing">5</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area4">
+          <object class="CtkButtonBox" id="dialog-action_area4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button1">
+              <object class="CtkButton" id="button1">
                 <property name="label" translatable="yes">_Close</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -99,14 +99,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="preferences_table">
+          <object class="CtkGrid" id="preferences_table">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">5</property>
             <property name="row_spacing">12</property>
             <property name="column_spacing">6</property>
             <child>
-              <object class="GtkLabel" id="label8">
+              <object class="CtkLabel" id="label8">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Preferences dialog: Label for angle unit combo box">_Angle units:</property>
@@ -120,7 +120,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label9">
+              <object class="CtkLabel" id="label9">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Preferences dialog: Label for display format combo box">Number _Format:</property>
@@ -134,7 +134,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkComboBox" id="angle_unit_combobox">
+              <object class="CtkComboBox" id="angle_unit_combobox">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="model">angle_unit_model</property>
@@ -146,7 +146,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkComboBox" id="number_format_combobox">
+              <object class="CtkComboBox" id="number_format_combobox">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="model">number_format_model</property>
@@ -158,7 +158,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkComboBox" id="word_size_combobox">
+              <object class="CtkComboBox" id="word_size_combobox">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="model">word_size_model</property>
@@ -170,7 +170,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label11">
+              <object class="CtkLabel" id="label11">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes" comments="Preferences dialog: label for word size combo box">Word _size:</property>
@@ -184,18 +184,18 @@
               </packing>
             </child>
             <child>
-              <object class="GtkAlignment" id="alignment1">
+              <object class="CtkAlignment" id="alignment1">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="bottom_padding">6</property>
                 <property name="left_padding">12</property>
                 <child>
-                  <object class="GtkGrid" id="table2">
+                  <object class="CtkGrid" id="table2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="row_spacing">6</property>
                     <child>
-                      <object class="GtkCheckButton" id="trailing_zeroes_check">
+                      <object class="CtkCheckButton" id="trailing_zeroes_check">
                         <property name="label" translatable="yes" comments="Preferences dialog: label for show trailing zeroes check button">Show trailing _zeroes</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
@@ -211,7 +211,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkCheckButton" id="thousands_separator_check">
+                      <object class="CtkCheckButton" id="thousands_separator_check">
                         <property name="label" translatable="yes" comments="Preferences dialog: label for show thousands separator check button">Show _thousands separators</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
@@ -227,15 +227,15 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkBox" id="hbox1">
+                      <object class="CtkBox" id="hbox1">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="spacing">6</property>
                         <child>
-                          <object class="GtkLabel" id="decimal_places_label1">
+                          <object class="CtkLabel" id="decimal_places_label1">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" comments="Not translated by Gtk+, is translated as one string">Show</property>
+                            <property name="label" comments="Not translated by Ctk+, is translated as one string">Show</property>
                             <property name="use_underline">True</property>
                             <property name="mnemonic_widget">decimal_places_spin</property>
                             <property name="xalign">0</property>
@@ -247,7 +247,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkSpinButton" id="decimal_places_spin">
+                          <object class="CtkSpinButton" id="decimal_places_spin">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="invisible_char">●</property>
@@ -261,10 +261,10 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="decimal_places_label2">
+                          <object class="CtkLabel" id="decimal_places_label2">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" comments="Not translated by Gtk+, is translated as one string">decimal _places</property>
+                            <property name="label" comments="Not translated by Ctk+, is translated as one string">decimal _places</property>
                             <property name="use_underline">True</property>
                             <property name="mnemonic_widget">decimal_places_spin</property>
                             <property name="xalign">0</property>

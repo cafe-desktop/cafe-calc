@@ -29,13 +29,13 @@ typedef struct MathEquationPrivate MathEquationPrivate;
 
 typedef struct
 {
-    GtkTextBuffer parent_instance;
+    CtkTextBuffer parent_instance;
     MathEquationPrivate *priv;
 } MathEquation;
 
 typedef struct
 {
-    GtkTextBufferClass parent_class;
+    CtkTextBufferClass parent_class;
 } MathEquationClass;
 
 typedef enum {

@@ -2,19 +2,19 @@
 <!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="ctk+" version="3.22"/>
-  <object class="GtkWindow" id="window1">
+  <object class="CtkWindow" id="window1">
     <property name="can_focus">False</property>
     <child type="titlebar">
       <placeholder/>
     </child>
     <child>
-      <object class="GtkGrid" id="button_panel">
+      <object class="CtkGrid" id="button_panel">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="row_homogeneous">True</property>
         <property name="column_homogeneous">True</property>
         <child>
-          <object class="GtkButton" id="calc_factor_button">
+          <object class="CtkButton" id="calc_factor_button">
             <property name="label">a×b</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -34,7 +34,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_imaginary_portion_button">
+          <object class="CtkButton" id="calc_imaginary_portion_button">
             <property name="label">Im</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -49,7 +49,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_imaginary_button">
+          <object class="CtkButton" id="calc_imaginary_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
@@ -57,7 +57,7 @@
             <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="imaginary_label">
+              <object class="CtkLabel" id="imaginary_label">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;i&lt;/i&gt;</property>
@@ -71,7 +71,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_4_button">
+          <object class="CtkButton" id="calc_4_button">
             <property name="label">4</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -86,7 +86,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_7_button">
+          <object class="CtkButton" id="calc_7_button">
             <property name="label">7</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -101,7 +101,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_8_button">
+          <object class="CtkButton" id="calc_8_button">
             <property name="label">8</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -116,7 +116,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_9_button">
+          <object class="CtkButton" id="calc_9_button">
             <property name="label">9</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -131,7 +131,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_5_button">
+          <object class="CtkButton" id="calc_5_button">
             <property name="label">5</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -146,7 +146,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_6_button">
+          <object class="CtkButton" id="calc_6_button">
             <property name="label">6</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -161,7 +161,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_divide_button">
+          <object class="CtkButton" id="calc_divide_button">
             <property name="label">÷</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -176,7 +176,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_2_button">
+          <object class="CtkButton" id="calc_2_button">
             <property name="label">2</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -191,7 +191,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_numeric_point_button">
+          <object class="CtkButton" id="calc_numeric_point_button">
             <property name="label" comments="Label is set in ctk.c to comply with LC flags">.</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -206,7 +206,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_3_button">
+          <object class="CtkButton" id="calc_3_button">
             <property name="label">3</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -221,7 +221,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_multiply_button">
+          <object class="CtkButton" id="calc_multiply_button">
             <property name="label">×</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -236,7 +236,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_subtract_button">
+          <object class="CtkButton" id="calc_subtract_button">
             <property name="label">−</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -251,7 +251,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_add_button">
+          <object class="CtkButton" id="calc_add_button">
             <property name="label">+</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -266,7 +266,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_result_button">
+          <object class="CtkButton" id="calc_result_button">
             <property name="label" translatable="yes" comments="Label on the solve button (clicking this solves the displayed calculation)">=</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -284,7 +284,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_clear_button">
+          <object class="CtkButton" id="calc_clear_button">
             <property name="label" translatable="yes">Clear</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -301,7 +301,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_exponential_button">
+          <object class="CtkButton" id="calc_exponential_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
@@ -309,7 +309,7 @@
             <property name="use_underline">True</property>
             <signal name="clicked" handler="exponent_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="label2">
+              <object class="CtkLabel" id="label2">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">×10&lt;sup&gt;&lt;i&gt;y&lt;/i&gt;&lt;/sup&gt;</property>
@@ -328,7 +328,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_modulus_divide_button">
+          <object class="CtkButton" id="calc_modulus_divide_button">
             <property name="label">mod</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -343,7 +343,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_start_group_button">
+          <object class="CtkButton" id="calc_start_group_button">
             <property name="label">(</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -358,7 +358,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_end_group_button">
+          <object class="CtkButton" id="calc_end_group_button">
             <property name="label">)</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -373,18 +373,18 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_memory_button">
+          <object class="CtkButton" id="calc_memory_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="memory_cb" swapped="no"/>
             <child>
-              <object class="GtkBox" id="hbox20">
+              <object class="CtkBox" id="hbox20">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
-                  <object class="GtkLabel" id="label23">
+                  <object class="CtkLabel" id="label23">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes" comments="The label on the memory button">x</property>
@@ -399,7 +399,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkArrow" id="arrow14">
+                  <object class="CtkArrow" id="arrow14">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="arrow_type">down</property>
@@ -425,7 +425,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_real_portion_button">
+          <object class="CtkButton" id="calc_real_portion_button">
             <property name="label">Re</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -440,7 +440,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_conjugate_button">
+          <object class="CtkButton" id="calc_conjugate_button">
             <property name="label">conj</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -455,7 +455,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_natural_logarithm_button">
+          <object class="CtkButton" id="calc_natural_logarithm_button">
             <property name="label">ln</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -470,7 +470,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_logarithm_button">
+          <object class="CtkButton" id="calc_logarithm_button">
             <property name="label">log</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -484,14 +484,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_x_pow_y_button">
+          <object class="CtkButton" id="calc_x_pow_y_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="x_pow_y_label">
+              <object class="CtkLabel" id="x_pow_y_label">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;x&lt;/i&gt;&lt;sup&gt;&lt;i&gt;y&lt;/i&gt;&lt;/sup&gt;</property>
@@ -510,7 +510,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_root_button">
+          <object class="CtkButton" id="calc_root_button">
             <property name="label">√</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -525,7 +525,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_undo_button">
+          <object class="CtkButton" id="calc_undo_button">
             <property name="label" translatable="yes">Undo</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -539,7 +539,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_pi_button">
+          <object class="CtkButton" id="calc_pi_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
@@ -547,7 +547,7 @@
             <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="pi_label">
+              <object class="CtkLabel" id="pi_label">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">π</property>
@@ -561,7 +561,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_eulers_number_button">
+          <object class="CtkButton" id="calc_eulers_number_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
@@ -569,7 +569,7 @@
             <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="eulers_number_label">
+              <object class="CtkLabel" id="eulers_number_label">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;e&lt;/i&gt;</property>
@@ -583,13 +583,13 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="table1">
+          <object class="CtkGrid" id="table1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="row_homogeneous">True</property>
             <property name="column_homogeneous">True</property>
             <child>
-              <object class="GtkButton" id="calc_cosine_button">
+              <object class="CtkButton" id="calc_cosine_button">
                 <property name="label">cos</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -603,7 +603,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_sine_button">
+              <object class="CtkButton" id="calc_sine_button">
                 <property name="label">sin</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -617,7 +617,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_tangent_button">
+              <object class="CtkButton" id="calc_tangent_button">
                 <property name="label">tan</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -631,7 +631,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_hyperbolic_sine_button">
+              <object class="CtkButton" id="calc_hyperbolic_sine_button">
                 <property name="label">sinh</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -645,7 +645,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_hyperbolic_tangent_button">
+              <object class="CtkButton" id="calc_hyperbolic_tangent_button">
                 <property name="label">tanh</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -659,7 +659,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_inverse_sine_button">
+              <object class="CtkButton" id="calc_inverse_sine_button">
                 <property name="label" translatable="yes">asin</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -673,7 +673,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_inverse_tangent_button">
+              <object class="CtkButton" id="calc_inverse_tangent_button">
                 <property name="label" translatable="yes">atan</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -687,7 +687,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_hyperbolic_cosine_button">
+              <object class="CtkButton" id="calc_hyperbolic_cosine_button">
                 <property name="label">cosh</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -701,7 +701,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calc_inverse_cosine_button">
+              <object class="CtkButton" id="calc_inverse_cosine_button">
                 <property name="label" translatable="yes">acos</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -723,18 +723,18 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_function_button">
+          <object class="CtkButton" id="calc_function_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="function_cb" swapped="no"/>
             <child>
-              <object class="GtkBox" id="hbox2">
+              <object class="CtkBox" id="hbox2">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
-                  <object class="GtkLabel" id="label5">
+                  <object class="CtkLabel" id="label5">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label">f(x)</property>
@@ -746,7 +746,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkArrow" id="arrow1">
+                  <object class="CtkArrow" id="arrow1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="arrow_type">down</property>
@@ -771,14 +771,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_inverse_button">
+          <object class="CtkButton" id="calc_inverse_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="label20">
+              <object class="CtkLabel" id="label20">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;x&lt;/i&gt;&lt;sup&gt;−1&lt;/sup&gt;</property>
@@ -798,14 +798,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_factorial_button">
+          <object class="CtkButton" id="calc_factorial_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="label14">
+              <object class="CtkLabel" id="label14">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;x&lt;/i&gt;!</property>
@@ -824,7 +824,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_abs_button">
+          <object class="CtkButton" id="calc_abs_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
@@ -832,7 +832,7 @@
             <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="label1">
+              <object class="CtkLabel" id="label1">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">|&lt;i&gt;x&lt;/i&gt;|</property>
@@ -851,7 +851,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_arg_button">
+          <object class="CtkButton" id="calc_arg_button">
             <property name="label">Arg</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -866,14 +866,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkToggleButton" id="calc_superscript_button">
+          <object class="CtkToggleButton" id="calc_superscript_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="set_superscript_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="label3">
+              <object class="CtkLabel" id="label3">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">↑n</property>
@@ -892,14 +892,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkToggleButton" id="calc_subscript_button">
+          <object class="CtkToggleButton" id="calc_subscript_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="set_subscript_cb" swapped="no"/>
             <child>
-              <object class="GtkLabel" id="label4">
+              <object class="CtkLabel" id="label4">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label">↓n</property>
@@ -918,7 +918,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_1_button">
+          <object class="CtkButton" id="calc_1_button">
             <property name="label">1</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -933,7 +933,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_0_button">
+          <object class="CtkButton" id="calc_0_button">
             <property name="label">0</property>
             <property name="width_request">50</property>
             <property name="visible">True</property>
@@ -949,18 +949,18 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_const_button">
+          <object class="CtkButton" id="calc_const_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="const_cb" swapped="no"/>
             <child>
-              <object class="GtkBox" id="hbox3">
+              <object class="CtkBox" id="hbox3">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
-                  <object class="GtkLabel">
+                  <object class="CtkLabel">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">const</property>
@@ -972,7 +972,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkArrow" id="arrow3">
+                  <object class="CtkArrow" id="arrow3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="arrow_type">down</property>

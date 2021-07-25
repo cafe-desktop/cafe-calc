@@ -25,13 +25,13 @@ typedef struct MathConverterPrivate MathConverterPrivate;
 
 typedef struct
 {
-    GtkHBox parent_instance;
+    CtkHBox parent_instance;
     MathConverterPrivate *priv;
 } MathConverter;
 
 typedef struct
 {
-    GtkHBoxClass parent_class;
+    CtkHBoxClass parent_class;
 
     void (*changed)(MathConverter *converter);
 } MathConverterClass;
