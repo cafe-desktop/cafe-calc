@@ -58,12 +58,12 @@ convert_equation(MathConverter *converter, const MPNumber *x, MPNumber *z)
     Unit *source_unit = NULL, *target_unit = NULL;
     gboolean result;
 
-    if (!gtk_combo_box_get_active_iter(GTK_COMBO_BOX(converter->priv->from_combo), &from_iter) ||
-        !gtk_combo_box_get_active_iter(GTK_COMBO_BOX(converter->priv->to_combo), &to_iter))
+    if (!ctk_combo_box_get_active_iter(GTK_COMBO_BOX(converter->priv->from_combo), &from_iter) ||
+        !ctk_combo_box_get_active_iter(GTK_COMBO_BOX(converter->priv->to_combo), &to_iter))
         return FALSE;
 
-    gtk_tree_model_get(gtk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->from_combo)), &from_iter, 1, &category, 2, &source_unit, -1);
-    gtk_tree_model_get(gtk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->to_combo)), &to_iter, 2, &target_unit, -1);
+    ctk_tree_model_get(ctk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->from_combo)), &from_iter, 1, &category, 2, &source_unit, -1);
+    ctk_tree_model_get(ctk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->to_combo)), &to_iter, 2, &target_unit, -1);
 
     result = unit_category_convert(category, x, source_unit, target_unit, z);
 
@@ -92,7 +92,7 @@ update_result_label(MathConverter *converter)
     else
         enabled = FALSE;
 
-    gtk_widget_set_sensitive(converter->priv->result_label, enabled);
+    ctk_widget_set_sensitive(converter->priv->result_label, enabled);
     if (enabled) {
         gchar *source_text, *target_text, *label;
         Unit *source_unit, *target_unit;
@@ -102,7 +102,7 @@ update_result_label(MathConverter *converter)
         source_text = unit_format(source_unit, &x);
         target_text = unit_format(target_unit, &z);
         label = g_strdup_printf("%s = %s", source_text, target_text);
-        gtk_label_set_text(GTK_LABEL(converter->priv->result_label), label);
+        ctk_label_set_text(GTK_LABEL(converter->priv->result_label), label);
 
         g_free(source_text);
         g_free(target_text);
@@ -126,7 +126,7 @@ update_from_model(MathConverter *converter)
 {
     GtkTreeStore *from_model;
 
-    from_model = gtk_tree_store_new(3, G_TYPE_STRING, G_TYPE_OBJECT, G_TYPE_OBJECT);
+    from_model = ctk_tree_store_new(3, G_TYPE_STRING, G_TYPE_OBJECT, G_TYPE_OBJECT);
 
     if (converter->priv->category == NULL) {
         const GList *categories, *iter;
@@ -137,15 +137,15 @@ update_from_model(MathConverter *converter)
             GtkTreeIter parent;
             const GList *unit_iter;
 
-            gtk_tree_store_append(from_model, &parent, NULL);
-            gtk_tree_store_set(from_model, &parent, 0, unit_category_get_display_name(category), 1, category, -1);
+            ctk_tree_store_append(from_model, &parent, NULL);
+            ctk_tree_store_set(from_model, &parent, 0, unit_category_get_display_name(category), 1, category, -1);
 
             for (unit_iter = unit_category_get_units(category); unit_iter; unit_iter = unit_iter->next) {
                 Unit *unit = unit_iter->data;
                 GtkTreeIter iter;
 
-                gtk_tree_store_append(from_model, &iter, &parent);
-                gtk_tree_store_set(from_model, &iter, 0, unit_get_display_name(unit), 1, category, 2, unit, -1);
+                ctk_tree_store_append(from_model, &iter, &parent);
+                ctk_tree_store_set(from_model, &iter, 0, unit_get_display_name(unit), 1, category, 2, unit, -1);
             }
         }
     }
@@ -158,12 +158,12 @@ update_from_model(MathConverter *converter)
             Unit *unit = unit_iter->data;
             GtkTreeIter iter;
 
-            gtk_tree_store_append(from_model, &iter, NULL);
-            gtk_tree_store_set(from_model, &iter, 0, unit_get_display_name(unit), 1, category, 2, unit, -1);
+            ctk_tree_store_append(from_model, &iter, NULL);
+            ctk_tree_store_set(from_model, &iter, 0, unit_get_display_name(unit), 1, category, 2, unit, -1);
         }
     }
 
-    gtk_combo_box_set_model(GTK_COMBO_BOX(converter->priv->from_combo), GTK_TREE_MODEL(from_model));
+    ctk_combo_box_set_model(GTK_COMBO_BOX(converter->priv->from_combo), GTK_TREE_MODEL(from_model));
 }
 
 
@@ -197,7 +197,7 @@ iter_is_unit(GtkTreeModel *model, GtkTreeIter *iter, Unit *unit)
 {
     Unit *u;
 
-    gtk_tree_model_get(model, iter, 2, &u, -1);
+    ctk_tree_model_get(model, iter, 2, &u, -1);
 
     if (!u)
         return FALSE;
@@ -216,20 +216,20 @@ set_active_unit(GtkComboBox *combo, GtkTreeIter *iter, Unit *unit)
     GtkTreeModel *model;
     GtkTreeIter child_iter;
 
-    model = gtk_combo_box_get_model(combo);
+    model = ctk_combo_box_get_model(combo);
 
     if (iter && iter_is_unit(model, iter, unit)) {
-        gtk_combo_box_set_active_iter(combo, iter);
+        ctk_combo_box_set_active_iter(combo, iter);
         return TRUE;
     }
 
-    if (!gtk_tree_model_iter_children(model, &child_iter, iter))
+    if (!ctk_tree_model_iter_children(model, &child_iter, iter))
         return FALSE;
 
     do {
         if (set_active_unit(combo, &child_iter, unit))
             return TRUE;
-    } while (gtk_tree_model_iter_next(model, &child_iter));
+    } while (ctk_tree_model_iter_next(model, &child_iter));
 
     return FALSE;
 }
@@ -253,12 +253,12 @@ math_converter_set_conversion(MathConverter *converter, /*const gchar *category,
         GtkTreeIter iter;
 
         /* Select the first unit */
-        model = gtk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->from_combo));
-        if (gtk_tree_model_get_iter_first(model, &iter)) {
+        model = ctk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->from_combo));
+        if (ctk_tree_model_get_iter_first(model, &iter)) {
             GtkTreeIter child_iter;
-            while (gtk_tree_model_iter_children(model, &child_iter, &iter))
+            while (ctk_tree_model_iter_children(model, &child_iter, &iter))
                 iter = child_iter;
-            gtk_combo_box_set_active_iter(GTK_COMBO_BOX(converter->priv->from_combo), &iter);
+            ctk_combo_box_set_active_iter(GTK_COMBO_BOX(converter->priv->from_combo), &iter);
         }
         return;
     }
@@ -277,11 +277,11 @@ math_converter_get_conversion(MathConverter *converter, Unit **from_unit, Unit *
     g_return_if_fail (from_unit != NULL);
     g_return_if_fail (to_unit != NULL);
 
-    gtk_combo_box_get_active_iter(GTK_COMBO_BOX(converter->priv->from_combo), &from_iter);
-    gtk_combo_box_get_active_iter(GTK_COMBO_BOX(converter->priv->to_combo), &to_iter);
+    ctk_combo_box_get_active_iter(GTK_COMBO_BOX(converter->priv->from_combo), &from_iter);
+    ctk_combo_box_get_active_iter(GTK_COMBO_BOX(converter->priv->to_combo), &to_iter);
 
-    gtk_tree_model_get(gtk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->from_combo)), &from_iter, 2, from_unit, -1);
-    gtk_tree_model_get(gtk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->to_combo)), &to_iter, 2, to_unit, -1);
+    ctk_tree_model_get(ctk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->from_combo)), &from_iter, 2, from_unit, -1);
+    ctk_tree_model_get(ctk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->to_combo)), &to_iter, 2, to_unit, -1);
 }
 
 
@@ -308,24 +308,24 @@ from_combobox_changed_cb(GtkWidget *combo, MathConverter *converter)
     Unit *unit;
     const GList *unit_iter;
 
-    model = gtk_combo_box_get_model(GTK_COMBO_BOX(combo));
-    if (!gtk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter))
+    model = ctk_combo_box_get_model(GTK_COMBO_BOX(combo));
+    if (!ctk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter))
         return;
-    gtk_tree_model_get(model, &iter, 1, &category, 2, &unit, -1);
+    ctk_tree_model_get(model, &iter, 1, &category, 2, &unit, -1);
 
     /* Set the to combobox to be the list of units can be converted to */
-    model = GTK_TREE_MODEL(gtk_list_store_new(3, G_TYPE_STRING, G_TYPE_OBJECT, G_TYPE_OBJECT));
+    model = GTK_TREE_MODEL(ctk_list_store_new(3, G_TYPE_STRING, G_TYPE_OBJECT, G_TYPE_OBJECT));
     for (unit_iter = unit_category_get_units(category); unit_iter; unit_iter = unit_iter->next) {
         Unit *u = unit_iter->data;
         if (u == unit)
             continue;
-        gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-        gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0, unit_get_display_name(u), 1, category, 2, u, -1);
+        ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+        ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0, unit_get_display_name(u), 1, category, 2, u, -1);
     }
-    gtk_combo_box_set_model(GTK_COMBO_BOX(converter->priv->to_combo), model);
+    ctk_combo_box_set_model(GTK_COMBO_BOX(converter->priv->to_combo), model);
 
     /* Select the first possible unit */
-    gtk_combo_box_set_active(GTK_COMBO_BOX(converter->priv->to_combo), 0);
+    ctk_combo_box_set_active(GTK_COMBO_BOX(converter->priv->to_combo), 0);
 
     g_object_unref(category);
     g_object_unref(unit);
@@ -349,7 +349,7 @@ from_cell_data_func(GtkCellLayout   *cell_layout,
                     GtkTreeIter     *iter,
                     gpointer         data)
 {
-    g_object_set(cell, "sensitive", !gtk_tree_model_iter_has_child(tree_model, iter), NULL);
+    g_object_set(cell, "sensitive", !ctk_tree_model_iter_has_child(tree_model, iter), NULL);
 }
 
 
@@ -387,54 +387,54 @@ math_converter_init(MathConverter *converter)
 
     converter->priv = math_converter_get_instance_private (converter);
 
-    gtk_box_set_spacing(GTK_BOX(converter), 6);
-    gtk_orientable_set_orientation (GTK_ORIENTABLE (converter),
+    ctk_box_set_spacing(GTK_BOX(converter), 6);
+    ctk_orientable_set_orientation (GTK_ORIENTABLE (converter),
                                     GTK_ORIENTATION_HORIZONTAL);
 
-    hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
-    gtk_widget_show(hbox);
-    gtk_box_pack_start(GTK_BOX(converter), hbox, FALSE, TRUE, 0);
+    hbox = ctk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
+    ctk_widget_show(hbox);
+    ctk_box_pack_start(GTK_BOX(converter), hbox, FALSE, TRUE, 0);
 
-    converter->priv->from_combo = gtk_combo_box_new ();
+    converter->priv->from_combo = ctk_combo_box_new ();
 
-    renderer = gtk_cell_renderer_text_new();
-    gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(converter->priv->from_combo), renderer, TRUE);
-    gtk_cell_layout_add_attribute(GTK_CELL_LAYOUT(converter->priv->from_combo), renderer, "text", 0);
-    gtk_cell_layout_set_cell_data_func(GTK_CELL_LAYOUT(converter->priv->from_combo),
+    renderer = ctk_cell_renderer_text_new();
+    ctk_cell_layout_pack_start(GTK_CELL_LAYOUT(converter->priv->from_combo), renderer, TRUE);
+    ctk_cell_layout_add_attribute(GTK_CELL_LAYOUT(converter->priv->from_combo), renderer, "text", 0);
+    ctk_cell_layout_set_cell_data_func(GTK_CELL_LAYOUT(converter->priv->from_combo),
                                        renderer,
                                        from_cell_data_func,
                                        NULL, NULL);
     g_signal_connect(converter->priv->from_combo, "changed", G_CALLBACK(from_combobox_changed_cb), converter);
-    gtk_widget_show(converter->priv->from_combo);
-    gtk_box_pack_start(GTK_BOX(hbox), converter->priv->from_combo, FALSE, TRUE, 0);
+    ctk_widget_show(converter->priv->from_combo);
+    ctk_box_pack_start(GTK_BOX(hbox), converter->priv->from_combo, FALSE, TRUE, 0);
 
-    label = gtk_label_new(/* Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]" */
+    label = ctk_label_new(/* Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]" */
                           _(" in "));
-    gtk_widget_show(label);
-    gtk_box_pack_start(GTK_BOX(hbox), label, FALSE, TRUE, 5);
+    ctk_widget_show(label);
+    ctk_box_pack_start(GTK_BOX(hbox), label, FALSE, TRUE, 5);
 
-    converter->priv->to_combo = gtk_combo_box_new();
-    renderer = gtk_cell_renderer_text_new();
-    gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(converter->priv->to_combo), renderer, TRUE);
-    gtk_cell_layout_add_attribute(GTK_CELL_LAYOUT(converter->priv->to_combo), renderer, "text", 0);
+    converter->priv->to_combo = ctk_combo_box_new();
+    renderer = ctk_cell_renderer_text_new();
+    ctk_cell_layout_pack_start(GTK_CELL_LAYOUT(converter->priv->to_combo), renderer, TRUE);
+    ctk_cell_layout_add_attribute(GTK_CELL_LAYOUT(converter->priv->to_combo), renderer, "text", 0);
     g_signal_connect(converter->priv->to_combo, "changed", G_CALLBACK(to_combobox_changed_cb), converter);
-    gtk_widget_show(converter->priv->to_combo);
-    gtk_box_pack_start(GTK_BOX(hbox), converter->priv->to_combo, FALSE, TRUE, 0);
+    ctk_widget_show(converter->priv->to_combo);
+    ctk_box_pack_start(GTK_BOX(hbox), converter->priv->to_combo, FALSE, TRUE, 0);
 
-    swap_button = gtk_button_new_with_label ("⇆");
-    gtk_widget_set_tooltip_text (swap_button,
+    swap_button = ctk_button_new_with_label ("⇆");
+    ctk_widget_set_tooltip_text (swap_button,
                                  /* Tooltip for swap conversion button */
                                  _("Switch conversion units"));
-    gtk_button_set_relief (GTK_BUTTON (swap_button), GTK_RELIEF_NONE);
+    ctk_button_set_relief (GTK_BUTTON (swap_button), GTK_RELIEF_NONE);
     g_signal_connect (swap_button, "clicked", G_CALLBACK (swap_button_clicked_cb), converter);
-    gtk_widget_show(swap_button);
-    gtk_box_pack_start(GTK_BOX(hbox), swap_button, FALSE, TRUE, 0);
+    ctk_widget_show(swap_button);
+    ctk_box_pack_start(GTK_BOX(hbox), swap_button, FALSE, TRUE, 0);
 
-    converter->priv->result_label = gtk_label_new("");
-    gtk_widget_set_halign (converter->priv->result_label, GTK_ALIGN_END);
-    gtk_widget_set_sensitive(converter->priv->result_label, FALSE);
-    gtk_widget_show(converter->priv->result_label);
-    gtk_box_pack_start(GTK_BOX(converter), converter->priv->result_label, TRUE, TRUE, 0);
+    converter->priv->result_label = ctk_label_new("");
+    ctk_widget_set_halign (converter->priv->result_label, GTK_ALIGN_END);
+    ctk_widget_set_sensitive(converter->priv->result_label, FALSE);
+    ctk_widget_show(converter->priv->result_label);
+    ctk_box_pack_start(GTK_BOX(converter), converter->priv->result_label, TRUE, TRUE, 0);
 
     g_signal_connect(currency_manager_get_default(), "updated", G_CALLBACK(currency_updated_cb), converter);
 }

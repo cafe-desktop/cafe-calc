@@ -12,7 +12,7 @@
 #define MATH_BUTTONS_H
 
 #include <glib-object.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include "math-equation.h"
 
 G_BEGIN_DECLS

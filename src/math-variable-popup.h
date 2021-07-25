@@ -11,7 +11,7 @@
 #ifndef MATH_VARIABLE_POPUP_H
 #define MATH_VARIABLE_POPUP_H
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include "math-equation.h"
 
 G_BEGIN_DECLS

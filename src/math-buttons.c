@@ -67,7 +67,7 @@ G_DEFINE_TYPE_WITH_PRIVATE (MathButtons, math_buttons, GTK_TYPE_BOX);
 #define UI_PROGRAMMING_RESOURCE_PATH "/org/cafe/calculator/ui/buttons-programming.ui"
 
 #define GET_WIDGET(ui, name) \
-          GTK_WIDGET(gtk_builder_get_object((ui), (name)))
+          GTK_WIDGET(ctk_builder_get_object((ui), (name)))
 
 #define WM_WIDTH_FACTOR  10
 #define WM_HEIGHT_FACTOR 30
@@ -314,7 +314,7 @@ static void
 set_data(GtkBuilder *ui, const gchar *object_name, const gchar *name, const char *value)
 {
     GObject *object;
-    object = gtk_builder_get_object(ui, object_name);
+    object = ctk_builder_get_object(ui, object_name);
     if (object)
         g_object_set_data(object, name, GINT_TO_POINTER(value));
 }
@@ -324,7 +324,7 @@ static void
 set_int_data(GtkBuilder *ui, const gchar *object_name, const gchar *name, gint value)
 {
     GObject *object;
-    object = gtk_builder_get_object(ui, object_name);
+    object = ctk_builder_get_object(ui, object_name);
     if (object)
         g_object_set_data(object, name, GINT_TO_POINTER(value));
 }
@@ -349,7 +349,7 @@ load_finc_dialogs(MathButtons *buttons)
     for (i = 0; finc_dialog_fields[i][0] != NULL; i++) {
         for (j = 0; finc_dialog_fields[i][j]; j++) {
             GObject *o;
-            o = gtk_builder_get_object (buttons->priv->financial_ui, finc_dialog_fields[i][j]);
+            o = ctk_builder_get_object (buttons->priv->financial_ui, finc_dialog_fields[i][j]);
             g_object_set_data(o, "finc_field", GINT_TO_POINTER(j));
             g_object_set_data(o, "finc_dialog", GINT_TO_POINTER(i));
         }
@@ -383,8 +383,8 @@ update_bit_panel(MathButtons *buttons)
             bits = mp_cast_to_unsigned_int(&x);
     }
 
-    gtk_widget_set_sensitive(buttons->priv->bit_panel, enabled);
-    gtk_widget_set_sensitive(buttons->priv->base_label, enabled);
+    ctk_widget_set_sensitive(buttons->priv->bit_panel, enabled);
+    ctk_widget_set_sensitive(buttons->priv->base_label, enabled);
 
     if (!enabled)
         return;
@@ -396,7 +396,7 @@ update_bit_panel(MathButtons *buttons)
             label = " 1";
         else
             label = " 0";
-        gtk_label_set_text(GTK_LABEL(buttons->priv->bit_labels[i]), label);
+        ctk_label_set_text(GTK_LABEL(buttons->priv->bit_labels[i]), label);
     }
 
     base = math_equation_get_base(buttons->priv->equation);
@@ -420,7 +420,7 @@ update_bit_panel(MathButtons *buttons)
         g_string_append(label, "₁₆");
     }
 
-    gtk_label_set_text(GTK_LABEL(buttons->priv->base_label), label->str);
+    ctk_label_set_text(GTK_LABEL(buttons->priv->base_label), label->str);
     g_string_free(label, TRUE);
 }
 
@@ -439,9 +439,9 @@ base_combobox_changed_cb(GtkWidget *combo, MathButtons *buttons)
     GtkTreeModel *model;
     GtkTreeIter iter;
 
-    model = gtk_combo_box_get_model(GTK_COMBO_BOX(combo));
-    gtk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
-    gtk_tree_model_get(model, &iter, 1, &value, -1);
+    model = ctk_combo_box_get_model(GTK_COMBO_BOX(combo));
+    ctk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
+    ctk_tree_model_get(model, &iter, 1, &value, -1);
 
     math_buttons_set_programming_base(buttons, value);
 }
@@ -457,22 +457,22 @@ base_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *buttons)
     if (buttons->priv->mode != PROGRAMMING)
         return;
 
-    model = gtk_combo_box_get_model(GTK_COMBO_BOX(buttons->priv->base_combo));
-    valid = gtk_tree_model_get_iter_first(model, &iter);
+    model = ctk_combo_box_get_model(GTK_COMBO_BOX(buttons->priv->base_combo));
+    valid = ctk_tree_model_get_iter_first(model, &iter);
     buttons->priv->programming_base = math_equation_get_base(buttons->priv->equation);
 
     while (valid) {
         gint v;
 
-        gtk_tree_model_get(model, &iter, 1, &v, -1);
+        ctk_tree_model_get(model, &iter, 1, &v, -1);
         if (v == buttons->priv->programming_base)
             break;
-        valid = gtk_tree_model_iter_next(model, &iter);
+        valid = ctk_tree_model_iter_next(model, &iter);
     }
     if (!valid)
-        valid = gtk_tree_model_get_iter_first(model, &iter);
+        valid = ctk_tree_model_get_iter_first(model, &iter);
 
-    gtk_combo_box_set_active_iter(GTK_COMBO_BOX(buttons->priv->base_combo), &iter);
+    ctk_combo_box_set_active_iter(GTK_COMBO_BOX(buttons->priv->base_combo), &iter);
 }
 
 
@@ -517,15 +517,15 @@ load_mode(MathButtons *buttons, ButtonMode mode)
     if (*panel)
         goto out;
 
-    builder = *builder_ptr = gtk_builder_new();
+    builder = *builder_ptr = ctk_builder_new();
     // FIXME: Show dialog if failed to load
-    gtk_builder_add_objects_from_resource(builder, path, objects, &error);
+    ctk_builder_add_objects_from_resource(builder, path, objects, &error);
     if (error) {
         g_warning("Error loading button UI: %s", error->message);
         g_clear_error(&error);
     }
     *panel = GET_WIDGET(builder, "button_panel");
-    gtk_box_pack_end(GTK_BOX(buttons), *panel, TRUE, TRUE, 0);
+    ctk_box_pack_end(GTK_BOX(buttons), *panel, TRUE, TRUE, 0);
 
     /* Configure buttons */
     for (i = 0; button_data[i].widget_name != NULL; i++) {
@@ -533,7 +533,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
         GtkWidget *button;
 
         name = g_strdup_printf("calc_%s_button", button_data[i].widget_name);
-        object = gtk_builder_get_object(*builder_ptr, name);
+        object = ctk_builder_get_object(*builder_ptr, name);
         g_free(name);
 
         if (!object)
@@ -543,9 +543,9 @@ load_mode(MathButtons *buttons, ButtonMode mode)
             g_object_set_data(object, "calc_text", (gpointer) button_data[i].data);
 
         if (button_data[i].tooltip)
-            gtk_widget_set_tooltip_text(button, _(button_data[i].tooltip));
+            ctk_widget_set_tooltip_text(button, _(button_data[i].tooltip));
 
-        atk_object_set_name(gtk_widget_get_accessible(button), button_data[i].widget_name);
+        atk_object_set_name(ctk_widget_get_accessible(button), button_data[i].widget_name);
     }
 
     /* Set special button data */
@@ -561,7 +561,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
             g_object_set_data(G_OBJECT(button), "calc_digit", GINT_TO_POINTER(i));
             len = g_unichar_to_utf8(math_equation_get_digit_text(buttons->priv->equation, i), buffer);
             buffer[len] = '\0';
-            gtk_button_set_label(GTK_BUTTON(button), buffer);
+            ctk_button_set_label(GTK_BUTTON(button), buffer);
         }
         g_free(name);
     }
@@ -572,20 +572,20 @@ load_mode(MathButtons *buttons, ButtonMode mode)
         gint len;
         len = g_unichar_to_utf8(mp_serializer_get_radix(serializer), buffer);
         buffer[len] = '\0';
-        gtk_button_set_label(GTK_BUTTON(widget), buffer);
+        ctk_button_set_label(GTK_BUTTON(widget), buffer);
     }
 
     widget = GET_WIDGET(builder, "calc_superscript_button");
     if (widget) {
         buttons->priv->superscript_toggles = g_list_append(buttons->priv->superscript_toggles, widget);
         if (math_equation_get_number_mode(buttons->priv->equation) == SUPERSCRIPT)
-            gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), TRUE);
+            ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), TRUE);
     }
     widget = GET_WIDGET(builder, "calc_subscript_button");
     if (widget) {
         buttons->priv->subscript_toggles = g_list_append(buttons->priv->subscript_toggles, widget);
         if (math_equation_get_number_mode(buttons->priv->equation) == SUBSCRIPT)
-            gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), TRUE);
+            ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), TRUE);
     }
 
     /* put the icon name "process-stop" in the buttons
@@ -596,8 +596,8 @@ load_mode(MathButtons *buttons, ButtonMode mode)
         if (i % 2) {
             widget = GET_WIDGET (builder, g_strdup_printf ("button%d",i));
             if (GTK_IS_BUTTON(widget))
-                gtk_button_set_image (GTK_BUTTON (widget),
-                                      gtk_image_new_from_icon_name ("process-stop", GTK_ICON_SIZE_BUTTON));
+                ctk_button_set_image (GTK_BUTTON (widget),
+                                      ctk_image_new_from_icon_name ("process-stop", GTK_ICON_SIZE_BUTTON));
         }
     }
 
@@ -620,27 +620,27 @@ load_mode(MathButtons *buttons, ButtonMode mode)
         }
 
         buttons->priv->base_combo = GET_WIDGET(builder, "base_combo");
-        model = gtk_list_store_new(2, G_TYPE_STRING, G_TYPE_INT, G_TYPE_INT);
-        gtk_combo_box_set_model(GTK_COMBO_BOX(buttons->priv->base_combo), GTK_TREE_MODEL(model));
-        gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-        gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+        model = ctk_list_store_new(2, G_TYPE_STRING, G_TYPE_INT, G_TYPE_INT);
+        ctk_combo_box_set_model(GTK_COMBO_BOX(buttons->priv->base_combo), GTK_TREE_MODEL(model));
+        ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+        ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                            /* Number display mode combo: Binary, e.g. 10011010010₂ */
                            _("Binary"), 1, 2, -1);
-        gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-        gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+        ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+        ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                            /* Number display mode combo: Octal, e.g. 2322₈ */
                            _("Octal"), 1, 8, -1);
-        gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-        gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+        ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+        ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                            /* Number display mode combo: Decimal, e.g. 1234 */
                            _("Decimal"), 1, 10, -1);
-        gtk_list_store_append(GTK_LIST_STORE(model), &iter);
-        gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+        ctk_list_store_append(GTK_LIST_STORE(model), &iter);
+        ctk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                            /* Number display mode combo: Hexadecimal, e.g. 4D2₁₆ */
                            _("Hexadecimal"), 1, 16, -1);
-        renderer = gtk_cell_renderer_text_new();
-        gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(buttons->priv->base_combo), renderer, TRUE);
-        gtk_cell_layout_add_attribute(GTK_CELL_LAYOUT(buttons->priv->base_combo), renderer, "text", 0);
+        renderer = ctk_cell_renderer_text_new();
+        ctk_cell_layout_pack_start(GTK_CELL_LAYOUT(buttons->priv->base_combo), renderer, TRUE);
+        ctk_cell_layout_add_attribute(GTK_CELL_LAYOUT(buttons->priv->base_combo), renderer, "text", 0);
 
         g_signal_connect(buttons->priv->base_combo, "changed", G_CALLBACK(base_combobox_changed_cb), buttons);
         g_signal_connect(buttons->priv->equation, "notify::base", G_CALLBACK(base_changed_cb), buttons);
@@ -663,7 +663,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
         set_data(builder, "calc_finc_term_button", "finc_dialog", "term_dialog");
     }
 
-    gtk_builder_connect_signals(builder, buttons);
+    ctk_builder_connect_signals(builder, buttons);
 
     display_changed_cb(buttons->priv->equation, NULL, buttons);
 
@@ -697,13 +697,13 @@ load_buttons(MathButtons *buttons)
 {
     GtkWidget *panel;
 
-    if (!gtk_widget_get_visible(GTK_WIDGET(buttons)))
+    if (!ctk_widget_get_visible(GTK_WIDGET(buttons)))
         return;
 
     if (!buttons->priv->converter) {
         buttons->priv->converter = math_converter_new(buttons->priv->equation);
         g_signal_connect(buttons->priv->converter, "changed", G_CALLBACK(converter_changed_cb), buttons);
-        gtk_box_pack_start(GTK_BOX(buttons), GTK_WIDGET(buttons->priv->converter), FALSE, TRUE, 0);
+        ctk_box_pack_start(GTK_BOX(buttons), GTK_WIDGET(buttons->priv->converter), FALSE, TRUE, 0);
     }
 
     panel = load_mode(buttons, buttons->priv->mode);
@@ -712,12 +712,12 @@ load_buttons(MathButtons *buttons)
 
     /* Hide old buttons */
     if (buttons->priv->active_panel)
-        gtk_widget_hide(buttons->priv->active_panel);
+        ctk_widget_hide(buttons->priv->active_panel);
 
     /* Load and display new buttons */
     buttons->priv->active_panel = panel;
     if (panel)
-        gtk_widget_show(panel);
+        ctk_widget_show(panel);
 }
 
 
@@ -738,7 +738,7 @@ math_buttons_set_mode(MathButtons *buttons, ButtonMode mode)
 
     load_buttons(buttons);
 
-    gtk_widget_set_visible(GTK_WIDGET(buttons->priv->converter), mode == ADVANCED || mode == FINANCIAL);
+    ctk_widget_set_visible(GTK_WIDGET(buttons->priv->converter), mode == ADVANCED || mode == FINANCIAL);
     if (mode == ADVANCED) {
         math_converter_set_category(buttons->priv->converter, NULL);
         math_converter_set_conversion(buttons->priv->converter,
@@ -860,7 +860,7 @@ shift_cb(GtkWidget *widget, MathButtons *buttons)
 static void
 popup_button_menu(GtkWidget *widget, GtkMenu *menu)
 {
-    gtk_menu_popup_at_widget (menu,
+    ctk_menu_popup_at_widget (menu,
                               widget,
                               GDK_GRAVITY_SOUTH_WEST,
                               GDK_GRAVITY_NORTH_WEST,
@@ -878,12 +878,12 @@ memory_cb(GtkWidget *widget, MathButtons *buttons)
     gint x, y;
 
     popup = math_variable_popup_new(buttons->priv->equation);
-    gtk_window_set_transient_for(GTK_WINDOW(popup), GTK_WINDOW(gtk_widget_get_toplevel(widget)));
+    ctk_window_set_transient_for(GTK_WINDOW(popup), GTK_WINDOW(ctk_widget_get_toplevel(widget)));
 
-    gtk_widget_get_allocation(widget, &allocation);
-    gdk_window_get_root_coords(gtk_widget_get_window(widget), allocation.x, allocation.y, &x, &y);
-    gtk_window_move(GTK_WINDOW(popup), x, y);
-    gtk_widget_show(GTK_WIDGET(popup));
+    ctk_widget_get_allocation(widget, &allocation);
+    gdk_window_get_root_coords(ctk_widget_get_window(widget), allocation.x, allocation.y, &x, &y);
+    ctk_window_move(GTK_WINDOW(popup), x, y);
+    ctk_widget_show(GTK_WIDGET(popup));
 }
 
 
@@ -896,8 +896,8 @@ shift_left_cb(GtkWidget *widget, MathButtons *buttons)
         gint i;
         GtkWidget *menu;
 
-        menu = buttons->priv->shift_left_menu = gtk_menu_new();
-        gtk_menu_set_reserve_toggle_size(GTK_MENU(menu), FALSE);
+        menu = buttons->priv->shift_left_menu = ctk_menu_new();
+        ctk_menu_set_reserve_toggle_size(GTK_MENU(menu), FALSE);
 
         for (i = 1; i < 16; i++) {
             GtkWidget *item, *label;
@@ -912,16 +912,16 @@ shift_left_cb(GtkWidget *widget, MathButtons *buttons)
                 format = ngettext("%d place", "%d places", i);
             }
             text = g_strdup_printf(format, i);
-            label = gtk_label_new_with_mnemonic(text);
+            label = ctk_label_new_with_mnemonic(text);
 
-            item = gtk_menu_item_new();
+            item = ctk_menu_item_new();
             g_object_set_data(G_OBJECT(item), "shiftcount", GINT_TO_POINTER(i));
-            gtk_container_add(GTK_CONTAINER(item), label);
-            gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
+            ctk_container_add(GTK_CONTAINER(item), label);
+            ctk_menu_shell_append(GTK_MENU_SHELL(menu), item);
             g_signal_connect(item, "activate", G_CALLBACK(shift_cb), buttons);
 
-            gtk_widget_show(label);
-            gtk_widget_show(item);
+            ctk_widget_show(label);
+            ctk_widget_show(item);
             g_free(text);
         }
     }
@@ -939,8 +939,8 @@ shift_right_cb(GtkWidget *widget, MathButtons *buttons)
         gint i;
         GtkWidget *menu;
 
-        menu = buttons->priv->shift_right_menu = gtk_menu_new();
-        gtk_menu_set_reserve_toggle_size(GTK_MENU(menu), FALSE);
+        menu = buttons->priv->shift_right_menu = ctk_menu_new();
+        ctk_menu_set_reserve_toggle_size(GTK_MENU(menu), FALSE);
 
         for (i = 1; i < 16; i++) {
             GtkWidget *item, *label;
@@ -955,16 +955,16 @@ shift_right_cb(GtkWidget *widget, MathButtons *buttons)
                 format = ngettext("%d place", "%d places", i);
             }
             text = g_strdup_printf(format, i);
-            label = gtk_label_new_with_mnemonic(text);
+            label = ctk_label_new_with_mnemonic(text);
 
-            item = gtk_menu_item_new();
+            item = ctk_menu_item_new();
             g_object_set_data(G_OBJECT(item), "shiftcount", GINT_TO_POINTER(-i));
-            gtk_container_add(GTK_CONTAINER(item), label);
-            gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
+            ctk_container_add(GTK_CONTAINER(item), label);
+            ctk_menu_shell_append(GTK_MENU_SHELL(menu), item);
             g_signal_connect(item, "activate", G_CALLBACK(shift_cb), buttons);
 
-            gtk_widget_show(label);
-            gtk_widget_show(item);
+            ctk_widget_show(label);
+            ctk_widget_show(item);
             g_free(text);
         }
     }
@@ -1008,17 +1008,17 @@ function_cb(GtkWidget *widget, MathButtons *buttons)
             { NULL, NULL }
         };
 
-        menu = buttons->priv->function_menu = gtk_menu_new();
-        gtk_menu_set_reserve_toggle_size(GTK_MENU(menu), FALSE);
+        menu = buttons->priv->function_menu = ctk_menu_new();
+        ctk_menu_set_reserve_toggle_size(GTK_MENU(menu), FALSE);
 
         for (i = 0; functions[i].name != NULL; i++) {
             GtkWidget *item;
 
-            item = gtk_menu_item_new_with_label(_(functions[i].name));
+            item = ctk_menu_item_new_with_label(_(functions[i].name));
             g_object_set_data(G_OBJECT(item), "function", g_strdup(functions[i].function));
-            gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
+            ctk_menu_shell_append(GTK_MENU_SHELL(menu), item);
             g_signal_connect(item, "activate", G_CALLBACK(insert_function_cb), buttons);
-            gtk_widget_show(item);
+            ctk_widget_show(item);
         }
     }
 
@@ -1066,18 +1066,18 @@ const_cb(GtkWidget *widget, MathButtons *buttons)
             { NULL, NULL, NULL }
         };
 
-        menu = buttons->priv->const_menu = gtk_menu_new();
-        gtk_menu_set_reserve_toggle_size(GTK_MENU(menu), FALSE);
+        menu = buttons->priv->const_menu = ctk_menu_new();
+        ctk_menu_set_reserve_toggle_size(GTK_MENU(menu), FALSE);
 
         for (i = 0; constants[i].name != NULL; i++) {
             GtkWidget *item;
 
-            item = gtk_menu_item_new_with_label(_(constants[i].name));
-            gtk_widget_set_tooltip_text(item, _(constants[i].tooltip));
+            item = ctk_menu_item_new_with_label(_(constants[i].name));
+            ctk_widget_set_tooltip_text(item, _(constants[i].tooltip));
             g_object_set_data(G_OBJECT(item), "const", g_strdup(constants[i].constant));
-            gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
+            ctk_menu_shell_append(GTK_MENU_SHELL(menu), item);
             g_signal_connect(item, "activate", G_CALLBACK(insert_const_cb), buttons);
-            gtk_widget_show(item);
+            ctk_widget_show(item);
         }
     }
 
@@ -1120,8 +1120,8 @@ finc_cb(GtkWidget *widget, MathButtons *buttons)
     gchar *name;
 
     name = g_object_get_data(G_OBJECT(widget), "finc_dialog");
-    gtk_dialog_run(GTK_DIALOG(GET_WIDGET(buttons->priv->financial_ui, name)));
-    gtk_widget_hide(GTK_WIDGET(GET_WIDGET(buttons->priv->financial_ui, name)));
+    ctk_dialog_run(GTK_DIALOG(GET_WIDGET(buttons->priv->financial_ui, name)));
+    ctk_widget_hide(GTK_WIDGET(GET_WIDGET(buttons->priv->financial_ui, name)));
 }
 
 
@@ -1130,7 +1130,7 @@ G_MODULE_EXPORT
 void
 insert_character_code_cb(GtkWidget *widget, MathButtons *buttons)
 {
-    gtk_window_present(GTK_WINDOW(buttons->priv->character_code_dialog));
+    ctk_window_present(GTK_WINDOW(buttons->priv->character_code_dialog));
 }
 
 
@@ -1146,9 +1146,9 @@ finc_activate_cb(GtkWidget *widget, MathButtons *buttons)
 
     if (finc_dialog_fields[dialog][field+1] == NULL) {
         GtkWidget *dialog_widget;
-        dialog_widget = gtk_widget_get_toplevel(widget);
-        if (gtk_widget_is_toplevel(dialog_widget)) {
-            gtk_dialog_response(GTK_DIALOG(dialog_widget),
+        dialog_widget = ctk_widget_get_toplevel(widget);
+        if (ctk_widget_is_toplevel(dialog_widget)) {
+            ctk_dialog_response(GTK_DIALOG(dialog_widget),
                                 GTK_RESPONSE_OK);
             return;
         }
@@ -1156,7 +1156,7 @@ finc_activate_cb(GtkWidget *widget, MathButtons *buttons)
     else {
         GtkWidget *next_widget;
         next_widget = GET_WIDGET(buttons->priv->financial_ui, finc_dialog_fields[dialog][field+1]);
-        gtk_widget_grab_focus(next_widget);
+        ctk_widget_grab_focus(next_widget);
     }
 }
 
@@ -1181,10 +1181,10 @@ finc_response_cb(GtkWidget *widget, gint response_id, MathButtons *buttons)
             continue;
         }
         entry = GET_WIDGET(buttons->priv->financial_ui, finc_dialog_fields[dialog][i]);
-        mp_set_from_string(gtk_entry_get_text(GTK_ENTRY(entry)), 10, &arg[i]);
-        gtk_entry_set_text(GTK_ENTRY(entry), "0");
+        mp_set_from_string(ctk_entry_get_text(GTK_ENTRY(entry)), 10, &arg[i]);
+        ctk_entry_set_text(GTK_ENTRY(entry), "0");
     }
-    gtk_widget_grab_focus(GET_WIDGET(buttons->priv->financial_ui, finc_dialog_fields[dialog][0]));
+    ctk_widget_grab_focus(GET_WIDGET(buttons->priv->financial_ui, finc_dialog_fields[dialog][0]));
 
     do_finc_expression(buttons->priv->equation, dialog, &arg[0], &arg[1], &arg[2], &arg[3]);
 }
@@ -1197,7 +1197,7 @@ character_code_dialog_response_cb(GtkWidget *dialog, gint response_id, MathButto
 {
     const gchar *text;
 
-    text = gtk_entry_get_text(GTK_ENTRY(buttons->priv->character_code_entry));
+    text = ctk_entry_get_text(GTK_ENTRY(buttons->priv->character_code_entry));
 
     if (response_id == GTK_RESPONSE_OK) {
         MPNumber x;
@@ -1217,7 +1217,7 @@ character_code_dialog_response_cb(GtkWidget *dialog, gint response_id, MathButto
         math_equation_insert_number(buttons->priv->equation, &x);
     }
 
-    gtk_widget_hide(dialog);
+    ctk_widget_hide(dialog);
 }
 
 
@@ -1255,13 +1255,13 @@ remove_trailing_spaces(MathButtons *buttons)
 {
     GtkTextMark *insert_mark;
     GtkTextIter start, end;
-    insert_mark = gtk_text_buffer_get_insert (GTK_TEXT_BUFFER(buttons->priv->equation));
-    gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(buttons->priv->equation), &end, insert_mark);
+    insert_mark = ctk_text_buffer_get_insert (GTK_TEXT_BUFFER(buttons->priv->equation));
+    ctk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(buttons->priv->equation), &end, insert_mark);
     start = end;
-    while (gtk_text_iter_backward_char(&start)) {
-        if (!g_unichar_isspace(gtk_text_iter_get_char(&start)))
+    while (ctk_text_iter_backward_char(&start)) {
+        if (!g_unichar_isspace(ctk_text_iter_get_char(&start)))
             break;
-        gtk_text_buffer_delete(GTK_TEXT_BUFFER(buttons->priv->equation), &start, &end);
+        ctk_text_buffer_delete(GTK_TEXT_BUFFER(buttons->priv->equation), &start, &end);
     }
 }
 
@@ -1271,9 +1271,9 @@ G_MODULE_EXPORT
 void
 set_superscript_cb(GtkWidget *widget, MathButtons *buttons)
 {
-    if (gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(widget))) {
+    if (ctk_toggle_button_get_active(GTK_TOGGLE_BUTTON(widget))) {
         math_equation_set_number_mode(buttons->priv->equation, SUPERSCRIPT);
-        if (!gtk_text_buffer_get_has_selection(GTK_TEXT_BUFFER(buttons->priv->equation))) {
+        if (!ctk_text_buffer_get_has_selection(GTK_TEXT_BUFFER(buttons->priv->equation))) {
             remove_trailing_spaces(buttons);
         }
     }
@@ -1287,9 +1287,9 @@ G_MODULE_EXPORT
 void
 set_subscript_cb(GtkWidget *widget, MathButtons *buttons)
 {
-    if (gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(widget))) {
+    if (ctk_toggle_button_get_active(GTK_TOGGLE_BUTTON(widget))) {
         math_equation_set_number_mode(buttons->priv->equation, SUBSCRIPT);
-        if (!gtk_text_buffer_get_has_selection(GTK_TEXT_BUFFER(buttons->priv->equation))) {
+        if (!ctk_text_buffer_get_has_selection(GTK_TEXT_BUFFER(buttons->priv->equation))) {
             remove_trailing_spaces(buttons);
         }
     }
@@ -1308,11 +1308,11 @@ number_mode_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *bu
 
     for (i = buttons->priv->superscript_toggles; i; i = i->next) {
         GtkWidget *widget = i->data;
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), mode == SUPERSCRIPT);
+        ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), mode == SUPERSCRIPT);
     }
     for (i = buttons->priv->subscript_toggles; i; i = i->next) {
         GtkWidget *widget = i->data;
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), mode == SUBSCRIPT);
+        ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), mode == SUBSCRIPT);
     }
 }
 
@@ -1425,8 +1425,8 @@ static void
 math_buttons_init(MathButtons *buttons)
 {
     buttons->priv = math_buttons_get_instance_private (buttons);
-    gtk_box_set_spacing(GTK_BOX(buttons), 6);
-    gtk_orientable_set_orientation (GTK_ORIENTABLE (buttons),
+    ctk_box_set_spacing(GTK_BOX(buttons), 6);
+    ctk_orientable_set_orientation (GTK_ORIENTABLE (buttons),
                                     GTK_ORIENTATION_VERTICAL);
     buttons->priv->programming_base = 10;
     g_signal_connect(G_OBJECT(buttons), "show", G_CALLBACK(load_buttons), NULL);

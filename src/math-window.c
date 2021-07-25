@@ -10,13 +10,13 @@
  */
 
 #include <glib/gi18n.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gdk/gdkkeysyms.h>
 
 #include "math-window.h"
 #include "utility.h"
 
-// gtk3 hack
+// ctk3 hack
 	#ifndef GDK_KEY_F1
 		#define GDK_KEY_F1 GDK_F1
 	#endif
@@ -103,15 +103,15 @@ math_window_critical_error(MathWindow *window, const gchar *title, const gchar *
     g_return_if_fail(title != NULL);
     g_return_if_fail(contents != NULL);
 
-    dialog = gtk_message_dialog_new(NULL, 0,
+    dialog = ctk_message_dialog_new(NULL, 0,
                                     GTK_MESSAGE_ERROR,
                                     GTK_BUTTONS_NONE,
                                     "%s", title);
-    gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog),
+    ctk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog),
                                              "%s", contents);
-    gtk_dialog_add_buttons(GTK_DIALOG(dialog), "gtk-quit", GTK_RESPONSE_ACCEPT, NULL);
+    ctk_dialog_add_buttons(GTK_DIALOG(dialog), "ctk-quit", GTK_RESPONSE_ACCEPT, NULL);
 
-    gtk_dialog_run(GTK_DIALOG(dialog));
+    ctk_dialog_run(GTK_DIALOG(dialog));
 
     g_signal_emit(window, signals[QUIT], 0);
 }
@@ -120,7 +120,7 @@ static void mode_changed_cb(GtkWidget *menu, MathWindow *window)
 {
     int mode;
 
-    if (!gtk_check_menu_item_get_active(GTK_CHECK_MENU_ITEM(menu)))
+    if (!ctk_check_menu_item_get_active(GTK_CHECK_MENU_ITEM(menu)))
     {
         return;
     }
@@ -134,10 +134,10 @@ static void show_preferences_cb(GtkMenuItem *menu, MathWindow *window)
     if (!window->priv->preferences_dialog)
     {
         window->priv->preferences_dialog = math_preferences_dialog_new(window->priv->equation);
-        gtk_window_set_transient_for(GTK_WINDOW(window->priv->preferences_dialog), GTK_WINDOW(window));
+        ctk_window_set_transient_for(GTK_WINDOW(window->priv->preferences_dialog), GTK_WINDOW(window));
     }
 
-    gtk_window_present(GTK_WINDOW(window->priv->preferences_dialog));
+    ctk_window_present(GTK_WINDOW(window->priv->preferences_dialog));
 }
 
 static gboolean
@@ -200,9 +200,9 @@ static void help_cb(GtkWidget *widget, MathWindow *window)
 {
     GError *error = NULL;
 
-    gtk_show_uri_on_window(GTK_WINDOW(window),
+    ctk_show_uri_on_window(GTK_WINDOW(window),
                            "help:cafe-calc",
-                           gtk_get_current_event_time(),
+                           ctk_get_current_event_time(),
                            &error);
 
     if (error != NULL)
@@ -211,11 +211,11 @@ static void help_cb(GtkWidget *widget, MathWindow *window)
         /* Translators: Error message displayed when unable to launch help browser */
         const char *message = _("Unable to open help file");
 
-        d = gtk_message_dialog_new(GTK_WINDOW(window), GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
+        d = ctk_message_dialog_new(GTK_WINDOW(window), GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
                 GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, "%s", message);
-        gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(d), "%s", error->message);
-        g_signal_connect(d, "response", G_CALLBACK(gtk_widget_destroy), NULL);
-        gtk_window_present(GTK_WINDOW (d));
+        ctk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(d), "%s", error->message);
+        g_signal_connect(d, "response", G_CALLBACK(ctk_widget_destroy), NULL);
+        ctk_window_present(GTK_WINDOW (d));
 
         g_error_free(error);
     }
@@ -278,7 +278,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
     for (p = documenters; *p; ++p)
         *p = _(*p);
 
-    gtk_show_about_dialog(GTK_WINDOW(window),
+    ctk_show_about_dialog(GTK_WINDOW(window),
         "program-name", _("CAFE Calculator"),
         "version", VERSION,
         "title", _("About CAFE Calculator"),
@@ -303,14 +303,14 @@ static void
 scroll_changed_cb(GtkAdjustment *adjustment, MathWindow *window)
 {
     if (window->priv->right_aligned)
-        gtk_adjustment_set_value(adjustment, gtk_adjustment_get_upper(adjustment) - gtk_adjustment_get_page_size(adjustment));
+        ctk_adjustment_set_value(adjustment, ctk_adjustment_get_upper(adjustment) - ctk_adjustment_get_page_size(adjustment));
 }
 
 
 static void
 scroll_value_changed_cb(GtkAdjustment *adjustment, MathWindow *window)
 {
-    if (gtk_adjustment_get_value(adjustment) == gtk_adjustment_get_upper(adjustment) - gtk_adjustment_get_page_size(adjustment))
+    if (ctk_adjustment_get_value(adjustment) == ctk_adjustment_get_upper(adjustment) - ctk_adjustment_get_page_size(adjustment))
         window->priv->right_aligned = TRUE;
     else
         window->priv->right_aligned = FALSE;
@@ -337,7 +337,7 @@ static void button_mode_changed_cb(MathButtons *buttons, GParamSpec *spec, MathW
             break;
     }
 
-    gtk_check_menu_item_set_active(GTK_CHECK_MENU_ITEM(menu), TRUE);
+    ctk_check_menu_item_set_active(GTK_CHECK_MENU_ITEM(menu), TRUE);
     g_settings_set_enum(g_settings_var, "button-mode", math_buttons_get_mode(buttons));
 }
 
@@ -346,12 +346,12 @@ static GtkWidget *add_menu(GtkWidget *menu_bar, const gchar *name)
     GtkWidget *menu_item;
     GtkWidget *menu;
 
-    menu_item = gtk_menu_item_new_with_mnemonic(name);
-    gtk_menu_shell_append(GTK_MENU_SHELL(menu_bar), menu_item);
-    gtk_widget_show(menu_item);
-    menu = gtk_menu_new();
-    gtk_menu_set_reserve_toggle_size(GTK_MENU(menu),FALSE);
-    gtk_menu_item_set_submenu(GTK_MENU_ITEM(menu_item), menu);
+    menu_item = ctk_menu_item_new_with_mnemonic(name);
+    ctk_menu_shell_append(GTK_MENU_SHELL(menu_bar), menu_item);
+    ctk_widget_show(menu_item);
+    menu = ctk_menu_new();
+    ctk_menu_set_reserve_toggle_size(GTK_MENU(menu),FALSE);
+    ctk_menu_item_set_submenu(GTK_MENU_ITEM(menu_item), menu);
 
     return menu;
 }
@@ -363,8 +363,8 @@ static void quit_cb(GtkWidget* widget, MathWindow* window)
 
 static GtkWidget *add_menu_item(GtkWidget *menu, GtkWidget *menu_item, GCallback callback, gpointer callback_data)
 {
-    gtk_menu_shell_append(GTK_MENU_SHELL(menu), menu_item);
-    gtk_widget_show(menu_item);
+    ctk_menu_shell_append(GTK_MENU_SHELL(menu), menu_item);
+    ctk_widget_show(menu_item);
 
     if (callback)
     {
@@ -376,37 +376,37 @@ static GtkWidget *add_menu_item(GtkWidget *menu, GtkWidget *menu_item, GCallback
 
 static GtkWidget *radio_menu_item_new(GSList **group, const gchar *name)
 {
-    GtkWidget *menu_item = gtk_radio_menu_item_new_with_mnemonic(*group, name);
+    GtkWidget *menu_item = ctk_radio_menu_item_new_with_mnemonic(*group, name);
 
-    *group = gtk_radio_menu_item_get_group(GTK_RADIO_MENU_ITEM(menu_item));
+    *group = ctk_radio_menu_item_get_group(GTK_RADIO_MENU_ITEM(menu_item));
 
     return menu_item;
 }
 
-static GtkWidget *gtk_image_menu_item_new_from_icon (const gchar   *icon_name,
+static GtkWidget *ctk_image_menu_item_new_from_icon (const gchar   *icon_name,
                                                      const gchar   *label_name,
                                                      GtkAccelGroup *accel_group)
 {
     gchar *concat = g_strconcat (label_name, "     ", NULL);
-    GtkWidget *box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-    GtkWidget *icon = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
-    GtkWidget *label = gtk_accel_label_new (concat);
-    GtkWidget *menu_item = gtk_menu_item_new ();
+    GtkWidget *box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+    GtkWidget *icon = ctk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
+    GtkWidget *label = ctk_accel_label_new (concat);
+    GtkWidget *menu_item = ctk_menu_item_new ();
 
     g_free (concat);
 
-    gtk_container_add (GTK_CONTAINER (box), icon);
+    ctk_container_add (GTK_CONTAINER (box), icon);
 
-    gtk_label_set_use_underline (GTK_LABEL (label), TRUE);
-    gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+    ctk_label_set_use_underline (GTK_LABEL (label), TRUE);
+    ctk_label_set_xalign (GTK_LABEL (label), 0.0);
 
-    gtk_accel_label_set_accel_widget (GTK_ACCEL_LABEL (label), menu_item);
+    ctk_accel_label_set_accel_widget (GTK_ACCEL_LABEL (label), menu_item);
 
-    gtk_box_pack_end (GTK_BOX (box), label, TRUE, TRUE, 0);
+    ctk_box_pack_end (GTK_BOX (box), label, TRUE, TRUE, 0);
 
-    gtk_container_add (GTK_CONTAINER (menu_item), box);
+    ctk_container_add (GTK_CONTAINER (menu_item), box);
 
-    gtk_widget_show_all (menu_item);
+    ctk_widget_show_all (menu_item);
 
     return menu_item;
 }
@@ -418,8 +418,8 @@ static void create_menu(MathWindow* window)
     GtkWidget* menu_item;
     GSList* group = NULL;
 
-    accel_group = gtk_accel_group_new();
-    gtk_window_add_accel_group(GTK_WINDOW(window), accel_group);
+    accel_group = ctk_accel_group_new();
+    ctk_window_add_accel_group(GTK_WINDOW(window), accel_group);
 
     /* Calculator menu */
     #define CALCULATOR_MENU_LABEL _("_Calculator")
@@ -439,20 +439,20 @@ static void create_menu(MathWindow* window)
     #define HELP_CONTENTS_LABEL _("_Contents")
 
     menu = add_menu(window->priv->menu_bar, CALCULATOR_MENU_LABEL);
-    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-copy",_("_Copy"), accel_group), G_CALLBACK(copy_cb), window);
-    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_C, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
-    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-paste",_("_Paste"), accel_group), G_CALLBACK(paste_cb), window);
-    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_V, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
-    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-undo",_("_Undo"), accel_group), G_CALLBACK(undo_cb), window);
-    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Z, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
-    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-redo",_("_Redo"), accel_group), G_CALLBACK(redo_cb), window);
-    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Z, GDK_CONTROL_MASK | GDK_SHIFT_MASK, GTK_ACCEL_VISIBLE);
-    add_menu_item(menu, gtk_separator_menu_item_new(), NULL, NULL);
-    add_menu_item(menu, gtk_image_menu_item_new_from_icon("preferences-desktop",_("_Preferences"), accel_group), G_CALLBACK(show_preferences_cb), window);
-    add_menu_item(menu, gtk_separator_menu_item_new(), NULL, NULL);
-    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("application-exit",_("_Quit"), accel_group), G_CALLBACK(quit_cb), window);
-    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Q, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
-    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_W, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+    menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("edit-copy",_("_Copy"), accel_group), G_CALLBACK(copy_cb), window);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_C, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+    menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("edit-paste",_("_Paste"), accel_group), G_CALLBACK(paste_cb), window);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_V, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+    menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("edit-undo",_("_Undo"), accel_group), G_CALLBACK(undo_cb), window);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Z, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+    menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("edit-redo",_("_Redo"), accel_group), G_CALLBACK(redo_cb), window);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Z, GDK_CONTROL_MASK | GDK_SHIFT_MASK, GTK_ACCEL_VISIBLE);
+    add_menu_item(menu, ctk_separator_menu_item_new(), NULL, NULL);
+    add_menu_item(menu, ctk_image_menu_item_new_from_icon("preferences-desktop",_("_Preferences"), accel_group), G_CALLBACK(show_preferences_cb), window);
+    add_menu_item(menu, ctk_separator_menu_item_new(), NULL, NULL);
+    menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("application-exit",_("_Quit"), accel_group), G_CALLBACK(quit_cb), window);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Q, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_W, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
 
     menu = add_menu(window->priv->menu_bar, MODE_MENU_LABEL);
     window->priv->mode_basic_menu_item = add_menu_item(menu, radio_menu_item_new(&group, MODE_BASIC_LABEL), G_CALLBACK(mode_changed_cb), window);
@@ -465,9 +465,9 @@ static void create_menu(MathWindow* window)
     g_object_set_data(G_OBJECT(window->priv->mode_programming_menu_item), "calcmode", GINT_TO_POINTER(PROGRAMMING));
 
     menu = add_menu(window->priv->menu_bar, HELP_MENU_LABEL);
-    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("help-browser", HELP_CONTENTS_LABEL, accel_group), G_CALLBACK(help_cb), window);
-    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_F1, 0, GTK_ACCEL_VISIBLE);
-    add_menu_item(menu, gtk_image_menu_item_new_from_icon("help-about",_("_About"), accel_group), G_CALLBACK(about_cb), window);
+    menu_item = add_menu_item(menu, ctk_image_menu_item_new_from_icon("help-browser", HELP_CONTENTS_LABEL, accel_group), G_CALLBACK(help_cb), window);
+    ctk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_F1, 0, GTK_ACCEL_VISIBLE);
+    add_menu_item(menu, ctk_image_menu_item_new_from_icon("help-about",_("_About"), accel_group), G_CALLBACK(about_cb), window);
 }
 
 static void
@@ -476,39 +476,39 @@ create_gui(MathWindow *window)
     GtkWidget *main_vbox, *vbox;
     GtkWidget *scrolled_window;
 
-    main_vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
-    gtk_container_add(GTK_CONTAINER(window), main_vbox);
-    gtk_widget_show(main_vbox);
+    main_vbox = ctk_box_new(GTK_ORIENTATION_VERTICAL, 0);
+    ctk_container_add(GTK_CONTAINER(window), main_vbox);
+    ctk_widget_show(main_vbox);
 
-    window->priv->menu_bar = gtk_menu_bar_new();
-    gtk_box_pack_start(GTK_BOX(main_vbox), window->priv->menu_bar, TRUE, TRUE, 0);
-    gtk_widget_show(window->priv->menu_bar);
+    window->priv->menu_bar = ctk_menu_bar_new();
+    ctk_box_pack_start(GTK_BOX(main_vbox), window->priv->menu_bar, TRUE, TRUE, 0);
+    ctk_widget_show(window->priv->menu_bar);
 
     create_menu(window);
 
-    vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 6);
-    gtk_container_set_border_width(GTK_CONTAINER(vbox), 6);
-    gtk_box_pack_start(GTK_BOX(main_vbox), vbox, TRUE, TRUE, 0);
-    gtk_widget_show(vbox);
+    vbox = ctk_box_new(GTK_ORIENTATION_VERTICAL, 6);
+    ctk_container_set_border_width(GTK_CONTAINER(vbox), 6);
+    ctk_box_pack_start(GTK_BOX(main_vbox), vbox, TRUE, TRUE, 0);
+    ctk_widget_show(vbox);
 
-    scrolled_window = gtk_scrolled_window_new(NULL, NULL);
-    gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(scrolled_window), GTK_POLICY_AUTOMATIC, GTK_POLICY_NEVER);
-    gtk_scrolled_window_set_shadow_type(GTK_SCROLLED_WINDOW(scrolled_window), GTK_SHADOW_IN);
-    gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(scrolled_window), TRUE, TRUE, 0);
-    g_signal_connect(gtk_scrolled_window_get_hadjustment(GTK_SCROLLED_WINDOW(scrolled_window)), "changed", G_CALLBACK(scroll_changed_cb), window);
-    g_signal_connect(gtk_scrolled_window_get_hadjustment(GTK_SCROLLED_WINDOW(scrolled_window)), "value-changed", G_CALLBACK(scroll_value_changed_cb), window);
+    scrolled_window = ctk_scrolled_window_new(NULL, NULL);
+    ctk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(scrolled_window), GTK_POLICY_AUTOMATIC, GTK_POLICY_NEVER);
+    ctk_scrolled_window_set_shadow_type(GTK_SCROLLED_WINDOW(scrolled_window), GTK_SHADOW_IN);
+    ctk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(scrolled_window), TRUE, TRUE, 0);
+    g_signal_connect(ctk_scrolled_window_get_hadjustment(GTK_SCROLLED_WINDOW(scrolled_window)), "changed", G_CALLBACK(scroll_changed_cb), window);
+    g_signal_connect(ctk_scrolled_window_get_hadjustment(GTK_SCROLLED_WINDOW(scrolled_window)), "value-changed", G_CALLBACK(scroll_value_changed_cb), window);
     window->priv->right_aligned = TRUE;
-    gtk_widget_show(scrolled_window);
+    ctk_widget_show(scrolled_window);
 
     window->priv->display = math_display_new_with_equation(window->priv->equation);
-    gtk_container_add(GTK_CONTAINER(scrolled_window), GTK_WIDGET(window->priv->display));
-    gtk_widget_show(GTK_WIDGET(window->priv->display));
+    ctk_container_add(GTK_CONTAINER(scrolled_window), GTK_WIDGET(window->priv->display));
+    ctk_widget_show(GTK_WIDGET(window->priv->display));
 
     window->priv->buttons = math_buttons_new(window->priv->equation);
     g_signal_connect(window->priv->buttons, "notify::mode", G_CALLBACK(button_mode_changed_cb), window);
     button_mode_changed_cb(window->priv->buttons, NULL, window);
-    gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(window->priv->buttons), TRUE, TRUE, 0);
-    gtk_widget_show(GTK_WIDGET(window->priv->buttons));
+    ctk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(window->priv->buttons), TRUE, TRUE, 0);
+    ctk_widget_show(GTK_WIDGET(window->priv->buttons));
 }
 
 
@@ -585,12 +585,12 @@ static void
 math_window_init(MathWindow *window)
 {
     window->priv = math_window_get_instance_private (window);
-    gtk_window_set_title(GTK_WINDOW(window),
+    ctk_window_set_title(GTK_WINDOW(window),
                          /* Title of main window */
                          _("Calculator"));
-    gtk_window_set_icon_name(GTK_WINDOW(window), "accessories-calculator");
-    gtk_window_set_role(GTK_WINDOW(window), "cafe-calc");
-    gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
+    ctk_window_set_icon_name(GTK_WINDOW(window), "accessories-calculator");
+    ctk_window_set_role(GTK_WINDOW(window), "cafe-calc");
+    ctk_window_set_resizable(GTK_WINDOW(window), FALSE);
     g_signal_connect_after(G_OBJECT(window), "key-press-event", G_CALLBACK(key_press_cb), NULL);
     g_signal_connect(G_OBJECT(window), "delete-event", G_CALLBACK(delete_cb), NULL);
 }

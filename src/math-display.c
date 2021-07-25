@@ -36,7 +36,7 @@ struct MathDisplayPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathDisplay, math_display, GTK_TYPE_VIEWPORT);
 
-#define GET_WIDGET(ui, name)  GTK_WIDGET(gtk_builder_get_object(ui, name))
+#define GET_WIDGET(ui, name)  GTK_WIDGET(ctk_builder_get_object(ui, name))
 
 MathDisplay *
 math_display_new()
@@ -309,14 +309,14 @@ key_press_cb(MathDisplay *display, GdkEventKey *event)
 static void
 status_changed_cb(MathEquation *equation, GParamSpec *spec, MathDisplay *display)
 {
-    gtk_text_buffer_set_text(display->priv->info_buffer, math_equation_get_status(equation), -1);
-    if (math_equation_in_solve(equation) && !gtk_widget_get_visible(display->priv->spinner)) {
-        gtk_widget_show(display->priv->spinner);
-        gtk_spinner_start(GTK_SPINNER(display->priv->spinner));
+    ctk_text_buffer_set_text(display->priv->info_buffer, math_equation_get_status(equation), -1);
+    if (math_equation_in_solve(equation) && !ctk_widget_get_visible(display->priv->spinner)) {
+        ctk_widget_show(display->priv->spinner);
+        ctk_spinner_start(GTK_SPINNER(display->priv->spinner));
     }
-    else if (!math_equation_in_solve(equation) && gtk_widget_get_visible(display->priv->spinner)) {
-        gtk_widget_hide(display->priv->spinner);
-        gtk_spinner_stop(GTK_SPINNER(display->priv->spinner));
+    else if (!math_equation_in_solve(equation) && ctk_widget_get_visible(display->priv->spinner)) {
+        ctk_widget_hide(display->priv->spinner);
+        ctk_spinner_stop(GTK_SPINNER(display->priv->spinner));
     }
 }
 
@@ -343,14 +343,14 @@ static void _text_view_override_font (GtkWidget *widget, PangoFontDescription *f
                              pango_font_description_get_size_is_absolute (font) ? "px" : "pt");
     css = g_strdup_printf ("textview { %s %s %s %s }", family, weight, style, size);
 
-    provider = gtk_css_provider_new ();
-    gtk_css_provider_load_from_data (provider, css, -1, NULL);
+    provider = ctk_css_provider_new ();
+    ctk_css_provider_load_from_data (provider, css, -1, NULL);
     g_free (css);
     g_free (family);
     g_free (weight);
     g_free (size);
 
-    gtk_style_context_add_provider (gtk_widget_get_style_context (widget),
+    ctk_style_context_add_provider (ctk_widget_get_style_context (widget),
                                     GTK_STYLE_PROVIDER (provider),
                                     GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
     g_object_unref (provider);
@@ -364,52 +364,52 @@ create_gui(MathDisplay *display)
     GtkStyleContext *context;
     GtkStateFlags state;
 
-    main_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
-    gtk_container_add(GTK_CONTAINER(display), main_box);
+    main_box = ctk_box_new(GTK_ORIENTATION_VERTICAL, 0);
+    ctk_container_add(GTK_CONTAINER(display), main_box);
 
     g_signal_connect(display, "key-press-event", G_CALLBACK(key_press_cb), display);
 
-    display->priv->text_view = gtk_text_view_new_with_buffer(GTK_TEXT_BUFFER(display->priv->equation));
-    gtk_text_view_set_wrap_mode(GTK_TEXT_VIEW(display->priv->text_view), GTK_WRAP_WORD);
-    gtk_text_view_set_accepts_tab(GTK_TEXT_VIEW(display->priv->text_view), FALSE);
-    gtk_text_view_set_pixels_above_lines(GTK_TEXT_VIEW(display->priv->text_view), 8);
-    gtk_text_view_set_pixels_below_lines(GTK_TEXT_VIEW(display->priv->text_view), 2);
+    display->priv->text_view = ctk_text_view_new_with_buffer(GTK_TEXT_BUFFER(display->priv->equation));
+    ctk_text_view_set_wrap_mode(GTK_TEXT_VIEW(display->priv->text_view), GTK_WRAP_WORD);
+    ctk_text_view_set_accepts_tab(GTK_TEXT_VIEW(display->priv->text_view), FALSE);
+    ctk_text_view_set_pixels_above_lines(GTK_TEXT_VIEW(display->priv->text_view), 8);
+    ctk_text_view_set_pixels_below_lines(GTK_TEXT_VIEW(display->priv->text_view), 2);
     /* TEMP: Disabled for now as GTK+ doesn't properly render a right aligned right margin, see bug #482688 */
-    /*gtk_text_view_set_right_margin(GTK_TEXT_VIEW(display->priv->text_view), 6);*/
-    gtk_text_view_set_justification(GTK_TEXT_VIEW(display->priv->text_view), GTK_JUSTIFY_RIGHT);
-    context = gtk_widget_get_style_context (display->priv->text_view);
-    state = gtk_widget_get_state_flags (GTK_WIDGET (display->priv->text_view));
-    gtk_style_context_get (context, state, GTK_STYLE_PROPERTY_FONT, &font_desc, NULL);
+    /*ctk_text_view_set_right_margin(GTK_TEXT_VIEW(display->priv->text_view), 6);*/
+    ctk_text_view_set_justification(GTK_TEXT_VIEW(display->priv->text_view), GTK_JUSTIFY_RIGHT);
+    context = ctk_widget_get_style_context (display->priv->text_view);
+    state = ctk_widget_get_state_flags (GTK_WIDGET (display->priv->text_view));
+    ctk_style_context_get (context, state, GTK_STYLE_PROPERTY_FONT, &font_desc, NULL);
     pango_font_description_set_size(font_desc, 16 * PANGO_SCALE);
     _text_view_override_font (display->priv->text_view, font_desc);
     pango_font_description_free(font_desc);
-    gtk_widget_set_name(display->priv->text_view, "displayitem");
-    atk_object_set_role(gtk_widget_get_accessible(display->priv->text_view), ATK_ROLE_EDITBAR);
+    ctk_widget_set_name(display->priv->text_view, "displayitem");
+    atk_object_set_role(ctk_widget_get_accessible(display->priv->text_view), ATK_ROLE_EDITBAR);
   //FIXME:<property name="AtkObject::accessible-description" translatable="yes" comments="Accessible description for the area in which results are displayed">Result Region</property>
     g_signal_connect(display->priv->text_view, "key-press-event", G_CALLBACK(display_key_press_cb), display);
-    gtk_box_pack_start(GTK_BOX(main_box), display->priv->text_view, TRUE, TRUE, 0);
+    ctk_box_pack_start(GTK_BOX(main_box), display->priv->text_view, TRUE, TRUE, 0);
 
-    info_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 6);
-    gtk_box_pack_start(GTK_BOX(main_box), info_box, FALSE, TRUE, 0);
+    info_box = ctk_box_new(GTK_ORIENTATION_HORIZONTAL, 6);
+    ctk_box_pack_start(GTK_BOX(main_box), info_box, FALSE, TRUE, 0);
 
-    info_view = gtk_text_view_new();
-    gtk_text_view_set_wrap_mode(GTK_TEXT_VIEW(info_view), GTK_WRAP_WORD);
-    gtk_widget_set_can_focus(info_view, TRUE); // FIXME: This should be FALSE but it locks the cursor inside the main view for some reason
-    gtk_text_view_set_cursor_visible(GTK_TEXT_VIEW(info_view), FALSE); // FIXME: Just here so when incorrectly gets focus doesn't look editable
-    gtk_text_view_set_editable(GTK_TEXT_VIEW(info_view), FALSE);
-    gtk_text_view_set_justification(GTK_TEXT_VIEW(info_view), GTK_JUSTIFY_RIGHT);
+    info_view = ctk_text_view_new();
+    ctk_text_view_set_wrap_mode(GTK_TEXT_VIEW(info_view), GTK_WRAP_WORD);
+    ctk_widget_set_can_focus(info_view, TRUE); // FIXME: This should be FALSE but it locks the cursor inside the main view for some reason
+    ctk_text_view_set_cursor_visible(GTK_TEXT_VIEW(info_view), FALSE); // FIXME: Just here so when incorrectly gets focus doesn't look editable
+    ctk_text_view_set_editable(GTK_TEXT_VIEW(info_view), FALSE);
+    ctk_text_view_set_justification(GTK_TEXT_VIEW(info_view), GTK_JUSTIFY_RIGHT);
     /* TEMP: Disabled for now as GTK+ doesn't properly render a right aligned right margin, see bug #482688 */
-    /*gtk_text_view_set_right_margin(GTK_TEXT_VIEW(info_view), 6);*/
-    gtk_box_pack_start(GTK_BOX(info_box), info_view, TRUE, TRUE, 0);
-    display->priv->info_buffer = gtk_text_view_get_buffer(GTK_TEXT_VIEW(info_view));
+    /*ctk_text_view_set_right_margin(GTK_TEXT_VIEW(info_view), 6);*/
+    ctk_box_pack_start(GTK_BOX(info_box), info_view, TRUE, TRUE, 0);
+    display->priv->info_buffer = ctk_text_view_get_buffer(GTK_TEXT_VIEW(info_view));
 
-    display->priv->spinner = gtk_spinner_new();
-    gtk_box_pack_end(GTK_BOX(info_box), display->priv->spinner, FALSE, FALSE, 0);
+    display->priv->spinner = ctk_spinner_new();
+    ctk_box_pack_end(GTK_BOX(info_box), display->priv->spinner, FALSE, FALSE, 0);
 
-    gtk_widget_show(info_box);
-    gtk_widget_show(info_view);
-    gtk_widget_show(display->priv->text_view);
-    gtk_widget_show(main_box);
+    ctk_widget_show(info_box);
+    ctk_widget_show(info_view);
+    ctk_widget_show(display->priv->text_view);
+    ctk_widget_show(main_box);
 
     g_signal_connect(display->priv->equation, "notify::status", G_CALLBACK(status_changed_cb), display);
     status_changed_cb(display->priv->equation, NULL, display);

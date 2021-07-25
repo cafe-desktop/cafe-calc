@@ -12,7 +12,7 @@
 #define MATH_CONVERTER_H
 
 #include <glib-object.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 #include "math-equation.h"
 #include "unit.h"
