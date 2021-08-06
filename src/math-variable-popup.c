@@ -202,10 +202,10 @@ math_variable_popup_set_property(GObject      *object,
 
         names = math_variables_get_names(math_equation_get_variables(self->priv->equation));
         for (i = 0; names[i]; i++) {
-            MPNumber *value;
+            MPNumber *val;
 
-            value = math_variables_get(math_equation_get_variables(self->priv->equation), names[i]);
-            entry = make_variable_entry(self, names[i], value, TRUE);
+            val = math_variables_get(math_equation_get_variables(self->priv->equation), names[i]);
+            entry = make_variable_entry(self, names[i], val, TRUE);
             ctk_widget_show(entry);
             ctk_box_pack_start(CTK_BOX(self->priv->vbox), entry, FALSE, TRUE, 0);
         }
