@@ -256,6 +256,7 @@ static void about_cb(CtkWidget* widget, MathWindow* window)
     GError *error = NULL;
     char **authors;
     gsize n_authors = 0, i;
+    gchar *comments;
 
     bytes = g_resources_lookup_data ("/org/cafe/calculator/ui/cafe-calc.about", G_RESOURCE_LOOKUP_FLAGS_NONE, &error);
     g_assert_no_error (error);
@@ -278,6 +279,9 @@ static void about_cb(CtkWidget* widget, MathWindow* window)
     for (p = documenters; *p; ++p)
         *p = _(*p);
 
+    comments = g_strdup_printf (_("Calculator with financial and scientific modes.\nUsing CTK %d.%d.%d"),
+                                ctk_get_major_version (), ctk_get_minor_version (), ctk_get_micro_version ());
+
     ctk_show_about_dialog(CTK_WINDOW(window),
         "program-name", _("CAFE Calculator"),
         "version", VERSION,
@@ -286,7 +290,7 @@ static void about_cb(CtkWidget* widget, MathWindow* window)
                        "Copyright \xc2\xa9 2011-2020 MATE developers\n"
                        "Copyright \xc2\xa9 2021 CAFE developers"),
         "license", license_trans,
-        "comments", _("Calculator with financial and scientific modes."),
+        "comments", comments,
         "authors", authors,
         "documenters", documenters,
         "translator_credits", _("translator-credits"),
@@ -296,6 +300,7 @@ static void about_cb(CtkWidget* widget, MathWindow* window)
         "logo-icon-name", "accessories-calculator",
         NULL);
 
+    g_free (comments);
     g_strfreev (authors);
     g_free (license_trans);
 }
