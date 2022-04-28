@@ -1,4 +1,7 @@
 CAFE:
+Pablo Barciela <scow@riseup.net>
+
+MATE:
 Perberos <perberos@gmail.com>
 Steve Zesch <stevezesch2@gmail.com>
 Stefano Karapetsas <stefano@karapetsas.com>
@@ -37,7 +40,7 @@ http://web.comlab.ox.ac.uk/oucl/work/richard.brent/ftp/rpb043/rpb043.tar.gz
 
 ----
 
-Acknowledgements for the GNOME/Ctk+ version:
+Acknowledgements for the GNOME/Gtk+ version:
 
 Dennis Cranston and Andrew Sobala for various bug fixes.
 Calum Benson for HCI advice.
