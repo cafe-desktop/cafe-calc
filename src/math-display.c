@@ -307,7 +307,9 @@ key_press_cb(MathDisplay *display, CdkEventKey *event)
 
 
 static void
-status_changed_cb(MathEquation *equation, GParamSpec *spec, MathDisplay *display)
+status_changed_cb (MathEquation *equation,
+		   GParamSpec   *spec G_GNUC_UNUSED,
+		   MathDisplay  *display)
 {
     ctk_text_buffer_set_text(display->priv->info_buffer, math_equation_get_status(equation), -1);
     if (math_equation_in_solve(equation) && !ctk_widget_get_visible(display->priv->spinner)) {

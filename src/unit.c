@@ -99,14 +99,17 @@ unit_get_symbols(Unit *unit)
 
 
 static int
-variable_is_defined(const char *name, void *data)
+variable_is_defined (const char *name G_GNUC_UNUSED,
+		     void       *data G_GNUC_UNUSED)
 {
     return TRUE;
 }
 
 
 static int
-get_variable(const char *name, MPNumber *z, void *data)
+get_variable (const char *name G_GNUC_UNUSED,
+	      MPNumber   *z,
+	      void       *data)
 {
     MPNumber *x = data;
     mp_set_from_mp(x, z);
@@ -197,7 +200,7 @@ unit_format(Unit *unit, MPNumber *x)
 
 
 static void
-unit_class_init(UnitClass *klass)
+unit_class_init (UnitClass *klass G_GNUC_UNUSED)
 {
 }
 

@@ -34,7 +34,7 @@ static void pass(const char *format, ...) __attribute__((format(printf, 1, 2)));
 static void fail(const char *format, ...) __attribute__((format(printf, 1, 2)));
 
 
-static void pass(const char *format, ...)
+static void pass (const char *format G_GNUC_UNUSED, ...)
 {
 /*    va_list args;
 
@@ -111,7 +111,11 @@ Test(char *expression, char *expected, int expected_error, int trailing_digits)
 
 
 static int
-do_convert(const MPNumber *x, const char *x_units, const char *z_units, MPNumber *z, void *data)
+do_convert(const MPNumber *x,
+	   const char     *x_units,
+	   const char     *z_units,
+	   MPNumber       *z,
+	   void           *data G_GNUC_UNUSED)
 {
     return unit_manager_convert_by_symbol(unit_manager_get_default(), x, x_units, z_units, z);
 }
@@ -159,14 +163,17 @@ test_conversions()
 
 
 static int
-variable_is_defined(const char *name, void *data)
+variable_is_defined (const char *name,
+		     void       *data G_GNUC_UNUSED)
 {
     return strcmp (name, "x") == 0 || strcmp (name, "y") == 0;
 }
 
 
 static int
-get_variable(const char *name, MPNumber *z, void *data)
+get_variable (const char *name,
+	      MPNumber   *z,
+	      void       *data G_GNUC_UNUSED)
 {
     if (strcmp (name, "x") == 0) {
         mp_set_from_integer (2, z);
@@ -181,7 +188,9 @@ get_variable(const char *name, MPNumber *z, void *data)
 
 
 static void
-set_variable(const char *name, const MPNumber *x, void *data)
+set_variable (const char     *name G_GNUC_UNUSED,
+	      const MPNumber *x G_GNUC_UNUSED,
+	      void           *data G_GNUC_UNUSED)
 {
 }
 
@@ -664,7 +673,8 @@ test_equations()
 
 
 int
-main (int argc, char **argv)
+main (int    argc G_GNUC_UNUSED,
+      char **argv G_GNUC_UNUSED)
 {
     setlocale(LC_ALL, "C");
 

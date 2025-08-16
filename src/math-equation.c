@@ -429,7 +429,9 @@ math_equation_copy(MathEquation *equation)
 
 
 static void
-on_paste(CtkClipboard *clipboard, const gchar *text, gpointer data)
+on_paste (CtkClipboard *clipboard G_GNUC_UNUSED,
+	  const gchar  *text,
+	  gpointer      data)
 {
     MathEquation *equation = data;
     if (text != NULL)
@@ -1160,7 +1162,11 @@ set_variable(const char *name, const MPNumber *x, void *data)
 
 
 static int
-convert(const MPNumber *x, const char *x_units, const char *z_units, MPNumber *z, void *data)
+convert (const MPNumber *x,
+	 const char     *x_units,
+	 const char     *z_units,
+	 MPNumber       *z,
+	 void           *data G_GNUC_UNUSED)
 {
     return unit_manager_convert_by_symbol(unit_manager_get_default(), x, x_units, z_units, z);
 }
@@ -1792,11 +1798,11 @@ math_equation_class_init(MathEquationClass *klass)
 
 
 static void
-pre_insert_text_cb(MathEquation  *equation,
-                   CtkTextIter   *location,
-                   gchar         *text,
-                   gint           len,
-                   gpointer       user_data)
+pre_insert_text_cb (MathEquation *equation,
+		    CtkTextIter  *location,
+		    gchar        *text,
+		    gint          len G_GNUC_UNUSED,
+		    gpointer      user_data G_GNUC_UNUSED)
 {
     gunichar c;
     gint cursor;
@@ -1843,10 +1849,10 @@ on_delete(MathEquation *equation)
 
 
 static void
-pre_delete_range_cb(MathEquation  *equation,
-                    CtkTextIter   *start,
-                    CtkTextIter   *end,
-                    gpointer       user_data)
+pre_delete_range_cb(MathEquation *equation,
+		    CtkTextIter  *start,
+		    CtkTextIter  *end,
+		    gpointer      user_data G_GNUC_UNUSED)
 {
     if (equation->priv->in_reformat)
         return;
@@ -1873,10 +1879,10 @@ pre_delete_range_cb(MathEquation  *equation,
 
 static void
 insert_text_cb(MathEquation  *equation,
-               CtkTextIter   *location,
-               gchar         *text,
-               gint           len,
-               gpointer       user_data)
+	       CtkTextIter   *location G_GNUC_UNUSED,
+	       gchar         *text,
+	       gint           len G_GNUC_UNUSED,
+	       gpointer       user_data G_GNUC_UNUSED)
 {
     if (equation->priv->in_reformat)
         return;
@@ -1891,10 +1897,10 @@ insert_text_cb(MathEquation  *equation,
 
 
 static void
-delete_range_cb(MathEquation  *equation,
-                CtkTextIter   *start,
-                CtkTextIter   *end,
-                gpointer       user_data)
+delete_range_cb (MathEquation *equation,
+		 CtkTextIter  *start G_GNUC_UNUSED,
+		 CtkTextIter  *end G_GNUC_UNUSED,
+		 gpointer      user_data G_GNUC_UNUSED)
 {
     if (equation->priv->in_reformat)
         return;

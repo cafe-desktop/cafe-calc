@@ -123,7 +123,7 @@ unit_category_convert(UnitCategory *category, const MPNumber *x, Unit *x_units, 
 
 
 static void
-unit_category_class_init(UnitCategoryClass *klass)
+unit_category_class_init (UnitCategoryClass *klass G_GNUC_UNUSED)
 {
 }
 

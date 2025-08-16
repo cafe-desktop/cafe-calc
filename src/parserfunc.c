@@ -17,7 +17,7 @@ set_error(ParserState* state, gint errorno, const gchar *token)
 
 /* Unused function pointer. This won't be called anytime. */
 void*
-pf_none(ParseNode* self)
+pf_none (ParseNode* self G_GNUC_UNUSED)
 {
     return NULL;
 }

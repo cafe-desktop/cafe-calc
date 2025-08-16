@@ -29,7 +29,7 @@ static void pass(const char *format, ...) __attribute__((format(printf, 1, 2)));
 static void fail(const char *format, ...) __attribute__((format(printf, 1, 2)));
 
 
-static void pass(const char *format, ...)
+static void pass (const char *format G_GNUC_UNUSED, ...)
 {
 /*    va_list args;
 
@@ -226,7 +226,8 @@ test_mp()
 
 
 int
-main (int argc, char **argv)
+main (int    argc G_GNUC_UNUSED,
+      char **argv G_GNUC_UNUSED)
 {
     setlocale(LC_ALL, "C");
 

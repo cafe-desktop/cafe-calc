@@ -15,7 +15,11 @@
 #include "mp.h"
 
 static void
-calc_ctrm(MathEquation *equation, MPNumber *t, MPNumber *pint, MPNumber *fv, MPNumber *pv)
+calc_ctrm (MathEquation *equation G_GNUC_UNUSED,
+	   MPNumber     *t,
+	   MPNumber     *pint,
+	   MPNumber     *fv,
+	   MPNumber     *pv)
 {
 
 /*  Cterm - pint (periodic interest rate).
@@ -74,7 +78,11 @@ calc_ddb(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *life, MP
 
 
 static void
-calc_fv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNumber *n)
+calc_fv (MathEquation *equation G_GNUC_UNUSED,
+	 MPNumber     *t,
+	 MPNumber     *pmt,
+	 MPNumber     *pint,
+	 MPNumber     *n)
 {
 
 /*  Fv    - pmt (periodic payment).
@@ -95,7 +103,10 @@ calc_fv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNu
 
 
 static void
-calc_gpm(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *margin)
+calc_gpm (MathEquation *equation G_GNUC_UNUSED,
+	  MPNumber     *t,
+	  MPNumber     *cost,
+	  MPNumber     *margin)
 {
 
 /*  Gpm   - cost (cost of sale).
@@ -113,7 +124,11 @@ calc_gpm(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *margin)
 
 
 static void
-calc_pmt(MathEquation *equation, MPNumber *t, MPNumber *prin, MPNumber *pint, MPNumber *n)
+calc_pmt (MathEquation *equation G_GNUC_UNUSED,
+	  MPNumber     *t,
+	  MPNumber     *prin,
+	  MPNumber     *pint,
+	  MPNumber     *n)
 {
 
 /*  Pmt   - prin (principal).
@@ -136,7 +151,11 @@ calc_pmt(MathEquation *equation, MPNumber *t, MPNumber *prin, MPNumber *pint, MP
 
 
 static void
-calc_pv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNumber *n)
+calc_pv (MathEquation *equation G_GNUC_UNUSED,
+	 MPNumber     *t,
+	 MPNumber     *pmt,
+	 MPNumber     *pint,
+	 MPNumber     *n)
 {
 
 /*  Pv    - pmt (periodic payment).
@@ -159,7 +178,11 @@ calc_pv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNu
 
 
 static void
-calc_rate(MathEquation *equation, MPNumber *t, MPNumber *fv, MPNumber *pv, MPNumber *n)
+calc_rate (MathEquation *equation G_GNUC_UNUSED,
+	   MPNumber     *t,
+	   MPNumber     *fv,
+	   MPNumber     *pv,
+	   MPNumber     *n)
 {
 
 /*  Rate  - fv (future value).
@@ -180,7 +203,11 @@ calc_rate(MathEquation *equation, MPNumber *t, MPNumber *fv, MPNumber *pv, MPNum
 
 
 static void
-calc_sln(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage, MPNumber *life)
+calc_sln (MathEquation *equation G_GNUC_UNUSED,
+	  MPNumber     *t,
+	  MPNumber     *cost,
+	  MPNumber     *salvage,
+	  MPNumber     *life)
 {
 
 /*  Sln   - cost    (cost of the asset).
@@ -197,7 +224,12 @@ calc_sln(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage,
 
 
 static void
-calc_syd(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage, MPNumber *life, MPNumber *period)
+calc_syd (MathEquation *equation G_GNUC_UNUSED,
+	  MPNumber     *t,
+	  MPNumber     *cost,
+	  MPNumber     *salvage,
+	  MPNumber     *life,
+	  MPNumber     *period)
 {
 
 /*  Syd   - cost    (cost of the asset).
@@ -224,7 +256,11 @@ calc_syd(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage,
 
 
 static void
-calc_term(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *fv, MPNumber *pint)
+calc_term (MathEquation *equation G_GNUC_UNUSED,
+	   MPNumber     *t,
+	   MPNumber     *pmt,
+	   MPNumber     *fv,
+	   MPNumber     *pint)
 {
 
 /*  Term  - pmt (periodic payment).

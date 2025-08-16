@@ -37,7 +37,9 @@ math_variable_popup_new(MathEquation *equation)
 
 
 static void
-variable_focus_out_event_cb(CtkWidget *widget, CdkEventFocus *event, MathVariablePopup *popup)
+variable_focus_out_event_cb (CtkWidget         *widget,
+			     CdkEventFocus     *event G_GNUC_UNUSED,
+			     MathVariablePopup *popup G_GNUC_UNUSED)
 {
     ctk_widget_destroy(widget);
 }
@@ -56,7 +58,9 @@ insert_variable_cb(CtkWidget *widget, MathVariablePopup *popup)
 
 
 static gboolean
-variable_name_key_press_cb(CtkWidget *widget, CdkEventKey *event, MathVariablePopup *popup)
+variable_name_key_press_cb (CtkWidget         *widget G_GNUC_UNUSED,
+			    CdkEventKey       *event,
+			    MathVariablePopup *popup G_GNUC_UNUSED)
 {
     /* Can't have whitespace in names, so replace with underscores */
     if (event->keyval == CDK_KEY_space || event->keyval == CDK_KEY_KP_Space)
@@ -67,7 +71,8 @@ variable_name_key_press_cb(CtkWidget *widget, CdkEventKey *event, MathVariablePo
 
 
 static void
-variable_name_changed_cb(CtkWidget *widget, MathVariablePopup *popup)
+variable_name_changed_cb (CtkWidget         *widget G_GNUC_UNUSED,
+			  MathVariablePopup *popup)
 {
     const gchar *text = ctk_entry_get_text(CTK_ENTRY(popup->priv->variable_name_entry));
     ctk_widget_set_sensitive(popup->priv->add_variable_button, text[0] != '\0');

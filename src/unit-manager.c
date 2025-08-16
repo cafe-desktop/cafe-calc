@@ -255,7 +255,7 @@ unit_manager_convert_by_symbol(UnitManager *manager, const MPNumber *x, const ch
 
 
 static void
-unit_manager_class_init(UnitManagerClass *klass)
+unit_manager_class_init (UnitManagerClass *klass G_GNUC_UNUSED)
 {
 }
 

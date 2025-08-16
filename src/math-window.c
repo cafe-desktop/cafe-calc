@@ -129,7 +129,8 @@ static void mode_changed_cb(CtkWidget *menu, MathWindow *window)
     math_buttons_set_mode(window->priv->buttons, mode);
 }
 
-static void show_preferences_cb(CtkMenuItem *menu, MathWindow *window)
+static void show_preferences_cb (CtkMenuItem *menu G_GNUC_UNUSED,
+				 MathWindow  *window)
 {
     if (!window->priv->preferences_dialog)
     {
@@ -171,32 +172,38 @@ key_press_cb(MathWindow *window, CdkEventKey *event)
     return result;
 }
 
-static void delete_cb(MathWindow *window, CdkEvent *event)
+static void delete_cb (MathWindow *window,
+		       CdkEvent   *event G_GNUC_UNUSED)
 {
     g_signal_emit(window, signals[QUIT], 0);
 }
 
-static void copy_cb(CtkWidget *widget, MathWindow *window)
+static void copy_cb (CtkWidget  *widget G_GNUC_UNUSED,
+		     MathWindow *window)
 {
     math_equation_copy(window->priv->equation);
 }
 
-static void paste_cb(CtkWidget *widget, MathWindow *window)
+static void paste_cb (CtkWidget  *widget G_GNUC_UNUSED,
+		      MathWindow *window)
 {
     math_equation_paste(window->priv->equation);
 }
 
-static void undo_cb(CtkWidget *widget, MathWindow *window)
+static void undo_cb (CtkWidget  *widget G_GNUC_UNUSED,
+		     MathWindow *window)
 {
     math_equation_undo(window->priv->equation);
 }
 
-static void redo_cb(CtkWidget *widget, MathWindow *window)
+static void redo_cb (CtkWidget  *widget G_GNUC_UNUSED,
+		     MathWindow *window)
 {
     math_equation_redo(window->priv->equation);
 }
 
-static void help_cb(CtkWidget *widget, MathWindow *window)
+static void help_cb (CtkWidget  *widget G_GNUC_UNUSED,
+		     MathWindow *window)
 {
     GError *error = NULL;
 
@@ -224,7 +231,8 @@ static void help_cb(CtkWidget *widget, MathWindow *window)
 #define ABOUT_GROUP "About"
 #define EMAILIFY(string) (g_strdelimit ((string), "%", '@'))
 
-static void about_cb(CtkWidget* widget, MathWindow* window)
+static void about_cb (CtkWidget  *widget G_GNUC_UNUSED,
+		      MathWindow *window)
 {
     const char* documenters[] = {
         N_("Sun Microsystems"),
@@ -322,7 +330,9 @@ scroll_value_changed_cb(CtkAdjustment *adjustment, MathWindow *window)
         window->priv->right_aligned = FALSE;
 }
 
-static void button_mode_changed_cb(MathButtons *buttons, GParamSpec *spec, MathWindow *window)
+static void button_mode_changed_cb (MathButtons *buttons,
+				    GParamSpec  *spec G_GNUC_UNUSED,
+				    MathWindow  *window)
 {
     CtkWidget *menu;
 
@@ -362,7 +372,8 @@ static CtkWidget *add_menu(CtkWidget *menu_bar, const gchar *name)
     return menu;
 }
 
-static void quit_cb(CtkWidget* widget, MathWindow* window)
+static void quit_cb (CtkWidget  *widget G_GNUC_UNUSED,
+		     MathWindow *window)
 {
     g_signal_emit(window, signals[QUIT], 0);
 }
@@ -390,8 +401,8 @@ static CtkWidget *radio_menu_item_new(GSList **group, const gchar *name)
 }
 
 static CtkWidget *ctk_image_menu_item_new_from_icon (const gchar   *icon_name,
-                                                     const gchar   *label_name,
-                                                     CtkAccelGroup *accel_group)
+						     const gchar   *label_name,
+						     CtkAccelGroup *accel_group G_GNUC_UNUSED)
 {
     gchar *concat = g_strconcat (label_name, "     ", NULL);
     CtkWidget *box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 6);

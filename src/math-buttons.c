@@ -426,7 +426,9 @@ update_bit_panel(MathButtons *buttons)
 
 
 static void
-display_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *buttons)
+display_changed_cb (MathEquation *equation G_GNUC_UNUSED,
+		    GParamSpec   *spec G_GNUC_UNUSED,
+		    MathButtons  *buttons)
 {
     update_bit_panel(buttons);
 }
@@ -448,7 +450,9 @@ base_combobox_changed_cb(CtkWidget *combo, MathButtons *buttons)
 
 
 static void
-base_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *buttons)
+base_changed_cb (MathEquation *equation G_GNUC_UNUSED,
+		 GParamSpec   *spec G_GNUC_UNUSED,
+		 MathButtons  *buttons)
 {
     CtkTreeModel *model;
     CtkTreeIter iter;
@@ -788,19 +792,19 @@ math_buttons_get_programming_base(MathButtons *buttons)
 }
 
 
-void exponent_cb(CtkWidget *widget, MathButtons *buttons);
+void exponent_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 void
-exponent_cb(CtkWidget *widget, MathButtons *buttons)
+exponent_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons)
 {
     math_equation_insert_exponent(buttons->priv->equation);
 }
 
 
-void subtract_cb(CtkWidget *widget, MathButtons *buttons);
+void subtract_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 void
-subtract_cb(CtkWidget *widget, MathButtons *buttons)
+subtract_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons)
 {
     math_equation_insert_subtract(buttons->priv->equation);
 }
@@ -815,37 +819,37 @@ button_cb(CtkWidget *widget, MathButtons *buttons)
 }
 
 
-void solve_cb(CtkWidget *widget, MathButtons *buttons);
+void solve_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 void
-solve_cb(CtkWidget *widget, MathButtons *buttons)
+solve_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons)
 {
     math_equation_solve(buttons->priv->equation);
 }
 
 
-void clear_cb(CtkWidget *widget, MathButtons *buttons);
+void clear_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 void
-clear_cb(CtkWidget *widget, MathButtons *buttons)
+clear_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons)
 {
     math_equation_clear(buttons->priv->equation);
 }
 
 
-void delete_cb(CtkWidget *widget, MathButtons *buttons);
+void delete_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 void
-delete_cb(CtkWidget *widget, MathButtons *buttons)
+delete_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons)
 {
     math_equation_delete(buttons->priv->equation);
 }
 
 
-void undo_cb(CtkWidget *widget, MathButtons *buttons);
+void undo_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 void
-undo_cb(CtkWidget *widget, MathButtons *buttons)
+undo_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons)
 {
     math_equation_undo(buttons->priv->equation);
 }
@@ -1084,10 +1088,10 @@ const_cb(CtkWidget *widget, MathButtons *buttons)
     popup_button_menu(widget, CTK_MENU(buttons->priv->const_menu));
 }
 
-void factorize_cb(CtkWidget *widget, MathButtons *buttons);
+void factorize_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 void
-factorize_cb(CtkWidget *widget, MathButtons *buttons)
+factorize_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons)
 {
     math_equation_factorize(buttons->priv->equation);
 }
@@ -1102,10 +1106,10 @@ digit_cb(CtkWidget *widget, MathButtons *buttons)
 }
 
 
-void numeric_point_cb(CtkWidget *widget, MathButtons *buttons);
+void numeric_point_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 void
-numeric_point_cb(CtkWidget *widget, MathButtons *buttons)
+numeric_point_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons)
 {
     math_equation_insert_numeric_point(buttons->priv->equation);
 }
@@ -1125,10 +1129,10 @@ finc_cb(CtkWidget *widget, MathButtons *buttons)
 }
 
 
-void insert_character_code_cb(CtkWidget *widget, MathButtons *buttons);
+void insert_character_code_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 void
-insert_character_code_cb(CtkWidget *widget, MathButtons *buttons)
+insert_character_code_cb(CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons)
 {
     ctk_window_present(CTK_WINDOW(buttons->priv->character_code_dialog));
 }
@@ -1221,29 +1225,29 @@ character_code_dialog_response_cb(CtkWidget *dialog, gint response_id, MathButto
 }
 
 
-void character_code_dialog_activate_cb(CtkWidget *entry, MathButtons *buttons);
+void character_code_dialog_activate_cb(CtkWidget *entry G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 void
-character_code_dialog_activate_cb(CtkWidget *entry, MathButtons *buttons)
+character_code_dialog_activate_cb(CtkWidget *entry G_GNUC_UNUSED, MathButtons *buttons)
 {
     character_code_dialog_response_cb(buttons->priv->character_code_dialog, CTK_RESPONSE_OK, buttons);
 }
 
 
-gboolean character_code_dialog_delete_cb(CtkWidget *dialog, CdkEvent *event, MathButtons *buttons);
+gboolean character_code_dialog_delete_cb(CtkWidget *dialog, CdkEvent *event G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 gboolean
-character_code_dialog_delete_cb(CtkWidget *dialog, CdkEvent *event, MathButtons *buttons)
+character_code_dialog_delete_cb(CtkWidget *dialog, CdkEvent *event G_GNUC_UNUSED, MathButtons *buttons)
 {
     character_code_dialog_response_cb(dialog, CTK_RESPONSE_CANCEL, buttons);
     return TRUE;
 }
 
 
-gboolean bit_toggle_cb(CtkWidget *event_box, CdkEventButton *event, MathButtons *buttons);
+gboolean bit_toggle_cb(CtkWidget *event_box, CdkEventButton *event G_GNUC_UNUSED, MathButtons *buttons);
 G_MODULE_EXPORT
 gboolean
-bit_toggle_cb(CtkWidget *event_box, CdkEventButton *event, MathButtons *buttons)
+bit_toggle_cb(CtkWidget *event_box, CdkEventButton *event G_GNUC_UNUSED, MathButtons *buttons)
 {
     math_equation_toggle_bit(buttons->priv->equation, GPOINTER_TO_INT(g_object_get_data(G_OBJECT(event_box), "bit_index")));
     return TRUE;
@@ -1299,7 +1303,9 @@ set_subscript_cb(CtkWidget *widget, MathButtons *buttons)
 
 
 static void
-number_mode_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *buttons)
+number_mode_changed_cb (MathEquation *equation,
+			GParamSpec   *spec G_GNUC_UNUSED,
+			MathButtons  *buttons)
 {
     GList *i;
     NumberMode mode;
