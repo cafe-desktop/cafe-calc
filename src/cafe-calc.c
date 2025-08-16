@@ -34,7 +34,11 @@ version(const gchar *progname)
 
 
 static int
-do_convert(const MPNumber *x, const char *x_units, const char *z_units, MPNumber *z, void *data)
+do_convert (const MPNumber *x,
+	    const char     *x_units,
+	    const char     *z_units,
+	    MPNumber       *z,
+	    void           *data G_GNUC_UNUSED)
 {
     return unit_manager_convert_by_symbol(unit_manager_get_default(), x, x_units, z_units, z);
 }
@@ -180,7 +184,7 @@ get_options(int argc, char *argv[])
 }
 
 static void
-quit_cb(MathWindow *window)
+quit_cb (MathWindow *window G_GNUC_UNUSED)
 {
     ctk_main_quit();
 }

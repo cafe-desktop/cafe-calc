@@ -161,7 +161,7 @@ math_variables_delete(MathVariables *variables, const char *name)
 
 
 static void
-math_variables_class_init (MathVariablesClass *klass)
+math_variables_class_init (MathVariablesClass *klass G_GNUC_UNUSED)
 {
 }
 

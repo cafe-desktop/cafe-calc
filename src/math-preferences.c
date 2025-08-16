@@ -41,14 +41,16 @@ math_preferences_dialog_new(MathEquation *equation)
 
 
 static void
-preferences_response_cb(CtkWidget *widget, gint id)
+preferences_response_cb (CtkWidget *widget,
+			 gint       id G_GNUC_UNUSED)
 {
     ctk_widget_hide(widget);
 }
 
 
 static gboolean
-preferences_dialog_delete_cb(CtkWidget *widget, CdkEvent *event)
+preferences_dialog_delete_cb (CtkWidget *widget,
+			      CdkEvent  *event G_GNUC_UNUSED)
 {
     preferences_response_cb(widget, 0);
     return TRUE;
@@ -165,7 +167,9 @@ set_combo_box_from_int(CtkWidget *combo, int value)
 
 
 static void
-accuracy_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
+accuracy_cb (MathEquation          *equation,
+	     GParamSpec            *spec G_GNUC_UNUSED,
+	     MathPreferencesDialog *dialog)
 {
     ctk_spin_button_set_value(CTK_SPIN_BUTTON(ctk_builder_get_object(dialog->priv->ui, "decimal_places_spin")),
                               math_equation_get_accuracy(equation));
@@ -174,7 +178,9 @@ accuracy_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dia
 
 
 static void
-show_thousands_separators_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
+show_thousands_separators_cb (MathEquation          *equation,
+			      GParamSpec            *spec G_GNUC_UNUSED,
+			      MathPreferencesDialog *dialog)
 {
     ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(ctk_builder_get_object(dialog->priv->ui, "thousands_separator_check")),
                                  math_equation_get_show_thousands_separators(equation));
@@ -183,7 +189,9 @@ show_thousands_separators_cb(MathEquation *equation, GParamSpec *spec, MathPrefe
 
 
 static void
-show_trailing_zeroes_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
+show_trailing_zeroes_cb (MathEquation          *equation,
+			 GParamSpec            *spec G_GNUC_UNUSED,
+			 MathPreferencesDialog *dialog)
 {
     ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(ctk_builder_get_object(dialog->priv->ui, "trailing_zeroes_check")),
                                  math_equation_get_show_trailing_zeroes(equation));
@@ -192,7 +200,9 @@ show_trailing_zeroes_cb(MathEquation *equation, GParamSpec *spec, MathPreference
 
 
 static void
-number_format_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
+number_format_cb (MathEquation          *equation,
+		  GParamSpec            *spec G_GNUC_UNUSED,
+		  MathPreferencesDialog *dialog)
 {
     set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "number_format_combobox"), math_equation_get_number_format(equation));
     g_settings_set_enum(g_settings_var, "number-format", math_equation_get_number_format(equation));
@@ -200,7 +210,9 @@ number_format_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog
 
 
 static void
-word_size_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
+word_size_cb (MathEquation          *equation,
+	      GParamSpec            *spec G_GNUC_UNUSED,
+	      MathPreferencesDialog *dialog)
 {
     set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "word_size_combobox"), math_equation_get_word_size(equation));
     g_settings_set_int(g_settings_var, "word-size", math_equation_get_word_size(equation));
@@ -208,7 +220,9 @@ word_size_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *di
 
 
 static void
-angle_unit_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
+angle_unit_cb (MathEquation          *equation,
+	       GParamSpec            *spec G_GNUC_UNUSED,
+	       MathPreferencesDialog *dialog)
 {
     set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "angle_unit_combobox"), math_equation_get_angle_units(equation));
     g_settings_set_enum(g_settings_var, "angle-units", math_equation_get_angle_units(equation));

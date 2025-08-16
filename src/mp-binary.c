@@ -93,7 +93,7 @@ mp_bitwise(const MPNumber *x, const MPNumber *y, int (*bitwise_operator)(int, in
 static int mp_bitwise_and(int v1, int v2) { return v1 & v2; }
 static int mp_bitwise_or(int v1, int v2) { return v1 | v2; }
 static int mp_bitwise_xor(int v1, int v2) { return v1 ^ v2; }
-static int mp_bitwise_not(int v1, int dummy) { return v1 ^ 0xF; }
+static int mp_bitwise_not(int v1, int dummy G_GNUC_UNUSED) { return v1 ^ 0xF; }
 
 
 bool

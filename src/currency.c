@@ -83,7 +83,7 @@ currency_get_value(Currency *currency)
 
 
 static void
-currency_class_init(CurrencyClass *klass)
+currency_class_init(CurrencyClass *klass G_GNUC_UNUSED)
 {
 }
 

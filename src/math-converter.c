@@ -115,7 +115,9 @@ update_result_label(MathConverter *converter)
 
 
 static void
-display_changed_cb(MathEquation *equation, GParamSpec *spec, MathConverter *converter)
+display_changed_cb (MathEquation  *equation G_GNUC_UNUSED,
+		    GParamSpec    *spec G_GNUC_UNUSED,
+		    MathConverter *converter)
 {
     update_result_label(converter);
 }
@@ -333,7 +335,8 @@ from_combobox_changed_cb(CtkWidget *combo, MathConverter *converter)
 
 
 static void
-to_combobox_changed_cb(CtkWidget *combo, MathConverter *converter)
+to_combobox_changed_cb (CtkWidget     *combo G_GNUC_UNUSED,
+			MathConverter *converter)
 {
     /* Conversion must have changed */
     update_result_label(converter);
@@ -343,24 +346,26 @@ to_combobox_changed_cb(CtkWidget *combo, MathConverter *converter)
 
 
 static void
-from_cell_data_func(CtkCellLayout   *cell_layout,
-                    CtkCellRenderer *cell,
-                    CtkTreeModel    *tree_model,
-                    CtkTreeIter     *iter,
-                    gpointer         data)
+from_cell_data_func(CtkCellLayout   *cell_layout G_GNUC_UNUSED,
+		    CtkCellRenderer *cell,
+		    CtkTreeModel    *tree_model,
+		    CtkTreeIter     *iter,
+		    gpointer         data G_GNUC_UNUSED)
 {
     g_object_set(cell, "sensitive", !ctk_tree_model_iter_has_child(tree_model, iter), NULL);
 }
 
 
 static void
-currency_updated_cb(CurrencyManager *manager, MathConverter *converter)
+currency_updated_cb (CurrencyManager *manager G_GNUC_UNUSED,
+		     MathConverter   *converter)
 {
     update_result_label(converter);
 }
 
 static void
-swap_button_clicked_cb(CtkButton *button, MathConverter *converter)
+swap_button_clicked_cb (CtkButton     *button G_GNUC_UNUSED,
+			MathConverter *converter)
 {
     Unit *from_unit, *to_unit;
     MPNumber x, z;

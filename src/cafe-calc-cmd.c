@@ -66,7 +66,8 @@ str_adjust(char *str)
 }
 
 int
-main(int argc, char **argv)
+main (int    argc G_GNUC_UNUSED,
+      char **argv G_GNUC_UNUSED)
 {
     char *equation, *line;
     size_t nbytes = MAXLINE;
