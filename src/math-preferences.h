@@ -36,6 +36,18 @@ GType math_preferences_get_type(void);
 
 MathPreferencesDialog *math_preferences_dialog_new(MathEquation *equation);
 
+void number_format_combobox_changed_cb (CtkWidget *combo, MathPreferencesDialog *dialog);
+
+void angle_unit_combobox_changed_cb (CtkWidget *combo, MathPreferencesDialog *dialog);
+
+void word_size_combobox_changed_cb (CtkWidget *combo, MathPreferencesDialog *dialog);
+
+void decimal_places_spin_change_value_cb (CtkWidget *spin, MathPreferencesDialog *dialog);
+
+void thousands_separator_check_toggled_cb (CtkWidget *check, MathPreferencesDialog *dialog);
+
+void trailing_zeroes_check_toggled_cb (CtkWidget *check, MathPreferencesDialog *dialog);
+
 G_END_DECLS
 
 #endif /* MATH_PREFERENCES_H */

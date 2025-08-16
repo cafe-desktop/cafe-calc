@@ -57,10 +57,8 @@ preferences_dialog_delete_cb (CtkWidget *widget,
 }
 
 
-void number_format_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog);
-G_MODULE_EXPORT
-void
-number_format_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog)
+void number_format_combobox_changed_cb (CtkWidget             *combo,
+					MathPreferencesDialog *dialog)
 {
     MpDisplayFormat value;
     CtkTreeModel *model;
@@ -73,10 +71,8 @@ number_format_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialo
 }
 
 
-void angle_unit_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog);
-G_MODULE_EXPORT
-void
-angle_unit_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog)
+void angle_unit_combobox_changed_cb (CtkWidget             *combo,
+				     MathPreferencesDialog *dialog)
 {
     MPAngleUnit value;
     CtkTreeModel *model;
@@ -89,10 +85,8 @@ angle_unit_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog)
 }
 
 
-void word_size_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog);
-G_MODULE_EXPORT
-void
-word_size_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog)
+void word_size_combobox_changed_cb (CtkWidget             *combo,
+				    MathPreferencesDialog *dialog)
 {
     gint value;
     CtkTreeModel *model;
@@ -105,10 +99,8 @@ word_size_combobox_changed_cb(CtkWidget *combo, MathPreferencesDialog *dialog)
 }
 
 
-void decimal_places_spin_change_value_cb(CtkWidget *spin, MathPreferencesDialog *dialog);
-G_MODULE_EXPORT
-void
-decimal_places_spin_change_value_cb(CtkWidget *spin, MathPreferencesDialog *dialog)
+void decimal_places_spin_change_value_cb (CtkWidget             *spin,
+					  MathPreferencesDialog *dialog)
 {
     gint value = 0;
 
@@ -117,10 +109,8 @@ decimal_places_spin_change_value_cb(CtkWidget *spin, MathPreferencesDialog *dial
 }
 
 
-void thousands_separator_check_toggled_cb(CtkWidget *check, MathPreferencesDialog *dialog);
-G_MODULE_EXPORT
-void
-thousands_separator_check_toggled_cb(CtkWidget *check, MathPreferencesDialog *dialog)
+void thousands_separator_check_toggled_cb (CtkWidget             *check,
+					   MathPreferencesDialog *dialog)
 {
     gboolean value;
 
@@ -129,10 +119,8 @@ thousands_separator_check_toggled_cb(CtkWidget *check, MathPreferencesDialog *di
 }
 
 
-void trailing_zeroes_check_toggled_cb(CtkWidget *check, MathPreferencesDialog *dialog);
-G_MODULE_EXPORT
-void
-trailing_zeroes_check_toggled_cb(CtkWidget *check, MathPreferencesDialog *dialog)
+void trailing_zeroes_check_toggled_cb (CtkWidget             *check,
+				       MathPreferencesDialog *dialog)
 {
     gboolean value;
 
