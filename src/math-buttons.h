@@ -51,6 +51,56 @@ void math_buttons_set_programming_base(MathButtons *buttons, gint base);
 
 gint math_buttons_get_programming_base(MathButtons *buttons);
 
+void exponent_cb (CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
+
+void subtract_cb (CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
+
+void button_cb (CtkWidget *widget, MathButtons *buttons);
+
+void solve_cb (CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
+
+void clear_cb (CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
+
+void delete_cb (CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
+
+void undo_cb (CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
+
+void memory_cb (CtkWidget *widget, MathButtons *buttons);
+
+void shift_left_cb (CtkWidget *widget, MathButtons *buttons);
+
+void shift_right_cb (CtkWidget *widget, MathButtons *buttons);
+
+void function_cb (CtkWidget *widget, MathButtons *buttons);
+
+void const_cb (CtkWidget *widget, MathButtons *buttons);
+
+void factorize_cb (CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
+
+void digit_cb (CtkWidget *widget, MathButtons *buttons);
+
+void numeric_point_cb (CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
+
+void finc_cb (CtkWidget *widget, MathButtons *buttons);
+
+void insert_character_code_cb (CtkWidget *widget G_GNUC_UNUSED, MathButtons *buttons);
+
+void finc_activate_cb (CtkWidget *widget, MathButtons *buttons);
+
+void finc_response_cb (CtkWidget *widget, gint response_id, MathButtons *buttons);
+
+void character_code_dialog_response_cb (CtkWidget *dialog, gint response_id, MathButtons *buttons);
+
+void character_code_dialog_activate_cb (CtkWidget *entry G_GNUC_UNUSED, MathButtons *buttons);
+
+gboolean character_code_dialog_delete_cb (CtkWidget *dialog, CdkEvent *event G_GNUC_UNUSED, MathButtons *buttons);
+
+gboolean bit_toggle_cb (CtkWidget *event_box, CdkEventButton *event G_GNUC_UNUSED, MathButtons *buttons);
+
+void set_superscript_cb (CtkWidget *widget, MathButtons *buttons);
+
+void set_subscript_cb (CtkWidget *widget, MathButtons *buttons);
+
 G_END_DECLS
 
 #endif /* MATH_BUTTONS_H */
