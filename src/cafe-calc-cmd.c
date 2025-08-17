@@ -69,7 +69,7 @@ int
 main (int    argc G_GNUC_UNUSED,
       char **argv G_GNUC_UNUSED)
 {
-    char *equation, *line;
+    char *equation;
     size_t nbytes = MAXLINE;
 
     /* Seed random number generator. */
@@ -81,6 +81,8 @@ main (int    argc G_GNUC_UNUSED,
 
     equation = (char *) malloc(MAXLINE * sizeof(char));
     while (1) {
+        char *line;
+
         printf("> ");
         line = fgets(equation, nbytes, stdin);
 

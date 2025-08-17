@@ -1230,8 +1230,7 @@ mp_lns(const MPNumber *x, MPNumber *z)
 static void
 mp_ln_real(const MPNumber *x, MPNumber *z)
 {
-    int e, k;
-    double rx, rlx;
+    int k;
     MPNumber t1, t2;
 
     /* LOOP TO GET APPROXICAFE LN(X) USING SINGLE-PRECISION */
@@ -1239,6 +1238,9 @@ mp_ln_real(const MPNumber *x, MPNumber *z)
     mp_set_from_integer(0, z);
     for(k = 0; k < 10; k++)
     {
+        int e;
+        double rx, rlx;
+
         /* COMPUTE FINAL CORRECTION ACCURATELY USING MP_LNS */
         mp_add_integer(&t1, -1, &t2);
         if (mp_is_zero(&t2) || t2.exponent + 1 <= 0) {

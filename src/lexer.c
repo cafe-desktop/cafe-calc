@@ -31,7 +31,6 @@ static gboolean
 l_check_if_number(LexerState* state)
 {
     MPNumber tmp;
-    int count = 0;
     gchar* text = pl_get_marked_substring(state->prelexer);
     if(mp_set_from_string(text, state->parent->options->base, &tmp) == 0)
     {
@@ -40,6 +39,8 @@ l_check_if_number(LexerState* state)
     }
     else
     {
+        int count = 0;
+
         /* Try to rollback several characters to see, if that yeilds any number. */
         while(strlen (text) > 0)
         {
@@ -527,7 +528,8 @@ LETTER_STATE:
 void
 l_insert_all_tokens(LexerState* state)
 {
-    LexerToken* token;
+    LexerToken* token = NULL;
+
     while(1)
     {
         token = l_insert_next_token(state);

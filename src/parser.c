@@ -323,7 +323,6 @@ p_check_variable(ParserState* state, gchar* name)
     gint result = 0;
 
     const gchar *c, *next;
-    gchar *buffer;
     MPNumber temp;
 
     if(!(state->get_variable))
@@ -340,6 +339,8 @@ p_check_variable(ParserState* state, gchar* name)
     /* If has more than one character then assume a multiplication of variables */
     if(utf8_next_char(name)[0] != '\0')
     {
+        gchar *buffer;
+
         result = 1;
         buffer = (gchar*) malloc(sizeof(gchar) * strlen(name));
         for(c = name; *c != '\0'; c = next)

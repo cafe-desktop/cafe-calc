@@ -50,7 +50,6 @@ solve(const char *equation)
     MPEquationOptions options;
     MPErrorCode error;
     MPNumber result;
-    char *result_str;
 
     memset(&options, 0, sizeof(options));
     options.base = 10;
@@ -68,6 +67,8 @@ solve(const char *equation)
         exit(1);
     }
     else {
+        char *result_str;
+
         result_str = mp_serializer_to_string(mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, 10, 9), &result);
         printf("%s\n", result_str);
         exit(0);
@@ -125,7 +126,8 @@ static void
 get_options(int argc, char *argv[])
 {
     int i;
-    char *progname, *arg;
+    char *progname = NULL;
+    char *arg = NULL;
 
     progname = g_path_get_basename(argv[0]);
 

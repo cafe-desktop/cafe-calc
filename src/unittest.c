@@ -78,12 +78,13 @@ static void test(char* expression, char* expected, int expected_error)
 {
 	MPErrorCode error;
 	MPNumber result;
-	char result_str[1024] = "";
 
 	error = mp_equation_parse(expression, &options, &result, NULL);
 
 	if (error == 0)
 	{
+		char result_str[1024] = "";
+
 		mp_cast_to_string(&result, options.base, options.base, 9, 1, result_str, 1024);
 
 		if (expected_error != 0)

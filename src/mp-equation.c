@@ -290,7 +290,6 @@ MPErrorCode
 mp_equation_parse(const char *expression, MPEquationOptions *options, MPNumber *result, char **error_token)
 {
     int ret;
-    int err;
     ParserState* state;
     state = p_create_parser (expression, options);
 
@@ -311,7 +310,9 @@ mp_equation_parse(const char *expression, MPEquationOptions *options, MPNumber *
     }
     /* Error during parsing */
     if (state->error) {
-	err = state->error;
+        int err;
+
+        err = state->error;
         p_destroy_parser (state);
         return err;
     }

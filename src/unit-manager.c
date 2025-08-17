@@ -193,12 +193,13 @@ Unit *
 unit_manager_get_unit_by_name(UnitManager *manager, const gchar *name)
 {
     GList *iter;
-    Unit *u;
 
     g_return_val_if_fail(manager != NULL, NULL);
     g_return_val_if_fail(name != NULL, NULL);
 
     for (iter = manager->priv->categories; iter; iter = iter->next) {
+        Unit *u;
+
         UnitCategory *c = iter->data;
         u = unit_category_get_unit_by_name(c, name);
         if (u)
@@ -213,12 +214,13 @@ Unit *
 unit_manager_get_unit_by_symbol(UnitManager *manager, const gchar *symbol)
 {
     GList *iter;
-    Unit *u;
 
     g_return_val_if_fail(manager != NULL, NULL);
     g_return_val_if_fail(symbol != NULL, NULL);
 
     for (iter = manager->priv->categories; iter; iter = iter->next) {
+        Unit *u;
+
         UnitCategory *c = iter->data;
         u = unit_category_get_unit_by_symbol(c, symbol);
         if (u)

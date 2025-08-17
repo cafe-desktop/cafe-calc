@@ -433,9 +433,11 @@ on_paste (CtkClipboard *clipboard G_GNUC_UNUSED,
 	  const gchar  *text,
 	  gpointer      data)
 {
-    MathEquation *equation = data;
-    if (text != NULL)
+    if (text != NULL) {
+        MathEquation *equation = data;
+
         math_equation_insert(equation, text);
+    }
 }
 
 
@@ -872,7 +874,6 @@ math_equation_get_equation(MathEquation *equation)
 gboolean
 math_equation_get_number(MathEquation *equation, MPNumber *z)
 {
-    gchar *text;
     gboolean result;
 
     g_return_val_if_fail(equation != NULL, FALSE);
@@ -883,6 +884,8 @@ math_equation_get_number(MathEquation *equation, MPNumber *z)
         return TRUE;
     }
     else {
+        gchar *text;
+
         text = math_equation_get_equation(equation);
         result = !mp_serializer_from_string(equation->priv->serializer, text, z);
         g_free(text);
@@ -1029,9 +1032,6 @@ math_equation_insert(MathEquation *equation, const gchar *text)
 void
 math_equation_insert_digit(MathEquation *equation, guint digit)
 {
-    static const char *subscript_digits[] = {"₀", "₁", "₂", "₃", "₄", "₅", "₆", "₇", "₈", "₉", NULL};
-    static const char *superscript_digits[] = {"⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹", NULL};
-
     g_return_if_fail(equation != NULL);
     g_return_if_fail(digit < 16);
 
@@ -1042,10 +1042,16 @@ math_equation_insert_digit(MathEquation *equation, guint digit)
         buffer[len] = '\0';
         math_equation_insert(equation, buffer);
     }
-    else if (equation->priv->number_mode == SUPERSCRIPT)
+    else if (equation->priv->number_mode == SUPERSCRIPT) {
+        static const char *superscript_digits[] = {"⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹", NULL};
+
         math_equation_insert(equation, superscript_digits[digit]);
-    else if (equation->priv->number_mode == SUBSCRIPT)
+    }
+    else if (equation->priv->number_mode == SUBSCRIPT) {
+        static const char *subscript_digits[] = {"₀", "₁", "₂", "₃", "₄", "₅", "₆", "₇", "₈", "₉", NULL};
+
         math_equation_insert(equation, subscript_digits[digit]);
+    }
 }
 
 

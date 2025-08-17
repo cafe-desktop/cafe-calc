@@ -169,7 +169,6 @@ pf_get_variable(ParseNode* self)
     gint result = 0;
 
     const gchar *c, *next;
-    gchar *buffer;
     MPNumber value;
 
     MPNumber t;
@@ -191,6 +190,8 @@ pf_get_variable(ParseNode* self)
     /* If has more than one character then assume a multiplication of variables */
     if(utf8_next_char(self->token->string)[0] != '\0')
     {
+        gchar *buffer;
+
         result = 1;
         buffer = (gchar*) malloc(sizeof(gchar) * strlen(self->token->string));
         mp_set_from_integer(1, &value);
@@ -226,7 +227,6 @@ pf_get_variable_with_power(ParseNode* self)
     gint pow;
 
     const gchar *c, *next;
-    gchar *buffer;
     MPNumber value;
 
     MPNumber t;
@@ -253,6 +253,8 @@ pf_get_variable_with_power(ParseNode* self)
     /* If has more than one character then assume a multiplication of variables */
     if(utf8_next_char(self->token->string)[0] != '\0')
     {
+        gchar *buffer;
+
         result = 1;
         buffer = (gchar*) malloc(sizeof(gchar) * strlen(self->token->string));
         mp_set_from_integer(1, &value);
