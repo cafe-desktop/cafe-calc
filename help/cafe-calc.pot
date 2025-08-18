@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CAFE Desktop Environment\n"
-"POT-Creation-Date: 2018-10-03 14:33+0200\n"
+"POT-Creation-Date: 2025-08-21 16:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
