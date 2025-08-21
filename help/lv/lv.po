@@ -1,20 +1,21 @@
-# 
+#
 # Translators:
 # Rihards Priedītis <rprieditis@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: CAFE Desktop Environment\n"
-"POT-Creation-Date: 2018-10-03 14:33+0200\n"
+"POT-Creation-Date: 2025-08-21 16:33+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Latvian (https://www.transifex.com/cafe/teams/13566/lv/)\n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lv\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -127,8 +128,8 @@ msgstr ""
 #: C/boolean.page:22
 msgid ""
 "The NOT <link xref=\"function\">function</link> inverts the bits in a "
-"number. The word size is set from the "
-"<guiseq><gui>Calculator</gui><gui>Preferences</gui></guiseq> menu."
+"number. The word size is set from the <guiseq><gui>Calculator</"
+"gui><gui>Preferences</gui></guiseq> menu."
 msgstr ""
 
 #. (itstool) path: example/p
@@ -162,8 +163,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/conv-character.page:11
 msgid ""
-"When in <link xref=\"mouse\">programming mode</link> the <gui>á</gui> button"
-" opens a dialog to convert characters to character codes."
+"When in <link xref=\"mouse\">programming mode</link> the <gui>á</gui> button "
+"opens a dialog to convert characters to character codes."
 msgstr ""
 
 #. (itstool) path: note/p
@@ -179,8 +180,8 @@ msgstr "Valūta"
 #. (itstool) path: page/p
 #: C/conv-currency.page:11
 msgid ""
-"To convert currencies, enter the <link xref=\"financial\">financial "
-"mode</link>, and use the currency controls."
+"To convert currencies, enter the <link xref=\"financial\">financial mode</"
+"link>, and use the currency controls."
 msgstr ""
 
 #. (itstool) path: page/p
@@ -300,8 +301,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/equation.page:22
 msgid ""
-"To solve, press the <gui>=</gui> button with your mouse or the "
-"<key>Enter</key> key on your keyboard."
+"To solve, press the <gui>=</gui> button with your mouse or the <key>Enter</"
+"key> key on your keyboard."
 msgstr ""
 
 #. (itstool) path: page/p
@@ -360,9 +361,9 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/factorize.page:11
 msgid ""
-"You can factorize the number currently displayed by pressing the "
-"<gui>fact</gui> button. This button is visible in <link "
-"xref=\"mouse\">programming mode</link>."
+"You can factorize the number currently displayed by pressing the <gui>fact</"
+"gui> button. This button is visible in <link xref=\"mouse\">programming "
+"mode</link>."
 msgstr ""
 
 #. (itstool) path: page/title
@@ -485,8 +486,8 @@ msgstr "Gcsn"
 #: C/financial.page:48
 msgid ""
 "Calculate the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
-" accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated."
 msgstr ""
@@ -500,8 +501,8 @@ msgstr "Termiņš"
 #: C/financial.page:52
 msgid ""
 "Calculate the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest"
-" rate."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
 msgstr ""
 
 #. (itstool) path: note/p
@@ -798,8 +799,8 @@ msgstr ""
 #: C/keyboard.page:39
 msgid ""
 "To enter <link xref=\"superscript\">superscript numbers</link> use "
-"<keyseq><key>Ctrl</key>number</keyseq>, for subscript use "
-"<keyseq><key>Alt</key>number</keyseq>."
+"<keyseq><key>Ctrl</key>number</keyseq>, for subscript use <keyseq><key>Alt</"
+"key>number</keyseq>."
 msgstr ""
 
 #. (itstool) path: p/link
@@ -816,8 +817,8 @@ msgstr ""
 #: C/legal.xml:6
 msgid ""
 "As a special exception, the copyright holders give you permission to copy, "
-"modify, and distribute the example code contained in this document under the"
-" terms of your choosing, without restriction."
+"modify, and distribute the example code contained in this document under the "
+"terms of your choosing, without restriction."
 msgstr ""
 
 #. (itstool) path: page/title
@@ -828,8 +829,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/logarithm.page:11
 msgid ""
-"Logarithms can be calculated using the log <link "
-"xref=\"function\">function</link>."
+"Logarithms can be calculated using the log <link xref=\"function\">function</"
+"link>."
 msgstr ""
 
 #. (itstool) path: example/p
@@ -862,8 +863,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/logarithm.page:35
 msgid ""
-"Euler's number can be entered by using the <link "
-"xref=\"variable\">variable</link> e."
+"Euler's number can be entered by using the <link xref=\"variable\">variable</"
+"link> e."
 msgstr ""
 
 #. (itstool) path: example/p
@@ -929,8 +930,8 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/mouse.page:26
 msgid ""
-"Provides buttons suitable for <link xref=\"financial\">financial "
-"equations</link>"
+"Provides buttons suitable for <link xref=\"financial\">financial equations</"
+"link>"
 msgstr ""
 
 #. (itstool) path: td/p
@@ -973,8 +974,7 @@ msgstr "Zinātniskais"
 #. (itstool) path: td/p
 #: C/number-display.page:21
 msgid ""
-"Results are displayed in <link xref=\"scientific\">scientific "
-"notation</link>"
+"Results are displayed in <link xref=\"scientific\">scientific notation</link>"
 msgstr ""
 
 #. (itstool) path: td/p
@@ -985,8 +985,8 @@ msgstr "Inženierijas"
 #. (itstool) path: td/p
 #: C/number-display.page:25
 msgid ""
-"Results are displayed in scientific notation except the exponent is always a"
-" multiple of three"
+"Results are displayed in scientific notation except the exponent is always a "
+"multiple of three"
 msgstr ""
 
 #. (itstool) path: td/p
@@ -1022,8 +1022,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/number-display.page:40
 msgid ""
-"The number of decimal places, if trailing zeroes and if thousands separators"
-" are shown can also be configured."
+"The number of decimal places, if trailing zeroes and if thousands separators "
+"are shown can also be configured."
 msgstr ""
 
 #. (itstool) path: page/title
@@ -1112,8 +1112,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/power.page:39
 msgid ""
-"Square roots can be calculated using the symbol "
-"(<keyseq><key>Ctrl</key><key>R</key></keyseq>)."
+"Square roots can be calculated using the symbol (<keyseq><key>Ctrl</"
+"key><key>R</key></keyseq>)."
 msgstr ""
 
 #. (itstool) path: example/p
@@ -1155,8 +1155,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/scientific.page:21
 msgid ""
-"Then press the scientific notation button (or press "
-"<keyseq><key>Ctrl</key><key>E</key></keyseq>):"
+"Then press the scientific notation button (or press <keyseq><key>Ctrl</"
+"key><key>E</key></keyseq>):"
 msgstr ""
 
 #. (itstool) path: example/p
@@ -1195,8 +1195,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/superscript.page:13
 msgid ""
-"Some equations may require numbers to be entered in superscript or subscript"
-" form. e.g."
+"Some equations may require numbers to be entered in superscript or subscript "
+"form. e.g."
 msgstr ""
 
 #. (itstool) path: example/p
@@ -1210,8 +1210,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/superscript.page:38
 msgid ""
-"To enter superscript numbers with the mouse select the number mode using the"
-" <gui>↑n</gui> and <gui>↓n</gui> buttons. When one of these modes is active "
+"To enter superscript numbers with the mouse select the number mode using the "
+"<gui>↑n</gui> and <gui>↓n</gui> buttons. When one of these modes is active "
 "clicking the number buttons will enter numbers in superscript or subscript. "
 "To return to normal number mode click the active button."
 msgstr ""
@@ -1250,10 +1250,9 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/trigonometry.page:19
 msgid ""
-"The angle units used can be changed from the "
-"<guiseq><gui>Calculator</gui><gui>Preferences</gui></guiseq> menu. "
-"Trigonometry buttons are visible when in <link xref=\"mouse\">Advanced "
-"mode</link>."
+"The angle units used can be changed from the <guiseq><gui>Calculator</"
+"gui><gui>Preferences</gui></guiseq> menu. Trigonometry buttons are visible "
+"when in <link xref=\"mouse\">Advanced mode</link>."
 msgstr ""
 
 #. (itstool) path: page/p
@@ -1318,8 +1317,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/variables.page:23
 msgid ""
-"Variables can be used in any equation and are substituted for their assigned"
-" value. Variables can be inserted using the <gui>x</gui> button."
+"Variables can be used in any equation and are substituted for their assigned "
+"value. Variables can be inserted using the <gui>x</gui> button."
 msgstr ""
 
 #. (itstool) path: example/p

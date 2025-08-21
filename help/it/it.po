@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # Dario Di Nucci <linkin88mail@gmail.com>, 2020
 # Wolfgang Ulbrich <cafe@raveit.de>, 2020
@@ -6,18 +6,18 @@
 # Enrico B. <enricobe@hotmail.com>, 2020
 # andrea pittaro <transifex@andreapittaro.it>, 2020
 # Alessandro Volturno <alelvb@inwind.it>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: CAFE Desktop Environment\n"
-"POT-Creation-Date: 2018-10-03 14:33+0200\n"
+"POT-Creation-Date: 2025-08-21 16:33+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2020\n"
 "Language-Team: Italian (https://www.transifex.com/cafe/teams/13566/it/)\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -146,8 +146,8 @@ msgstr ""
 #: C/boolean.page:22
 msgid ""
 "The NOT <link xref=\"function\">function</link> inverts the bits in a "
-"number. The word size is set from the "
-"<guiseq><gui>Calculator</gui><gui>Preferences</gui></guiseq> menu."
+"number. The word size is set from the <guiseq><gui>Calculator</"
+"gui><gui>Preferences</gui></guiseq> menu."
 msgstr ""
 "La <link xref=\"function\">funzione</link> NOT inverte i bit di un numero. "
 "La dimensione della visualizzazione è impostata dal menu "
@@ -178,8 +178,8 @@ msgid ""
 msgstr ""
 "Per convertire un numero tra una base e l'altra inserire un numero (o "
 "risolvi un'equazione) e cambia il <link xref=\"number-display\">formato del "
-"risultato</link> dal menu "
-"<guiseq><gui>Calcolatrice</gui><gui>Preferenze</gui></guiseq>."
+"risultato</link> dal menu <guiseq><gui>Calcolatrice</gui><gui>Preferenze</"
+"gui></guiseq>."
 
 #. (itstool) path: page/title
 #: C/conv-character.page:9
@@ -189,8 +189,8 @@ msgstr "Codifica dei Caratteri"
 #. (itstool) path: page/p
 #: C/conv-character.page:11
 msgid ""
-"When in <link xref=\"mouse\">programming mode</link> the <gui>á</gui> button"
-" opens a dialog to convert characters to character codes."
+"When in <link xref=\"mouse\">programming mode</link> the <gui>á</gui> button "
+"opens a dialog to convert characters to character codes."
 msgstr ""
 "Nella <link xref=\"mouse\">modalità programmazione</link> il pulsante "
 "<gui>á</gui> apre una finestra di dialogo per convertire i caratteri nel "
@@ -209,8 +209,8 @@ msgstr "Valuta"
 #. (itstool) path: page/p
 #: C/conv-currency.page:11
 msgid ""
-"To convert currencies, enter the <link xref=\"financial\">financial "
-"mode</link>, and use the currency controls."
+"To convert currencies, enter the <link xref=\"financial\">financial mode</"
+"link>, and use the currency controls."
 msgstr ""
 "Per convertire valute monetarie, entrate nella <link "
 "xref=\"financial\">modalità finanziaria</link>, ed utilizzare i controlli "
@@ -344,11 +344,11 @@ msgstr "7+2"
 #. (itstool) path: page/p
 #: C/equation.page:22
 msgid ""
-"To solve, press the <gui>=</gui> button with your mouse or the "
-"<key>Enter</key> key on your keyboard."
+"To solve, press the <gui>=</gui> button with your mouse or the <key>Enter</"
+"key> key on your keyboard."
 msgstr ""
-"Per risolvere l'equazione premere <gui>=</gui> con il mouse o il tasto Invio"
-" sulla tastiera."
+"Per risolvere l'equazione premere <gui>=</gui> con il mouse o il tasto Invio "
+"sulla tastiera."
 
 #. (itstool) path: page/p
 #: C/equation.page:25
@@ -357,8 +357,8 @@ msgid ""
 "division are performed before addition and subtraction. The following "
 "equation solves to 1 (3×2 = 6, 7−6 = 1)."
 msgstr ""
-"Le operazioni sono eseguite nell'ordine cafematico standard: moltiplicazioni"
-" e divisioni  vengono effettuate prima di addizioni e sottrazioni. "
+"Le operazioni sono eseguite nell'ordine cafematico standard: moltiplicazioni "
+"e divisioni  vengono effettuate prima di addizioni e sottrazioni. "
 "L'equazione seguente dà come risultato 1 ( 3x2=6 e 7-6=1)"
 
 #. (itstool) path: example/p
@@ -415,9 +415,9 @@ msgstr "Fattorizzazione"
 #. (itstool) path: page/p
 #: C/factorize.page:11
 msgid ""
-"You can factorize the number currently displayed by pressing the "
-"<gui>fact</gui> button. This button is visible in <link "
-"xref=\"mouse\">programming mode</link>."
+"You can factorize the number currently displayed by pressing the <gui>fact</"
+"gui> button. This button is visible in <link xref=\"mouse\">programming "
+"mode</link>."
 msgstr ""
 "Potete fattorizzare il numero correntemente mostrato premendo il pulsante "
 "<gui>fact</gui>. Questo pulsante è visibile nella <link "
@@ -475,8 +475,8 @@ msgid ""
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
 msgstr ""
-"Calcola il valore futuro di un investimento basato su pagamenti uguali ad un"
-" tasso d'interesse periodico sul numero di periodi di pagamento."
+"Calcola il valore futuro di un investimento basato su pagamenti uguali ad un "
+"tasso d'interesse periodico sul numero di periodi di pagamento."
 
 #. (itstool) path: td/p
 #: C/financial.page:27
@@ -563,14 +563,14 @@ msgstr "Syd"
 #: C/financial.page:48
 msgid ""
 "Calculate the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
-" accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated."
 msgstr ""
 "Calcola l'ammortamento di un bene in un determinato periodo di tempo "
-"utilizzando il metodo della somma degli anni di durata prevista, SYD. Questo"
-" metodo accelera il tasso di ammortamento, in modo che ci sia maggior "
+"utilizzando il metodo della somma degli anni di durata prevista, SYD. Questo "
+"metodo accelera il tasso di ammortamento, in modo che ci sia maggior "
 "ammortamento nei periodi iniziali rispetto a quelli successivi. La vita "
 "utile è il numero di periodi, di solito anni, durante i quali un bene viene "
 "ammortizzato."
@@ -584,8 +584,8 @@ msgstr "Termine"
 #: C/financial.page:52
 msgid ""
 "Calculate the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest"
-" rate."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
 msgstr ""
 "Calcola il numero di periodi di pagamento necessari per accumulare, durante "
 "il periodo di rendita ordinaria ad un tasso di interesse periodico, un "
@@ -611,8 +611,7 @@ msgid ""
 msgstr ""
 "Le funzioni possono essere utilizzate inserendo il nome della funzione "
 "seguito dall'argomento della funzione. Se l'argomento non è un numero o una "
-"<link xref=\"variable\">variabile</link>, usate le parentesi attorno ad "
-"esso."
+"<link xref=\"variable\">variabile</link>, usate le parentesi attorno ad esso."
 
 #. (itstool) path: example/p
 #: C/functions.page:16
@@ -893,12 +892,12 @@ msgstr "<keyseq><key>Ctrl</key><key>P</key></keyseq>"
 #: C/keyboard.page:39
 msgid ""
 "To enter <link xref=\"superscript\">superscript numbers</link> use "
-"<keyseq><key>Ctrl</key>number</keyseq>, for subscript use "
-"<keyseq><key>Alt</key>number</keyseq>."
+"<keyseq><key>Ctrl</key>number</keyseq>, for subscript use <keyseq><key>Alt</"
+"key>number</keyseq>."
 msgstr ""
 "Per inserire <link xref=\"superscript\">numeri in apice</link> "
-"utilizzate<keyseq><key>Ctrl</key>numero,</keyseq> per numeri in pedice usate"
-" <keyseq><key>Alt</key>numero</keyseq>."
+"utilizzate<keyseq><key>Ctrl</key>numero,</keyseq> per numeri in pedice usate "
+"<keyseq><key>Alt</key>numero</keyseq>."
 
 #. (itstool) path: p/link
 #: C/legal.xml:4
@@ -914,12 +913,12 @@ msgstr "Questo lavoro è rilasciato sotto la licenza <_:link-1/>."
 #: C/legal.xml:6
 msgid ""
 "As a special exception, the copyright holders give you permission to copy, "
-"modify, and distribute the example code contained in this document under the"
-" terms of your choosing, without restriction."
+"modify, and distribute the example code contained in this document under the "
+"terms of your choosing, without restriction."
 msgstr ""
 "A titolo di eccezione speciale, i detentori del copyright vi forniscono il "
-"permesso di copiare, modificare e distribuire il codice di esempio contenuto"
-" in questo documento sotto i termini di una licenza di vostra scelta, senza "
+"permesso di copiare, modificare e distribuire il codice di esempio contenuto "
+"in questo documento sotto i termini di una licenza di vostra scelta, senza "
 "restrizione alcuna."
 
 #. (itstool) path: page/title
@@ -930,8 +929,8 @@ msgstr "Logaritmi"
 #. (itstool) path: page/p
 #: C/logarithm.page:11
 msgid ""
-"Logarithms can be calculated using the log <link "
-"xref=\"function\">function</link>."
+"Logarithms can be calculated using the log <link xref=\"function\">function</"
+"link>."
 msgstr ""
 "I logaritmi possono essere calcolati utilizzando la <link "
 "xref=\"function\">funzione</link> log."
@@ -968,8 +967,8 @@ msgstr "ln 1.32"
 #. (itstool) path: page/p
 #: C/logarithm.page:35
 msgid ""
-"Euler's number can be entered by using the <link "
-"xref=\"variable\">variable</link> e."
+"Euler's number can be entered by using the <link xref=\"variable\">variable</"
+"link> e."
 msgstr ""
 "Il numero di Eulero può essere inserito utilizzando la <link "
 "xref=\"variable\">variabile</link> e."
@@ -1033,8 +1032,8 @@ msgid ""
 "Provides buttons suitable for advanced mathematics such as <link "
 "xref=\"trigonometry\"/>"
 msgstr ""
-"Mostra i pulsanti necessari a eseguire funzioni cafematiche avanzate come ad"
-" esempio <link xref=\"trigonometry\"/>"
+"Mostra i pulsanti necessari a eseguire funzioni cafematiche avanzate come ad "
+"esempio <link xref=\"trigonometry\"/>"
 
 #. (itstool) path: td/p
 #: C/mouse.page:25
@@ -1044,8 +1043,8 @@ msgstr "Finanziaria"
 #. (itstool) path: td/p
 #: C/mouse.page:26
 msgid ""
-"Provides buttons suitable for <link xref=\"financial\">financial "
-"equations</link>"
+"Provides buttons suitable for <link xref=\"financial\">financial equations</"
+"link>"
 msgstr ""
 "Mostra i pulsanti relativi alle <link xref=\"financial\">equazioni "
 "finanziarie</link>"
@@ -1092,8 +1091,7 @@ msgstr "Scientifica"
 #. (itstool) path: td/p
 #: C/number-display.page:21
 msgid ""
-"Results are displayed in <link xref=\"scientific\">scientific "
-"notation</link>"
+"Results are displayed in <link xref=\"scientific\">scientific notation</link>"
 msgstr ""
 "I risultati saranno mostrati in <link xref=\"scientific\">notazione "
 "scientifica</link>"
@@ -1106,8 +1104,8 @@ msgstr "Ingegneristica"
 #. (itstool) path: td/p
 #: C/number-display.page:25
 msgid ""
-"Results are displayed in scientific notation except the exponent is always a"
-" multiple of three"
+"Results are displayed in scientific notation except the exponent is always a "
+"multiple of three"
 msgstr ""
 "I numeri saranno mostrati in notazione scientifica mantenendo l'esponente "
 "fisso su un multiplo di 3"
@@ -1143,14 +1141,14 @@ msgstr "Esadecimale"
 #: C/number-display.page:37
 msgid "Results are displayed as <link xref=\"base\">hexadecimal numbers</link>"
 msgstr ""
-"I risultati saranno mostrati come <link xref=\"base\">numeri "
-"esadecimali</link>"
+"I risultati saranno mostrati come <link xref=\"base\">numeri esadecimali</"
+"link>"
 
 #. (itstool) path: page/p
 #: C/number-display.page:40
 msgid ""
-"The number of decimal places, if trailing zeroes and if thousands separators"
-" are shown can also be configured."
+"The number of decimal places, if trailing zeroes and if thousands separators "
+"are shown can also be configured."
 msgstr ""
 "Può essere configurato anche il numero di cifre significative mostrate, se "
 "il numero di zeri terminali o se l'opzione di mostrare il separatore delle "
@@ -1190,8 +1188,7 @@ msgid ""
 "The following equation calculates one quarter of 80 apples ((25÷100)×80)."
 msgstr ""
 "In tutti gli altri casi il simbolo della percentuale si riduce a una "
-"frazione di 100. La seguente equazione calcola un quarto di 80 "
-"((25÷100)×80)."
+"frazione di 100. La seguente equazione calcola un quarto di 80 ((25÷100)×80)."
 
 #. (itstool) path: example/p
 #: C/percentage.page:28
@@ -1223,8 +1220,8 @@ msgid ""
 "The inverse of a number can be entered using the inverse symbol ⁻¹ "
 "(<keyseq><key>Ctrl</key><key>I</key></keyseq>)."
 msgstr ""
-"L'inverso di un numero può essere inserito utilizzando il simbolo inverso ⁻¹"
-" (<keyseq><key>Ctrl</key><key>I</key></keyseq>)."
+"L'inverso di un numero può essere inserito utilizzando il simbolo inverso ⁻¹ "
+"(<keyseq><key>Ctrl</key><key>I</key></keyseq>)."
 
 #. (itstool) path: example/p
 #: C/power.page:23
@@ -1257,8 +1254,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/power.page:39
 msgid ""
-"Square roots can be calculated using the symbol "
-"(<keyseq><key>Ctrl</key><key>R</key></keyseq>)."
+"Square roots can be calculated using the symbol (<keyseq><key>Ctrl</"
+"key><key>R</key></keyseq>)."
 msgstr ""
 "Le radici quadrate possono essere calcolate utilizzando il simbolo "
 "(<keyseq><key>Ctrl</key><key>R</key></keyseq>)."
@@ -1296,10 +1293,10 @@ msgid ""
 "xref=\"superscript\">number mode</link> automatically changes to "
 "superscript. To enter 2×10¹⁰⁰, start by entering the mantissa (2):"
 msgstr ""
-"Per inserire numeri in formato scientifico utilizzate il pulsante "
-"<gui>×10x</gui> (<keyseq><key>Ctrl</key><key>E</key></keyseq>). Il modo "
-"numerico automaticamente cambia in apice. Per inserire 2×10¹⁰⁰, iniziate con"
-" lo scrivere la mantissa (2):"
+"Per inserire numeri in formato scientifico utilizzate il pulsante <gui>×10x</"
+"gui> (<keyseq><key>Ctrl</key><key>E</key></keyseq>). Il modo numerico "
+"automaticamente cambia in apice. Per inserire 2×10¹⁰⁰, iniziate con lo "
+"scrivere la mantissa (2):"
 
 #. (itstool) path: example/p
 #: C/scientific.page:17
@@ -1309,8 +1306,8 @@ msgstr "2"
 #. (itstool) path: page/p
 #: C/scientific.page:21
 msgid ""
-"Then press the scientific notation button (or press "
-"<keyseq><key>Ctrl</key><key>E</key></keyseq>):"
+"Then press the scientific notation button (or press <keyseq><key>Ctrl</"
+"key><key>E</key></keyseq>):"
 msgstr ""
 "Poi premete il pulsante notazione scientifica (o la combinazione di tasti "
 "<keyseq><key>Ctrl</key><key>E</key></keyseq>):"
@@ -1353,8 +1350,8 @@ msgstr "Apice e Pedice"
 #. (itstool) path: page/p
 #: C/superscript.page:13
 msgid ""
-"Some equations may require numbers to be entered in superscript or subscript"
-" form. e.g."
+"Some equations may require numbers to be entered in superscript or subscript "
+"form. e.g."
 msgstr ""
 "Alcune equazioni richiederanno numeri da inserire in formato di apice o "
 "pedice. Per es."
@@ -1373,8 +1370,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/superscript.page:38
 msgid ""
-"To enter superscript numbers with the mouse select the number mode using the"
-" <gui>↑n</gui> and <gui>↓n</gui> buttons. When one of these modes is active "
+"To enter superscript numbers with the mouse select the number mode using the "
+"<gui>↑n</gui> and <gui>↓n</gui> buttons. When one of these modes is active "
 "clicking the number buttons will enter numbers in superscript or subscript. "
 "To return to normal number mode click the active button."
 msgstr ""
@@ -1425,15 +1422,14 @@ msgstr "sin 45"
 #. (itstool) path: page/p
 #: C/trigonometry.page:19
 msgid ""
-"The angle units used can be changed from the "
-"<guiseq><gui>Calculator</gui><gui>Preferences</gui></guiseq> menu. "
-"Trigonometry buttons are visible when in <link xref=\"mouse\">Advanced "
-"mode</link>."
+"The angle units used can be changed from the <guiseq><gui>Calculator</"
+"gui><gui>Preferences</gui></guiseq> menu. Trigonometry buttons are visible "
+"when in <link xref=\"mouse\">Advanced mode</link>."
 msgstr ""
 "Le unità di misura degli angoli possono essere modificate dal menu "
 "<guiseq><gui>Calcolatrice</gui><gui>Preferenze</gui></guiseq>. I comandi "
-"trigonometrici sono visibili se ci si trova in <link xref=\"mouse\">modalità"
-" Avanzata</link>."
+"trigonometrici sono visibili se ci si trova in <link xref=\"mouse\">modalità "
+"Avanzata</link>."
 
 #. (itstool) path: page/p
 #: C/trigonometry.page:23
@@ -1490,10 +1486,10 @@ msgid ""
 "assign to with the <gui>x</gui> button in <link xref=\"mouse\">advanced "
 "mode</link>. A variable name must only contain upper or lower characters."
 msgstr ""
-"Per assegnare un valore ad una variabile utilizzare il simbolo = o scegliere"
-" la variabile a cui assegnare il valore con il pulsante <gui>x</gui> "
-"disponibile in <link xref=\"mouse\">modalità avanzata</link>. Il nome di una"
-" bvariabile può contenere solo caratteri maiuscoli o minuscoli."
+"Per assegnare un valore ad una variabile utilizzare il simbolo = o scegliere "
+"la variabile a cui assegnare il valore con il pulsante <gui>x</gui> "
+"disponibile in <link xref=\"mouse\">modalità avanzata</link>. Il nome di una "
+"bvariabile può contenere solo caratteri maiuscoli o minuscoli."
 
 #. (itstool) path: example/p
 #: C/variables.page:16
@@ -1508,8 +1504,8 @@ msgstr "valore=82"
 #. (itstool) path: page/p
 #: C/variables.page:23
 msgid ""
-"Variables can be used in any equation and are substituted for their assigned"
-" value. Variables can be inserted using the <gui>x</gui> button."
+"Variables can be used in any equation and are substituted for their assigned "
+"value. Variables can be inserted using the <gui>x</gui> button."
 msgstr ""
 "Le variabili possono essere utilizzate in ogni equazione e verranno "
 "sostituite dal valore loro assegnato. Le variabili possono essere inserite "
