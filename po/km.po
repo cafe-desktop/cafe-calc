@@ -2,23 +2,23 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Bunhann THOU <bunhann@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: cafe-calc 1.23.0\n"
 "Report-Msgid-Bugs-To: http://cafe-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2025-08-21 16:33+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Khmer (https://www.transifex.com/cafe/teams/13566/km/)\n"
+"Language: km\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: km\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Accessible name for the factorize button
@@ -153,8 +153,8 @@ msgid ""
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
 msgstr ""
-"គណនា​ចំនួន​​​​នៃ​ការ​បន្សំ​អំឡុង​ពេល​ចាំបាច់​​ដែល​កើន​ឡើង​ការ​វិនិយោគ​តម្លៃ​បច្ចុប្បន្ន​​ទៅកាន់​​តម្លៃ​អនាគត"
-" ​​នៅ​អត្រា​ការប្រាក់​ថេរ​នៅ​អំឡុង​ពេល​បន្សំ ។"
+"គណនា​ចំនួន​​​​នៃ​ការ​បន្សំ​អំឡុង​ពេល​ចាំបាច់​​ដែល​កើន​ឡើង​ការ​វិនិយោគ​តម្លៃ​បច្ចុប្បន្ន​​ទៅកាន់​​តម្លៃ​អនាគត ​​នៅ​អត្រា​"
+"ការប្រាក់​ថេរ​នៅ​អំឡុង​ពេល​បន្សំ ។"
 
 #. Compounding Term Dialog: Label before periodic interest rate input
 #. Future Value Dialog: Label before periodic interest rate input
@@ -190,8 +190,8 @@ msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
 msgstr ""
-"គណនា​ប្រាក់​ឧបត្ថម្ភ​រំលោះ​​លើ​​ទ្រព្យសកម្ម​សម្រាប់​ពេល​វេលា​ដែល​បាន​បញ្ជាក់"
-" ដោយ​ប្រើ​វិធីសាស្ត្រ​តុល្យភាព​បដិសេធ​ទ្វេ​ដង ។"
+"គណនា​ប្រាក់​ឧបត្ថម្ភ​រំលោះ​​លើ​​ទ្រព្យសកម្ម​សម្រាប់​ពេល​វេលា​ដែល​បាន​បញ្ជាក់ ដោយ​ប្រើ​វិធីសាស្ត្រ​តុល្យភាព​បដិសេធ​"
+"ទ្វេ​ដង ។"
 
 #. Double-Declining Depreciation Dialog: Label before life input
 #. Straight-Line Depreciation Dialog: Label before life input
@@ -232,8 +232,8 @@ msgid ""
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
 msgstr ""
-"គណនា​តម្លៃ​អនាគត​ក្នុង​ការ​វិនិយោគ​អាស្រ័យ​ទៅតាម​ស៊េរី​ក្នុង​ការ​​បង់​ប្រាក់​​ស្មើ​ៗ​គ្នា​នៅ​ការ​ប្រាក់​តាម​អំឡុង​ពេល​លើ​ចំនួន​អំឡុង​ពេល​ធ្វើ​ការ​បង់​ប្រាក់​​​នៅ​​រយៈពេល"
-" ។"
+"គណនា​តម្លៃ​អនាគត​ក្នុង​ការ​វិនិយោគ​អាស្រ័យ​ទៅតាម​ស៊េរី​ក្នុង​ការ​​បង់​ប្រាក់​​ស្មើ​ៗ​គ្នា​នៅ​ការ​ប្រាក់​តាម​អំឡុង​ពេល​លើ​"
+"ចំនួន​អំឡុង​ពេល​ធ្វើ​ការ​បង់​ប្រាក់​​​នៅ​​រយៈពេល ។"
 
 #. Future Value Dialog: Label before periodic payment input
 #. Present Value Dialog: Label before periodic payment input
@@ -255,9 +255,8 @@ msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
 msgstr ""
-"គណនា​​ថ្លៃ​ផលិតផល​​ក្នុង​ការ​លក់​បន្ត អាស្រ័យ​ទៅ​តាម​​ថ្លៃ​ផលិតផល "
-"និង​អត្រា​ខុស​គ្នា​រវាង​ថ្លៃ​ទំនិញ​ឆ្លងកាត់​​នៃ​ប្រាក់​ចំណេញ​ដែល​អ្នក​ចង់​បាន"
-" ។"
+"គណនា​​ថ្លៃ​ផលិតផល​​ក្នុង​ការ​លក់​បន្ត អាស្រ័យ​ទៅ​តាម​​ថ្លៃ​ផលិតផល និង​អត្រា​ខុស​គ្នា​រវាង​ថ្លៃ​ទំនិញ​ឆ្លងកាត់​​នៃ​ប្រាក់​"
+"ចំណេញ​ដែល​អ្នក​ចង់​បាន ។"
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: src/buttons-financial.ui:684
@@ -276,9 +275,8 @@ msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr ""
-"ការ​គណនា​ចំនួន​ការ​បង់​ប្រាក់​តាម​ពេល​កំណត់​​នៃ​ប្រាក់​កម្ចី "
-"ដែល​ការ​បង់​ប្រាក់​ត្រូវ​បាន​ធ្វើ​នៅ​ចុង​គ្រា​កំឡុង​ពេល​​រៀងរាល់​នៃ​ការ​បង់​ប្រាក់"
-" ។"
+"ការ​គណនា​ចំនួន​ការ​បង់​ប្រាក់​តាម​ពេល​កំណត់​​នៃ​ប្រាក់​កម្ចី ដែល​ការ​បង់​ប្រាក់​ត្រូវ​បាន​ធ្វើ​នៅ​ចុង​គ្រា​កំឡុង​ពេល​​"
+"រៀងរាល់​នៃ​ការ​បង់​ប្រាក់ ។"
 
 #. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
@@ -304,8 +302,8 @@ msgid ""
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
 msgstr ""
-"គណនា​តម្លៃ​បច្ចុប្បន្ន​ក្នុង​ការ​វិនិយោគ​អាស្រ័យ​ទៅ​តាម​ស៊េរី​​ការ​ចំណាយ​ស្មើៗ​គ្នា​ដែល​បាន​អប្បហារ​នៅ​​អត្រា​ការ​ប្រាក់​តាម​អំឡុង​ពេល​លើ​ចំនួន​​ក្នុង​អំឡុង​ពេល​ការ​បង់​ប្រាក់​តាម​​រយៈ​ពេល"
-" ។"
+"គណនា​តម្លៃ​បច្ចុប្បន្ន​ក្នុង​ការ​វិនិយោគ​អាស្រ័យ​ទៅ​តាម​ស៊េរី​​ការ​ចំណាយ​ស្មើៗ​គ្នា​ដែល​បាន​អប្បហារ​នៅ​​អត្រា​ការ​"
+"ប្រាក់​តាម​អំឡុង​ពេល​លើ​ចំនួន​​ក្នុង​អំឡុង​ពេល​ការ​បង់​ប្រាក់​តាម​​រយៈ​ពេល ។"
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -319,8 +317,7 @@ msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
 msgstr ""
-"គណនា​ការ​ប្រាក់​​តាម​អំឡុង​ពេល​ចាំបាច់ "
-"ដើម្បី​បង្កើន​​តម្លៃ​អនាគត​ក្នុង​ការ​វិនិយោគ លើ​ចំនួន​នៃ​អំឡុង​ពេល​​បន្សំ ។"
+"គណនា​ការ​ប្រាក់​​តាម​អំឡុង​ពេល​ចាំបាច់ ដើម្បី​បង្កើន​​តម្លៃ​អនាគត​ក្នុង​ការ​វិនិយោគ លើ​ចំនួន​នៃ​អំឡុង​ពេល​​បន្សំ ។"
 
 #. Title of Straight-Line Depreciation dialog
 #: src/buttons-financial.ui:1262
@@ -347,11 +344,9 @@ msgid ""
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
 msgstr ""
-"គណនា​ការ​រំលោះ​តាម​​បន្ទាត់​ត្រង់​នៃ​ទ្រព្យសកម្ម​សម្រាប់​អំឡុង​ពេល​មួយ ។ "
-"វិធីសាស្ត្រ​​តាម​បន្ទាត់​ត្រង់​ក្នុង​ការ​​​ចែក​ការ​រំលោះ​​តម្លៃ​ដែល​អាច​​បញ្ចុះ​​ស្មើ​ៗ​គ្នា"
-" ដែល​ជា​ប្រយោជន៍​អាយុកាល​របស់​ទ្រព្យសកម្ម ។ "
-"អាយុកាល​ដែល​​មាន​ប្រយោជន៍​ជា​ចំនួន​នៃ​អំឡុង​ពេល  ឆ្នាំ "
-"លើ​ទ្រព្យសកម្ម​ដែល​ត្រូវ​បាន​បញ្ចុះ​តម្លៃ ។"
+"គណនា​ការ​រំលោះ​តាម​​បន្ទាត់​ត្រង់​នៃ​ទ្រព្យសកម្ម​សម្រាប់​អំឡុង​ពេល​មួយ ។ វិធីសាស្ត្រ​​តាម​បន្ទាត់​ត្រង់​ក្នុង​ការ​​​ចែក​"
+"ការ​រំលោះ​​តម្លៃ​ដែល​អាច​​បញ្ចុះ​​ស្មើ​ៗ​គ្នា ដែល​ជា​ប្រយោជន៍​អាយុកាល​របស់​ទ្រព្យសកម្ម ។ អាយុកាល​ដែល​​មាន​"
+"ប្រយោជន៍​ជា​ចំនួន​នៃ​អំឡុង​ពេល  ឆ្នាំ លើ​ទ្រព្យសកម្ម​ដែល​ត្រូវ​បាន​បញ្ចុះ​តម្លៃ ។"
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: src/buttons-financial.ui:1446
@@ -362,17 +357,15 @@ msgstr "ផល​បូក​នៃ​ឆ្នាំ តួលេខ រំល�
 #: src/buttons-financial.ui:1631
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
-" accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
-"គណនា​ប្រាក់​ឧបត្ថម្ភ​រំលោះ​លើ​ទ្រព្យសកម្ម​​សម្រាប់​​អំឡុង​ពេល​ដែល​បាន​បញ្ជាក់"
-" ដោយ​ប្រើ​វិធីសាស្ត្រ ផល​បូក​ឆ្នាំ តួលេខ ។ "
-"វិធីសាស្ត្រ​រំលោះ​នេះ​បង្កើន​អត្រា​រំលោះ "
-"ដូច្នេះ​ប្រាក់​ចំណាយ​ក្នុង​ការ​រំលោះ​ជា​ច្រើន​នៅ​អំឡុង​ពេល​ចាស់​ច្រើន​ជាង​អំឡុង​ពេល​ថ្មី"
-" ។ អាយុកាល​ដែល​មាន​ប្រយោជន៍​គឺ​ជា​ចំនួន​អំឡុង​ពេល ឆ្នាំ "
-"លើ​ទ្រព្យសកម្ម​ដែល​ត្រូវ​បាន​កាន់​បន្ថយ​​តម្លៃ ។"
+"គណនា​ប្រាក់​ឧបត្ថម្ភ​រំលោះ​លើ​ទ្រព្យសកម្ម​​សម្រាប់​​អំឡុង​ពេល​ដែល​បាន​បញ្ជាក់ ដោយ​ប្រើ​វិធីសាស្ត្រ ផល​បូក​ឆ្នាំ "
+"តួលេខ ។ វិធីសាស្ត្រ​រំលោះ​នេះ​បង្កើន​អត្រា​រំលោះ ដូច្នេះ​ប្រាក់​ចំណាយ​ក្នុង​ការ​រំលោះ​ជា​ច្រើន​នៅ​អំឡុង​ពេល​ចាស់​"
+"ច្រើន​ជាង​អំឡុង​ពេល​ថ្មី ។ អាយុកាល​ដែល​មាន​ប្រយោជន៍​គឺ​ជា​ចំនួន​អំឡុង​ពេល ឆ្នាំ លើ​ទ្រព្យសកម្ម​ដែល​ត្រូវ​បាន​កាន់​"
+"បន្ថយ​​តម្លៃ ។"
 
 #. Title of Payment Period dialog
 #: src/buttons-financial.ui:1659
@@ -388,89 +381,58 @@ msgstr "តម្លៃ​អនាគត ៖"
 #: src/buttons-financial.ui:1815
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest"
-" rate."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
 msgstr ""
-"គណនា​ចំនួន​នៃ​ការ​បង់​ប្រាក់​អំឡុង​ពេល​ដែល​ចាំបាច់​នៃ​ធនលាភ​ធម្មតា "
-"កើន​ឡើង​តម្លៃ​អនាគត ការ​ប្រាក់​តាម​អំឡុង​ពេល ។"
+"គណនា​ចំនួន​នៃ​ការ​បង់​ប្រាក់​អំឡុង​ពេល​ដែល​ចាំបាច់​នៃ​ធនលាភ​ធម្មតា កើន​ឡើង​តម្លៃ​អនាគត ការ​ប្រាក់​តាម​អំឡុង​"
+"ពេល ។"
 
-#. Calculates the number of compounding periods necessary to increase an
-#. investment of present value pv to a future value of fv, at a fixed interest
-#. rate of int per compounding period. See also:
-#. http://en.wikipedia.org/wiki/Compound_interest
+#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
 #: src/buttons-financial.ui:2166
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the double-declining balance method. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2181
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal
-#. payments, each of amount pmt, at a periodic interest rate of int, over the
-#. number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Future_value
+#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
 #: src/buttons-financial.ui:2196
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term
-#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
-#. interest rate of int. Each payment is equal to amount pmt. See also:
-#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: src/buttons-financial.ui:2211
 msgid "Term"
 msgstr "រយៈពេល"
 
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2226
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The
-#. depreciable cost is cost - salvage. The straight-line method of
-#. depreciation divides the depreciable cost evenly over the useful life of an
-#. asset. The useful life is the number of periods, typically years, over
-#. which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2241
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of
-#. present value pv to a future value of fv, over the number of compounding
-#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: src/buttons-financial.ui:2256
 msgid "Rate"
 msgstr "អត្រា"
 
-#. Calculates the present value of an investment based on a series of equal
-#. payments, each of amount pmt, discounted at a periodic interest rate of
-#. int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Present_value
+#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
 #: src/buttons-financial.ui:2271
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are
-#. made at the end of each payment period. See also:
-#. http://en.wikipedia.org/wiki/Amortization_schedule
+#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
 #: src/buttons-financial.ui:2286
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the
-#. wanted gross profit margin. See also:
-#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
 #: src/buttons-financial.ui:2301
 msgid "Gpm"
 msgstr "Gpm"
@@ -527,7 +489,7 @@ msgid "64-bit"
 msgstr "៦៤​ ប៊ីត"
 
 #. Title of preferences dialog
-#: src/preferences.ui:60 src/math-preferences.c:239
+#: src/preferences.ui:60 src/math-preferences.c:253
 msgid "Preferences"
 msgstr "ចំណូល​ចិត្ត"
 
@@ -582,28 +544,21 @@ msgid ""
 "project's home page."
 msgstr ""
 
-#: data/cafe-calc.desktop.in:3 src/math-window.c:261
+#: data/cafe-calc.desktop.in:2 src/math-window.c:294
 msgid "CAFE Calculator"
 msgstr "ម៉ាស៊ីនគិតលេខ CAFE"
 
 #. Title of main window
-#: data/cafe-calc.desktop.in:4 src/math-window.c:568
+#: data/cafe-calc.desktop.in:3 src/math-window.c:607
 msgid "Calculator"
 msgstr "ម៉ាស៊ីន​គិត​លេខ"
 
-#: data/cafe-calc.desktop.in:5
+#: data/cafe-calc.desktop.in:4
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "អនុវត្ត​ការ​គណនា​គណិតវិទ្យា វិទ្យាសាស្ត្រ ឬ​ហិរញ្ញវត្ថុ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/cafe-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr ""
-
-#. Translators: Search terms to find this application. Do NOT translate or
-#. localize the semicolons! The list MUST also end with a semicolon!
-#: data/cafe-calc.desktop.in:13
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/cafe-calc.desktop.in:12
 msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
 msgstr ""
 
@@ -637,8 +592,7 @@ msgstr "បង្ហាញ​សញ្ញា​បំបែក​ខ្ទង់
 
 #: data/org.cafe.calc.gschema.xml:43
 msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr ""
-"បង្ហាញ​ថា​តើ​សញ្ញា​បំបែក​ខ្ទង់ពាន់​ត្រូវ​បាន​បង្ហាញ​នៅ​ក្នុង​ចំនួន​ធំ​ ។"
+msgstr "បង្ហាញ​ថា​តើ​សញ្ញា​បំបែក​ខ្ទង់ពាន់​ត្រូវ​បាន​បង្ហាញ​នៅ​ក្នុង​ចំនួន​ធំ​ ។"
 
 #: data/org.cafe.calc.gschema.xml:47
 msgid "Show Trailing Zeroes"
@@ -648,9 +602,7 @@ msgstr "បង្ហាញ ០ ខាងចុង"
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
-msgstr ""
-"បង្ហាញ​ថា​តើ​ ០ ខាងចុង "
-"នៅ​បន្ទាប់​ពី​ចំណុច​ជា​លេខ​គួរ​តែ​ត្រូវ​បាន​បង្ហាញ​នៅ​តម្លៃ​ទិដ្ឋភាព ។"
+msgstr "បង្ហាញ​ថា​តើ​ ០ ខាងចុង នៅ​បន្ទាប់​ពី​ចំណុច​ជា​លេខ​គួរ​តែ​ត្រូវ​បាន​បង្ហាញ​នៅ​តម្លៃ​ទិដ្ឋភាព ។"
 
 #: data/org.cafe.calc.gschema.xml:52
 msgid "Number format"
@@ -948,12 +900,12 @@ msgstr "ប៊ូលីវ៉ារ រ៉េណេស៊ុយអេឡា"
 msgid "South African Rand"
 msgstr "រ៉ង់​អាហ្វ្រិក​ខាង​ត្បូង"
 
-#: src/financial.c:70
+#: src/financial.c:74
 msgid "Error: the number of periods must be positive"
 msgstr "កំហុស ៖ ចំនួន​អំឡុង​ពេល​ត្រូវតែ​វិជ្ជមាន"
 
 #. Description on how to use cafe-calc displayed on command-line
-#: src/cafe-calc.c:79
+#: src/cafe-calc.c:84
 #, c-format
 msgid ""
 "Usage:\n"
@@ -962,9 +914,8 @@ msgstr ""
 "ការ​ប្រើប្រាស់ ៖\n"
 "  %s — ធ្វើ​ការ​គណនា​គណិតវិទ្យា"
 
-#. Description on cafe-calc command-line help options displayed on command-
-#. line
-#: src/cafe-calc.c:87
+#. Description on cafe-calc command-line help options displayed on command-line
+#: src/cafe-calc.c:92
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -979,14 +930,15 @@ msgstr ""
 "  --ជំនួយ-​ទាំងអស់ បង្ហាញ​ជម្រើស​ជំនួយ​ទាំងអស់\n"
 "  --ជំនួយ-ctk                      បង្ហាញ CTK+ ជម្រើស"
 
-#. Description on cafe-calc command-line CTK+ options displayed on command-
-#. line
-#: src/cafe-calc.c:98
+#. Description on cafe-calc command-line CTK+ options displayed on command-line
+#: src/cafe-calc.c:103
 #, c-format
 msgid ""
 "CTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window manager\n"
-"  --name=NAME                     Program name as used by the window manager\n"
+"  --class=CLASS                   Program class as used by the window "
+"manager\n"
+"  --name=NAME                     Program name as used by the window "
+"manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --ctk-module=MODULES            Load additional CTK+ modules\n"
@@ -1001,7 +953,7 @@ msgstr ""
 "  --g-fatal-warnings ធ្វើ​ការ​ព្រមាន​ធ្ងន់ធ្ងរ​ទាំងអស់"
 
 #. Description on cafe-calc application options displayed on command-line
-#: src/cafe-calc.c:112
+#: src/cafe-calc.c:117
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1011,13 +963,13 @@ msgstr ""
 "  -s, --ដោះស្រាយ <equation>ដោះស្រាយ​សមីការ​ដែល​បាន​ផ្ដល់"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/cafe-calc.c:160
+#: src/cafe-calc.c:166
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "អាគុយម៉ង់ --ដោះស្រាយ​ការ​ទាមទារ​សម័យ​ការ​​ត្រូវ​ដោះស្រាយ"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/cafe-calc.c:171
+#: src/cafe-calc.c:177
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "អាគុយម៉ង់​ដែល​មិនស្គាល់ '%s'"
@@ -1208,12 +1160,12 @@ msgid "Boolean NOT"
 msgstr "ប៊ូលីន NOT"
 
 #. Tooltip for the integer component button
-#: src/math-buttons.c:209 src/math-buttons.c:997
+#: src/math-buttons.c:209 src/math-buttons.c:1001
 msgid "Integer Component"
 msgstr "សមាសភាគ​លេខគត់"
 
 #. Tooltip for the fractional component button
-#: src/math-buttons.c:212 src/math-buttons.c:999
+#: src/math-buttons.c:212 src/math-buttons.c:1003
 msgid "Fractional Component"
 msgstr "សមាសភាគ​នៃ​ប្រភាគ"
 
@@ -1303,28 +1255,28 @@ msgid "Straight Line Depreciation"
 msgstr "រំលោះ​តាម​បន្ទាត់​ត្រង់"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: src/math-buttons.c:628
+#: src/math-buttons.c:632
 msgid "Binary"
 msgstr "គោល​ពីរ"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: src/math-buttons.c:632
+#: src/math-buttons.c:636
 msgid "Octal"
 msgstr "គោល​ប្រាំបី"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: src/math-buttons.c:636
+#: src/math-buttons.c:640
 msgid "Decimal"
 msgstr "គោល​ដប់​"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: src/math-buttons.c:640
+#: src/math-buttons.c:644
 msgid "Hexadecimal"
 msgstr "គោល​ដប់ប្រាំមួយ"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: src/math-buttons.c:908 src/math-buttons.c:951
+#: src/math-buttons.c:912 src/math-buttons.c:955
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1332,259 +1284,252 @@ msgstr[0] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: src/math-buttons.c:912 src/math-buttons.c:955
+#: src/math-buttons.c:916 src/math-buttons.c:959
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
 msgstr[0] ""
 
 #. Tooltip for the round button
-#: src/math-buttons.c:1001
+#: src/math-buttons.c:1005
 msgid "Round"
 msgstr "ជុំ"
 
 #. Tooltip for the floor button
-#: src/math-buttons.c:1003
+#: src/math-buttons.c:1007
 msgid "Floor"
 msgstr "បាត"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1005
+#: src/math-buttons.c:1009
 msgid "Ceiling"
 msgstr "Ceiling"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1007
+#: src/math-buttons.c:1011
 msgid "Sign"
 msgstr "ចុះហត្ថលេខា"
 
 #. Tooltip for the c₀ component button
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "Velocity of Light"
 msgstr ""
 
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "299,792,458 m/s"
 msgstr ""
 
 #. Tooltip for the μ₀ component button
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "Magnetic constant"
 msgstr ""
 
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "1.2566370614×10⁻⁶ N/A²"
 msgstr ""
 
 #. Tooltip for the ε₀ button
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "Electric constant"
 msgstr ""
 
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
 msgstr ""
 
 #. Tooltip for the G button
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "Newtonian constant of gravitation"
 msgstr ""
 
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
 msgstr ""
 
 #. Tooltip for the h button
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "Planck constant"
 msgstr ""
 
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "6.62607004×10⁻³⁴ m²kg/s"
 msgstr ""
 
 #. Tooltip for the ｅ button
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "Elementary charge"
 msgstr ""
 
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "1.6021766208(98)×10⁻¹⁹ C"
 msgstr ""
 
 #. Tooltip for the mₑ button
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "Electron mass"
 msgstr ""
 
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "9.10938356×10⁻³¹ kg"
 msgstr ""
 
 #. Tooltip for the mₚ button
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1067
 msgid "Proton mass"
 msgstr ""
 
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1067
 msgid "1.672621898(21)×10⁻²⁷ kg"
 msgstr ""
 
 #. Tooltip for the Nₐ button
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1069
 msgid "Avogadro constant"
 msgstr ""
 
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1069
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr ""
 
-#. Label that is displayed between the two conversion combo boxes, e.g.
-#. "[degrees] in [radians]"
-#: src/math-converter.c:412
+#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#: src/math-converter.c:417
 msgid " in "
 msgstr "ក្នុង"
 
 #. Tooltip for swap conversion button
-#: src/math-converter.c:427
+#: src/math-converter.c:432
 msgid "Switch conversion units"
 msgstr "ប្ដូរ​ឯកតា​ការ​បម្លែង"
 
 #. Error shown when trying to undo with no undo history
-#: src/math-equation.c:459
+#: src/math-equation.c:463
 msgid "No undo history"
 msgstr "គ្មាន​ប្រវត្តិ​មិន​ធ្វើ​វិញ"
 
 #. Error shown when trying to redo with no redo history
-#: src/math-equation.c:486
+#: src/math-equation.c:490
 msgid "No redo history"
 msgstr "គ្មាន​ប្រវត្តិ​ធ្វើ​វិញ"
 
-#: src/math-equation.c:948
+#: src/math-equation.c:953
 msgid "No sane value to store"
 msgstr "គ្មាន​តម្លៃ​សមស្រប​ត្រូវ​ទុក​ឡើយ"
 
-#. Error displayed to user when they perform a bitwise operation on numbers
-#. greater than the current word
-#: src/math-equation.c:1230
+#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#: src/math-equation.c:1242
 msgid "Overflow. Try a bigger word size"
 msgstr "លើស​ចំនួន ព្យាយាម​ទំហំ​ធំជាង​នេះ"
 
 #. Error displayed to user when they an unknown variable is entered
-#: src/math-equation.c:1235
+#: src/math-equation.c:1247
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "អថេរ​ដែល​មិន​ស្គាល់ '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: src/math-equation.c:1240
+#: src/math-equation.c:1252
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "មិន​​បាន​កំណត់​អនុគមន៍ '%s' ឡើយ"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: src/math-equation.c:1245
+#: src/math-equation.c:1257
 msgid "Unknown conversion"
 msgstr "មិន​ស្គាល់​ការ​បម្លែង"
 
 #. Uncategorized error. Show error token to user
-#: src/math-equation.c:1253
+#: src/math-equation.c:1265
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr ""
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: src/math-equation.c:1256 src/math-equation.c:1261
+#: src/math-equation.c:1268 src/math-equation.c:1273
 msgid "Malformed expression"
 msgstr "កន្សោម​មិន​ត្រឹមត្រូវ"
 
-#: src/math-equation.c:1275
+#: src/math-equation.c:1287
 msgid "Calculating"
 msgstr "ការ​គណនា"
 
 #. Error displayed when trying to factorize a non-integer value
-#: src/math-equation.c:1390
+#: src/math-equation.c:1402
 msgid "Need an integer to factorize"
 msgstr "ត្រូវ​ការ​លេខគត់​ដើម្បី​ដាក់​កត្តា"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: src/math-equation.c:1462
+#: src/math-equation.c:1474
 msgid "No sane value to bitwise shift"
 msgstr "គ្មាន​តម្លៃ​សមស្រប​ ដើម្បី​​ប្ដូរ​​ឈ្នាប់​ឡើយ"
 
 #. Message displayed when cannot toggle bit in display
-#: src/math-equation.c:1493
+#: src/math-equation.c:1505
 msgid "Displayed value not an integer"
 msgstr "គ្មាន​តម្លៃ​លេខគត់​​​ដែល​បាន​បង្ហាញ​ឡើយ"
 
 #. Digits localized for the given language
-#: src/math-equation.c:1916
+#: src/math-equation.c:1928
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
-#. calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
-#. grads
-#: src/math-preferences.c:256 src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: src/math-preferences.c:270 src/unit-manager.c:54
 msgid "Degrees"
 msgstr "ដឺក្រេ"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
-#. calculations
-#: src/math-preferences.c:260 src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#: src/math-preferences.c:274 src/unit-manager.c:55
 msgid "Radians"
 msgstr "រ៉ាដ្យង់"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
-#. calculations
-#: src/math-preferences.c:264 src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#: src/math-preferences.c:278 src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Gradians"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
-#. number 1.234×10^99)
-#: src/math-preferences.c:274
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#: src/math-preferences.c:288
 msgid "Automatic"
 msgstr "ស្វ័យប្រវត្តិ"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: src/math-preferences.c:278
+#: src/math-preferences.c:292
 msgid "Fixed"
 msgstr "ថេរ"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: src/math-preferences.c:282
+#: src/math-preferences.c:296
 msgid "Scientific"
 msgstr "វិទ្យាសាស្ត្រ"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: src/math-preferences.c:286
+#: src/math-preferences.c:300
 msgid "Engineering"
 msgstr "វិស្វកម្ម"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: src/math-preferences.c:297
+#: src/math-preferences.c:311
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "បង្ហាញ​​ការ​ដាក់​ទសភាគ %d"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: src/math-window.c:212
+#: src/math-window.c:219
 msgid "Unable to open help file"
 msgstr "មិន​អាច​បើក​ឯកសារ​ជំនួយ​បាន​ទេ"
 
-#: src/math-window.c:234
+#: src/math-window.c:238
 msgid "Sun Microsystems"
 msgstr ""
 
-#: src/math-window.c:235
+#: src/math-window.c:239
 msgid "CAFE Documentation Team"
 msgstr ""
 
-#: src/math-window.c:241
+#: src/math-window.c:245
 msgid ""
 "CAFE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1592,127 +1537,127 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: src/math-window.c:245
+#: src/math-window.c:249
 msgid ""
 "CAFE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
-" more details."
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
 msgstr ""
 
-#: src/math-window.c:249
+#: src/math-window.c:253
 msgid ""
-"You should have received a copy of the GNU General Public License along with"
-" CAFE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"You should have received a copy of the GNU General Public License along with "
+"CAFE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 
-#: src/math-window.c:263
+#: src/math-window.c:290
+#, c-format
+msgid ""
+"Calculator with financial and scientific modes.\n"
+"Using CTK %d.%d.%d"
+msgstr ""
+
+#: src/math-window.c:296
 msgid "About CAFE Calculator"
 msgstr ""
 
-#: src/math-window.c:264
+#: src/math-window.c:297
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
-"Copyright © 2011-2020 CAFE developers"
+"Copyright © 2011-2020 MATE developers\n"
+"Copyright © 2021-2025 Pablo Barciela"
 msgstr ""
 
-#: src/math-window.c:267
-msgid "Calculator with financial and scientific modes."
-msgstr "ម៉ាស៊ីន​គិតលេខ​ដែល​មាន​របៀប​វិទ្យាសាស្ត្រ និង​​របៀប​ហិរញ្ញវត្ថុ"
-
-#: src/math-window.c:270
+#: src/math-window.c:304
 msgid "translator-credits"
 msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា, ចាន់ សម្បត្តិរតនៈ, សុខ សុភា"
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:442
 msgid "_Calculator"
 msgstr "ម៉ាស៊ីន​គិតលេខ"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:444
 msgid "_Mode"
 msgstr "របៀប"
 
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:446
 msgid "_Help"
 msgstr "ជំនួយ"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:448
 msgid "_Basic"
 msgstr "ជា​គោល"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:450
 msgid "_Advanced"
 msgstr "កម្រិត​ខ្ពស់"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:452
 msgid "_Financial"
 msgstr "ហិរញ្ញវត្ថុ"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:454
 msgid "_Programming"
 msgstr "ការ​សរសេរ​កម្មវិធី"
 
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:456
 msgid "_Contents"
 msgstr "មាតិកា"
 
-#: src/math-window.c:420
+#: src/math-window.c:459
 msgid "_Copy"
 msgstr ""
 
-#: src/math-window.c:422
+#: src/math-window.c:461
 msgid "_Paste"
 msgstr ""
 
-#: src/math-window.c:424
+#: src/math-window.c:463
 msgid "_Undo"
 msgstr ""
 
-#: src/math-window.c:426
+#: src/math-window.c:465
 msgid "_Redo"
 msgstr ""
 
-#: src/math-window.c:429
+#: src/math-window.c:468
 msgid "_Preferences"
 msgstr ""
 
-#: src/math-window.c:431
+#: src/math-window.c:470
 msgid "_Quit"
 msgstr ""
 
-#: src/math-window.c:448
+#: src/math-window.c:487
 msgid "_About"
 msgstr "_អំពី"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer
-#. values
+#. Translators: Error displayed when boolean AND attempted on non-integer values
 #: src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr "ប៊ូលីន AND ត្រូវ​បាន​កំណត់​ចំពោះ​តែ​លេខគត់​វិជ្ជមាន​ប៉ុណ្ណោះ"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer
-#. values
+#. Translators: Error displayed when boolean OR attempted on non-integer values
 #: src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr "ប៊ូលីន OR ត្រូវ​បាន​កំណត់​​ចំពោះ​តែ​លេខគត់​វិជ្ជមាន​ប៉ុណ្ណោះ"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer
-#. values
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
 #: src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "ប៊ូលីន XOR ត្រូវ​បាន​កំណត់​ចំពោះ​តែ​លេខគត់​វិជ្ជមាន​ប៉ុណ្ណោះ"
 
-#. Translators: Error displayed when boolean NOT attempted on non-integer
-#. values
+#. Translators: Error displayed when boolean NOT attempted on non-integer values
 #: src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "ប៉ូលីន NOT ត្រូវ​បាន​កំណត់​ចំពោះ​តែ​លេខគត់​វិជ្ជមាន​ប៉ុណ្ណោះ"
@@ -1732,57 +1677,51 @@ msgid "Overflow: the result couldn't be calculated"
 msgstr "លើស​ចំនួន ៖ លទ្ធផល​មិន​អាច​ត្រូវ​បាន​គណនា​ឡើយ"
 
 #. Translators: Error displayed attempted to divide by zero
-#: src/mp.c:644 src/mp.c:676 src/mp.c:1605
+#: src/mp.c:644 src/mp.c:676 src/mp.c:1607
 msgid "Division by zero is undefined"
 msgstr "វិធី​ចែក​​ត្រឹម ០ មិន​ត្រូវ​បាន​កំណត់​ឡើយ"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
-#: src/mp.c:1276 src/mp.c:1313
+#: src/mp.c:1278 src/mp.c:1315
 msgid "Logarithm of zero is undefined"
 msgstr "ឡូការីត ០ មិន​ត្រូវ​បាន​កំណត់​ឡើយ"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. exponent
-#: src/mp.c:1680 src/mp.c:1994
+#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#: src/mp.c:1682 src/mp.c:1996
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "ស្វ័យគុណ ០ មិន​ត្រូវ​បាន​កំណត់​ចំពោះ​​និទស្សន្ត​អវិជ្ជមាន​ឡើយ"
 
-#: src/mp.c:1704
+#: src/mp.c:1706
 msgid "Reciprocal of zero is undefined"
 msgstr "ច្រាស​នៃ ០ មិន​ត្រូវ​បាន​កំណត់​ឡើយ"
 
-#: src/mp.c:1789
+#: src/mp.c:1791
 msgid "Root must be non-zero"
 msgstr "ឫស​មិន​ត្រូវ​ ០ ឡើយ"
 
-#: src/mp.c:1807
+#: src/mp.c:1809
 msgid "Negative root of zero is undefined"
 msgstr "ឬស​ ០ អវិជ្ជមាន​មិន​ត្រូវ​បាន​កំណត់​ឡើយ"
 
-#: src/mp.c:1813
+#: src/mp.c:1815
 msgid "nth root of negative number is undefined for even n"
 msgstr "nth root នៃ​ចំនួន​អវិជ្ជមាន​​មិន​ត្រូវ​បាន​កំណត់​ឡើយ​ចំពោះ​ n "
 
-#. Translators: Error displayed when attempted take the factorial of a
-#. fractional number
-#: src/mp.c:1934
+#. Translators: Error displayed when attempted take the factorial of a fractional number
+#: src/mp.c:1936
 msgid "Factorial is only defined for natural numbers"
 msgstr "ហ្វាក់តូរីយ្យែល​​ត្រូវ​បាន​កំណត់​លេខ​ធម្មជាតិ​ប៉ុណ្ណោះ"
 
-#. Translators: Error displayed when attemping to do a modulus division on
-#. non-integer numbers
-#: src/mp.c:1954
+#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#: src/mp.c:1956
 msgid "Modulus division is only defined for integers"
 msgstr "វិធី​ចែក​ម៉ូឌុល​ត្រូវ​បាន​កំណត់​ចំពោះ​តែ​លេខគត់​ប៉ុណ្ណោះ"
 
 #. Translators: Error displayed when tangent value is undefined
 #: src/mp-trigonometric.c:310
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
-"(90°)"
-msgstr ""
-"តង់សង់​មិន​ត្រូវ​បាន​កំណត់​​ចំពោះ​មុំ​ដែល​​ជា​ពហុគុណ​នៃ π (180°) ពី π∕2 "
-"(90°) ឡើយ"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+msgstr "តង់សង់​មិន​ត្រូវ​បាន​កំណត់​​ចំពោះ​មុំ​ដែល​​ជា​ពហុគុណ​នៃ π (180°) ពី π∕2 (90°) ឡើយ"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:355
@@ -1794,15 +1733,12 @@ msgstr "ច្រាស​ស៊ីនីស​មិន​ត្រូវ​ប
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "កូស៊ីនុស​​ច្រាស​មិន​ត្រូវ​បាន​កំណត់​ចំពោះ​​តម្លៃ​​ក្រៅ​​ពី [-1, 1]"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is
-#. undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
 #: src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
-msgstr ""
-"កូស៊ីនុស​អ៊ីពែរបូល​ច្រាស​មិន​ត្រូវ​បាន​កំណត់​ចំពោះ​តម្លៃ​តូច​ជាង​មួយ​ឡើយ"
+msgstr "កូស៊ីនុស​អ៊ីពែរបូល​ច្រាស​មិន​ត្រូវ​បាន​កំណត់​ចំពោះ​តម្លៃ​តូច​ជាង​មួយ​ឡើយ"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is
-#. undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
 #: src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr "តង់សង់​អ៊ីពែរបូល​ច្រាស​មិន​ត្រូវ​បាន​កំណត់​តម្លៃ​ក្រៅ​ពី [-1, 1]"
@@ -2243,9 +2179,7 @@ msgstr "%s mL"
 #: src/unit-manager.c:83
 msgctxt "unit-symbols"
 msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
-msgstr ""
-"មិល្លី​លីត្រ មិល្លី​លីត្រ មិល្លី​លីត្រ  មិល្លី​លីត្រ មិល្លី​លីត្រ "
-"សង់ទីម៉ែត្រ​គូប​"
+msgstr "មិល្លី​លីត្រ មិល្លី​លីត្រ មិល្លី​លីត្រ  មិល្លី​លីត្រ មិល្លី​លីត្រ សង់ទីម៉ែត្រ​គូប​"
 
 #: src/unit-manager.c:84
 msgid "Microlitres"
@@ -2534,9 +2468,11 @@ msgstr "សីតុណ្ហភាព"
 msgid "Currency"
 msgstr "រូបិយប័ណ្ណ"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the
-#. placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
 #: src/unit-manager.c:137
 #, c-format
 msgid "%s%%s"
 msgstr "%s%%s"
+
+#~ msgid "Calculator with financial and scientific modes."
+#~ msgstr "ម៉ាស៊ីន​គិតលេខ​ដែល​មាន​របៀប​វិទ្យាសាស្ត្រ និង​​របៀប​ហិរញ្ញវត្ថុ"

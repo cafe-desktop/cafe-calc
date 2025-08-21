@@ -2,25 +2,25 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Francesc Famadas, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Pere O. <gotrunks@gmail.com>, 2020
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: cafe-calc 1.23.0\n"
 "Report-Msgid-Bugs-To: http://cafe-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2025-08-21 16:33+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020\n"
 "Language-Team: Catalan (https://www.transifex.com/cafe/teams/13566/ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Accessible name for the factorize button
@@ -235,8 +235,8 @@ msgid ""
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
 msgstr ""
-"Calcula el valor futur d'una inversió basat en una sèrie de pagaments iguals"
-" a un tipus d'interès periòdic sobre el nombre de períodes de pagament al "
+"Calcula el valor futur d'una inversió basat en una sèrie de pagaments iguals "
+"a un tipus d'interès periòdic sobre el nombre de períodes de pagament al "
 "termini."
 
 #. Future Value Dialog: Label before periodic payment input
@@ -259,8 +259,8 @@ msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
 msgstr ""
-"Calcula el preu de revenda d'un producte, basat en el cost del producte i el"
-" percentatge brut de benefici desitjat."
+"Calcula el preu de revenda d'un producte, basat en el cost del producte i el "
+"percentatge brut de benefici desitjat."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: src/buttons-financial.ui:684
@@ -279,8 +279,8 @@ msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr ""
-"Calcula la quantitat del pagament periòdic d'un préstec, on els pagaments es"
-" fan al final de cada període de pagament."
+"Calcula la quantitat del pagament periòdic d'un préstec, on els pagaments es "
+"fan al final de cada període de pagament."
 
 #. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
@@ -307,8 +307,8 @@ msgid ""
 "periods in the term. "
 msgstr ""
 "Calcula el valor actual d'una inversió basat en una sèrie de pagaments "
-"iguals descomptats a un tipus d'interès periòdic sobre el nombre de períodes"
-" de pagament en el termini."
+"iguals descomptats a un tipus d'interès periòdic sobre el nombre de períodes "
+"de pagament en el termini."
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -322,8 +322,8 @@ msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
 msgstr ""
-"Calcula l'interès periòdic necessari per incrementar una inversió a un valor"
-" futur, sobre el nombre de períodes composts."
+"Calcula l'interès periòdic necessari per incrementar una inversió a un valor "
+"futur, sobre el nombre de períodes composts."
 
 #. Title of Straight-Line Depreciation dialog
 #: src/buttons-financial.ui:1262
@@ -364,8 +364,8 @@ msgstr "Depreciació per suma dels dígits dels anys"
 #: src/buttons-financial.ui:1631
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
-" accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
@@ -390,89 +390,58 @@ msgstr "_Valor futur:"
 #: src/buttons-financial.ui:1815
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest"
-" rate."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
 msgstr ""
-"Calcula el nombre de períodes composts necessaris durant el període d'un any"
-" ordinari, per acumular un valor futur, a un tipus d'interès periòdic."
+"Calcula el nombre de períodes composts necessaris durant el període d'un any "
+"ordinari, per acumular un valor futur, a un tipus d'interès periòdic."
 
-#. Calculates the number of compounding periods necessary to increase an
-#. investment of present value pv to a future value of fv, at a fixed interest
-#. rate of int per compounding period. See also:
-#. http://en.wikipedia.org/wiki/Compound_interest
+#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
 #: src/buttons-financial.ui:2166
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the double-declining balance method. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2181
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal
-#. payments, each of amount pmt, at a periodic interest rate of int, over the
-#. number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Future_value
+#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
 #: src/buttons-financial.ui:2196
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term
-#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
-#. interest rate of int. Each payment is equal to amount pmt. See also:
-#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: src/buttons-financial.ui:2211
 msgid "Term"
 msgstr "Term"
 
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2226
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The
-#. depreciable cost is cost - salvage. The straight-line method of
-#. depreciation divides the depreciable cost evenly over the useful life of an
-#. asset. The useful life is the number of periods, typically years, over
-#. which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2241
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of
-#. present value pv to a future value of fv, over the number of compounding
-#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: src/buttons-financial.ui:2256
 msgid "Rate"
 msgstr "Cadència"
 
-#. Calculates the present value of an investment based on a series of equal
-#. payments, each of amount pmt, discounted at a periodic interest rate of
-#. int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Present_value
+#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
 #: src/buttons-financial.ui:2271
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are
-#. made at the end of each payment period. See also:
-#. http://en.wikipedia.org/wiki/Amortization_schedule
+#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
 #: src/buttons-financial.ui:2286
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the
-#. wanted gross profit margin. See also:
-#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
 #: src/buttons-financial.ui:2301
 msgid "Gpm"
 msgstr "Gpm"
@@ -529,7 +498,7 @@ msgid "64-bit"
 msgstr "64 bits"
 
 #. Title of preferences dialog
-#: src/preferences.ui:60 src/math-preferences.c:239
+#: src/preferences.ui:60 src/math-preferences.c:253
 msgid "Preferences"
 msgstr "Preferències"
 
@@ -577,8 +546,8 @@ msgid ""
 "to give a high degree of accuracy."
 msgstr ""
 "La calculadora de CAFE és una calculadora gràfica potent amb mode financer, "
-"lògic i científic. Utilitza l'empaquetament de precisió múltiple per fer que"
-" la seva aritmètica doni un grau elevat de precisió."
+"lògic i científic. Utilitza l'empaquetament de precisió múltiple per fer que "
+"la seva aritmètica doni un grau elevat de precisió."
 
 #: data/cafe-calc.appdata.xml.in:15
 msgid ""
@@ -590,31 +559,23 @@ msgstr ""
 "de l'entorn d'escriptori CAFE. Si voleu saber més sobre CAFE i la "
 "calculadora de CAFE, visiteu la pàgina principal del projecte."
 
-#: data/cafe-calc.desktop.in:3 src/math-window.c:261
+#: data/cafe-calc.desktop.in:2 src/math-window.c:294
 msgid "CAFE Calculator"
 msgstr "Calculadora de CAFE"
 
 #. Title of main window
-#: data/cafe-calc.desktop.in:4 src/math-window.c:568
+#: data/cafe-calc.desktop.in:3 src/math-window.c:607
 msgid "Calculator"
 msgstr "Calculadora"
 
-#: data/cafe-calc.desktop.in:5
+#: data/cafe-calc.desktop.in:4
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Realitzeu càlculs aritmètics, científics o financers"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/cafe-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr "accessories-calculator"
-
-#. Translators: Search terms to find this application. Do NOT translate or
-#. localize the semicolons! The list MUST also end with a semicolon!
-#: data/cafe-calc.desktop.in:13
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/cafe-calc.desktop.in:12
 msgid "calculator;CAFE;scientific;arithmetic;financial;calculations;"
-msgstr ""
-"calculadora;CAFE;científica;aritmètica;financera;càlculs;operacions;cafemàtica;"
+msgstr "calculadora;CAFE;científica;aritmètica;financera;càlculs;operacions;cafemàtica;"
 
 #: data/org.cafe.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -630,8 +591,7 @@ msgstr "Mida de la paraula"
 
 #: data/org.cafe.calc.gschema.xml:32
 msgid "The size of the words used in bitwise operations"
-msgstr ""
-"La mida de les paraules utilitzades en les operacions a nivell de bits"
+msgstr "La mida de les paraules utilitzades en les operacions a nivell de bits"
 
 #: data/org.cafe.calc.gschema.xml:37
 msgid "Numeric Base"
@@ -957,12 +917,12 @@ msgstr "Bolívar veneçolà"
 msgid "South African Rand"
 msgstr "Rand sud-africà"
 
-#: src/financial.c:70
+#: src/financial.c:74
 msgid "Error: the number of periods must be positive"
 msgstr "S'ha produït un error, el nombre de períodes ha de ser positiu"
 
 #. Description on how to use cafe-calc displayed on command-line
-#: src/cafe-calc.c:79
+#: src/cafe-calc.c:84
 #, c-format
 msgid ""
 "Usage:\n"
@@ -971,9 +931,8 @@ msgstr ""
 "Ús:\n"
 "  %s — Realitza càlculs cafemàtics"
 
-#. Description on cafe-calc command-line help options displayed on command-
-#. line
-#: src/cafe-calc.c:87
+#. Description on cafe-calc command-line help options displayed on command-line
+#: src/cafe-calc.c:92
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -988,29 +947,32 @@ msgstr ""
 "  --help-all                      Mostra totes les opcions d'ajuda\n"
 "  --help-ctk                      Mostra les opcions de CTK+"
 
-#. Description on cafe-calc command-line CTK+ options displayed on command-
-#. line
-#: src/cafe-calc.c:98
+#. Description on cafe-calc command-line CTK+ options displayed on command-line
+#: src/cafe-calc.c:103
 #, c-format
 msgid ""
 "CTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window manager\n"
-"  --name=NAME                     Program name as used by the window manager\n"
+"  --class=CLASS                   Program class as used by the window "
+"manager\n"
+"  --name=NAME                     Program name as used by the window "
+"manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --ctk-module=MODULES            Load additional CTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
 "Opcions de la CTK+:\n"
-"  --class=CLASSE                  Classe del programa tal com l'utilitza el gestor de finestres\n"
-"  --name=NOM                      Nom del programa tal com l'utilitza el gestor de finestres\n"
+"  --class=CLASSE                  Classe del programa tal com l'utilitza el "
+"gestor de finestres\n"
+"  --name=NOM                      Nom del programa tal com l'utilitza el "
+"gestor de finestres\n"
 "  --screen=PANTALLA               Pantalla X a utilitzar\n"
 "  --sync                          Fa que les crides X siguin síncrones\n"
 "  --ctk-module=MÒDULS             Carrega mòduls de CTK+ addicionals\n"
 "  --g-fatal-warnings              Fa que tots els avisos siguin fatals"
 
 #. Description on cafe-calc application options displayed on command-line
-#: src/cafe-calc.c:112
+#: src/cafe-calc.c:117
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1020,13 +982,13 @@ msgstr ""
 "  -s, --solve <equation>          Resol l'equació proporcionada"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/cafe-calc.c:160
+#: src/cafe-calc.c:166
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "L'argument --solve requereix una equació a resoldre"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/cafe-calc.c:171
+#: src/cafe-calc.c:177
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "Argument desconegut «%s»"
@@ -1217,12 +1179,12 @@ msgid "Boolean NOT"
 msgstr "Operació binària NOT"
 
 #. Tooltip for the integer component button
-#: src/math-buttons.c:209 src/math-buttons.c:997
+#: src/math-buttons.c:209 src/math-buttons.c:1001
 msgid "Integer Component"
 msgstr "Part entera"
 
 #. Tooltip for the fractional component button
-#: src/math-buttons.c:212 src/math-buttons.c:999
+#: src/math-buttons.c:212 src/math-buttons.c:1003
 msgid "Fractional Component"
 msgstr "Part fraccionària"
 
@@ -1312,28 +1274,28 @@ msgid "Straight Line Depreciation"
 msgstr "Depreciació constant"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: src/math-buttons.c:628
+#: src/math-buttons.c:632
 msgid "Binary"
 msgstr "Binària"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: src/math-buttons.c:632
+#: src/math-buttons.c:636
 msgid "Octal"
 msgstr "Octal"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: src/math-buttons.c:636
+#: src/math-buttons.c:640
 msgid "Decimal"
 msgstr "Decimal"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: src/math-buttons.c:640
+#: src/math-buttons.c:644
 msgid "Hexadecimal"
 msgstr "Hexadecimal"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: src/math-buttons.c:908 src/math-buttons.c:951
+#: src/math-buttons.c:912 src/math-buttons.c:955
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1342,7 +1304,7 @@ msgstr[1] "_%d posicions"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: src/math-buttons.c:912 src/math-buttons.c:955
+#: src/math-buttons.c:916 src/math-buttons.c:959
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1350,252 +1312,245 @@ msgstr[0] "%d posició"
 msgstr[1] "%d posicions"
 
 #. Tooltip for the round button
-#: src/math-buttons.c:1001
+#: src/math-buttons.c:1005
 msgid "Round"
 msgstr "Arrodoneix"
 
 #. Tooltip for the floor button
-#: src/math-buttons.c:1003
+#: src/math-buttons.c:1007
 msgid "Floor"
 msgstr "Cap a baix"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1005
+#: src/math-buttons.c:1009
 msgid "Ceiling"
 msgstr "Cap a dalt"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1007
+#: src/math-buttons.c:1011
 msgid "Sign"
 msgstr "Signe"
 
 #. Tooltip for the c₀ component button
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "Velocity of Light"
 msgstr "Velocitat de la llum"
 
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "299,792,458 m/s"
 msgstr "299.792.458 m/s"
 
 #. Tooltip for the μ₀ component button
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "Magnetic constant"
 msgstr "Constant magnètica"
 
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "1.2566370614×10⁻⁶ N/A²"
 msgstr "1,2566370614×10⁻⁶ N/A²"
 
 #. Tooltip for the ε₀ button
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "Electric constant"
 msgstr "Permitivitat del buit"
 
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
 msgstr "8,85418782×10⁻¹² s⁴A²/m³kg"
 
 #. Tooltip for the G button
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "Newtonian constant of gravitation"
 msgstr "Constant de la gravitació"
 
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
 msgstr "6,67408×10⁻¹¹ m³/(s²kg)"
 
 #. Tooltip for the h button
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "Planck constant"
 msgstr "Constant de Planck"
 
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "6.62607004×10⁻³⁴ m²kg/s"
 msgstr "6,62607004×10⁻³⁴ m²kg/s"
 
 #. Tooltip for the ｅ button
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "Elementary charge"
 msgstr "Càrrega elèctrica elemental"
 
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "1.6021766208(98)×10⁻¹⁹ C"
 msgstr "1,021766208(98)×10⁻¹⁹ C"
 
 #. Tooltip for the mₑ button
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "Electron mass"
 msgstr "Massa de l'electró"
 
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "9.10938356×10⁻³¹ kg"
 msgstr "9,10938356×10⁻³¹ kg"
 
 #. Tooltip for the mₚ button
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1067
 msgid "Proton mass"
 msgstr "Massa del protó"
 
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1067
 msgid "1.672621898(21)×10⁻²⁷ kg"
 msgstr "1,672621898(21)×10⁻²⁷ kg"
 
 #. Tooltip for the Nₐ button
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1069
 msgid "Avogadro constant"
 msgstr "Nombre d'Avogadro"
 
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1069
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr "6,02214086×10²³ mol⁻¹"
 
-#. Label that is displayed between the two conversion combo boxes, e.g.
-#. "[degrees] in [radians]"
-#: src/math-converter.c:412
+#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#: src/math-converter.c:417
 msgid " in "
 msgstr " a "
 
 #. Tooltip for swap conversion button
-#: src/math-converter.c:427
+#: src/math-converter.c:432
 msgid "Switch conversion units"
 msgstr "Commuta les unitats de conversió"
 
 #. Error shown when trying to undo with no undo history
-#: src/math-equation.c:459
+#: src/math-equation.c:463
 msgid "No undo history"
 msgstr "Sense historial per desfer"
 
 #. Error shown when trying to redo with no redo history
-#: src/math-equation.c:486
+#: src/math-equation.c:490
 msgid "No redo history"
 msgstr "Sense historial per refer"
 
-#: src/math-equation.c:948
+#: src/math-equation.c:953
 msgid "No sane value to store"
 msgstr "No és un valor adequat per emmagatzemar"
 
-#. Error displayed to user when they perform a bitwise operation on numbers
-#. greater than the current word
-#: src/math-equation.c:1230
+#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#: src/math-equation.c:1242
 msgid "Overflow. Try a bigger word size"
 msgstr "Desbordament. Proveu amb una mida més gran de la paraula"
 
 #. Error displayed to user when they an unknown variable is entered
-#: src/math-equation.c:1235
+#: src/math-equation.c:1247
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "Variable desconeguda «%s»"
 
 #. Error displayed to user when an unknown function is entered
-#: src/math-equation.c:1240
+#: src/math-equation.c:1252
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "La funció «%s» no és definida"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: src/math-equation.c:1245
+#: src/math-equation.c:1257
 msgid "Unknown conversion"
 msgstr "Conversió desconeguda"
 
 #. Uncategorized error. Show error token to user
-#: src/math-equation.c:1253
+#: src/math-equation.c:1265
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr "L'expressió a «%s» està mal escrita"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: src/math-equation.c:1256 src/math-equation.c:1261
+#: src/math-equation.c:1268 src/math-equation.c:1273
 msgid "Malformed expression"
 msgstr "Expressió mal escrita"
 
-#: src/math-equation.c:1275
+#: src/math-equation.c:1287
 msgid "Calculating"
 msgstr "S'està calculant"
 
 #. Error displayed when trying to factorize a non-integer value
-#: src/math-equation.c:1390
+#: src/math-equation.c:1402
 msgid "Need an integer to factorize"
 msgstr "Cal un enter per factoritzar"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: src/math-equation.c:1462
+#: src/math-equation.c:1474
 msgid "No sane value to bitwise shift"
 msgstr "No és un valor adequat per fer un desplaçament bit a bit"
 
 #. Message displayed when cannot toggle bit in display
-#: src/math-equation.c:1493
+#: src/math-equation.c:1505
 msgid "Displayed value not an integer"
 msgstr "El valor a mostrar no és un enter"
 
 #. Digits localized for the given language
-#: src/math-equation.c:1916
+#: src/math-equation.c:1928
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
-#. calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
-#. grads
-#: src/math-preferences.c:256 src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: src/math-preferences.c:270 src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Graus"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
-#. calculations
-#: src/math-preferences.c:260 src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#: src/math-preferences.c:274 src/unit-manager.c:55
 msgid "Radians"
 msgstr "Radians"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
-#. calculations
-#: src/math-preferences.c:264 src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#: src/math-preferences.c:278 src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Graus centesimals"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
-#. number 1.234×10^99)
-#: src/math-preferences.c:274
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#: src/math-preferences.c:288
 msgid "Automatic"
 msgstr "Automàtic"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: src/math-preferences.c:278
+#: src/math-preferences.c:292
 msgid "Fixed"
 msgstr "Fix"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: src/math-preferences.c:282
+#: src/math-preferences.c:296
 msgid "Scientific"
 msgstr "Científic"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: src/math-preferences.c:286
+#: src/math-preferences.c:300
 msgid "Engineering"
 msgstr "Enginyer"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: src/math-preferences.c:297
+#: src/math-preferences.c:311
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Mostra %d _posicions decimals"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: src/math-window.c:212
+#: src/math-window.c:219
 msgid "Unable to open help file"
 msgstr "No es pot obrir el fitxer d'ajuda"
 
-#: src/math-window.c:234
+#: src/math-window.c:238
 msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
-#: src/math-window.c:235
+#: src/math-window.c:239
 msgid "CAFE Documentation Team"
 msgstr "Equip de documentació de CAFE"
 
-#: src/math-window.c:241
+#: src/math-window.c:245
 msgid ""
 "CAFE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1607,46 +1562,47 @@ msgstr ""
 "ha estat publicada per la Free Software Foundation, ja sigui la versió 2 de "
 "la Llicència o bé (si ho preferiu) qualsevol versió posterior."
 
-#: src/math-window.c:245
+#: src/math-window.c:249
 msgid ""
 "CAFE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
-" more details."
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
 msgstr ""
 "La calculadora de CAFE es distribueix amb l'esperança que sigui útil, però "
 "SENSE CAP GARANTIA; ni tan sols la garantia implícita de COMERCIALITZACIÓ o "
 "ADEQUACIÓ PER A CAP FINALITAT DETERMINADA. Consulteu la Llicència Pública "
 "General de GNU per a més informació."
 
-#: src/math-window.c:249
+#: src/math-window.c:253
 msgid ""
-"You should have received a copy of the GNU General Public License along with"
-" CAFE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"You should have received a copy of the GNU General Public License along with "
+"CAFE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 "Amb la calculadora de CAFE hauríeu d'haver rebut una còpia de la Llicència "
 "Pública General de GNU; si no és així, escriviu a la Free Software "
-"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 "
-"USA."
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA."
 
-#: src/math-window.c:263
+#: src/math-window.c:290
+#, c-format
+msgid ""
+"Calculator with financial and scientific modes.\n"
+"Using CTK %d.%d.%d"
+msgstr ""
+
+#: src/math-window.c:296
 msgid "About CAFE Calculator"
 msgstr "Quant a la calculadora de CAFE"
 
-#: src/math-window.c:264
+#: src/math-window.c:297
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
-"Copyright © 2011-2020 CAFE developers"
+"Copyright © 2011-2020 MATE developers\n"
+"Copyright © 2021-2025 Pablo Barciela"
 msgstr ""
-"Drets d'autor © 1986–2010 Els autors de GCalctool\n"
-"Drets d'autor © 2011-2020 Els desenvolupadors de CAFE"
 
-#: src/math-window.c:267
-msgid "Calculator with financial and scientific modes."
-msgstr "Calculadora amb mode financer i científic."
-
-#: src/math-window.c:270
+#: src/math-window.c:304
 msgid "translator-credits"
 msgstr ""
 "Joan Duran <jodufi@gmail.com>, 2007\n"
@@ -1654,93 +1610,89 @@ msgstr ""
 "Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2018, 2019, 2020"
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:442
 msgid "_Calculator"
 msgstr "_Calculadora"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:444
 msgid "_Mode"
 msgstr "_Mode"
 
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:446
 msgid "_Help"
 msgstr "_Ajuda"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:448
 msgid "_Basic"
 msgstr "_Bàsic"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:450
 msgid "_Advanced"
 msgstr "_Avançat"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:452
 msgid "_Financial"
 msgstr "_Financer"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:454
 msgid "_Programming"
 msgstr "_Programació"
 
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:456
 msgid "_Contents"
 msgstr "_Contingut"
 
-#: src/math-window.c:420
+#: src/math-window.c:459
 msgid "_Copy"
 msgstr "_Copia"
 
-#: src/math-window.c:422
+#: src/math-window.c:461
 msgid "_Paste"
 msgstr "_Enganxa"
 
-#: src/math-window.c:424
+#: src/math-window.c:463
 msgid "_Undo"
 msgstr "_Desfés"
 
-#: src/math-window.c:426
+#: src/math-window.c:465
 msgid "_Redo"
 msgstr "_Refés"
 
-#: src/math-window.c:429
+#: src/math-window.c:468
 msgid "_Preferences"
 msgstr "_Preferències"
 
-#: src/math-window.c:431
+#: src/math-window.c:470
 msgid "_Quit"
 msgstr "_Surt"
 
-#: src/math-window.c:448
+#: src/math-window.c:487
 msgid "_About"
 msgstr "_Quant a"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer
-#. values
+#. Translators: Error displayed when boolean AND attempted on non-integer values
 #: src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr "L'operació binària AND només està definida per als enters positius"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer
-#. values
+#. Translators: Error displayed when boolean OR attempted on non-integer values
 #: src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr "L'operació binària OR només està definida per als enters positius"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer
-#. values
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
 #: src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "L'operació binària XOR només està definida per als enters positius"
 
-#. Translators: Error displayed when boolean NOT attempted on non-integer
-#. values
+#. Translators: Error displayed when boolean NOT attempted on non-integer values
 #: src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "L'operació binària NOT només està definida per als enters positius"
@@ -1760,57 +1712,53 @@ msgid "Overflow: the result couldn't be calculated"
 msgstr "Desbordament: no s'ha pogut calcular el resultat"
 
 #. Translators: Error displayed attempted to divide by zero
-#: src/mp.c:644 src/mp.c:676 src/mp.c:1605
+#: src/mp.c:644 src/mp.c:676 src/mp.c:1607
 msgid "Division by zero is undefined"
 msgstr "La divisió per zero no és definida"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
-#: src/mp.c:1276 src/mp.c:1313
+#: src/mp.c:1278 src/mp.c:1315
 msgid "Logarithm of zero is undefined"
 msgstr "El logaritme de zero no és definit"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. exponent
-#: src/mp.c:1680 src/mp.c:1994
+#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#: src/mp.c:1682 src/mp.c:1996
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "La potència de zero no és definida per a un exponent negatiu"
 
-#: src/mp.c:1704
+#: src/mp.c:1706
 msgid "Reciprocal of zero is undefined"
 msgstr "El recíproc de zero no és definit"
 
-#: src/mp.c:1789
+#: src/mp.c:1791
 msgid "Root must be non-zero"
 msgstr "L'arrel ha de ser diferent de zero"
 
-#: src/mp.c:1807
+#: src/mp.c:1809
 msgid "Negative root of zero is undefined"
 msgstr "L'arrel negativa de zero no és definida"
 
-#: src/mp.c:1813
+#: src/mp.c:1815
 msgid "nth root of negative number is undefined for even n"
 msgstr "L'arrel enèsima d'un nombre negatiu no és definida per a una n parell"
 
-#. Translators: Error displayed when attempted take the factorial of a
-#. fractional number
-#: src/mp.c:1934
+#. Translators: Error displayed when attempted take the factorial of a fractional number
+#: src/mp.c:1936
 msgid "Factorial is only defined for natural numbers"
 msgstr "El factorial només està definit per als nombres naturals"
 
-#. Translators: Error displayed when attemping to do a modulus division on
-#. non-integer numbers
-#: src/mp.c:1954
+#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#: src/mp.c:1956
 msgid "Modulus division is only defined for integers"
 msgstr "La divisió modular només està definida per als enters"
 
 #. Translators: Error displayed when tangent value is undefined
 #: src/mp-trigonometric.c:310
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
-"(90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
 msgstr ""
-"La tangent no és definida per a angles que són múltiples de π∕2 (180°) a π∕4"
-" (90°)"
+"La tangent no és definida per a angles que són múltiples de π∕2 (180°) a π∕4 "
+"(90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:355
@@ -1822,16 +1770,14 @@ msgstr "L'invers del sinus no es troba definit per a valors fora de [-1, 1]"
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "L'invers del cosinus no es troba definit per a valors fora de [-1, 1]"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is
-#. undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
 #: src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr ""
 "L'invers del cosinus hiperbòlic no es troba definit per als valors més "
 "petits que u"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is
-#. undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
 #: src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr ""
@@ -2563,9 +2509,21 @@ msgstr "Temperatura"
 msgid "Currency"
 msgstr "Moneda"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the
-#. placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
 #: src/unit-manager.c:137
 #, c-format
 msgid "%s%%s"
 msgstr "%%s %s"
+
+#~ msgid "accessories-calculator"
+#~ msgstr "accessories-calculator"
+
+#~ msgid ""
+#~ "Copyright © 1986–2010 The GCalctool authors\n"
+#~ "Copyright © 2011-2020 CAFE developers"
+#~ msgstr ""
+#~ "Drets d'autor © 1986–2010 Els autors de GCalctool\n"
+#~ "Drets d'autor © 2011-2020 Els desenvolupadors de CAFE"
+
+#~ msgid "Calculator with financial and scientific modes."
+#~ msgstr "Calculadora amb mode financer i científic."
