@@ -1,3 +1,18 @@
+### cafe-calc 2.0.0
+
+  * math-variable-popup: avoid shadow variable
+  * math-window: show CTK version in about dialog
+  * po: Makevars: suppress progress indicators
+  * ci: some improvements
+  * update AUTHORS
+  * build: remove obsolete AC_HEADER_STDC and AC_ISC_POSIX
+  * build: Fix AC_OUTPUT warning
+  * math-window: update copyright
+  * add G_GNUC_UNUSED in unused parameters
+  * reduce the scope of some variables
+  * update translations
+
+
 ### cafe-calc 1.25.0
 
   * Initial release forked from mate-calc 1.24.1
