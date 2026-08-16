@@ -127,11 +127,12 @@ get_options(int argc, char *argv[])
 {
     int i;
     char *progname = NULL;
-    char *arg = NULL;
 
     progname = g_path_get_basename(argv[0]);
 
     for (i = 1; i < argc; i++) {
+        char *arg = NULL;
+
         arg = argv[i];
 
         if (strcmp(arg, "-v") == 0 ||

@@ -380,7 +380,7 @@ load_imf_rates(CurrencyManager *manager)
 
         tokens = g_strsplit(line, "\t", 0);
         if (strcmp(tokens[0], "Currency") != 0) {
-            gint value_index, name_index;
+            gint value_index;
 
             for (value_index = 1; tokens[value_index]; value_index++) {
                 gchar *value = g_strchug (tokens[value_index]);
@@ -388,6 +388,8 @@ load_imf_rates(CurrencyManager *manager)
                     break;
             }
             if (tokens[value_index]) {
+                gint name_index;
+
                 for (name_index = 0; name_map[name_index].name; name_index++) {
                     if (strcmp(name_map[name_index].name, tokens[0]) == 0)
                         break;

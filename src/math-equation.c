@@ -874,8 +874,6 @@ math_equation_get_equation(MathEquation *equation)
 gboolean
 math_equation_get_number(MathEquation *equation, MPNumber *z)
 {
-    gboolean result;
-
     g_return_val_if_fail(equation != NULL, FALSE);
     g_return_val_if_fail(z != NULL, FALSE);
 
@@ -885,6 +883,7 @@ math_equation_get_number(MathEquation *equation, MPNumber *z)
     }
     else {
         gchar *text;
+        gboolean result;
 
         text = math_equation_get_equation(equation);
         result = !mp_serializer_from_string(equation->priv->serializer, text, z);

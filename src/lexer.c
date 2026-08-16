@@ -528,10 +528,10 @@ LETTER_STATE:
 void
 l_insert_all_tokens(LexerState* state)
 {
-    LexerToken* token = NULL;
-
     while(1)
     {
+        LexerToken* token = NULL;
+
         token = l_insert_next_token(state);
         assert(token != NULL);
         if(token->token_type == PL_EOS)
