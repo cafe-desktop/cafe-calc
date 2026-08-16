@@ -296,7 +296,7 @@ static void about_cb (CtkWidget  *widget G_GNUC_UNUSED,
         "title", _("About CAFE Calculator"),
         "copyright", _("Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
                        "Copyright \xc2\xa9 2011-2020 MATE developers\n"
-                       "Copyright \xc2\xa9 2021-2025 Pablo Barciela"),
+                       "Copyright \xc2\xa9 2021-2026 Pablo Barciela"),
         "license", license_trans,
         "comments", comments,
         "authors", authors,
