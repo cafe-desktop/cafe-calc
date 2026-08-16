@@ -2,11 +2,11 @@ dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.62)
 AC_INIT([cafe-calc], [2.0.0], [http://cafe-desktop.org])
 
-AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
+AM_INIT_AUTOMAKE([1.11 foreign no-dist-gzip dist-xz check-news])
 AC_CONFIG_HEADERS(config.h)
 AM_MAINTAINER_MODE
 CAFE_MAINTAINER_MODE_DEFINES
-m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
+AM_SILENT_RULES([yes])
 
 AC_PROG_CC
 
