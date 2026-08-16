@@ -87,7 +87,7 @@ static const CurrencyInfo currency_info[] = {
     {"UYU", "$",    N_("Uruguayan Peso")},
     {"VEF", "Bs F", N_("Venezuelan Bolívar")},
     {"ZAR", "R",    N_("South African Rand")},
-    {NULL, NULL}
+    {NULL, NULL, NULL}
 };
 
 static gboolean downloading_imf_rates = FALSE, downloading_ecb_rates = FALSE;

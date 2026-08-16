@@ -98,7 +98,7 @@ unit_manager_get_default(void)
         {NULL,          "degree-farenheit", N_("Farenheit"),         NC_("unit-format", "%s ˚F"),       "(x+459.67)*5/9",     "x*9/5-459.67",   NC_("unit-symbols", "degF,˚F")},
         {NULL,          "degree-kelvin",    N_("Kelvin"),            NC_("unit-format", "%s K"),        "x",                  "x",              NC_("unit-symbols", "K")},
         {NULL,          "degree-rankine",   N_("Rankine"),           NC_("unit-format", "%s ˚R"),       "x*5/9",              "x*9/5",          NC_("unit-symbols", "degR,˚R,˚Ra")},
-        { NULL, NULL, NULL, NULL, NULL, NULL }
+        { NULL, NULL, NULL, NULL, NULL, NULL, NULL }
     };
 
     if (default_unit_manager)
