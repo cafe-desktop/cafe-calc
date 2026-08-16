@@ -1,3 +1,10 @@
+### cafe-calc 2.1.0
+
+  * Fix [-Wmissing-field-initializers] warnings
+  * reduce the scope of some variables
+  * build: require automake 1.11
+  * update translations
+
 ### cafe-calc 2.0.0
 
   * math-variable-popup: avoid shadow variable
