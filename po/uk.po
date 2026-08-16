@@ -13,9 +13,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-calc 1.23.0\n"
+"Project-Id-Version: cafe-calc 2.1.0\n"
 "Report-Msgid-Bugs-To: http://cafe-desktop.org\n"
-"POT-Creation-Date: 2025-08-21 16:33+0200\n"
+"POT-Creation-Date: 2026-08-16 14:10+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Микола Ткач <chistomov@gmail.com>, 2020\n"
 "Language-Team: Ukrainian (https://www.transifex.com/cafe/teams/13566/uk/)\n"
@@ -985,13 +985,13 @@ msgstr ""
 "  -s, --solve <equation>          Обчислити вираз"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/cafe-calc.c:166
+#: src/cafe-calc.c:167
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "Для арґументу --solve треба вказати вираз для обчислення"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/cafe-calc.c:177
+#: src/cafe-calc.c:178
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "Невідомий арґумент «%s»"
@@ -1439,66 +1439,66 @@ msgstr "Немає історії повернень"
 msgid "No redo history"
 msgstr "Немає історії повторень"
 
-#: src/math-equation.c:953
+#: src/math-equation.c:952
 msgid "No sane value to store"
 msgstr "Немає нормального значення для зберігання"
 
 #. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
-#: src/math-equation.c:1242
+#: src/math-equation.c:1241
 msgid "Overflow. Try a bigger word size"
 msgstr "Переповнення. Спробуйте більший розмір слова"
 
 #. Error displayed to user when they an unknown variable is entered
-#: src/math-equation.c:1247
+#: src/math-equation.c:1246
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "Невідома змінна «%s»"
 
 #. Error displayed to user when an unknown function is entered
-#: src/math-equation.c:1252
+#: src/math-equation.c:1251
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "Функція «%s» не визначена"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: src/math-equation.c:1257
+#: src/math-equation.c:1256
 msgid "Unknown conversion"
 msgstr "Невідоме перетворення"
 
 #. Uncategorized error. Show error token to user
-#: src/math-equation.c:1265
+#: src/math-equation.c:1264
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr "Некоректний вираз: лексема «%s»"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: src/math-equation.c:1268 src/math-equation.c:1273
+#: src/math-equation.c:1267 src/math-equation.c:1272
 msgid "Malformed expression"
 msgstr "Неправильний вираз"
 
-#: src/math-equation.c:1287
+#: src/math-equation.c:1286
 msgid "Calculating"
 msgstr "Обчислення"
 
 #. Error displayed when trying to factorize a non-integer value
-#: src/math-equation.c:1402
+#: src/math-equation.c:1401
 msgid "Need an integer to factorize"
 msgstr "Для розкладання на множники вкажіть ціле число"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: src/math-equation.c:1474
+#: src/math-equation.c:1473
 msgid "No sane value to bitwise shift"
 msgstr "Немає нормального значення для побітового зсуву"
 
 #. Message displayed when cannot toggle bit in display
-#: src/math-equation.c:1505
+#: src/math-equation.c:1504
 msgid "Displayed value not an integer"
 msgstr "Показане значення не є цілим числом"
 
 #. Digits localized for the given language
-#: src/math-equation.c:1928
+#: src/math-equation.c:1927
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1603,7 +1603,7 @@ msgstr "Про CAFE Calc"
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers\n"
-"Copyright © 2021-2025 Pablo Barciela"
+"Copyright © 2021-2026 Pablo Barciela"
 msgstr ""
 
 #: src/math-window.c:304
@@ -2515,16 +2515,3 @@ msgstr "Валюта"
 #, c-format
 msgid "%s%%s"
 msgstr "%%s %s"
-
-#~ msgid "accessories-calculator"
-#~ msgstr "accessories-calculator"
-
-#~ msgid ""
-#~ "Copyright © 1986–2010 The GCalctool authors\n"
-#~ "Copyright © 2011-2020 CAFE developers"
-#~ msgstr ""
-#~ "Авторське право © 1986–2010 Автори GCalctool\n"
-#~ "Авторське право © 2011-2020 Розробники CAFE"
-
-#~ msgid "Calculator with financial and scientific modes."
-#~ msgstr "Рахівник з фінансовими і науковими функціями."
